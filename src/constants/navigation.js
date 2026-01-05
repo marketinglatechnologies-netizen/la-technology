@@ -38,7 +38,7 @@ export const NAV_LINKS = [
   },
   {
     label: "Insights",
-    href: "/careers",
+    href: "/",
     dropdown: [
       { label: "Blogs", href: "/insights/blogs" },
       { label: "Podcast", href: "/insights/podcast" },
