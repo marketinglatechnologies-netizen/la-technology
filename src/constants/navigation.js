@@ -4,7 +4,8 @@ export const NAV_LINKS = [
     href: "/",
     dropdown: [
       { label: "About us", href: "/who-we-are/about-us" },
-      { label: "Team", href: "/about/team" },
+      { label: "Meet Our Leaders", href: "/who-we-are/team" },
+      { label: "Clientele", href: "/who-we-are/team" },
     ],
   },
   {
