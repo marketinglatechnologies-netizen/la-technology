@@ -10,10 +10,10 @@ export default function AboutPage() {
   return (
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
-        title="Driven by Innovation"
+        bgImage="/assets/images/about-us/our-team-banner.jpg"
+        title="The People Who Make It Happen"
         titleTag="h1"
-        description={`Our team combines technology, strategy, and <br> creativity to deliver meaningful digital experiences.`}
+        description={`A passionate team dedicated to building meaningful solutions.`}
       />
     </div>
   );
