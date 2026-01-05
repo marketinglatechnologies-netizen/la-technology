@@ -20,6 +20,14 @@ export const NAV_LINKS = [
   },
   { label: "Global Presence", href: "/global" },
   {
+    label: "Join Us",
+    href: "/",
+    dropdown: [
+      { label: "Life AT LA", href: "/join-us/life-at-la" },
+      { label: "Careers", href: "/join-us/careers" },
+    ],
+  },
+  {
     label: "LA Subsidiaries",
     href: "/",
     dropdown: [
