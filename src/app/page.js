@@ -1,8 +1,12 @@
 import HomeHero from "@/components/sections/HomeHero";
+import ServicesSection from "@/components/home/ServicesSection";
 import LogoSlider from "@/components/sections/LogoSlider";
 import DynamicMasonryGrid from "@/components/ui/DynamicMasonryGrid";
 import { PhoneCall } from "lucide-react";
 import Link from "next/link";
+import TestimonialsSection from "@/components/home/testimonials";
+import dynamic from "next/dynamic";
+import VendorLogo from "@/components/home/vendorslogo";
 
 export default function HomePage() {
   const heroSlides = [
@@ -23,6 +27,52 @@ export default function HomePage() {
     "/assets/images/home/who-we-are-2.jpg", // Becomes top-right
     "/assets/images/home/who-we-are-3.jpg", // Becomes bottom-right
   ];
+
+  const industriesData = {
+    sectionTitle: "Empowering Every Industry With Secure Innovation",
+    items: [
+      {
+        id: "banks",
+        title: "Banks",
+        image: "/assets/images/home/bank.png",
+      },
+      {
+        id: "financial-institutions",
+        title: "Financial Institutions",
+        image: "/assets/images/home/financial-institute.png",
+      },
+      {
+        id: "manufacturing",
+        title: "Manufacturing",
+        image: "/assets/images/home/manufacturing.png",
+      },
+      {
+        id: "pharma-healthcare",
+        title: "Pharma & Health Care",
+        image: "/assets/images/home/pharma.png",
+      },
+      {
+        id: "media",
+        title: "Media",
+        image: "/assets/images/home/media.png",
+      },
+      {
+        id: "ites",
+        title: "ITES",
+        image: "/assets/images/home/ites.png",
+      },
+      {
+        id: "service-providers",
+        title: "Service Providers",
+        image: "/assets/images/home/service-providers.png",
+      },
+      {
+        id: "others",
+        title: "Others",
+        image: "/assets/images/home/others.png",
+      },
+    ],
+  };
 
   return (
     <main>
@@ -77,7 +127,314 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* Rest of home components */}
+      <ServicesSection />
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            {/* LEFT CONTENT */}
+            <div>
+              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-10">
+                Why Industry Leaders <br /> Trust us
+              </h2>
+
+              <div className="space-y-8">
+                {/* Item 1 */}
+                <div className="flex gap-5">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
+                    01
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Unmatched Industry Knowledge
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Partnering with us means working with a team that
+                      prioritizes your growth, security, and long-term success.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item 2 */}
+                <div className="flex gap-5">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
+                    02
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Comprehensive Solutions
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      From infrastructure to cybersecurity, we provide
+                      end-to-end services under one roof.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item 3 */}
+                <div className="flex gap-5">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
+                    03
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Future-Ready Innovation
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      We adopt emerging technologies to ensure your business
+                      stays competitive and resilient.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item 4 */}
+                <div className="flex gap-5">
+                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
+                    04
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      Commitment to Excellence
+                    </h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Our client-first approach guarantees reliable support,
+                      measurable outcomes, and lasting partnerships.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGES */}
+            <div className="relative">
+              {/* Top small image */}
+              <div className="absolute -top-10 left-0 p-2">
+                <img
+                  src="/assets/images/home/industry1.png"
+                  alt="20+ Years Experience"
+                  className="rounded-xl w-48"
+                />
+              </div>
+
+              {/* Bottom image */}
+              <div className="absolute -bottom-8 left-12  p-2">
+                <img
+                  src="/assets/images/home/industry2.png"
+                  alt="Cybersecurity Laptop"
+                  className="rounded-xl w-64"
+                />
+              </div>
+
+              {/* Main image */}
+              <div className="ml-auto w-[360px] p-3">
+                <img
+                  src="/assets/images/home/industry3.png"
+                  alt="Cyber Security Shield"
+                  className="rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
+            {industriesData.sectionTitle}
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {industriesData.items.map((item) => (
+              <div
+                key={item.id}
+                className="relative group overflow-hidden rounded-2xl
+                     w-[260px] h-[360px] mx-auto"
+              >
+                {/* Image */}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Label */}
+                {/* <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                  <span className="bg-black/60 text-white text-sm px-5 py-2 rounded-full">
+                    {item.title}
+                  </span>
+                </div> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#FFF7EB] py-20">
+        {/* WHITE CONTAINER */}
+        <div className="max-w-7xl mx-auto bg-white px-6 lg:px-10 py-16">
+          {/* Heading */}
+          <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
+            Delivering value through execution.
+          </h2>
+
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                title: "Secure Digital Banking Transformation Using Netskope",
+                image: "/assets/images/home/case1.png",
+              },
+              {
+                title:
+                  "Pan-India Power Manufacturing OT Cybersecurity Transformation",
+                image: "/assets/images/home/case2.png",
+              },
+              {
+                title:
+                  "Authentication IoT Security Enhancement for Smart Devices",
+                image: "/assets/images/home/case3.png",
+              },
+              {
+                title:
+                  "Authentication IoT Security Enhancement for Smart Devices",
+                image: "/assets/images/home/case4.png",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-2xl
+                     w-[260px] h-[360px] mx-auto group"
+              >
+                {/* Image */}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Text box */}
+                <div className="absolute bottom-4 left-4 right-4">
+                  {/* <div className="bg-black/60 backdrop-blur-sm text-white text-sm px-4 py-3 rounded-xl text-center leading-snug">
+                    {item.title}
+                  </div> */}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <TestimonialsSection />
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+          {/* Section Heading */}
+          <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
+            Insights, ideas, and updates from our team.
+          </h2>
+
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {[
+              {
+                date: "Dec 4",
+                title: "Cybersecurity Best Practices",
+                description:
+                  "Tips to protect your business from evolving threats.",
+                image: "/assets/images/home/insight1.png",
+              },
+              {
+                date: "Dec 4",
+                title: "Cybersecurity Best Practices",
+                description:
+                  "Tips to protect your business from evolving threats.",
+                image: "/assets/images/home/insight2.png",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#FFF3E0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
+              >
+                {/* Image */}
+                <div className="relative">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-[240px] object-cover"
+                  />
+
+                  {/* Date Ribbon */}
+                  <div className="absolute top-0 left-4">
+                    <div className="relative">
+                      <img
+                        src="/assets/images/home/flag.png" // your image path
+                        alt="Date badge"
+                        className="w-15 h-auto"
+                      />
+                      <span className="absolute inset-0 flex items-center  -translate-y-3 justify-center text-white text-sm font-semibold">
+                        {item.date}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 flex items-center justify-between gap-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-gray-600">{item.description}</p>
+                  </div>
+
+                  {/* CTA Button */}
+                  <button
+                    className="shrink-0 w-11 h-11 rounded-xl
+                         bg-gradient-to-r from-[#E11D48] to-[#F97316]
+                         flex items-center justify-center
+                         text-white hover:opacity-90 transition"
+                    aria-label="Read more"
+                  >
+                    <img src="/assets/images/home/send.svg" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <VendorLogo />
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+          <div
+            className="flex flex-col lg:flex-row items-center justify-between gap-6
+                    bg-gradient-to-r from-[#E11D48] to-[#F97316]
+                    rounded-3xl px-8 lg:px-12 py-8"
+          >
+            {/* Text */}
+            <h2 className="text-white text-lg lg:text-xl font-semibold leading-snug text-center lg:text-left">
+              DRIVING DIGITAL GROWTH WITH TRUSTED TECHNOLOGY
+              <br className="hidden lg:block" />
+              SOLUTIONS- REACH OUT TO US NOW
+            </h2>
+
+            {/* CTA Button */}
+            <button
+              className="shrink-0 inline-flex items-center gap-2
+             text-[#F58028] bg-white
+             text-sm font-medium
+             px-6 py-3 rounded-lg
+             hover:bg-gray-100 transition"
+            >
+              <img
+                src="/assets/images/home/phone.svg"
+                alt="Phone"
+                className="w-4 h-4"
+              />
+              <span>Talk to an Expert</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
