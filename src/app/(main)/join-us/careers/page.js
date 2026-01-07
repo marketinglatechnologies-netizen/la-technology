@@ -45,7 +45,7 @@ export default function AboutPage() {
             <ImageCard src="talent-1.jpg" />
             <ImageCard src="talent-2.jpg" />
             <ImageCard src="talent-3.jpg" />
-            <ImageCard src="talent-4.jpg" />
+           
 
           </div>
 
