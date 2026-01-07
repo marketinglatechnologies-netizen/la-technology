@@ -8,12 +8,65 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div>
+    <main>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
-        title="Driven by Innovation"
+        bgImage="/assets/images/careers/banner-global.jpg"
+        title="Build Your Career With Us"
         titleTag="h1"
-        description={`Our team combines technology, strategy, and <br> creativity to deliver meaningful digital experiences.`}
+        description={`Join a global team where innovation, growth, and opportunity come together.`}
+      />
+     
+  <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+          {/* LEFT CONTENT */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-black mb-5">
+              Where your talent can be best showcased
+            </h2>
+
+            <p className="text-gray-600 leading-relaxed">
+              Step into a role where your work truly matters—protecting
+              critical infrastructure, outsmarting attackers, and shaping
+              the future of cyber resilience across industries. In our
+              inclusive environment, you’ll have the freedom and tools to
+              do your most impactful work.
+              <br /><br />
+              Get to know our culture, explore our Leadership Principles,
+              and review the comprehensive benefits we offer.
+            </p>
+          </div>
+
+          {/* RIGHT IMAGE GRID */}
+          <div className="grid grid-cols-2 gap-6">
+
+            <ImageCard src="talent-1.jpg" />
+            <ImageCard src="talent-2.jpg" />
+            <ImageCard src="talent-3.jpg" />
+            <ImageCard src="talent-4.jpg" />
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+    </main>
+    
+  );
+}
+
+/* IMAGE CARD */
+function ImageCard({ src }) {
+  return (
+    <div className="rounded-2xl overflow-hidden h-[160px]">
+      <img
+        src={`/assets/images/careers/${src}`}
+        alt="Life at LA Technologies"
+        className="w-full h-full object-cover"
       />
     </div>
   );

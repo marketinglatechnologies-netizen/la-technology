@@ -717,7 +717,6 @@ export default function AboutPage() {
       </div>
     </section>
 
-      
     </main>
     
   );

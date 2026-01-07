@@ -5,7 +5,7 @@ export const NAV_LINKS = [
     dropdown: [
       { label: "About us", href: "/who-we-are/about-us" },
       { label: "Meet Our Leaders", href: "/who-we-are/team" },
-      { label: "Clientele", href: "/who-we-are/team" },
+      { label: "Clientele", href: "/who-we-are/clientele" },
     ],
   },
   {
@@ -25,6 +25,7 @@ export const NAV_LINKS = [
     dropdown: [
       { label: "Life AT LA", href: "/join-us/life-at-la" },
       { label: "Careers", href: "/join-us/careers" },
+      { label: "Global Presence", href: "/join-us/globalpresence" },
     ],
   },
   {
