@@ -1,4 +1,5 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
+import JobApplicationForm from "@/components/joinus/JobApplicationForm";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -45,14 +46,14 @@ export default function AboutPage() {
             <ImageCard src="talent-1.jpg" />
             <ImageCard src="talent-2.jpg" />
             <ImageCard src="talent-3.jpg" />
-           
+            <ImageCard src="talent-4.jpg" />
 
           </div>
 
         </div>
       </div>
     </section>
-    
+    <JobApplicationForm />
 
     </main>
     
