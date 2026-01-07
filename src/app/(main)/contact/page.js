@@ -6,7 +6,7 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-export default function AboutPage() {
+export default function ContactPage() {
   return (
     <main>
       <InnerPageBanner

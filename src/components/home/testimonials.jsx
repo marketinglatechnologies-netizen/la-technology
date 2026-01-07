@@ -96,7 +96,7 @@ export default function TestimonialsSection() {
                 <div className="flex items-center gap-4 mt-auto">
                   <img
                     src={item.image}
-                    alt={item.name}
+                    alt={item.name} 
                     className="w-15 h-15 object-cover"
                   />
                   <div>

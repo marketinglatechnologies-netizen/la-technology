@@ -12,9 +12,9 @@ export const NAV_LINKS = [
     label: "What We Do",
     href: "/services",
     dropdown: [
-      { label: "IT Infrastructure", href: "/services/infrastructure" },
-      { label: "Cloud Security", href: "/services/cloud-security" },
-      { label: "Security Solution", href: "/services/security" },
+      { label: "SOC", href: "/services/soc-as-service" },
+      { label: "NOC", href: "/services/noc-as-service" },
+      { label: "Infra Managed Services", href: "/services/infra-managed-services" },
       // Add the rest of your 31 services here
     ],
   },

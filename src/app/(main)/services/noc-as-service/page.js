@@ -6,7 +6,7 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-export default function BlogPage() {
+export default function NOC() {
   return (
     <div>
       <InnerPageBanner
@@ -14,7 +14,7 @@ export default function BlogPage() {
         title="Driven by Innovation"
         titleTag="h1"
         description={`Our team combines technology, strategy, and <br> creativity to deliver meaningful digital experiences.`}
-      /> 
+      />
     </div>
   );
 }
