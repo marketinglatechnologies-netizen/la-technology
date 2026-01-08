@@ -56,7 +56,7 @@ function Card({ icon, title, description }) {
         <Image src={icon} alt={title} width={48} height={48} />
       </div>
 
-      <h4 className="text-base text-gray-900 mb-2 text-left">
+      <h4 className="text-base text-gray-900 mb-2 text-left font-semibold">
         {title}
       </h4>
 

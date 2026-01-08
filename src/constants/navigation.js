@@ -8,23 +8,51 @@ export const NAV_LINKS = [
       { label: "Clientele", href: "/who-we-are/clientele" },
     ],
   },
-  {
-    label: "What We Do",
-    href: "/services",
-    dropdown: [
-      { label: "SOC", href: "/services/soc-as-service" },
-      { label: "NOC", href: "/services/noc-as-service" },
-      { label: "Infra Managed Services", href: "/services/infra-managed-services" },
-      { label: "Managed Broadband + SDWAN", href: "/services/managed-broadband-sdwan" },
-      { label: "IT Branch Operations", href: "/services/it-branch-operations" },
-      { label: "IT Staff Augmentation", href: "/services/it-staff-augmentation" },
-      { label: "Facility Management Services", href: "/services/facility-management" },
-      { label: "Security Assessment", href: "/services/security-assessment" },
+{
+  label: "What We Do",
+  href: "/services",
+  megaMenu: [
+    {
+      title: "Managed Services",
+      items: [
+        { label: "SOC-as-a-Service", href: "/services/soc-as-service" },
+        { label: "NOC-as-a-Service", href: "/services/noc-as-service" },
+        { label: "Infra Managed Services", href: "/services/infra-managed-services" },
+        { label: "Managed Security Services", href: "/services/managed-security-services" },
+        { label: "Managed Broadband + SDWAN", href: "/services/managed-broadband" },
+        { label: "IT Branch Operations", href: "/services/it-branch-operations" },
+        { label: "IT Staff Augmentation", href: "/services/it-staff-augmentation" },
+        { label: "Facility Management Services", href: "/services/facility-management" },
+        { label: "Security Assessment", href: "/services/security-assessment" }
+      ],
+    },
+    {
+      title: "Cyber Security & IT Infra Services",
+      items: [
+        { label: "Data Security", href: "/services/data-security" },
+        { label: "Endpoint Security", href: "/services/endpoint-security" },
+        { label: "Network Security", href: "/services/network-security" },
+        { label: "Application Security", href: "/services/application-security" },
+        { label: "Cloud Security", href: "/services/cloud-security" },
+        { label: "Data Center Build", href: "/services/data-center-build" },
+        { label: "Network Infrastructure", href: "/services/network-infrastructure" }
+      ],
+    },
+    {
+      title: "OT Services",
+      items: [
+        { label: "ICS & SCADA Security", href: "/services/ics-scada-security" },
+        { label: "Asset Discovery", href: "/services/asset-discovery" },
+        { label: "Network Segmentation", href: "/services/network-segmentation" },
+        { label: "Threat Detection & Incident Response", href: "/services/threat-detection" },
+        { label: "OT Endpoint Protection", href: "/services/ot-endpoint-protection" },
+        { label: "Compliance for OT", href: "/services/compliance-for-ot" },
+        { label: "Secure Remote Access", href: "/services/secure-remote-access" }
+      ],
+    },
+  ],
+},
 
-
-      // Add the rest of your 31 services here
-    ],
-  },
   { label: "Global Presence", href: "/global" },
   {
     label: "Join Us",

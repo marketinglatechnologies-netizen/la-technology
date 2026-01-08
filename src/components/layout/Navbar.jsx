@@ -55,55 +55,98 @@ export default function Navbar() {
               onMouseEnter={() => setOpenDropdown(link.label)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  // Tablet/Touch: Toggle dropdown on click
-                  setOpenDropdown(
-                    openDropdown === link.label ? null : link.label
-                  );
-                }}
-                className={`lg:text-[13px] xl:text-[15px] font-semibold flex items-center transition-colors whitespace-nowrap ${
-                  openDropdown === link.label
-                    ? "text-la-orange"
-                    : "text-gray-800"
-                }`}
-              >
-                {link.label}
-                {link.dropdown && (
+              {link.dropdown || link.megaMenu ? (
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpenDropdown(
+                      openDropdown === link.label ? null : link.label
+                    );
+                  }}
+                  className={`lg:text-[13px] xl:text-[15px] font-semibold flex items-center transition-colors whitespace-nowrap ${
+                    openDropdown === link.label
+                      ? "text-la-orange"
+                      : "text-gray-800"
+                  }`}
+                >
+                  {link.label}
                   <ChevronDown
                     size={14}
                     className={`ml-1 transition-transform duration-300 ${
                       openDropdown === link.label ? "rotate-180" : ""
                     }`}
                   />
-                )}
-              </button>
+                </button>
+              ) : (
+                <Link
+                  href={link.href}
+                  className="lg:text-[13px] xl:text-[15px] font-semibold whitespace-nowrap text-gray-800 hover:text-la-orange transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )}
 
               {/* Desktop Dropdown Content */}
               <AnimatePresence>
-                {link.dropdown && openDropdown === link.label && (
+                {/* MEGA MENU – only for What We Do */}
+                {link.megaMenu && openDropdown === link.label && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full -left-4 pt-2 w-max z-[100]"
+                    className="absolute top-8 left-1/2 -translate-x-[40%] pt-6 z-[100]"
                   >
-                    <div className="bg-white shadow-2xl border border-gray-100 rounded-xl min-w-[240px] p-3 overflow-hidden">
-                      {link.dropdown.map((sub) => (
-                        <Link
-                          key={sub.label}
-                          href={sub.href}
-                          onClick={() => setOpenDropdown(null)}
-                          className="block px-4 py-2.5 text-sm text-gray-700 hover:text-la-red hover:bg-la-cream rounded-lg transition-all"
-                        >
-                          {sub.label}
-                        </Link>
+                    <div className="bg-white shadow-2xl border border-gray-100 rounded-2xl p-8 grid grid-cols-3 gap-10 min-w-[900px]">
+                      {link.megaMenu.map((section) => (
+                        <div key={section.title}>
+                          <h4 className="text-la-red font-semibold mb-4">
+                            {section.title}
+                          </h4>
+                          <ul className="space-y-3">
+                            {section.items.map((item) => (
+                              <li key={item.label}>
+                                <Link
+                                  href={item.href}
+                                  onClick={() => setOpenDropdown(null)}
+                                  className="text-sm text-gray-700 hover:text-la-orange transition"
+                                >
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       ))}
                     </div>
                   </motion.div>
                 )}
+
+                {/* NORMAL DROPDOWN – for others */}
+                {link.dropdown &&
+                  !link.megaMenu &&
+                  openDropdown === link.label && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full -left-4 pt-2 w-max z-[100]"
+                    >
+                      <div className="bg-white shadow-2xl border border-gray-100 rounded-xl min-w-[240px] p-3">
+                        {link.dropdown.map((sub) => (
+                          <Link
+                            key={sub.label}
+                            href={sub.href}
+                            onClick={() => setOpenDropdown(null)}
+                            className="block px-4 py-2.5 text-sm hover:bg-la-cream rounded-lg"
+                          >
+                            {sub.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
               </AnimatePresence>
             </div>
           ))}
@@ -158,7 +201,7 @@ export default function Navbar() {
               <div className="flex-1 overflow-y-auto px-8 py-10">
                 {NAV_LINKS.map((link) => (
                   <div key={link.label} className="mb-8">
-                    {link.dropdown ? (
+                    {link.dropdown || link.megaMenu ? (
                       <div>
                         <button
                           onClick={() =>
@@ -185,16 +228,36 @@ export default function Navbar() {
                               className="overflow-hidden mt-4 ml-2 border-l-2 border-la-cream pl-4"
                             >
                               <div className="flex flex-col gap-4 py-2">
-                                {link.dropdown.map((sub) => (
-                                  <Link
-                                    key={sub.label}
-                                    href={sub.href}
-                                    onClick={closeMobileMenu}
-                                    className="text-gray-600 text-base"
-                                  >
-                                    {sub.label}
-                                  </Link>
-                                ))}
+                                {link.megaMenu
+                                  ? link.megaMenu.map((section) => (
+                                      <div key={section.title} className="mb-6">
+                                        <p className="text-sm font-semibold text-la-red mb-3">
+                                          {section.title}
+                                        </p>
+                                        <div className="flex flex-col gap-3 pl-3">
+                                          {section.items.map((item) => (
+                                            <Link
+                                              key={item.label}
+                                              href={item.href}
+                                              onClick={closeMobileMenu}
+                                              className="text-gray-600 text-base"
+                                            >
+                                              {item.label}
+                                            </Link>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    ))
+                                  : link.dropdown.map((sub) => (
+                                      <Link
+                                        key={sub.label}
+                                        href={sub.href}
+                                        onClick={closeMobileMenu}
+                                        className="text-gray-600 text-base"
+                                      >
+                                        {sub.label}
+                                      </Link>
+                                    ))}
                               </div>
                             </motion.div>
                           )}

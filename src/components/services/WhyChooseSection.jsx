@@ -11,13 +11,11 @@ export default function WhyChooseSection({
   return (
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-
         <h2 className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
           {heading}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-
           {/* Left Features */}
           <div className="space-y-20">
             {featuresLeft.map((item, idx) => (
@@ -53,7 +51,6 @@ export default function WhyChooseSection({
               />
             ))}
           </div>
-
         </div>
       </div>
     </section>
@@ -62,22 +59,15 @@ export default function WhyChooseSection({
 
 function Feature({ icon, title, text }) {
   return (
-   <div className="flex gap-4 items-start">
-  <div className="w-14 h-14 relative flex items-center justify-center shrink-0">
-    <Image
-      src={icon}
-      alt={title}
-      fill
-      className="object-contain"
-    />
-  </div>
+    <div className="flex gap-4 items-start">
+      <div className="w-14 h-14 relative flex items-center justify-center shrink-0">
+        <Image src={icon} alt={title} fill className="object-contain" />
+      </div>
 
-  <div>
-    <h4 className="text-base text-gray-900 mb-1">{title}</h4>
-    <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
-  </div>
-</div>
-
-
+      <div>
+        <h4 className="text-base text-gray-900 mb-1 font-semibold">{title}</h4>
+        <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
+      </div>
+    </div>
   );
 }
