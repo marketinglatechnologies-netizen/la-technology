@@ -46,9 +46,9 @@ export default function SOC() {
       <div>
         <InnerPageBanner
           bgImage="/assets/images/about-us/banner.jpg"
-          title="Driven by Innovation"
+          title="SOC As A Service"
           titleTag="h1"
-          description={`Our team combines technology, strategy, and <br> creativity to deliver meaningful digital experiences.`}
+          description={`Round-the-clock SOC services designed to defend modern enterprises.`}
         />
       </div>
       <FeatureHighlightSection
@@ -113,24 +113,24 @@ export default function SOC() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/home/icon1.png",
+            icon: "/assets/images/services/soc/cost.png",
             title: "Cost-Effective Security",
             text: "Avoid the high costs of building and maintaining an in-house SOC while accessing enterprise-grade capabilities.",
           },
           {
-            icon: "/assets/images/home/icon2.png",
+            icon: "/assets/images/services/soc/scalable.png",
             title: "Scalable & Flexible",
             text: "Whether you are a startup or a large enterprise, our service scales with your business needs.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/home/icon3.png",
+            icon: "/assets/images/services/soc/alert.png",
             title: "Tailored Alerts & Reports",
             text: "Receive customized alerts and actionable insights aligned with your business priorities.",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/soc/global.png",
             title: "Global Threat Intelligence",
             text: "We combine human expertise with AI-driven tools to detect both known and zero-day threats.",
           },
@@ -142,7 +142,7 @@ export default function SOC() {
         tabs={[
           {
             label: "Businesses handling sensitive customer data",
-            image: "/images/soc-tab-1.jpg",
+            image: "/assets/images/services/soc/tab1.png",
           },
           {
             label: "Organizations in regulated industries",
@@ -161,7 +161,7 @@ export default function SOC() {
       <ImageHighlightSection
         heading="Your Security, Our Priority"
         headingTag="h2"
-        imageSrc="/images/security-priority.jpg"
+        imageSrc="/assets/images/services/soc/security.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
       />

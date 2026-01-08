@@ -19,7 +19,7 @@ export default function WhyChooseSection({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
 
           {/* Left Features */}
-          <div className="space-y-12">
+          <div className="space-y-20">
             {featuresLeft.map((item, idx) => (
               <Feature
                 key={idx}
@@ -43,7 +43,7 @@ export default function WhyChooseSection({
           </div>
 
           {/* Right Features */}
-          <div className="space-y-12">
+          <div className="space-y-20">
             {featuresRight.map((item, idx) => (
               <Feature
                 key={idx}
@@ -62,15 +62,22 @@ export default function WhyChooseSection({
 
 function Feature({ icon, title, text }) {
   return (
-    <div className="flex gap-4 items-start">
-      <div className="w-12 h-12 flex items-center justify-center">
-        <Image src={icon} alt={title} width={22} height={22} />
-      </div>
+   <div className="flex gap-4 items-start">
+  <div className="w-14 h-14 relative flex items-center justify-center shrink-0">
+    <Image
+      src={icon}
+      alt={title}
+      fill
+      className="object-contain"
+    />
+  </div>
 
-      <div>
-        <h4 className="text-base text-gray-900 mb-1">{title}</h4>
-        <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
-      </div>
-    </div>
+  <div>
+    <h4 className="text-base text-gray-900 mb-1">{title}</h4>
+    <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
+  </div>
+</div>
+
+
   );
 }

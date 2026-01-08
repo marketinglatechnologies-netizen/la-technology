@@ -51,16 +51,16 @@ export default function FiveCards({
 
 function Card({ icon, title, description }) {
   return (
-    <div className="flex flex-col items-center text-center max-w-sm">
+    <div className="flex flex-col items-left text-left max-w-xs">
       <div className="mb-4">
         <Image src={icon} alt={title} width={48} height={48} />
       </div>
 
-      <h4 className="text-base text-gray-900 mb-2">
+      <h4 className="text-base text-gray-900 mb-2 text-left">
         {title}
       </h4>
 
-      <p className="text-sm text-gray-600 leading-relaxed">
+      <p className="text-sm text-gray-600 leading-relaxed text-left">
         {description}
       </p>
     </div>
