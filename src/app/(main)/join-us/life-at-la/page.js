@@ -66,7 +66,7 @@ export default function AboutPage() {
           {/* RIGHT FULL IMAGE */}
           <div className="rounded-2xl overflow-hidden h-[600px]">
             <img
-              src="/assets/images/join-us/team-collaboration.png"
+              src="/assets/images/join-us/team.png"
               alt="Life at LA Technologies"
               className="w-full h-full object-cover"
             />
