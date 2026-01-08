@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/join-us/banner.jpg"
+        bgImage="/assets/images/joinus/banner.jpg"
         title="Where People Power Innovation"
         titleTag="h1"
         description={`Experience a workplace built on collaboration, learning, and impact.`}
@@ -64,7 +64,7 @@ export default function AboutPage() {
             {/* RIGHT FULL IMAGE */}
             <div className="rounded-2xl overflow-hidden h-[560px] lg:h-[620px]">
               <Image
-                src="/assets/images/join-us/team.png"
+                src="/assets/images/joinus/team.png"
                 alt="Life at LA Technologies"
                 width={800}
                 height={900}
