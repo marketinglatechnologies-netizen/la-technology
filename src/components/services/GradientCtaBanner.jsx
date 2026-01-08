@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function GradientCtaBanner({ text }) {
   const router = useRouter();
+  
 
   return (
     <section className="w-full py-12">
@@ -14,7 +15,7 @@ export default function GradientCtaBanner({ text }) {
           bg-gradient-to-r from-red-500 to-orange-500"
         >
           {/* Left Text */}
-          <p className="text-white text-lg md:text-xl font-semibold text-center md:text-left">
+          <p className="text-white text-lg md:text-xl font-semibold text-center md:text-left uppercase">
             {text}
           </p>
 

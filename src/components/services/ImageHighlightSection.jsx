@@ -16,7 +16,7 @@ export default function ImageHighlightSection({
       <div className="max-w-5xl mx-auto px-4 text-center">
 
         {/* Heading */}
-        <HeadingTag className="text-2xl md:text-3xl text-gray-900 mb-8">
+        <HeadingTag className="text-2xl md:text-3xl text-gray-900 mb-8 font-semibold">
           {heading}
         </HeadingTag>
 

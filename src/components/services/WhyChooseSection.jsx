@@ -12,7 +12,7 @@ export default function WhyChooseSection({
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
 
-        <h2 className="text-2xl md:text-3xl text-center text-gray-900 mb-16">
+        <h2 className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
           {heading}
         </h2>
 
@@ -35,7 +35,7 @@ export default function WhyChooseSection({
             <div className="relative w-[300px] h-[420px] rounded-2xl overflow-hidden">
               <Image
                 src={centerImage}
-                alt="Why choose"
+                alt="Why choosee"
                 fill
                 className="object-cover"
               />

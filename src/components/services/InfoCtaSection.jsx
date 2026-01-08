@@ -10,7 +10,7 @@ export default function InfoCtaSection({ title, description }) {
     <section className="w-full py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 text-center space-y-6">
         
-        <h2 className="text-2xl md:text-3xl text-gray-900">
+        <h2 className="text-2xl md:text-3xl text-gray-900 font-semibold">
           {title}
         </h2>
 

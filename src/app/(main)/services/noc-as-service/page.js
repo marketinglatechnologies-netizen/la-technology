@@ -14,6 +14,39 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
+const benefitsData = [
+  {
+    icon: "/assets/images/services/noc/ai.png",
+    title: "24×7 Monitoring & Remediation",
+    description:
+      "Continuous oversight of servers, networks, applications, and databases.",
+  },
+  {
+    icon: "/assets/images/services/noc/cost.png",
+    title: "Cost-Effective Scaling",
+    description:
+      "Expand your service offerings without increasing headcount or infrastructure costs.",
+  },
+  {
+    icon: "/assets/images/services/noc/reduce.png",
+    title: "Reduce Alert Fatigue",
+    description:
+      "We handle alerts and minimize false positives, freeing your engineers for strategic work.",
+  },
+  {
+    icon: "/assets/images/services/noc/partner.png",
+    title: "Preferred Pricing for Partners",
+    description:
+      "Competitive pricing models designed for MSPs and VARs to maximize margins.",
+  },
+  {
+    icon: "/assets/images/services/noc/device.png",
+    title: "Your Tools, Your Way",
+    description:
+      "We integrate with your existing RMM tools to ensure consistency and leverage your investments.",
+  },
+];
+
 export default function NOC() {
   return (
     <>
@@ -41,12 +74,21 @@ export default function NOC() {
           },
         ]}
         title="Scale Your IT Operations Without Increasing Overhead"
-        description="In today’s digital-first world, cyber threats are more advanced, persistent, and damaging than ever before. From ransomware and phishing attacks to insider threats and data breaches, businesses face constant risks that can disrupt operations and compromise sensitive data. Traditional security measures are no longer enough—you need a dedicated team monitoring your environment around the clock.That’s where LA Technologies’ SOC-as-a-Service comes in. We provide a fully managed Security Operations Center (SOC) that acts as an extension of your IT team, delivering continuous threat detection, rapid incident response, and proactive defense—all without the cost and complexity of building your own SOC"
+        description="Managing IT infrastructure is complex and resource-intensive. As businesses grow, so do
+the demands for continuous monitoring, maintenance, and rapid issue resolution. Building
+and staffing an in-house Network Operations Center (NOC) can be costly and time consuming. LA Technologies’ NOC-as-a-Service empowers Managed Service Providers (MSPs) and
+Value-Added Resellers (VARs) to deliver world-class IT operations without heavy upfront
+investment or additional staffing. We act as your extended team, providing 24/7
+monitoring, remediation, and dedicated technical expertise—fully branded or white labeled under your name."
       />
 
       <InfoCtaSection
-        title="What is SOC-as-a-Service?"
-        description="SOC-as-a-Service is a subscription-based model that gives you access to enterprise-grade security operations without heavy upfront investment..."
+        title="What is NOC-as-a-Service?"
+        description="NOC-as-a-Service is a managed solution that provides remote monitoring and remediation
+for servers, networks, applications, databases, and workstations. Our certified engineers
+handle alerts, troubleshoot issues, and ensure maximum uptime—so your team can focus
+on strategic, high-margin projects.
+"
       />
 
       <FiveCards
@@ -85,65 +127,110 @@ export default function NOC() {
           },
         ]}
       />
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Heading */}
+          <h2 className="text-center text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+            Key Benefits
+          </h2>
+
+          {/* Divider */}
+          <div className="w-full h-[4px] bg-gradient-to-r from-orange-400 to-red-500 mb-16" />
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {benefitsData.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl border border-orange-100 p-8 shadow-lg shadow-orange-200"
+              >
+                {/* Icon Image */}
+                <div className="w-15 h-15 flex items-center justify-center mb-5">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                  />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <WhyChooseSection
-        heading="Why Choose LA Technologies SOC-as-a-Service?"
+        heading="Why Partner with LA Technologies?"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Cost-Effective Security",
-            text: "Avoid the high costs of building and maintaining an in-house SOC while accessing enterprise-grade capabilities.",
+            title: "Increase Recurring Revenue",
+            text: "Increase Recurring Revenue",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Scalable & Flexible",
-            text: "Whether you are a startup or a large enterprise, our service scales with your business needs.",
+            title: "Certified Expertise",
+            text: "Our NOC teams include engineers skilled in OS, networking, backup, databases, security, and virtualization.",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
-            title: "Tailored Alerts & Reports",
-            text: "Receive customized alerts and actionable insights aligned with your business priorities.",
+            title: "Dedicated Resources",
+            text: "Form your own Agile Pod with the right mix of Level 2 & 3 engineers for evolving needs.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Global Threat Intelligence",
-            text: "We combine human expertise with AI-driven tools to detect both known and zero-day threats.",
+            title: "Enhanced Customer Satisfaction",
+            text: "Improve uptime, reliability, and retention with proactive IT operations.",
           },
         ]}
       />
       <ImageTabsSection
-        heading="Who Needs SOC-as-a-Service?"
+        heading="Who Needs NOC-as-a-Service?"
         headingTag="h2"
         tabs={[
           {
-            label: "Businesses handling sensitive customer data",
+            label: "MSPs and VARs looking to expand service offerings",
             image: "/assets/images/services/soc/tab1.png",
           },
           {
-            label: "Organizations in regulated industries",
+            label: "Businesses seeking 24×7 IT infrastructure monitoring",
             image: "/images/soc-tab-2.jpg",
           },
           {
-            label: "Companies migrating workloads to the cloud",
+            label:
+              "Organizations aiming to reduce operational costs and complexity",
             image: "/images/soc-tab-3.jpg",
           },
-          {
-            label: "Enterprises lacking in-house security expertise",
-            image: "/images/soc-tab-4.jpg",
-          },
+          // {
+          //   label: "Enterprises lacking in-house security expertise",
+          //   image: "/images/soc-tab-4.jpg",
+          // },
         ]}
       />
       <ImageHighlightSection
-        heading="Your Security, Our Priority"
+        heading="Your Operations, Our Expertise"
         headingTag="h2"
         imageSrc="/assets/images/services/soc/security.png"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
+        description="With LA Technologies as your NOC partner, you gain flexibility, scalability, and peace of
+mind. We work behind the scenes to keep your IT environment running smoothly—so you
+can focus on growth and customer success.
+"
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="Ready to scale your IT services?" />
     </>
   );
 }

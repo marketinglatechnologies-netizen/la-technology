@@ -19,7 +19,7 @@ export default function ImageTabsSection({
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Dynamic Heading */}
-        <HeadingTag className="text-2xl md:text-3xl text-gray-900 mb-12">
+        <HeadingTag className="text-2xl md:text-3xl text-gray-900 mb-12 font-semibold">
           {heading}
         </HeadingTag>
 

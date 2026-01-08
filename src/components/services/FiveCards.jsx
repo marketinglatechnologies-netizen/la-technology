@@ -14,7 +14,7 @@ export default function FiveCards({
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
-        <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16">
+        <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
           {heading}
         </HeadingTag>
 
