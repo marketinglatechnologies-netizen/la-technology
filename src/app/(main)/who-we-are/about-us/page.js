@@ -2,6 +2,7 @@ import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import Image from "next/image";
 import Link from "next/link";
 import OurPartners from "@/components/sections/OurPartners";
+import JourneyTimeline from "@/components/about-us/JourneyTimeline";
 
 
 export const metadata = {
@@ -448,111 +449,7 @@ export default function AboutPage() {
              </div>
            </div>
          </section>
-        <section className="py-20 bg-[#faf8f5]">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-                {/* TITLE */}
-                <h2 className="text-center text-3xl lg:text-4xl font-semibold text-gray-900 mb-10">
-                  A journey of innovation and impact
-                </h2>
-        
-                {/* TOP DIVIDER */}
-                <div className="border-t border-gray-200" />
-        
-                {/* TIMELINE */}
-                <div>
-        
-                  {/* ITEM 1 */}
-                  <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_1.5fr] items-center py-8 border-b border-gray-200">
-                    <div className="flex items-center gap-4">
-                      <Image
-                        src="/assets/images/about-us/2003.png"
-                        alt="Founded"
-                        width={40}
-                        height={40}
-                      />
-                      <span className="text-red-600 font-semibold">2003</span>
-                    </div>
-        
-                    <h3 className="font-semibold text-gray-900">
-                      Founded LA Technologies Pvt Ltd.
-                    </h3>
-        
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Officially began operations in India with a vision to deliver
-                      technology-driven, business-empowering solutions.
-                    </p>
-                  </div>
-        
-                  {/* ITEM 2 */}
-                  <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_1.5fr] items-center py-8 border-b border-gray-200">
-                    <div className="flex items-center gap-4">
-                      <Image
-                        src="/assets/images/about-us/2006.png"
-                        alt="Cisco Talent"
-                        width={40}
-                        height={40}
-                      />
-                      <span className="text-red-600 font-semibold">2006</span>
-                    </div>
-        
-                    <h3 className="font-semibold text-gray-900">
-                      3,000+ Cisco-trained, 35 CCIEs nurtured
-                    </h3>
-        
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Built one of the strongest Cisco talent pools with 3,000+ trained
-                      engineers and over 35 CCIE-certified professionals.
-                    </p>
-                  </div>
-        
-                  {/* ITEM 3 */}
-                  <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_1.5fr] items-center py-8 border-b border-gray-200">
-                    <div className="flex items-center gap-4">
-                      <Image
-                        src="/assets/images/about-us/icon-2014.png"
-                        alt="OEM Alliances"
-                        width={40}
-                        height={40}
-                      />
-                      <span className="text-red-600 font-semibold">2014</span>
-                    </div>
-        
-                    <h3 className="font-semibold text-gray-900">
-                      200+ clientele with global OEM alliances
-                    </h3>
-        
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Formed strategic partnerships with leading technology providers
-                      including Cisco, Juniper, Avaya, APC, Polycom, and Fortinet.
-                    </p>
-                  </div>
-        
-                  {/* ITEM 4 */}
-                  <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_1.5fr] items-center py-8 border-b border-gray-200">
-                    <div className="flex items-center gap-4">
-                      <Image
-                        src="/assets/images/about-us/2016.png"
-                        alt="Managed Services"
-                        width={40}
-                        height={40}
-                      />
-                      <span className="text-red-600 font-semibold">2016</span>
-                    </div>
-        
-                    <h3 className="font-semibold text-gray-900">
-                      Shift to managed services (ARR)
-                    </h3>
-        
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Transitioned to a recurring, services-led business approach
-                      focused on customer longevity and operational continuity.
-                    </p>
-                  </div>
-        
-                </div>
-              </div>
-            </section>
+        <JourneyTimeline />
           
     <section className="py-20 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

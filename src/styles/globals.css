@@ -48,3 +48,24 @@ body {
 .swiper *:focus {
   outline: none !important;
 }
+
+/* Thin scrollbar (Webkit browsers) */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 1px; /* 👈 reduce width here */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf; /* light gray */
+  border-radius: 10px;
+}
+
+/* Firefox */
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cfcfcf transparent;
+}
+
