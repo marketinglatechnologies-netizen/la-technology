@@ -8,7 +8,34 @@ import TestimonialsSection from "@/components/home/testimonials";
 import dynamic from "next/dynamic";
 import VendorLogo from "@/components/home/vendorslogo";
 
+
+
 export default function HomePage() {
+
+  const caseStudies = [
+  {
+    title: "Secure Digital Banking Transformation Using Netskope",
+    image: "/assets/images/home/case1.png",
+    link: "/case-studies/secure-digital-banking-netskope",
+  },
+  {
+    title: "Pan-India Power Manufacturing OT Cybersecurity Transformation",
+    image: "/assets/images/home/case2.png",
+    link: "/case-studies/pan-india-power-manufacturing",
+  },
+  {
+    title: "Authentication IoT Security Enhancement for Smart Devices",
+    image: "/assets/images/home/case3.png",
+    link: "/case-studies/iot-security-enhancement",
+  },
+  {
+    title: "Authentication IoT Security Enhancement for Smart Devices",
+    image: "/assets/images/home/case4.png",
+    link: "/case-studies/iot-security-enhancement-2",
+  },
+];
+
+
   const heroSlides = [
     {
       type: "image",
@@ -75,7 +102,7 @@ export default function HomePage() {
   };
 
   return (
-    <main>
+    <>
       <section>
         <HomeHero slides={heroSlides} />
       </section>
@@ -269,55 +296,25 @@ export default function HomePage() {
         </div>
       </section>
       <section className="bg-[#FFF7EB] py-20">
-        {/* WHITE CONTAINER */}
         <div className="max-w-7xl mx-auto bg-white px-6 lg:px-10 py-16">
-          {/* Heading */}
           <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
             Delivering value through execution.
           </h2>
 
-          {/* Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Secure Digital Banking Transformation Using Netskope",
-                image: "/assets/images/home/case1.png",
-              },
-              {
-                title:
-                  "Pan-India Power Manufacturing OT Cybersecurity Transformation",
-                image: "/assets/images/home/case2.png",
-              },
-              {
-                title:
-                  "Authentication IoT Security Enhancement for Smart Devices",
-                image: "/assets/images/home/case3.png",
-              },
-              {
-                title:
-                  "Authentication IoT Security Enhancement for Smart Devices",
-                image: "/assets/images/home/case4.png",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-2xl
-                     w-[260px] h-[360px] mx-auto group"
-              >
-                {/* Image */}
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-
-                {/* Text box */}
-                <div className="absolute bottom-4 left-4 right-4">
-                  {/* <div className="bg-black/60 backdrop-blur-sm text-white text-sm px-4 py-3 rounded-xl text-center leading-snug">
-                    {item.title}
-                  </div> */}
+            {caseStudies.map((item, index) => (
+              <Link key={index} href={item.link} className="group block">
+                <div
+                  className="relative overflow-hidden rounded-2xl
+                       w-[260px] h-[360px] mx-auto"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -435,6 +432,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
