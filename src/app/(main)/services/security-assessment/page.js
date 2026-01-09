@@ -289,6 +289,50 @@ export default function SecurityAssessment() {
         </div>
       </div>
     </section>
+    <SixCards
+  heading="Deliverables You Receive"
+  headingTag="h2"
+  subheading="Tangible outcomes from our comprehensive assessment process."
+  items={[
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Executive Summary",
+      description:
+        "Clear overview of risks and business impact, designed for leadership review.",
+    },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Detailed Findings Report",
+      description:
+        "Evidence, severity ratings, and affected assets for technical teams.",
+    },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Prioritized Remediation Plan",
+      description:
+        "Quick wins, medium-term actions, and strategic upgrades to improve posture.",
+    },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Policy & Config Baselines",
+      description:
+        "Templates for standardization across branches and new deployments.",
+    },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "SLA-Ready Action Tracker",
+      description:
+        "Assign tasks, owners, and due dates—ready for immediate execution.",
+    },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Review Workshop",
+      description:
+        "Walkthrough with stakeholders to align next steps and clarify findings.",
+    },
+  ]}
+/>
+
 
   <WhyChooseSection
           heading="Why Choose LA Technologies?"
@@ -340,15 +384,76 @@ export default function SecurityAssessment() {
                   },
                 ]}
               />
-              <ImageHighlightSection
-                heading="Your Team, Our Talent"
-                headingTag="h2"
-                imageSrc="/assets/images/industries/security.jpg"
-                imageAlt="Cybersecurity monitoring dashboard"
-                description="With LA Technologies as your security partner, you gain peace of mind knowing your
-business is protected against evolving threats. We work behind the scenes so you can
-focus on growth and innovation."
-              />
+              <section className="w-full py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    {/* Heading */}
+    <h2 className="text-center text-3xl font-semibold text-gray-900 mb-14">
+      Engagement Options
+    </h2>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      {/* Card 1 */}
+      <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md transition">
+        <h3 className="text-lg font-semibold text-red-500 mb-2">
+          Rapid Security Health Check
+        </h3>
+
+        <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
+          1–2 Weeks
+        </p>
+
+        <p className="text-gray-600 mb-8">
+          Quick baseline and top risks assessment for rapid insights.
+        </p>
+
+        <button className="px-8 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-50 transition">
+          Get Started
+        </button>
+      </div>
+
+      {/* Card 2 (Highlighted) */}
+      <div className="rounded-2xl border-2 border-red-500 p-8 text-center shadow-sm">
+        <h3 className="text-lg font-semibold text-red-500 mb-2">
+          Comprehensive Assessment
+        </h3>
+
+        <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
+          3–6 Weeks
+        </p>
+
+        <p className="text-gray-600 mb-8">
+          Full-scope multi-location deep dive into all assets.
+        </p>
+
+        <button className="px-8 py-2 rounded-full bg-red-500 text-white font-medium hover:bg-red-600 transition">
+          Learn More
+        </button>
+      </div>
+
+      {/* Card 3 */}
+      <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md transition">
+        <h3 className="text-lg font-semibold text-red-500 mb-2">
+          OT-Focused Assessment
+        </h3>
+
+        <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
+          Specialized
+        </p>
+
+        <p className="text-gray-600 mb-8">
+          Tailored specifically for industrial and operational environments.
+        </p>
+
+        <button className="px-8 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-50 transition">
+          Contact Us
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
               <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
   </>
   );
