@@ -15,17 +15,6 @@ export const NAV_LINKS = [
     {
       title: "Managed Services",
       items: [
-<<<<<<< Updated upstream
-        { label: "SOC-as-a-Service", href: "/services/soc-as-service" },
-        { label: "NOC-as-a-Service", href: "/services/noc-as-service" },
-        { label: "Infra Managed Services", href: "/services/infra-managed-services" },
-        { label: "Managed Security Services", href: "/services/managed-security-services" },
-        { label: "Managed Broadband + SDWAN", href: "/services/managed-broadband-sdwan" },
-        { label: "IT Branch Operations", href: "/services/it-branch-operations" },
-        { label: "IT Staff Augmentation", href: "/services/it-staff-augmentation" },
-        { label: "Facility Management Services", href: "/services/facility-management" },
-        { label: "Security Assessment", href: "/services/security-assessment" }
-=======
         { label: "SOC-as-a-Service", href: "/services/managed-services/soc-as-service" },
         { label: "NOC-as-a-Service", href: "/services/managed-services/noc-as-service" },
         { label: "Infra Managed Services", href: "/services/managed-services/infra-managed-services" },
@@ -33,9 +22,8 @@ export const NAV_LINKS = [
         { label: "Managed Broadband + SDWAN", href: "/services/managed-services/managed-broadband-sdwan" },
         { label: "IT Branch Operations", href: "/services/managed-services/it-branch-operations" },
         { label: "IT Staff Augmentation", href: "/services/managed-services/it-staff-augmentation" },
-        { label: "Facility Management Services", href: "/services//managed-servicesfacility-management" },
+        { label: "Facility Management Services", href: "/services//managed-services/facility-management" },
         { label: "Security Assessment", href: "/services//managed-services/security-assessment" }
->>>>>>> Stashed changes
       ],
     },
     {
