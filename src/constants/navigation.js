@@ -19,7 +19,7 @@ export const NAV_LINKS = [
         { label: "NOC-as-a-Service", href: "/services/noc-as-service" },
         { label: "Infra Managed Services", href: "/services/infra-managed-services" },
         { label: "Managed Security Services", href: "/services/managed-security-services" },
-        { label: "Managed Broadband + SDWAN", href: "/services/managed-broadband" },
+        { label: "Managed Broadband + SDWAN", href: "/services/managed-broadband-sdwan" },
         { label: "IT Branch Operations", href: "/services/it-branch-operations" },
         { label: "IT Staff Augmentation", href: "/services/it-staff-augmentation" },
         { label: "Facility Management Services", href: "/services/facility-management" },

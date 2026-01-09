@@ -101,35 +101,35 @@ reliable, cost-effective solutions"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
+              icon: "/assets/images/services/soc/cost.png",
               title: "Certified IT Professionals",
               text: "Skilled engineers with expertise in networking, servers, storage, and end-user support.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/soc/scalable.png",
               title: "Cost Efficiency",
               text: "Reduce operational overhead with flexible engagement models.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
+              icon: "/assets/images/services/soc/alert.png",
               title: "Scalability",
               text: "Services tailored for single-site or multi-location enterprises.",
             },
             {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/soc/global.png",
               title: "Proactive Approach",
               text: "Prevent issues before they impact business operations.",
             },
           ]}
         />
         <ImageTabsSection
-                heading="Who Needs SOC-as-a-Service?"
+                heading="Who Needs Facility Management Services?"
                 headingTag="h2"
                 tabs={[
                   {
-                    label: "Businesses with short-term IT projects",
+                    label: "Enterprises with large IT infrastructure",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {

@@ -8,24 +8,34 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const stories = [
+const items = [
   {
     title: "Lorem ipsum dolor sit",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/assets/images/about-us/team1.jpg",
+    align: "left",
   },
   {
     title: "Lorem ipsum dolor sit",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/assets/images/about-us/team1.jpg",
+    align: "right",
   },
   {
     title: "Lorem ipsum dolor sit",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/assets/images/about-us/team1.jpg",
+    align: "left",
+  },
+  {
+    title: "Lorem ipsum dolor sit",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/assets/images/about-us/team1.jpg",
+    align: "right",
   },
 ];
 
@@ -40,53 +50,54 @@ export default function OurTeam() {
       />
 
     
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+     <section className="w-full py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        
+        {/* ===== Section Heading ===== */}
+        <div className="text-center mb-16">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+            Real stories from the team shaping our
+            <br />
+            culture and success.
+          </h2>
+        </div>
 
-        {/* SECTION TITLE */}
-        <h2 className="text-center text-3xl font-semibold text-gray-900 mb-16">
-          Real stories from the team shaping our <br />
-          culture and success.
-        </h2>
-
-        {/* STORIES */}
-        <div className="space-y-16">
-          {stories.map((item, index) => (
+        {/* ===== Video Blocks ===== */}
+        <div className="space-y-20">
+          {items.map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center`}
             >
-              {/* VIDEO THUMBNAIL */}
-              <div className="relative rounded-2xl overflow-hidden">
+              {/* Video */}
+              <div
+                className={`relative rounded-2xl overflow-hidden ${
+                  item.align === "right" ? "lg:order-2" : ""
+                }`}
+              >
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={640}
-                  height={360}
+                  width={600}
+                  height={350}
                   className="w-full h-auto object-cover"
                 />
 
-                {/* PLAY BUTTON */}
+                {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center shadow-lg">
-                    <svg
-                      className="w-6 h-6 text-white ml-1"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
+                  <span className="w-14 h-14 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg">
+                    ▶
+                  </span>
                 </div>
               </div>
 
-              {/* CONTENT */}
+              {/* Content */}
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-semibold mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed max-w-xl">
-                  {item.desc}
+                <p className="text-gray-600 leading-relaxed">
+                  {item.description}
                 </p>
               </div>
             </div>
@@ -94,9 +105,7 @@ export default function OurTeam() {
         </div>
 
       </div>
-      
     </section>
-
 <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 

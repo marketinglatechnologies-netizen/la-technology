@@ -1,6 +1,6 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import FeatureHighlightSection from "@/components/services/FeatureHighlightSection";
-import SixCards from "@/components/services/SixCards";
+import EightCards from "@/components/services/EightCards";
 import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
@@ -15,24 +15,24 @@ export const metadata = {
 
 const items = [
     {
-      title: "Unpredictable Network Performance",
+      title: "Rising Cyber Threats",
       text:
-        "Legacy WAN solutions struggle with bandwidth demands and cloud adoption.",
+        "Rising Cyber Threats Ransomware, phishing, and insider threats target sensitive data. ",
     },
     {
-      title: "High Operational Costs",
+      title: "Regulatory Compliance ",
       text:
-        "MPLS and traditional WAN architectures are expensive and inflexible.",
+        " Laws like GDPR, HIPAA, and local data protection mandates require strict controls.",
     },
     {
-      title: "Security Challenges",
+      title: "Multi-Location Risks ",
       text:
-        "Distributed branches and remote users increase exposure to cyber threats.",
+        "Distributed offices and remote teams increase exposure to breaches. ",
     },
     {
-      title: "Cloud-First Workloads",
+      title: "Business Continuity ",
       text:
-        "Businesses need seamless connectivity to SaaS and cloud applications.",
+        "Data loss or corruption can halt operations and impact customer trust.",
     },
   ];
 
@@ -57,15 +57,19 @@ const items = [
       title: "Education",
       image: "/assets/images/industries/education.jpg",
     },
+    {
+      title: "Government & Public Sector",
+      image: "/assets/images/industries/education.jpg",
+    },
   ];
 
-export default function ManagedBroadbandSDWAN() {
+export default function DataSecurity() {
   return (
     <>
       <div>
         <InnerPageBanner
           bgImage="/assets/images/about-us/banner.jpg"
-          title="Managed Broadband + SDWAN"
+          title="Data Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
         />
@@ -85,15 +89,15 @@ export default function ManagedBroadbandSDWAN() {
             alt: "Data monitoring",
           },
         ]}
-        title="Reliable Connectivity with Intelligent Network Management"
-        description="Modern businesses rely on fast, secure, and resilient connectivity to keep operations running smoothly. Traditional broadband alone often falls short in delivering the performance and flexibility required for today’s distributed environments. That’s where Managed Broadband + SD-WAN comes in—combining high-speed internet with intelligent software-defined networking for optimized performance, security, and cost efficiency. "
+        title="Protect Your Most Valuable Asset—Your Data "
+        description="Data is the lifeblood of modern businesses. From customer information to financial records and intellectual property, any compromise can lead to severe financial, operational, and reputational damage. LA Technologies’ Data Security solutions safeguard your data across endpoints, networks, and storage systems—ensuring confidentiality, integrity, and availability."
       />
       <section className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* HEADING */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-          Why Managed Broadband + SD-WAN Matters
+          Why OT Endpoint Protection Matters
         </h2>
 
         {/* CARDS */}
@@ -116,79 +120,87 @@ export default function ManagedBroadbandSDWAN() {
       </div>
     </section> 
 
-    <SixCards
-  heading="Our Managed Broadband + SD-WAN Solutions"
+    <EightCards
+  heading="Our Data Security Capabilities"
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/speed.svg",
-      title: "High-Speed Broadband Connectivity",
+      icon: "/assets/images/icons/path.svg",
+      title: "Data Encryption",
       description:
-        "Reliable internet access tailored to your business needs.",
-    },
-    {
-      icon: "/assets/images/icons/wan.svg",
-      title: "SD-WAN Orchestration",
-      description:
-        "Intelligent routing for optimal application performance and reduced latency.",
-    },
-    {
-      icon: "/assets/images/icons/vector.svg",
-      title: "Centralized Management ",
-      description:
-        "Single-pane-of-glass visibility for all branch and remote connections.",
-    },
-    {
-      icon: "/assets/images/icons/securtiy.svg",
-      title: "Integrated Security",
-      description:
-        "Built-in firewall, encryption, and threat detection for secure data flow.",
+        "Protect data at rest and in transit with strong encryption standards.",
     },
     {
       icon: "/assets/images/icons/path.svg",
-      title: "Dynamic Path Selection",
+      title: "Data Loss Prevention (DLP)",
       description:
-        "RAutomatically route traffic over the best available link for performance. ",
+        "Monitor and control sensitive data movement across endpoints and networks.",
     },
     {
       icon: "/assets/images/icons/path.svg",
-      title: "Cloud Optimization",
+      title: "Access Control & Identity Management",
       description:
-        "Direct, secure access to cloud services without backhauling traffic.",
+        "Enforce least privilege and MFA for secure data access.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Endpoint Protection",
+      description:
+        "Secure laptops, desktops, and mobile devices against malware and unauthorized access.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Email & File Security",
+      description:
+        "Prevent phishing, malware, and unauthorized file sharing.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Backup & Recovery",
+      description:
+        "Ensure reliable data backups and fast restoration in case of incidents.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Data Classification & Governance",
+      description:
+        "Identify sensitive data and apply appropriate protection policies.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Insider Threat Management",
+      description:
+        "Detect and prevent unauthorized data access or exfiltration.",
     },
   ]}
-/>   
+/>
+
     
       <WhyChooseSection
-        heading="Benefits of LA Technologies Managed Broadband + SD-WAN "
+        heading="Benefits of LA Technologies Data Security"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Enhanced Performance",
-            text: "Improve application speed and user experience across all locations.",
+            title: "Prevent Data Breaches",
+            text: "Reduce risk of unauthorized access and data theft.",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Cost Efficiency",
-            text: "Reduce dependency on expensive MPLS circuits.",
+            title: "Ensure Compliance",
+            text: "Meet regulatory and industry standards effortlessly. ",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
-            title: "Scalability",
-            text: "Easily add new branches or remote sites without complex configurations.",
+            title: "Improve Visibility",
+            text: "Track data movement and enforce security policies across all locations.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Security & Compliancee",
-            text: "Protect data with advanced encryption and policy enforcement requirements.",
-          },
-          {
-            icon: "/assets/images/services/soc/global.png",
-            title: "24/7 Monitoring & Support",
-            text: "Proactive management to ensure uptime and reliability.",
+            title: "Business Continuity",
+            text: "Minimize downtime with robust backup and recovery strategies.",
           },
         ]}
       />
@@ -198,11 +210,11 @@ export default function ManagedBroadbandSDWAN() {
       industries={industries}
     />
       <ImageHighlightSection
-        heading="Your Security, Our Priority"
+        heading="Your Data, Always Secure"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
+        description="With LA Technologies, you gain complete control and protection for your critical data—across every branch and endpoint."
       />
       <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
     </>

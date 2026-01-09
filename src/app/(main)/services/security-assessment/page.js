@@ -335,30 +335,30 @@ export default function SecurityAssessment() {
 
 
   <WhyChooseSection
-          heading="Why Choose LA Technologies?"
+          heading="Multi-Location Coverage"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
-              title: "Certified Professionals",
-              text: "Experts in networking, cloud, security, and enterprise IT solutions.",
+              icon: "/assets/images/services/soc/cost.png",
+              title: "Consistent Templates",
+              text: "Baselines applied across all branches uniformly.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
-              title: "Cost Efficiency",
-              text: "Reduce hiring costs and eliminate long recruitment cycles.",
+              icon: "/assets/images/services/soc/scalable.png",
+              title: "Comparative Scorecards",
+              text: "Highlight site-wise risk differences effectively.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
-              title: "Scalability",
-              text: "Scale up or down based on project requirements.",
+              icon: "/assets/images/services/soc/alert.png",
+              title: "Phased Remediation Plan",
+              text: "Designed for efficient region-wise rollout",
             },
             {
-              icon: "/assets/images/home/icon4.png",
-              title: "Domain Expertise",
-              text: "Experience across industries including BFSI, healthcare, manufacturing, and IT services.",
+              icon: "/assets/images/services/soc/global.png",
+              title: "Centralized Repository",
+              text: "Evidence repository for audits and reviews.",
             },
           ]}
         />

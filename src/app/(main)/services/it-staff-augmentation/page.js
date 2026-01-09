@@ -96,24 +96,24 @@ improved efficiency."
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
+              icon: "/assets/images/services/soc/cost.png",
               title: "Certified Professionals",
               text: "Experts in networking, cloud, security, and enterprise IT solutions.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/soc/scalable.png",
               title: "Cost Efficiency",
               text: "Reduce hiring costs and eliminate long recruitment cycles.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
+              icon: "/assets/images/services/soc/alert.png",
               title: "Scalability",
               text: "Scale up or down based on project requirements.",
             },
             {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/soc/global.png",
               title: "Domain Expertise",
               text: "Experience across industries including BFSI, healthcare, manufacturing, and IT services.",
             },
