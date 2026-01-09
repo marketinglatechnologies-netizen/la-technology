@@ -22,8 +22,8 @@ export const NAV_LINKS = [
         { label: "Managed Broadband + SDWAN", href: "/services/managed-services/managed-broadband-sdwan" },
         { label: "IT Branch Operations", href: "/services/managed-services/it-branch-operations" },
         { label: "IT Staff Augmentation", href: "/services/managed-services/it-staff-augmentation" },
-        { label: "Facility Management Services", href: "/services//managed-services/facility-management" },
-        { label: "Security Assessment", href: "/services//managed-services/security-assessment" }
+        { label: "Facility Management Services", href: "/services/managed-services/facility-management" },
+        { label: "Security Assessment", href: "/services/managed-services/security-assessment" }
       ],
     },
     {
