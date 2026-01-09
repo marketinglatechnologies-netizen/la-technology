@@ -106,6 +106,7 @@ export default function AboutPage() {
               address={[
                 "10 UBI CRESCENT, #02-38, UBI",
                 "TECHPARK, SINGAPORE 408564",
+                "408564",
               ]}
             mapEmbedUrl="https://www.google.com/maps?q=10%20Ubi%20Crescent%20Singapore&output=embed"
             />
