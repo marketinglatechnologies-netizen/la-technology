@@ -14,7 +14,7 @@ export default function EightCards({
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
-        <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16">
+        <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
           {heading}
         </HeadingTag>
 
@@ -37,7 +37,7 @@ export default function EightCards({
 
 function Card({ icon, title, description }) {
   return (
-    <div className="flex flex-col items-center max-w-xs mx-auto">
+    <div className="flex flex-col items-left max-w-xs mx-auto">
       <div className="mb-4">
         <Image
           src={icon}
@@ -47,11 +47,11 @@ function Card({ icon, title, description }) {
         />
       </div>
 
-      <h4 className="text-base text-gray-900 mb-2">
+      <h4 className="text-base text-gray-900 mb-2 text-left font-semibold">
         {title}
       </h4>
 
-      <p className="text-sm text-gray-600 leading-relaxed">
+      <p className="text-sm text-gray-600 leading-relaxed text-left">
         {description}
       </p>
     </div>

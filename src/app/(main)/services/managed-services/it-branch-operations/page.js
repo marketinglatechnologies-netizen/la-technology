@@ -154,35 +154,35 @@ Why Multi-Location IT Branch Operations Matter
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/services/soc/cost.png",
+              icon: "/assets/images/home/icon1.png",
               title: "Consistency Across All Locations",
               text: "Standardized configurations and policies reduce variability.",
             },
             {
-              icon: "/assets/images/services/soc/scalable.png",
+              icon: "/assets/images/home/icon2.png",
               title: "Lower Operational Costs",
               text: "Centralized management and automation reduce on-site dependencies.",
             },
             {
-              icon: "/assets/images/services/soc/scalable.png",
+              icon: "/assets/images/home/icon2.png",
               title: "Single Point of Accountability",
               text: "One partner managing networks, endpoints, security, and support.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/services/soc/alert.png",
+              icon: "/assets/images/home/icon3.png",
               title: "Enhanced Security Posture",
               text: "Continuous monitoring and rapid incident response across branches.",
             },
             {
-              icon: "/assets/images/services/soc/global.png",
+              icon: "/assets/images/home/icon4.png",
               title: "Business Continuity",
               text: "High availability design and tested recovery procedures.",
             },
           
              {
-              icon: "/assets/images/services/soc/global.png",
+              icon: "/assets/images/home/icon4.png",
               title: "Scalability",
               text: "Rapid onboarding for new branches with templated deployments.",
             },

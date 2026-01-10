@@ -29,13 +29,14 @@ export const NAV_LINKS = [
     {
       title: "Cyber Security & IT Infra Services",
       items: [
-        { label: "Data Security", href: "/services/data-security" },
-        { label: "Endpoint Security", href: "/services/endpoint-security" },
-        { label: "Network Security", href: "/services/network-security" },
-        { label: "Application Security", href: "/services/application-security" },
-        { label: "Cloud Security", href: "/services/cloud-security" },
-        { label: "Data Center Build", href: "/services/data-center-build" },
-        { label: "Network Infrastructure", href: "/services/network-infrastructure" }
+        { label: "Data Security", href: "/services/technology-services/data-security" },
+        { label: "Endpoint Security", href: "/services/technology-services/endpoint-security" },
+        { label: "Network Security", href: "/services/technology-services/network-security" },
+        { label: "Application Security", href: "/services/technology-services/application-security" },
+        { label: "Cloud Security", href: "/services/technology-services/cloud-security" },
+        { label: "Data Center Build", href: "/services/technology-services/data-center-build" },
+        { label: "Network Infrastructure", href: "/services/technology-services/network-infrastructure" },
+        { label: "Data Center Solutions", href: "/services/technology-services/data-center-solutions" }
       ],
     },
     {

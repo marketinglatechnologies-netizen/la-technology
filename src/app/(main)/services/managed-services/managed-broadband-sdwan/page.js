@@ -164,29 +164,29 @@ export default function ManagedBroadbandSDWAN() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/home/icon1.png",
             title: "Enhanced Performance",
             text: "Improve application speed and user experience across all locations.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/home/icon2.png",
             title: "Cost Efficiency",
             text: "Reduce dependency on expensive MPLS circuits.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/home/icon3.png",
             title: "Scalability",
             text: "Easily add new branches or remote sites without complex configurations.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/home/icon4.png",
             title: "Security & Compliancee",
             text: "Protect data with advanced encryption and policy enforcement requirements.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/home/icon4.png",
             title: "24/7 Monitoring & Support",
             text: "Proactive management to ensure uptime and reliability.",
           },

@@ -38,9 +38,9 @@ export default function IndustriesGrid({ title, industries }) {
                   />
 
                   {/* LABEL */}
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-2 rounded-md text-sm font-medium text-center">
+                  {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white px-6 py-2 rounded-md text-sm font-medium text-center">
                     {item.title}
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
