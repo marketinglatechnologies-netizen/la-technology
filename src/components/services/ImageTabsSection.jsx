@@ -31,7 +31,7 @@ export default function ImageTabsSection({
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`w-full text-left px-6 py-4 rounded-xl border transition
+                className={`w-full text-left px-6 py-4 rounded-xl border transition cursor-pointer 
                   ${
                     activeTab === index
                       ? "bg-orange-50 border-orange-200 text-gray-900"

@@ -9,7 +9,7 @@ export default function GradientCtaBanner({ text }) {
 
   return (
     <section className="w-full py-12">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6
           rounded-2xl px-8 py-8
           bg-gradient-to-r from-red-500 to-orange-500"

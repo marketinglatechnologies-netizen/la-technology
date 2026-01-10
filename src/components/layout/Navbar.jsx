@@ -35,7 +35,7 @@ export default function Navbar() {
       ref={navRef}
       className="sticky top-0 z-[60] w-full bg-white border-b border-gray-100 font-poppins shadow-sm"
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 lg:px-6 xl:px-0">
+      <div className="max-w-7xl mx-auto flex items-center justify-between lg:px-6 md:px-6 px-4 relative">
         {/* Logo Section */}
         <Link href="/" className="flex-shrink-0 relative z-[70]">
           <img

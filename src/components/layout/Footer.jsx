@@ -40,7 +40,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10 pb-20 px-4 md:px-6 lg:px-6 xl:px-0">
+      <div className="lg:px-6 max-w-7xl md:px-6 mx-auto px-4 relative z-10 pb-20 lg:px-6 md:px-6 px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
           {/* Column 1: Brand & Socials */}
           <div className="md:col-span-4">
