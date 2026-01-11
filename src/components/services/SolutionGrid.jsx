@@ -23,7 +23,7 @@ export default function SolutionGrid({ title, items = [], align = "center" }) {
 
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 lg:px-6">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6">
         {title && (
           <h2
             className={`text-2xl md:text-3xl font-bold text-[#3D2C2E] mb-16 ${alignmentClasses.title}`}

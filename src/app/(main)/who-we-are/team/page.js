@@ -51,7 +51,7 @@ export default function OurTeam() {
 
     
      <section className="w-full py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         
         {/* ===== Section Heading ===== */}
         <div className="text-center mb-16">

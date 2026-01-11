@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
-import { PhoneCall } from 'lucide-react';
-import Link from 'next/link';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
+import { PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 
 export default function HomeHero({ slides }) {
   return (
@@ -25,7 +25,7 @@ export default function HomeHero({ slides }) {
           <SwiperSlide key={index} className="relative w-full h-full">
             {/* Background Layer: Video or Image */}
             <div className="absolute inset-0 z-0">
-              {slide.type === 'video' ? (
+              {slide.type === "video" ? (
                 <video
                   autoPlay
                   loop
@@ -36,7 +36,7 @@ export default function HomeHero({ slides }) {
                   <source src={slide.src} type="video/mp4" />
                 </video>
               ) : (
-                <div 
+                <div
                   className="w-full h-full bg-cover bg-center transition-transform duration-[5000ms] scale-110 group-[.swiper-slide-active]:scale-100"
                   style={{ backgroundImage: `url(${slide.src})` }}
                 />
@@ -46,16 +46,20 @@ export default function HomeHero({ slides }) {
             </div>
 
             {/* Content Layer */}
-            <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-6 lg:px-6 xl:px-0 flex flex-col justify-center">
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-6 lg:px-6 md:px-6 px-4 flex flex-col justify-center">
               <div className="max-w-3xl">
                 {/* Dynamic SEO Tags */}
-                <slide.titleTag 
-                  className={`text-3xl md:text-5xl lg:text-4xl font-bold text-white leading-[1.5] mb-6 ${slide.titleClassName || ''}`}
+                <slide.titleTag
+                  className={`text-3xl md:text-5xl lg:text-4xl font-bold text-white leading-[1.5] mb-6 ${
+                    slide.titleClassName || ""
+                  }`}
                   dangerouslySetInnerHTML={{ __html: slide.title }}
                 />
-                
-                <slide.descTag 
-                  className={`text-lg md:text-xl text-gray-200 leading-relaxed mb-10 max-w-2xl ${slide.descClassName || ''}`}
+
+                <slide.descTag
+                  className={`text-lg md:text-xl text-gray-200 leading-relaxed mb-10 max-w-2xl ${
+                    slide.descClassName || ""
+                  }`}
                   dangerouslySetInnerHTML={{ __html: slide.description }}
                 />
 
@@ -72,17 +76,26 @@ export default function HomeHero({ slides }) {
           </SwiperSlide>
         ))}
       </Swiper>
-      
+
       {/* Custom CSS for Swiper Navigation Arrows to match brand */}
       <style jsx global>{`
-        .swiper-button-next, .swiper-button-prev {
+        .swiper-button-next,
+        .swiper-button-prev {
           color: white !important;
           transform: scale(0.7);
           opacity: 0.5;
           transition: opacity 0.3s;
         }
-        .swiper-button-next:hover, .swiper-button-prev:hover { opacity: 1; }
-        @media (max-width: 768px) { .swiper-button-next, .swiper-button-prev { display: none; } }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+          opacity: 1;
+        }
+        @media (max-width: 768px) {
+          .swiper-button-next,
+          .swiper-button-prev {
+            display: none;
+          }
+        }
       `}</style>
     </section>
   );

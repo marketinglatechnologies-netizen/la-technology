@@ -20,33 +20,39 @@ export const metadata = {
 const multiCardsItems = [
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Automated Asset <br> Inventory",
+    title: "Centralized Credential <br> Vault",
     description:
-      "Discover all OT devices, <br> including PLCs, HMIs, sensors, <br> and engineering workstations.",
+      "Securely store and rotate privileged <br> credentials for OT systems.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Passive Network <br> Scanning",
+    title: "Granular Access <br> Control",
     description:
-      "Non-intrusive methods to <br> avoid disrupting critical <br> operations.",
+      "Assign role-based permissions and <br> enforce least privilege principles.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Asset Classification & <br> Risk Scoring",
+    title: "Just-in-Time <br> Access",
     description:
-      "Categorize assets by <br> criticality and vulnerability <br> exposure.",
+      "Provide temporary, time-bound <br> access to critical OT assets.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Continuous <br> Monitoring",
+    title: "Session Monitoring & <br> Recording",
     description:
-      "Track changes in asset <br> configurations and detect <br> unauthorized devices.",
+      "Track and record all privileged <br> activities for compliance and <br> forensic analysis.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Integration with OT <br> Security Tools",
+    title: "Automated Password <br> Rotation",
     description:
-      "Seamless integration with threat <br> detection and vulnerability <br> management platforms.",
+      "Eliminate shared or static credentials <br> across OT environments.",
+  },
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Integration with Secure <br> Remote Access",
+    description:
+      "Combine PAM with remote access <br> controls for complete security.",
   },
 ];
 
@@ -81,15 +87,17 @@ const industriesData = {
   ],
 };
 
-export default function ApplicationSecurity() {
+export default function Page() {
   return (
     <>
       <div>
         <InnerPageBanner
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
-          title="Asset Discovery"
+          title="OT Privileged Access Management"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`Round-the-clock Endpoint Security
+ Services
+ designed to defend modern enterprises.`}
         />
       </div>
       <FeatureHighlightSection
@@ -107,56 +115,48 @@ export default function ApplicationSecurity() {
             alt: "Data monitoring",
           },
         ]}
-        title="Gain Complete Visibility into Your OT Environment"
-        description="In industrial networks, you can’t protect what you can’t see. Many OT environments have
-legacy devices, undocumented assets, and shadow systems that create blind spots for
-security teams. These unknowns increase the risk of cyberattacks and operational
-disruptions. <br>
-LA Technologies’ Asset Discovery solutions provide full visibility into your OT
-infrastructure, helping you identify, classify, and monitor every connected device.
-"
-      />
-
-      <InfoList
-        title="Why Asset Discovery Matters"
-        items={[
-          "Unidentified assets can become entry points for attackers.",
-          "Manual inventory processes are time-consuming and error-prone.",
-          "Compliance requires accurate asset records and risk assessments.",
-        ]}
+        title="Control and Monitor Privileged Accounts Across OT Systems"
+        description="Privileged accounts in OT environments hold the keys to critical industrial assets. If
+compromised, they can override safety controls, disrupt operations, and cause severe
+financial and reputational damage. Traditional IT PAM solutions often fail to address the
+unique challenges of OT networks, which include legacy systems, proprietary protocols,
+and strict uptime requirements. <br/>
+LA Technologies’ OT Privileged Access Management (PAM) solution secures, monitors,
+and governs privileged accounts across your OT infrastructure—ensuring compliance,
+reducing risk, and maintaining operational continuity."
       />
 
       <SolutionGrid
-        title="Our Asset Discovery Solutions"
+        title="Our OT PAM Solutions"
         items={multiCardsItems}
         align="center"
       />
 
       <WhyChooseSection
-        heading="Benefits of LA Technologies Asset Discovery"
+        heading="Benefits of LA Technologies OT PAM"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Reduce Blind Spots",
-            text: "Gain complete visibility into your OT environment.",
+            title: "Reduce Cyber Risk",
+            text: "Prevent unauthorized access to critical OT systems.",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Improve Security Posture",
-            text: "Identify and mitigate risks before attackers exploit them.",
+            title: "Ensure Compliance",
+            text: "Meet IEC 62443 and other industry standards effortlessly.",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
-            title: "Ensure Compliance",
-            text: "Maintain accurate asset records for audits and regulatory requirements.",
+            title: "Improve Visibility",
+            text: "Gain full insight into privileged activities across OT networks.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Operational Efficiency",
-            text: "Automate inventory and reduce manual effort.",
+            title: "Operational Safety",
+            text: "Minimize downtime and maintain safety during maintenance operations.",
           },
         ]}
       />
@@ -164,13 +164,15 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Operations, Our Protection"
+        heading="Your Privileged Access, Secured"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you gain complete control over privileged accounts—without
+compromising uptime or safety."
       />
-      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
+
+      <GradientCtaBanner text="Ready to secure privileged access in your OT environment?" />
     </>
   );
 }

@@ -7,6 +7,7 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import FiveCards from "@/components/services/FiveCards";
 import Image from "next/image";
+import BenefitsGrid from "@/components/services/BenefitsGrid";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -127,47 +128,8 @@ on strategic, high-margin projects.
           },
         ]}
       />
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Heading */}
-          <h2 className="text-center text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
-            Key Benefits
-          </h2>
 
-          {/* Divider */}
-          <div className="w-full h-[4px] bg-gradient-to-r from-orange-400 to-red-500 mb-16" />
-
-          {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {benefitsData.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl border border-orange-100 p-8 shadow-lg shadow-orange-200"
-              >
-                {/* Icon Image */}
-                <div className="w-15 h-15 flex items-center justify-center mb-5">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={50}
-                    height={50}
-                  />
-                </div>
-
-                {/* Title */}
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  {item.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BenefitsGrid heading="Key Benefits" items={benefitsData} columns={4} />
 
       <WhyChooseSection
         heading="Why Partner with LA Technologies?"

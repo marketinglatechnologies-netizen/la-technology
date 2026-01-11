@@ -7,34 +7,31 @@ import Link from "next/link";
 import TestimonialsSection from "@/components/home/testimonials";
 import dynamic from "next/dynamic";
 import VendorLogo from "@/components/home/vendorslogo";
-
-
+import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 
 export default function HomePage() {
-
   const caseStudies = [
-  {
-    title: "Secure Digital Banking Transformation Using Netskope",
-    image: "/assets/images/home/case1.png",
-    link: "/case-studies/secure-digital-banking-netskope",
-  },
-  {
-    title: "Pan-India Power Manufacturing OT Cybersecurity Transformation",
-    image: "/assets/images/home/case2.png",
-    link: "/case-studies/pan-india-power-manufacturing",
-  },
-  {
-    title: "Authentication IoT Security Enhancement for Smart Devices",
-    image: "/assets/images/home/case3.png",
-    link: "/case-studies/iot-security-enhancement",
-  },
-  {
-    title: "Authentication IoT Security Enhancement for Smart Devices",
-    image: "/assets/images/home/case4.png",
-    link: "/case-studies/iot-security-enhancement-2",
-  },
-];
-
+    {
+      title: "Secure Digital Banking Transformation Using Netskope",
+      image: "/assets/images/home/case1.png",
+      link: "/case-studies/secure-digital-banking-netskope",
+    },
+    {
+      title: "Pan-India Power Manufacturing OT Cybersecurity Transformation",
+      image: "/assets/images/home/case2.png",
+      link: "/case-studies/pan-india-power-manufacturing",
+    },
+    {
+      title: "Authentication IoT Security Enhancement for Smart Devices",
+      image: "/assets/images/home/case3.png",
+      link: "/case-studies/iot-security-enhancement",
+    },
+    {
+      title: "Authentication IoT Security Enhancement for Smart Devices",
+      image: "/assets/images/home/case4.png",
+      link: "/case-studies/iot-security-enhancement-2",
+    },
+  ];
 
   const heroSlides = [
     {
@@ -110,7 +107,7 @@ export default function HomePage() {
         <LogoSlider />
       </section>
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-15 ">
             {/* Left Side: Using the Common Masonry Component */}
             <div className="w-full lg:w-1/2">
@@ -156,7 +153,7 @@ export default function HomePage() {
       </section>
       <ServicesSection />
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* LEFT CONTENT */}
             <div>
@@ -233,8 +230,11 @@ export default function HomePage() {
 
             {/* RIGHT IMAGES */}
             <div className="relative">
+              <div className="flex gap-5">
+                <img src="/assets/images/home/industry-leader.png" />
+              </div>
               {/* Top small image */}
-              <div className="absolute -top-10 left-0 p-2">
+              <div className="absolute -top-10 left-0 p-2 hidden">
                 <img
                   src="/assets/images/home/industry1.png"
                   alt="20+ Years Experience"
@@ -243,7 +243,7 @@ export default function HomePage() {
               </div>
 
               {/* Bottom image */}
-              <div className="absolute -bottom-8 left-12  p-2">
+              <div className="absolute -bottom-8 left-12  p-2 hidden">
                 <img
                   src="/assets/images/home/industry2.png"
                   alt="Cybersecurity Laptop"
@@ -252,7 +252,7 @@ export default function HomePage() {
               </div>
 
               {/* Main image */}
-              <div className="ml-auto w-[360px] p-3">
+              <div className="ml-auto w-[360px] p-3 hidden">
                 <img
                   src="/assets/images/home/industry3.png"
                   alt="Cyber Security Shield"
@@ -265,7 +265,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
             {industriesData.sectionTitle}
           </h2>
@@ -275,7 +275,7 @@ export default function HomePage() {
               <div
                 key={item.id}
                 className="relative group overflow-hidden rounded-2xl
-                     w-[260px] h-[360px] mx-auto"
+                     w-full h-[auto] lg:h-[360px] mx-auto"
               >
                 {/* Image */}
                 <img
@@ -296,7 +296,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="bg-[#FFF7EB] py-20">
-        <div className="max-w-7xl mx-auto bg-white px-6 lg:px-10 py-16">
+        <div className="max-w-7xl mx-auto bg-white lg:px-6 md:px-6 px-4 py-16">
           <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
             Delivering value through execution.
           </h2>
@@ -306,7 +306,7 @@ export default function HomePage() {
               <Link key={index} href={item.link} className="group block">
                 <div
                   className="relative overflow-hidden rounded-2xl
-                       w-[260px] h-[360px] mx-auto"
+                       w-full h-[auto] lg:h-[360px] mx-auto"
                 >
                   <img
                     src={item.image}
@@ -319,10 +319,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <TestimonialsSection />
 
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           {/* Section Heading */}
           <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
             Insights, ideas, and updates from our team.
@@ -398,10 +399,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <VendorLogo />
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+      <GradientCtaBanner
+        text="DRIVING DIGITAL GROWTH WITH TRUSTED TECHNOLOGY SOLUTIONS- REACH OUT TO US NOW"
+        buttonText="Talk to an Expert"
+        iconSrc="/assets/images/home/phone.svg"
+      />
+
+      <section className="py-20 hidden">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div
             className="flex flex-col lg:flex-row items-center justify-between gap-6
                     bg-gradient-to-r from-[#E11D48] to-[#F97316]

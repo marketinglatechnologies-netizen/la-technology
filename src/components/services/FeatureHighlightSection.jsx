@@ -55,8 +55,7 @@ export default function FeatureHighlightSection({
             {title}
           </h2>
 
-          <p className="text-gray-600 text-base leading-relaxed">
-            {description}
+          <p className="text-gray-600 text-base leading-relaxed" dangerouslySetInnerHTML={{__html: description}}>
           </p>
         </div>
       </div>

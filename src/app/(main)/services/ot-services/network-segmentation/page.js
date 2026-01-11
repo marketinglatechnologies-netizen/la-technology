@@ -20,33 +20,32 @@ export const metadata = {
 const multiCardsItems = [
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Automated Asset <br> Inventory",
+    title: "Zone & Conduit <br> Design",
     description:
-      "Discover all OT devices, <br> including PLCs, HMIs, sensors, <br> and engineering workstations.",
+      "Logical separation of OT assets <br> based on criticality and <br> function.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Passive Network <br> Scanning",
-    description:
-      "Non-intrusive methods to <br> avoid disrupting critical <br> operations.",
+    title: "Firewall & Access <br> Control Policies",
+    description: "Enforce strict communication rules <br> between zones.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Asset Classification & <br> Risk Scoring",
+    title: "Secure Remote Access <br> Integration",
     description:
-      "Categorize assets by <br> criticality and vulnerability <br> exposure.",
+      "Ensure vendor and maintenance access is <br> limited to specific zones.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Continuous <br> Monitoring",
+    title: "Monitoring & <br> Validation",
     description:
-      "Track changes in asset <br> configurations and detect <br> unauthorized devices.",
+      "Continuous verification of <br> segmentation policies and <br> traffic flows.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Integration with OT <br> Security Tools",
+    title: "Compliance <br> Alignment",
     description:
-      "Seamless integration with threat <br> detection and vulnerability <br> management platforms.",
+      "Implement segmentation strategies <br> that meet industry <br> standards.",
   },
 ];
 
@@ -87,9 +86,9 @@ export default function ApplicationSecurity() {
       <div>
         <InnerPageBanner
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
-          title="Asset Discovery"
+          title="Network Segmentation"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
         />
       </div>
       <FeatureHighlightSection
@@ -107,56 +106,56 @@ export default function ApplicationSecurity() {
             alt: "Data monitoring",
           },
         ]}
-        title="Gain Complete Visibility into Your OT Environment"
-        description="In industrial networks, you can’t protect what you can’t see. Many OT environments have
-legacy devices, undocumented assets, and shadow systems that create blind spots for
-security teams. These unknowns increase the risk of cyberattacks and operational
-disruptions. <br>
-LA Technologies’ Asset Discovery solutions provide full visibility into your OT
-infrastructure, helping you identify, classify, and monitor every connected device.
+        title="Divide and Protect Your OT Network"
+        description="In OT environments, flat networks create a high-risk scenario—if one system is
+compromised, attackers can move laterally and disrupt critical operations. Network
+Segmentation is essential to isolate critical assets, enforce least-privilege access, and
+reduce the impact of potential breaches.<br>
+LA Technologies’ Network Segmentation solutions help you design and implement
+secure zones and conduits without disrupting production.
 "
       />
 
       <InfoList
-        title="Why Asset Discovery Matters"
+        title="Why Network Segmentation Matters ?"
         items={[
-          "Unidentified assets can become entry points for attackers.",
-          "Manual inventory processes are time-consuming and error-prone.",
-          "Compliance requires accurate asset records and risk assessments.",
+          "Flat networks allow attackers to move freely once inside.",
+          "Compliance frameworks (IEC 62443, NIST) mandate segmentation.",
+          "Segmentation reduces the blast radius of any cyber incident.",
         ]}
       />
 
       <SolutionGrid
-        title="Our Asset Discovery Solutions"
+        title="Our ICS & SCADA Security Solutions"
         items={multiCardsItems}
         align="center"
       />
 
       <WhyChooseSection
-        heading="Benefits of LA Technologies Asset Discovery"
+        heading="Benefits of LA Technologies Network Segmentation"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Reduce Blind Spots",
-            text: "Gain complete visibility into your OT environment.",
+            title: "Reduce Attack Surface",
+            text: "Limit lateral movement and contain threats.",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Improve Security Posture",
-            text: "Identify and mitigate risks before attackers exploit them.",
+            title: "Improve Resilience",
+            text: "Isolate critical systems to maintain uptime during incidents.",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
             title: "Ensure Compliance",
-            text: "Maintain accurate asset records for audits and regulatory requirements.",
+            text: "Meet regulatory and industry security requirements.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Operational Efficiency",
-            text: "Automate inventory and reduce manual effort.",
+            title: "Expert Design & Implementation",
+            text: "Certified professionals with OT and network security expertise.",
           },
         ]}
       />
@@ -164,13 +163,14 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Operations, Our Protection"
+        heading="Your Network, Our Shield"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you gain a segmented, secure OT network—without compromising
+operational efficiency."
       />
-      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
+      <GradientCtaBanner text="Ready to implement secure OT segmentation?" />
     </>
   );
 }

@@ -16,37 +16,36 @@ export const metadata = {
   description:
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
-
 const multiCardsItems = [
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Automated Asset <br> Inventory",
+    title: "Gap Assessment & <br> Compliance Mapping",
     description:
-      "Discover all OT devices, <br> including PLCs, HMIs, sensors, <br> and engineering workstations.",
+      "Identify gaps against IEC 62443, <br> NIST, and industry-specific <br> standards.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Passive Network <br> Scanning",
+    title: "Policy Development <br> & Documentation",
     description:
-      "Non-intrusive methods to <br> avoid disrupting critical <br> operations.",
+      "Create OT-specific security policies, <br> procedures, and governance <br> frameworks.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Asset Classification & <br> Risk Scoring",
+    title: "Access Control & <br> Privilege Management",
     description:
-      "Categorize assets by <br> criticality and vulnerability <br> exposure.",
+      "Implement least-privilege <br> access and secure remote <br> connections.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Continuous <br> Monitoring",
+    title: "Incident Response & <br> Reporting",
     description:
-      "Track changes in asset <br> configurations and detect <br> unauthorized devices.",
+      "Develop OT-focused IR plans <br> and maintain audit-ready <br> logs.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Integration with OT <br> Security Tools",
+    title: "Continuous Compliance <br> Monitoring",
     description:
-      "Seamless integration with threat <br> detection and vulnerability <br> management platforms.",
+      "Track adherence and generate <br> reports for audits and <br> certifications.",
   },
 ];
 
@@ -81,13 +80,13 @@ const industriesData = {
   ],
 };
 
-export default function ApplicationSecurity() {
+export default function Page() {
   return (
     <>
       <div>
         <InnerPageBanner
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
-          title="Asset Discovery"
+          title="Compliance for OT"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
         />
@@ -107,22 +106,20 @@ export default function ApplicationSecurity() {
             alt: "Data monitoring",
           },
         ]}
-        title="Gain Complete Visibility into Your OT Environment"
-        description="In industrial networks, you can’t protect what you can’t see. Many OT environments have
-legacy devices, undocumented assets, and shadow systems that create blind spots for
-security teams. These unknowns increase the risk of cyberattacks and operational
-disruptions. <br>
-LA Technologies’ Asset Discovery solutions provide full visibility into your OT
-infrastructure, helping you identify, classify, and monitor every connected device.
-"
+        title="Achieve Regulatory Compliance Without Disrupting Operations"
+        description="Industrial environments face increasing pressure to comply with cybersecurity standards
+and regulations. Frameworks like IEC 62443, NIST CSF, and industry-specific mandates
+require robust security controls, documented processes, and continuous monitoring. <br>
+LA Technologies’ Compliance for OT solutions help you meet these requirements while
+maintaining uptime and safety."
       />
 
       <InfoList
-        title="Why Asset Discovery Matters"
+        title="Why OT Compliance Matters"
         items={[
-          "Unidentified assets can become entry points for attackers.",
-          "Manual inventory processes are time-consuming and error-prone.",
-          "Compliance requires accurate asset records and risk assessments.",
+          "Non-compliance can lead to fines, reputational damage, and operational shutdowns.",
+          "OT systems often lack built-in security controls, making compliance challenging.",
+          "Regulations demand documented risk assessments, access controls, and incident response plans.",
         ]}
       />
 
@@ -133,30 +130,30 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       />
 
       <WhyChooseSection
-        heading="Benefits of LA Technologies Asset Discovery"
+        heading="Benefits of LA Technologies Compliance Services"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Reduce Blind Spots",
-            text: "Gain complete visibility into your OT environment.",
+            title: "Reduce Regulatory Risk",
+            text: "Avoid penalties and maintain operational licenses.",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Improve Security Posture",
-            text: "Identify and mitigate risks before attackers exploit them.",
+            title: "Audit-Ready Documentation",
+            text: "Simplify compliance audits with structured reports.",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
-            title: "Ensure Compliance",
-            text: "Maintain accurate asset records for audits and regulatory requirements.",
+            title: "Improve Security Posture",
+            text: "Align with global best practices for OT environments.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Operational Efficiency",
-            text: "Automate inventory and reduce manual effort.",
+            title: "Expert Guidance",
+            text: "Certified professionals with deep knowledge of OT standards.",
           },
         ]}
       />
@@ -164,13 +161,13 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Operations, Our Protection"
+        heading="Your Compliance, Our Expertise"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you achieve OT compliance without compromising productivity or safety."
       />
-      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
+      <GradientCtaBanner text="Ready to align your OT environment with global standards?" />
     </>
   );
 }

@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function VendorLogo() {
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+      <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
           <div>

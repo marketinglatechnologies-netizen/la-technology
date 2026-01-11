@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className="sticky top-0 z-[60] w-full bg-white border-b border-gray-100 font-poppins shadow-sm"
+      className="sticky top-0 z-[60] w-full bg-white border-b border-gray-100 font-poppins shadow-sm py-2"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between lg:px-6 md:px-6 px-4 relative">
         {/* Logo Section */}
@@ -198,9 +198,29 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <div className="flex-1 overflow-y-auto px-8 py-10">
+              {/* This container handles the staggering */}
+              <motion.div
+                variants={{
+                  open: {
+                    transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+                  },
+                  closed: {
+                    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+                  },
+                }}
+                initial="closed"
+                animate="open"
+                className="flex-1 overflow-y-auto px-8 py-10"
+              >
                 {NAV_LINKS.map((link) => (
-                  <div key={link.label} className="mb-8">
+                  <motion.div
+                    key={link.label}
+                    variants={{
+                      open: { opacity: 1, x: 0 },
+                      closed: { opacity: 0, x: 20 },
+                    }}
+                    className="mb-8"
+                  >
                     {link.dropdown || link.megaMenu ? (
                       <div>
                         <button
@@ -222,9 +242,9 @@ export default function Navbar() {
                         <AnimatePresence>
                           {activeAccordion === link.label && (
                             <motion.div
-                              initial={{ height: 0 }}
-                              animate={{ height: "auto" }}
-                              exit={{ height: 0 }}
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
                               className="overflow-hidden mt-4 ml-2 border-l-2 border-la-cream pl-4"
                             >
                               <div className="flex flex-col gap-4 py-2">
@@ -272,9 +292,9 @@ export default function Navbar() {
                         {link.label}
                       </Link>
                     )}
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
 
               <div className="p-8 bg-gray-50">
                 <Link

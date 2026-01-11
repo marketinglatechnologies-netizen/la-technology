@@ -18,8 +18,8 @@ export default function InfoList({
 }) {
   return (
     // REMOVED 'bg-white' to let the prop or global theme take over if needed
-    <section className="py-12 md:py-24 bg-transparent">
-      <div className="max-w-6xl mx-auto px-4 lg:px-6 xl:px-0">
+    <section className="py-12 md:py-12 bg-transparent">
+      <div className="max-w-6xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Responsive Heading */}
         {title && (
           <motion.h2

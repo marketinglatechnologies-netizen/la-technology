@@ -169,7 +169,7 @@ without disrupting production.
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
     </>
   );
 }

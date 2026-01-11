@@ -20,33 +20,31 @@ export const metadata = {
 const multiCardsItems = [
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Automated Asset <br> Inventory",
+    title: "Granular Access <br> Control",
     description:
-      "Discover all OT devices, <br> including PLCs, HMIs, sensors, <br> and engineering workstations.",
+      "Limit remote access to specific <br> zones, assets, and time windows.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Passive Network <br> Scanning",
-    description:
-      "Non-intrusive methods to <br> avoid disrupting critical <br> operations.",
+    title: "Multi-Factor <br> Authentication (MFA)",
+    description: "Enforce strong authentication for all <br> remote users.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Asset Classification & <br> Risk Scoring",
+    title: "Just-in-Time <br> Access",
     description:
-      "Categorize assets by <br> criticality and vulnerability <br> exposure.",
+      "Provide temporary access for <br> vendors and revoke <br> automatically after use.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Continuous <br> Monitoring",
-    description:
-      "Track changes in asset <br> configurations and detect <br> unauthorized devices.",
+    title: "Secure Jump <br> Hosts",
+    description: "Isolate remote sessions from critical <br> OT networks.",
   },
   {
     icon: "/assets/images/icons/path.svg",
-    title: "Integration with OT <br> Security Tools",
+    title: "Integration with OT Privileged <br> Access Management",
     description:
-      "Seamless integration with threat <br> detection and vulnerability <br> management platforms.",
+      "Manage and monitor privileged <br> accounts during remote sessions.",
   },
 ];
 
@@ -81,13 +79,13 @@ const industriesData = {
   ],
 };
 
-export default function ApplicationSecurity() {
+export default function Page() {
   return (
     <>
       <div>
         <InnerPageBanner
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
-          title="Asset Discovery"
+          title="Secure Remote Access"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
         />
@@ -107,22 +105,21 @@ export default function ApplicationSecurity() {
             alt: "Data monitoring",
           },
         ]}
-        title="Gain Complete Visibility into Your OT Environment"
-        description="In industrial networks, you can’t protect what you can’t see. Many OT environments have
-legacy devices, undocumented assets, and shadow systems that create blind spots for
-security teams. These unknowns increase the risk of cyberattacks and operational
-disruptions. <br>
-LA Technologies’ Asset Discovery solutions provide full visibility into your OT
-infrastructure, helping you identify, classify, and monitor every connected device.
-"
+        title="Control Vendor and Maintenance Access Without Compromising Safety"
+        description="Remote access is essential for OT environments—vendors, integrators, and maintenance
+teams often need to connect to industrial systems for troubleshooting and updates. But
+uncontrolled remote access is one of the biggest attack vectors for ransomware and
+targeted OT breaches. <br>
+LA Technologies’ Secure Remote Access solutions ensure that remote connectivity to
+OT systems is safe, monitored, and compliant with security best practices."
       />
 
       <InfoList
-        title="Why Asset Discovery Matters"
+        title="Why Secure Remote Access Matters"
         items={[
-          "Unidentified assets can become entry points for attackers.",
-          "Manual inventory processes are time-consuming and error-prone.",
-          "Compliance requires accurate asset records and risk assessments.",
+          " Unrestricted VPNs and shared credentials create major security gaps.",
+          "Attackers exploit remote access tools to deploy malware or manipulate control systems.",
+          "Compliance frameworks mandate strict control and logging of remote sessions.",
         ]}
       />
 
@@ -133,30 +130,30 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       />
 
       <WhyChooseSection
-        heading="Benefits of LA Technologies Asset Discovery"
+        heading="Benefits of LA Technologies Secure Remote Access"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
-            title: "Reduce Blind Spots",
-            text: "Gain complete visibility into your OT environment.",
+            title: "Reduce Attack Surface",
+            text: "Eliminate uncontrolled remote connections and shared credentials.",
           },
           {
             icon: "/assets/images/services/soc/scalable.png",
-            title: "Improve Security Posture",
-            text: "Identify and mitigate risks before attackers exploit them.",
+            title: "Ensure Compliance",
+            text: "Meet IEC 62443 and industry security requirements.",
           },
         ]}
         featuresRight={[
           {
             icon: "/assets/images/services/soc/alert.png",
-            title: "Ensure Compliance",
-            text: "Maintain accurate asset records for audits and regulatory requirements.",
+            title: "Improve Visibility",
+            text: "Monitor and record all remote activities for accountability.",
           },
           {
             icon: "/assets/images/services/soc/global.png",
-            title: "Operational Efficiency",
-            text: "Automate inventory and reduce manual effort.",
+            title: "Operational Safety",
+            text: "Maintain uptime and prevent unauthorized changes during remote work.",
           },
         ]}
       />
@@ -164,13 +161,14 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Operations, Our Protection"
+        heading="Your Remote Access, Our Control"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you enable secure, monitored remote access—without compromising safety or productivity."
       />
-      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
+      
+      <GradientCtaBanner text="Ready to secure remote access to your OT environment?" />
     </>
   );
 }
