@@ -58,35 +58,35 @@ export const NAV_LINKS = [
         items: [
           {
             label: "Data Security",
-            href: "/services/technology-services/data-security",
+            href: "/services/cyber-security-&-it-infra-services/data-security",
           },
           {
             label: "Endpoint Security",
-            href: "/services/technology-services/endpoint-security",
+            href: "/services/cyber-security-&-it-infra-services/endpoint-security",
           },
           {
             label: "Network Security",
-            href: "/services/technology-services/network-security",
+            href: "/services/cyber-security-&-it-infra-services/network-security",
           },
           {
             label: "Application Security",
-            href: "/services/technology-services/application-security",
+            href: "/services/cyber-security-&-it-infra-services/application-security",
           },
           {
             label: "Cloud Security",
-            href: "/services/technology-services/cloud-security",
+            href: "/services/cyber-security-&-it-infra-services/cloud-security",
           },
           {
             label: "Data Center Build",
-            href: "/services/technology-services/data-center-build",
+            href: "/services/cyber-security-&-it-infra-services/data-center-build",
           },
           {
             label: "Network Infrastructure",
-            href: "/services/technology-services/network-infrastructure",
+            href: "/services/cyber-security-&-it-infra-services/network-infrastructure",
           },
           {
             label: "Data Center Solutions",
-            href: "/services/technology-services/data-center-solutions",
+            href: "/services/cyber-security-&-it-infra-services/data-center-solutions",
           },
         ],
       },
