@@ -2,6 +2,7 @@
 
 import { Send } from "lucide-react";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function JobApplicationForm() {
   const [loading, setLoading] = useState(false);
@@ -216,27 +217,59 @@ export default function JobApplicationForm() {
           </button>
         </form>
 
-        <div className="mt-6">
-          {status === "success" && (
-            <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg text-left flex items-center gap-2">
-              <span>✅</span> Application submitted successfully!
-            </div>
-          )}
-          {status === "error" && (
-            <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-left flex items-center gap-2">
-              <span>❌</span> Something went wrong. Please try again.
-            </div>
-          )}
-          {status === "error-captcha" && (
-            <div className="mb-6 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-left flex items-center gap-2">
-              <span>⚠️</span> Invalid captcha answer.
-            </div>
-          )}
-          {status === "error-file-size" && (
-            <div className="mb-6 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-left flex items-center gap-2">
-              <span>⚠️</span> File size exceeds 5MB limit.
-            </div>
-          )}
+        <div className="mt-6 min-h-[60px]">
+          <AnimatePresence mode="wait">
+            {status === "success" && (
+              <motion.div
+                key="career-success"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg text-left flex items-center gap-2"
+              >
+                <span className="text-xl">✅</span>
+                <span className="font-medium">
+                  Application submitted successfully!
+                </span>
+              </motion.div>
+            )}
+
+            {status === "error" && (
+              <motion.div
+                key="career-error"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-left flex items-center gap-2"
+              >
+                <span className="text-xl">❌</span>
+                <span className="font-medium">
+                  Something went wrong. Please try again.
+                </span>
+              </motion.div>
+            )}
+
+            {(status === "error-captcha" || status === "error-file-size") && (
+              <motion.div
+                key={status} // key changes so animation re-triggers if they fail twice
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  x: [0, -4, 4, -4, 4, 0],
+                }}
+                transition={{ duration: 0.4 }}
+                exit={{ opacity: 0 }}
+                className="mb-6 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-lg text-left flex items-center gap-2"
+              >
+                <span>⚠️</span>
+                <span className="font-medium">
+                  {status === "error-captcha"
+                    ? "Invalid captcha answer."
+                    : "File size exceeds 5MB limit."}
+                </span>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </section>

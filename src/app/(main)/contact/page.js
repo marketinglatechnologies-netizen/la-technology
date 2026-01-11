@@ -3,6 +3,7 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import { useEffect, useState } from "react";
 import { CheckCircle, AlertCircle, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Metadata must be in a separate layout.js or a Server Component.
 // You cannot export metadata from a file with "use client".
@@ -53,7 +54,7 @@ export default function ContactPage() {
       });
 
       if (response.ok) {
-        alert("Success! Check your email.");
+        // alert("Success! Check your email.");
         setFormData({
           firstName: "",
           lastName: "",
@@ -63,6 +64,7 @@ export default function ContactPage() {
           captchaInput: "",
         });
         generateCaptcha();
+        setStatus("success");
       } else {
         setStatus("error");
       }
@@ -127,40 +129,6 @@ export default function ContactPage() {
 
             {/* RIGHT FORM */}
             <div>
-              {/* BEAUTIFUL STATUS NOTIFICATIONS */}
-              {status === "success" && (
-                <div className="mb-6 flex items-center gap-3 p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl animate-in fade-in slide-in-from-top-4 duration-300">
-                  <CheckCircle className="w-5 h-5" />
-                  <div>
-                    <p className="font-semibold">Message Sent!</p>
-                    <p className="text-sm">
-                      We'll get back to you within 24 hours.
-                    </p>
-                  </div>
-                  <button onClick={() => setStatus("idle")} className="ml-auto">
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-              )}
-
-              {status === "error" && (
-                <div className="mb-6 flex items-center gap-3 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl animate-in fade-in duration-300">
-                  <AlertCircle className="w-5 h-5" />
-                  <p className="text-sm font-semibold">
-                    Something went wrong. Please try again.
-                  </p>
-                </div>
-              )}
-
-              {status === "error-captcha" && (
-                <div className="mb-6 flex items-center gap-3 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-xl animate-in shake duration-300">
-                  <AlertCircle className="w-5 h-5" />
-                  <p className="text-sm font-semibold">
-                    Captcha is incorrect. Please solve again.
-                  </p>
-                </div>
-              )}
-
               <form
                 onSubmit={handleSubmit}
                 className="grid grid-cols-1 md:grid-cols-2 gap-5"
@@ -270,7 +238,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="mt-2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-8 py-3 rounded-md flex items-center justify-center gap-3 text-sm font-medium hover:opacity-90 transition disabled:cursor-not-allowed w-full md:w-auto"
+                    className="mt-2 bg-gradient-to-r from-red-500 cursor-pointer to-orange-500 text-white px-8 py-3 rounded-md flex items-center justify-center gap-3 text-sm font-medium hover:opacity-90 transition disabled:cursor-not-allowed w-full md:w-auto"
                   >
                     {status === "submitting" ? (
                       <div className="flex items-center gap-2">
@@ -288,6 +256,82 @@ export default function ContactPage() {
                       </>
                     )}
                   </button>
+                </div>
+
+                <div className="col-span-full min-h-[80px]">
+                  <AnimatePresence mode="wait">
+                    {status === "success" && (
+                      <motion.div
+                        key="success"
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        className="mb-6 flex items-center gap-3 p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl"
+                      >
+                        <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                        <div className="flex-1">
+                          <p className="font-semibold text-sm md:text-base">
+                            Message Sent!
+                          </p>
+                          <p className="text-xs md:text-sm opacity-90">
+                            We'll get back to you within 24 hours.
+                          </p>
+                        </div>
+                        {/* <button
+                          onClick={() => setStatus("idle")}
+                          className="p-1 hover:bg-green-100 rounded-lg transition-colors"
+                        >
+                          <X className="w-4 h-4" />
+                        </button> */}
+                      </motion.div>
+                    )}
+
+                    {status === "error" && (
+                      <motion.div
+                        key="error"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="mb-6 flex items-center gap-3 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl"
+                      >
+                        <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                        <p className="text-sm font-semibold">
+                          Something went wrong. Please try again.
+                        </p>
+                        {/* <button
+                          onClick={() => setStatus("idle")}
+                          className="ml-auto p-1 hover:bg-red-100 rounded-lg transition-colors"
+                        >
+                          <X className="w-4 h-4" />
+                        </button> */}
+                      </motion.div>
+                    )}
+
+                    {status === "error-captcha" && (
+                      <motion.div
+                        key="captcha"
+                        initial={{ opacity: 0 }}
+                        animate={{
+                          opacity: 1,
+                          x: [0, -4, 4, -4, 4, 0], // This creates the "Shake" animation
+                        }}
+                        transition={{ duration: 0.4 }}
+                        exit={{ opacity: 0 }}
+                        className="mb-6 flex items-center gap-3 p-4 bg-amber-50 border border-amber-200 text-amber-700 rounded-xl"
+                      >
+                        <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                        <p className="text-sm font-semibold">
+                          Captcha is incorrect. Please solve again.
+                        </p>
+                        {/* <button
+                          onClick={() => setStatus("idle")}
+                          className="ml-auto p-1 hover:bg-amber-100 rounded-lg transition-colors"
+                        >
+                          <X className="w-4 h-4" />
+                        </button> */}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </form>
             </div>
