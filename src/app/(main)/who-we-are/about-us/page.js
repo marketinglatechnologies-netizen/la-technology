@@ -100,49 +100,54 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
-      <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-          Who We Are
-        </h2>
+      <section className="w-full bg-[#FFF9F4] py-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-top">
+          
+          {/* Left Content */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
+              Who We Are
+            </h2>
 
-        <div className="space-y-6 text-gray-600 leading-relaxed text-base lg:text-lg">
-           <p>
-            At LA Technologies, we are more than a cybersecurity firm; we are
-            your strategic partners in digital resilience. Founded in 2003,
-            we have spent over two decades empowering enterprises to navigate
-            complexity, mitigate risk, and unlock growth through secure,
-            scalable, and intelligent solutions in an ever-evolving and
-            volatile digital world.
-          </p>
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base space-y-4">
+              <span className="block mb-4">
+                At LA Technologies, we are more than a cybersecurity firm; we are your
+                strategic partners in digital resilience. Founded in 2003, we have spent
+                over two decades empowering enterprises to navigate complexity, mitigate
+                risk, and unlock growth through secure, scalable, and intelligent solutions.
+              </span>
 
-          <p>
-            We operate at the intersection of technology, trust, and
-            transformation, delivering integrated cybersecurity frameworks
-            that align with business objectives and regulatory landscapes.
-            Our approach is consultative, our execution is precise, and our
-            commitment is unwavering.
-          </p>
+              <span className="block mb-4">
+                Our approach combines deep technical expertise with strategic foresight,
+                delivering integrated cybersecurity frameworks that align with business
+                objectives and regulatory landscapes. Our unwavering focus on execution
+                ensures precision, resilience, and long-term value.
+              </span>
 
-          <p>
-            With a strong presence across key markets and a portfolio of
-            elite OEM partnerships, we bring global capabilities with local
-            insight. Our teams are built around domain expertise,
-            operational excellence, and a shared vision to secure what
-            matters most.
-          </p>
+              <span className="block">
+                With a strong presence across key markets and a global ecosystem of partners,
+                we help organizations protect what matters most. Whether you are a fast-scaling
+                disruptor or a Fortune 500 enterprise, LA Technologies is your trusted ally in
+                innovation and security.
+              </span>
+            </p>
+          </div>
 
-          <p>
-            Whether you're a Fortune 500 enterprise or a fast-scaling
-            disruptor, we design solutions that evolve with you—anticipating
-            threats, enabling agility, and driving competitive advantage.
-            LA Technologies is not just a service provider. We are your
-            cybersecurity ally, your innovation enabler, and your partner
-            in progress.
-          </p>
+          {/* Right Image */}
+          <div className="relative h-[460px] w-full rounded-2xl overflow-hidden">
+            <Image
+              src="/assets/images/about-us/intro.jpg"
+              alt="Who We Are - LA Technologies"
+              width={500}
+              height={350}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+
         </div>
       </div>
-    </section> 
+    </section>
        <section className="py-20 bg-[#faf8f5]">
            {/* Wider container, less side gap */}
            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">

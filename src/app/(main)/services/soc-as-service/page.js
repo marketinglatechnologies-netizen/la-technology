@@ -15,13 +15,13 @@ export const metadata = {
 
 const features = [
   {
-    icon: "/assets/images/services/soc/feature1.png",
+    icon: "/assets/images/services/soc/24.png",
     title: "24/7 Threat Monitoring & Detection",
     description:
       "Continuous surveillance of networks, endpoints, and cloud environments using next-gen SIEM and analytics.",
   },
   {
-    icon: "/assets/images/services/soc/feature3.png",
+    icon: "/assets/images/services/soc/Incident-Response.png",
     title: "Rapid Incident Response",
     description:
       "Our certified analysts investigate and contain threats immediately, minimizing downtime and damage.",
@@ -45,7 +45,7 @@ export default function SOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/soc/soc-service-banner.jpg"
           title="SOC As A Service"
           titleTag="h1"
           description={`Round-the-clock SOC services designed to defend modern enterprises.`}
@@ -113,24 +113,24 @@ export default function SOC() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/soc/Cost-Effective.svg",
             title: "Cost-Effective Security",
             text: "Avoid the high costs of building and maintaining an in-house SOC while accessing enterprise-grade capabilities.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/soc/Flexible.svg",
             title: "Scalable & Flexible",
             text: "Whether you are a startup or a large enterprise, our service scales with your business needs.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/soc/report.svg",
             title: "Tailored Alerts & Reports",
             text: "Receive customized alerts and actionable insights aligned with your business priorities.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/soc/global.svg",
             title: "Global Threat Intelligence",
             text: "We combine human expertise with AI-driven tools to detect both known and zero-day threats.",
           },
