@@ -13,8 +13,7 @@ export default function ImageHighlightSection({
 
   return (
     <section className="w-full py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-4 text-center">
-
+      <div className="max-w-6xl mx-auto px-4 lg:px-6 text-center">
         {/* Heading */}
         <HeadingTag className="text-2xl md:text-3xl text-gray-900 mb-8 font-semibold">
           {heading}
@@ -32,10 +31,10 @@ export default function ImageHighlightSection({
         </div>
 
         {/* Description */}
-        <p className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto">
-          {description}
-        </p>
-
+        <p
+          className="text-gray-600 text-base leading-relaxed max-w-3xl mx-auto font-medium"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       </div>
     </section>
   );

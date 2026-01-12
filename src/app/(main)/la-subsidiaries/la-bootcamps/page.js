@@ -139,37 +139,40 @@ export default function LaBootCamp() {
           </div>
 
           {/* Right Image Grid */}
-          <div className="grid grid-cols-2 gap-6">
-            {/* LEFT COLUMN – STACKED IMAGES */}
-            <div className="flex flex-col gap-6">
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/la/bootcamps/abt1.png"
-                  alt="Cybersecurity infrastructure"
-                  className="w-full object-cover"
-                />
-              </div>
+         {/* Image Section */}
+<div className="flex justify-center">
+  <div className="grid grid-cols-2 gap-4 max-w-sm w-full">
+    
+    {/* Top Left Image */}
+    <div className="rounded-2xl overflow-hidden">
+      <img
+        src="/assets/images/la/bootcamps/abt1.png"
+        alt="Cybersecurity infrastructure"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src="/assets/images/la/bootcamps/abt2.png"
-                  alt="Data center security"
-                  className="w-full object-cover"
-                />
-              </div>
-            </div>
+    {/* Right Tall Image */}
+    <div className="row-span-2 rounded-2xl overflow-hidden">
+      <img
+        src="/assets/images/la/bootcamps/abt3.png"
+        alt="Security operations center"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-            {/* RIGHT COLUMN – SMALLER, CENTERED IMAGE */}
-            <div className="flex items-center">
-              <div className="rounded-2xl overflow-hidden max-h-[300px] w-full">
-                <img
-                  src="/assets/images/la/bootcamps/abt3.png"
-                  alt="Security operations center"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+    {/* Bottom Left Image */}
+    <div className="rounded-2xl overflow-hidden">
+      <img
+        src="/assets/images/la/bootcamps/abt2.png"
+        alt="Data center security"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</div>
+
         </div>
       </section>
       <section className="w-full bg-white py-20">

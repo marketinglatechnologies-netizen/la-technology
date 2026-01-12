@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function VendorLogo() {
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 xl:px-0">
+      <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">
           <div>
@@ -30,27 +30,26 @@ export default function VendorLogo() {
             <span> Talk to an Expert</span>
           </button>
         </div>
-
-        {/* Marquee */}
-        <Marquee speed={60} pauseOnHover gradient={false}>
-          {[
-            "/assets/images/home/opswat.png",
-            "/assets/images/home/fortinet.png",
-            "/assets/images/home/solarwinds.png",
-            "/assets/images/home/txone.png",
-            "/assets/images/home/netskope.png",
-            "/assets/images/home/varonis.png",
-          ].map((logo, i) => (
-            <div key={i} className="mx-10 flex items-center">
-              <img
-                src={logo}
-                alt="Vendor logo"
-                className="h-full w-full object-contain"
-              />
-            </div>
-          ))}
-        </Marquee>
       </div>
+      {/* Marquee */}
+      <Marquee speed={60} pauseOnHover gradient={false}>
+        {[
+          "/assets/images/home/opswat.png",
+          "/assets/images/home/fortinet.png",
+          "/assets/images/home/solarwinds.png",
+          "/assets/images/home/txone.png",
+          "/assets/images/home/netskope.png",
+          "/assets/images/home/varonis.png",
+        ].map((logo, i) => (
+          <div key={i} className="mx-10 flex items-center">
+            <img
+              src={logo}
+              alt="Vendor logo"
+              className="h-full w-full object-contain"
+            />
+          </div>
+        ))}
+      </Marquee>
     </section>
   );
 }

@@ -26,7 +26,7 @@ export default function InnerPageBanner({
           - px-4: mobile padding (so text doesn't touch screen edges)
           - md:px-0: removes padding on desktop so text hits the 7xl edge
       */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto h-full min-h-[320px] md:min-h-[400px] lg:min-h-[450px] pt-4 pb-8 md:pt-5 md:pb-14 px-4 md:px-0 flex flex-col justify-between">
+      <div className="relative z-20 w-full max-w-7xl mx-auto h-full min-h-[320px] md:min-h-[400px] lg:min-h-[450px] pt-4 pb-8 md:pt-5 md:pb-14 lg:px-6 md:px-6 px-4 flex flex-col justify-between">
         {/* Breadcrumbs - Top Aligned */}
         <div className="pt-2 md:pt-4 overflow-x-auto no-scrollbar">
           <Breadcrumbs />

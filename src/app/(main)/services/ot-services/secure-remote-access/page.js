@@ -1,0 +1,211 @@
+import InnerPageBanner from "@/components/layout/InnerPageBanner";
+import FeatureHighlightSection from "@/components/services/FeatureHighlightSection";
+import InfoCtaSection from "@/components/services/InfoCtaSection";
+import EightCards from "@/components/services/EightCards";
+import WhyChooseSection from "@/components/services/WhyChooseSection";
+import ImageTabsSection from "@/components/services/ImageTabsSection";
+import ImageHighlightSection from "@/components/services/ImageHighlightSection";
+import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import Image from "next/image";
+import InfoList from "@/components/ui/InfoList";
+import SixCards from "@/components/services/SixCards";
+import IndustryGrid from "@/components/sections/IndustrySection";
+
+export const metadata = {
+  title: "Who We Are | LA TECH Cybersecurity",
+  description:
+    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+};
+
+const multiCardsItems = [
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Granular Access <br> Control",
+    description:
+      "Limit remote access to specific <br> zones, assets, and time windows.",
+  },
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Multi-Factor <br> Authentication (MFA)",
+    description: "Enforce strong authentication for all <br> remote users.",
+  },
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Just-in-Time <br> Access",
+    description:
+      "Provide temporary access for <br> vendors and revoke <br> automatically after use.",
+  },
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Secure Jump <br> Hosts",
+    description: "Isolate remote sessions from critical <br> OT networks.",
+  },
+  {
+    icon: "/assets/images/icons/path.svg",
+    title: "Integration with OT Privileged <br> Access Management",
+    description:
+      "Manage and monitor privileged <br> accounts during remote sessions.",
+  },
+];
+
+const industriesData = {
+  sectionTitle: "Industries We Serve",
+  items: [
+    {
+      id: "manufacturing",
+      title: "Manufacturing",
+      image: "/assets/images/industries/bfsi.jpg",
+    },
+    {
+      id: "energyUtilities",
+      title: "Energy & Utilities",
+      image: "/assets/images/industries/education.jpg",
+    },
+    {
+      id: "oilNGas",
+      title: "Oil & Gas",
+      image: "/assets/images/industries/manufacturing.jpg",
+    },
+    {
+      id: "transportation",
+      title: "Transportation",
+      image: "/assets/images/industries/transportation.jpg",
+    },
+    {
+      id: "criticalInfrastructure",
+      title: "Critical Infrastructure",
+      image: "/assets/images/industries/criticalInfra.jpg",
+    },
+  ],
+};
+
+export default function Page() {
+  return (
+    <>
+      <div>
+        <InnerPageBanner
+          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          title="Secure Remote Access"
+          titleTag="h1"
+          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+        />
+      </div>
+      <FeatureHighlightSection
+        images={[
+          {
+            src: "/assets/images/services/soc/soc1.png",
+            alt: "Security dashboard",
+          },
+          {
+            src: "/assets/images/services/soc/soc2.png",
+            alt: "Developer working",
+          },
+          {
+            src: "/assets/images/services/soc/soc3.png",
+            alt: "Data monitoring",
+          },
+        ]}
+        title="Control Vendor and Maintenance Access Without Compromising Safety"
+        description="Remote access is essential for OT environments—vendors, integrators, and maintenance
+teams often need to connect to industrial systems for troubleshooting and updates. But
+uncontrolled remote access is one of the biggest attack vectors for ransomware and
+targeted OT breaches. <br>
+LA Technologies’ Secure Remote Access solutions ensure that remote connectivity to
+OT systems is safe, monitored, and compliant with security best practices."
+      />
+
+      <InfoList
+        title="Why Secure Remote Access Matters"
+        items={[
+          " Unrestricted VPNs and shared credentials create major security gaps.",
+          "Attackers exploit remote access tools to deploy malware or manipulate control systems.",
+          "Compliance frameworks mandate strict control and logging of remote sessions.",
+        ]}
+      />
+
+      <SixCards
+        heading="Our Facility Management Services Include"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Granular Access Control",
+            description:
+              "Limit remote access to specific zones, assets, and time windows.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Multi-Factor Authentication (MFA)",
+            description:
+              "Enforce strong authentication for all remote users.",
+          },
+           {
+            icon: "/assets/images/icons/path.svg",
+            title: "Multi-Factor Authentication (MFA)",
+            description:
+              "Enforce strong authentication for all remote users.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Just-in-Time Access",
+            description:
+              "Provide temporary access for vendors and revoke automatically after use.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Secure Jump Hosts",
+            description:
+              "Isolate remote sessions from critical OT networks.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Integration with OT Privileged Access Management",
+            description:
+              "Manage and monitor privilegedaccounts during remote sessions.",
+          },
+        ]}
+      />
+
+      <WhyChooseSection
+        heading="Benefits of LA Technologies Secure Remote Access"
+        centerImage="/assets/images/services/soc/whychoose.png"
+        featuresLeft={[
+          {
+            icon: "/assets/images/services/soc/cost.png",
+            title: "Reduce Attack Surface",
+            text: "Eliminate uncontrolled remote connections and shared credentials.",
+          },
+          {
+            icon: "/assets/images/services/soc/scalable.png",
+            title: "Ensure Compliance",
+            text: "Meet IEC 62443 and industry security requirements.",
+          },
+        ]}
+        featuresRight={[
+          {
+            icon: "/assets/images/services/soc/alert.png",
+            title: "Improve Visibility",
+            text: "Monitor and record all remote activities for accountability.",
+          },
+          {
+            icon: "/assets/images/services/soc/global.png",
+            title: "Operational Safety",
+            text: "Maintain uptime and prevent unauthorized changes during remote work.",
+          },
+        ]}
+      />
+
+      <IndustryGrid data={industriesData} />
+
+      <ImageHighlightSection
+        heading="Your Remote Access, Our Control"
+        headingTag="h2"
+        imageSrc="/assets/images/industries/security.jpg"
+        imageAlt="Cybersecurity monitoring dashboard"
+        description="With LA Technologies, you enable secure, monitored remote access—without compromising safety or productivity."
+      />
+
+      <GradientCtaBanner text="Ready to secure remote access to your OT environment?" />
+    </>
+  );
+}
