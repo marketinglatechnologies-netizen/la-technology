@@ -78,8 +78,8 @@ const testimonials = [
 
 export default function EmployeeTestimonials() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-14 md:py-20 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         <Swiper
           modules={[Autoplay]}
@@ -87,37 +87,44 @@ export default function EmployeeTestimonials() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-          spaceBetween={24}
+          spaceBetween={16}
           slidesPerView="auto"
           grabCursor
+          breakpoints={{
+            640: { spaceBetween: 20 },
+            1024: { spaceBetween: 24 },
+          }}
         >
           {testimonials.map((item, index) => (
-            <SwiperSlide key={index} className="!w-[420px]">
-              <div className="bg-[#FFF4E8] rounded-2xl p-6 shadow-sm relative flex gap-6 min-h-[260px]">
+            <SwiperSlide
+              key={index}
+              className="!w-[300px] sm:!w-[360px] lg:!w-[420px]"
+            >
+              <div className="bg-[#FFF4E8] rounded-2xl p-5 sm:p-6 shadow-sm relative flex gap-4 sm:gap-6 min-h-[240px] sm:min-h-[260px]">
 
                 {/* Quote Icon */}
-                <span className="absolute top-4 right-5 text-7xl text-orange-100 leading-none">
+                <span className="absolute top-3 right-4 sm:top-4 sm:right-5 text-6xl sm:text-7xl text-orange-100 leading-none">
                   “
                 </span>
 
                 {/* LEFT: IMAGE + NAME */}
-                <div className="flex flex-col items-center min-w-[110px]">
-                  <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center">
+                <div className="flex flex-col items-center min-w-[90px] sm:min-w-[110px]">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white flex items-center justify-center">
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-20 h-20 rounded-full object-cover object-top"
+                      className="w-full h-full rounded-full object-cover object-top"
                     />
                   </div>
 
-                  <p className="mt-3 text-sm font-semibold text-black text-center leading-tight">
+                  <p className="mt-2 sm:mt-3 text-xs sm:text-sm font-semibold text-black text-center leading-tight">
                     {item.name.split(" ")[0]} <br />
                     {item.name.split(" ").slice(1).join(" ")}
                   </p>
                 </div>
 
                 {/* RIGHT: TEXT */}
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                   “{item.text}”
                 </p>
 

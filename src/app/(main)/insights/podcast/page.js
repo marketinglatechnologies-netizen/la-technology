@@ -102,7 +102,7 @@ export default function PodcastPage() {
           </div>
         </div>
       </section>
-       <section className="w-full bg-white py-20">
+       <section className="w-full bg-white py-15">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
         {/* Left Content */}

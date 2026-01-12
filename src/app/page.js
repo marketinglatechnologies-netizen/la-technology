@@ -36,7 +36,7 @@ export default function HomePage() {
   const heroSlides = [
     {
       type: "image",
-      src: "/assets/images/home/slider-1.jpg", // Based on your "Building Technology" mockup
+      src: "/assets/images/home/home-banner.jpg", // Based on your "Building Technology" mockup
       title: "Building Technology That Moves Business Forward",
       description:
         "We design and build scalable technology solutions <br /> that help brands grow, innovate, and succeed.",
@@ -47,9 +47,9 @@ export default function HomePage() {
   ];
 
   const securityMedia = [
-    "/assets/images/home/who-we-are-1.jpg", // Becomes the large left image
-    "/assets/images/home/who-we-are-2.jpg", // Becomes top-right
-    "/assets/images/home/who-we-are-3.jpg", // Becomes bottom-right
+    "/assets/images/home/home1.jpg", // Becomes the large left image
+    "/assets/images/home/home2.jpg", // Becomes top-right
+    "/assets/images/home/home3.jpg", // Becomes bottom-right
   ];
 
   const industriesData = {

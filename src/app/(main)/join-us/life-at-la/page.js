@@ -19,7 +19,7 @@ export default function AboutPage() {
         description={`Experience a workplace built on collaboration, learning, and impact.`}
       />
 
-    <section className="py-20 bg-white">
+    <section className="py-15 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-start">
 
@@ -179,7 +179,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
@@ -228,7 +228,7 @@ export default function AboutPage() {
     </section>
 
   
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
@@ -294,7 +294,7 @@ export default function AboutPage() {
     </section>
     <EmployeeTestimonials />
 
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* TITLE */}

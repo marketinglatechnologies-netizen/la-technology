@@ -101,40 +101,24 @@ reliable, cost-effective solutions"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-<<<<<<< HEAD:src/app/(main)/services/facility-management/page.js
-              icon: "/assets/images/services/facility-management/Certified.png",
-=======
               icon: "/assets/images/home/icon1.png",
->>>>>>> 3fef0d8f9061ce564152035190f64d31df348d8a:src/app/(main)/services/managed-services/facility-management/page.js
               title: "Certified IT Professionals",
               text: "Skilled engineers with expertise in networking, servers, storage, and end-user support.",
             },
             {
-<<<<<<< HEAD:src/app/(main)/services/facility-management/page.js
-              icon: "/assets/images/services/facility-management/Cost.png",
-=======
               icon: "/assets/images/home/icon2.png",
->>>>>>> 3fef0d8f9061ce564152035190f64d31df348d8a:src/app/(main)/services/managed-services/facility-management/page.js
               title: "Cost Efficiency",
               text: "Reduce operational overhead with flexible engagement models.",
             },
           ]}
           featuresRight={[
             {
-<<<<<<< HEAD:src/app/(main)/services/facility-management/page.js
-              icon: "/assets/images/services/facility-management/Scalability.png",
-=======
               icon: "/assets/images/home/icon3.png",
->>>>>>> 3fef0d8f9061ce564152035190f64d31df348d8a:src/app/(main)/services/managed-services/facility-management/page.js
               title: "Scalability",
               text: "Services tailored for single-site or multi-location enterprises.",
             },
             {
-<<<<<<< HEAD:src/app/(main)/services/facility-management/page.js
-              icon: "/assets/images/services/facility-management/Approach.png",
-=======
               icon: "/assets/images/home/icon4.png",
->>>>>>> 3fef0d8f9061ce564152035190f64d31df348d8a:src/app/(main)/services/managed-services/facility-management/page.js
               title: "Proactive Approach",
               text: "Prevent issues before they impact business operations.",
             },
