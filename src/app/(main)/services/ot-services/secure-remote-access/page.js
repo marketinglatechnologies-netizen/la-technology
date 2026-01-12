@@ -8,7 +8,7 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
-import SolutionGrid from "@/components/services/SolutionGrid";
+import SixCards from "@/components/services/SixCards";
 import IndustryGrid from "@/components/sections/IndustrySection";
 
 export const metadata = {
@@ -123,10 +123,47 @@ OT systems is safe, monitored, and compliant with security best practices."
         ]}
       />
 
-      <SolutionGrid
-        title="Our Asset Discovery Solutions"
-        items={multiCardsItems}
-        align="center"
+      <SixCards
+        heading="Our Facility Management Services Include"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Granular Access Control",
+            description:
+              "Limit remote access to specific zones, assets, and time windows.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Multi-Factor Authentication (MFA)",
+            description:
+              "Enforce strong authentication for all remote users.",
+          },
+           {
+            icon: "/assets/images/icons/path.svg",
+            title: "Multi-Factor Authentication (MFA)",
+            description:
+              "Enforce strong authentication for all remote users.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Just-in-Time Access",
+            description:
+              "Provide temporary access for vendors and revoke automatically after use.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Secure Jump Hosts",
+            description:
+              "Isolate remote sessions from critical OT networks.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Integration with OT Privileged Access Management",
+            description:
+              "Manage and monitor privilegedaccounts during remote sessions.",
+          },
+        ]}
       />
 
       <WhyChooseSection
@@ -167,7 +204,7 @@ OT systems is safe, monitored, and compliant with security best practices."
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you enable secure, monitored remote access—without compromising safety or productivity."
       />
-      
+
       <GradientCtaBanner text="Ready to secure remote access to your OT environment?" />
     </>
   );

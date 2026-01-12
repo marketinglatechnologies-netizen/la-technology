@@ -10,6 +10,7 @@ import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -123,10 +124,42 @@ maintaining uptime and safety."
         ]}
       />
 
-      <SolutionGrid
-        title="Our Asset Discovery Solutions"
-        items={multiCardsItems}
-        align="center"
+      <FiveCards
+        heading="Our Endpoint Security Solutions"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Gap Assessment & Compliance Mapping",
+            description:
+              "Identify gaps against IEC 62443, NIST, and industry-specific standards.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Policy Development & Documentation",
+            description:
+              "Create OT-specific security policies, procedures, and governance frameworks.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Access Control & Privilege Management",
+            description:
+              "Implement least-privilege access and secure remote connections.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Incident Response & Reporting",
+            description:
+              "Develop OT-focused IR plans and maintain audit-ready logs.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+
+            title: "Continuous Compliance Monitoring",
+            description:
+              "Track adherence and generate reports for audits and certifications.",
+          },
+        ]}
       />
 
       <WhyChooseSection

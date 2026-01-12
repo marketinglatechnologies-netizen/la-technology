@@ -4,7 +4,7 @@ import EightCards from "@/components/services/EightCards";
 import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
-import IndustriesGrid from "@/components/services/IndustriesGrid";
+import IndustryGrid from "@/components/sections/IndustrySection";
 import Image from "next/image";
 
 export const metadata = {
@@ -36,32 +36,41 @@ const items = [
     },
   ];
 
-  const industries = [
+  const industriesData =  {
+  sectionTitle: "Industries We Serve",
+  items: [
     {
+      id: "bfsi",
       title: "BFSI",
       image: "/assets/images/industries/bfsi.jpg",
     },
     {
+      id: "healthcare",
       title: "Healthcare",
       image: "/assets/images/industries/healthcare.jpg",
     },
     {
+      id: "manufacturing",
       title: "Manufacturing",
       image: "/assets/images/industries/manufacturing.jpg",
     },
     {
-      title: "Retail & Branch networking",
+      id: "retail",
+      title: "Retail",
       image: "/assets/images/industries/retail.jpg",
     },
     {
+      id: "education",
       title: "Education",
       image: "/assets/images/industries/education.jpg",
     },
     {
-      title: "Government & Public Sector",
-      image: "/assets/images/industries/education.jpg",
+      id: "Government and public sector",
+      title: "Government & public sector",
+      image: "/assets/images/industries/criticalInfra.jpg",
     },
-  ];
+  ],
+};
 
 export default function DataSecurity() {
   return (
@@ -205,10 +214,7 @@ export default function DataSecurity() {
         ]}
       />
 
-       <IndustriesGrid
-      title="Industries We Serve"
-      industries={industries}
-    />
+      <IndustryGrid data={industriesData} />
       <ImageHighlightSection
         heading="Your Data, Always Secure"
         headingTag="h2"

@@ -8,7 +8,7 @@ import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import Image from "next/image";
-import IndustriesGrid from "@/components/services/IndustriesGrid";
+import IndustryGrid from "@/components/sections/IndustrySection";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -16,33 +16,41 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const industries = [
-  {
-    title: "BFSI",
-    image: "/assets/images/industries/bfsi.jpg",
-  },
-  {
-    title: "Healthcare",
-    image: "/assets/images/industries/healthcare.jpg",
-  },
-  {
-    title: "Manufacturing",
-    image: "/assets/images/industries/manufacturing.jpg",
-  },
-  {
-    title: "Retail & Branch networking",
-    image: "/assets/images/industries/retail.jpg",
-  },
-  {
-    title: "Education",
-    image: "/assets/images/industries/education.jpg",
-  },
-  {
-    title: "Government",
-    image: "/assets/images/industries/goverment.png",
-  },
-];
-
+const industriesData = {
+  sectionTitle: "Industries We Serve",
+  items: [
+    {
+      id: "Retail & Multi-Branch Enterprises",
+      title: "Retail & Multi-Branch Enterprises",
+      image: "/assets/images/industries/bfsi.jpg",
+    },
+    {
+      id: "BFSI (Branches & ATMs)",
+      title: "BFSI (Branches & ATMs)",
+      image: "/assets/images/industries/education.jpg",
+    },
+    {
+      id: "Manufacturing (Plants & Warehouses) ",
+      title: "Manufacturing (Plants & Warehouses) ",
+      image: "/assets/images/industries/manufacturing.jpg",
+    },
+    {
+      id: "Healthcare Networks",
+      title: "Healthcare Networks",
+      image: "/assets/images/industries/bfsi.jpg",
+    },
+     {
+      id: "Logistics & Distribution ",
+      title: "Logistics & Distribution ",
+      image: "/assets/images/industries/education.jpg",
+    },
+     {
+      id: "Education (Campuses & Centers)",
+      title: "Education (Campuses & Centers)",
+      image: "/assets/images/industries/manufacturing.jpg",
+    },
+  ],
+};
 export const whatWeDeliverData = [
   {
     title: "Network Architecture & Design",
@@ -511,7 +519,7 @@ export default function FacilityManagement() {
         ]}
       />
 
-      <IndustriesGrid title="Industries We Serve" industries={industries} />
+     <IndustryGrid data={industriesData} />
 
       <GradientCtaBanner text="Ready to modernize your network infrastructure?" />
     </>

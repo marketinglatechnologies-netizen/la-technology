@@ -6,10 +6,10 @@ import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import IndustryGrid from "@/components/sections/IndustrySection";
 import FourBoxSection from "@/components/services/FourBox";
 import EightCards from "@/components/services/EightCards";
 import Image from "next/image";
-import IndustriesGrid from "@/components/services/IndustriesGrid";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -17,32 +17,41 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const industries = [
+const industriesData =  {
+  sectionTitle: "Industries We Serve",
+  items: [
     {
+      id: "bfsi",
       title: "BFSI",
       image: "/assets/images/industries/bfsi.jpg",
     },
     {
+      id: "healthcare",
       title: "Healthcare",
       image: "/assets/images/industries/healthcare.jpg",
     },
     {
+      id: "manufacturing",
       title: "Manufacturing",
       image: "/assets/images/industries/manufacturing.jpg",
     },
     {
-      title: "Retail & Branch networking",
+      id: "retail",
+      title: "Retail",
       image: "/assets/images/industries/retail.jpg",
     },
     {
+      id: "education",
       title: "Education",
       image: "/assets/images/industries/education.jpg",
     },
-     {
-      title: "Government",
-      image: "/assets/images/industries/goverment.png",
+    {
+      id: "Government & public sector",
+      title: "Government & public sector",
+      image: "/assets/images/industries/criticalInfra.jpg",
     },
-  ];
+  ],
+};
 
 export default function FacilityManagement() {
   return (
@@ -188,10 +197,7 @@ prevent application-level threats, ensuring your business remains secure and com
           },
         ]}
       />
-      <IndustriesGrid
-            title="Industries We Serve"
-            industries={industries}
-          />
+       <IndustryGrid data={industriesData} />
       <ImageHighlightSection
         heading="Your Cloud, Secured"
         headingTag="h2"

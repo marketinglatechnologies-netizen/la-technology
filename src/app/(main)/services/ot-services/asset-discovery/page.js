@@ -10,6 +10,7 @@ import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -126,10 +127,41 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         ]}
       />
 
-      <SolutionGrid
-        title="Our Asset Discovery Solutions"
-        items={multiCardsItems}
-        align="center"
+      <FiveCards
+        heading="Our Endpoint Security Solutions"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Automated Asset Inventory",
+            description:
+              "Discover all OT devices, including PLCs, HMIs, sensors, and engineering workstations.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Passive Network Scanning",
+            description:
+              "Non-intrusive methods to avoid disrupting critical  operations.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Asset Classification & Risk Scoring",
+            description:
+              "Categorize assets by criticality and vulnerability exposure.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Continuous Monitoring",
+            description:
+              "Track changes in asset configurations and detect unauthorized devices.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Integration with OT Security Tools",
+            description:
+              "Seamless integration with threat detection and vulnerability management platforms.",
+          },
+        ]}
       />
 
       <WhyChooseSection

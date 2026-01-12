@@ -12,6 +12,7 @@ import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
 import FourBoxSection from "@/components/services/FourBox";
 import BenefitsGrid from "@/components/services/BenefitsGrid";
+import SixCards from "@/components/services/SixCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -98,7 +99,8 @@ const benefitsData = [
   {
     icon: "/assets/images/industries/greybox.jpg",
     title: "Reduce Ransomware & Logic Tampering Risk",
-    description: "Block unauthorized executables and monitor high‑risk activities on engineering devices.",
+    description:
+      "Block unauthorized executables and monitor high‑risk activities on engineering devices.",
   },
   {
     icon: "/assets/images/industries/greybox.jpg",
@@ -180,10 +182,54 @@ industrial processes.
         ]}
       />
 
-      <SolutionGrid
-        title="Our ICS & SCADA Security Solutions"
-        items={multiCardsItems}
-        align="left"
+      <SixCards
+        heading="Our Managed Security Services Include"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "OT-Safe Endpoint Hardening",
+            description:
+              "Baseline configurations for HMIs, historians, and engineering stations (services, accounts, policies, removable media controls) tailored to vendor guidance.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Application Control / Allow-Listing",
+            description:
+              "Permit only trusted engineering tools and runtime binaries; block unauthorized executables and scripts to prevent logic tampering and malware execution.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title:
+              "Advanced Endpoint Protection (Agented or Agentless Options)",
+            description:
+              "Deploy EDR/XDR where feasible on Windows/Linux endpoints; use agentless monitoring for constrained systems to observe changes and suspicious behaviors without impacting controllers.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Removable Media  Governance",
+            description:
+              "Control and scan USB usage on programming laptops; enforce cryptographic signing of ladder logic/firmware files and maintain transfer logs.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Privilege & Session Controls",
+            description:
+              "Enforce least privilege on engineering accounts, MFA for  admin access, and session recording on maintenance activities (links with OT Privileged  Access Management).",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Patch &  Compensating Controls",
+            description:
+              "Plan patching aligned to shutdown  windows; for unpatchable assets, implement compensating controls (isolation, ACLs, app control, enhanced monitoring).",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Change Control & Integrity Monitoring",
+            description:
+              "Track and approve PLC/HMI project hanges; alert on unauthorized firmware updates,logic downloads, or configuration drifts.",
+          },
+        ]}
       />
 
       <WhyChooseSection
@@ -258,7 +304,7 @@ industrial processes.
             icon: "/assets/images/industries/greybox.jpg",
             title: "Operate & Improve",
             text: "Continuous monitoring, periodic reviews, and updates to baselines and allow‑lists.",
-          }
+          },
         ]}
       />
 

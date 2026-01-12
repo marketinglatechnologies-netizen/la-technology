@@ -10,6 +10,7 @@ import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -125,10 +126,41 @@ secure zones and conduits without disrupting production.
         ]}
       />
 
-      <SolutionGrid
-        title="Our ICS & SCADA Security Solutions"
-        items={multiCardsItems}
-        align="center"
+      <FiveCards
+        heading="Our Endpoint Security Solutions"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Zone & Conduit Design",
+            description:
+              "Logical separation of OT assets <br> based on criticality and <br> function.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Firewall & Access Control Policies",
+            description:
+              "Enforce strict communication rules between zones.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Secure Remote Access Integration",
+            description:
+              "Ensure vendor and maintenance access is limited to specific zones.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Monitoring & Validation",
+            description:
+              "Continuous verification of segmentation policies and <br> traffic flows.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Compliance Alignment",
+            description:
+              "Implement segmentation strategies that meet industry <br> standards.",
+          },
+        ]}
       />
 
       <WhyChooseSection

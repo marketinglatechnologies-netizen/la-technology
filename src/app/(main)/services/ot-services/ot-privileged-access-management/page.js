@@ -6,6 +6,7 @@ import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import SixCards from "@/components/services/SixCards";
 import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SolutionGrid from "@/components/services/SolutionGrid";
@@ -126,10 +127,47 @@ and governs privileged accounts across your OT infrastructure—ensuring complia
 reducing risk, and maintaining operational continuity."
       />
 
-      <SolutionGrid
-        title="Our OT PAM Solutions"
-        items={multiCardsItems}
-        align="center"
+      <SixCards
+        heading="Our Facility Management Services Include"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Centralized Credential <br> Vault",
+            description:
+              "Securely store and rotate privileged <br> credentials for OT systems.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Granular Access Control",
+            description:
+              "Assign role-based permissions and enforce least privilege principles.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Just-in-Time Access",
+            description:
+              "Provide temporary, time-bound access to critical OT assets.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Session Monitoring & Recording",
+            description:
+              "Track and record all privileged activities for compliance and forensic analysis.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Automated Password Rotation",
+            description:
+              "Eliminate shared or static credentials across OT environments.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Integration with Secure Remote Access",
+            description:
+              "Combine PAM with remote access controls for complete security.",
+          },
+        ]}
       />
 
       <WhyChooseSection

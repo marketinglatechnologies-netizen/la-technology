@@ -10,6 +10,7 @@ import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -17,37 +18,37 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const multiCardsItems = [
-  {
-    icon: "/assets/images/icons/path.svg",
-    title: "System <br> Hardening",
-    description:
-      "Secure configurations for PLCs, <br> HMIs, and SCADA servers.",
-  },
-  {
-    icon: "/assets/images/icons/path.svg",
-    title: "Access Control & <br> Authentication",
-    description:
-      "Enforce least-privilege access <br> and multi-factor authentication for OT systems.",
-  },
-  {
-    icon: "/assets/images/icons/path.svg",
-    title: "Network <br> Segmentation",
-    description:
-      "Implement zones and conduits <br> to isolate critical assets.",
-  },
-  {
-    icon: "/assets/images/icons/path.svg",
-    title: "Monitoring & <br> Threat Detection",
-    description:
-      "Continuous visibility into ICS <br> traffic and anomaly detection.",
-  },
-  {
-    icon: "/assets/images/icons/path.svg",
-    title: "Incident Response <br> Planning",
-    description: "Develop OT-specific playbooks <br> for rapid containment.",
-  },
-];
+// const multiCardsItems = [
+//   {
+//     icon: "/assets/images/icons/path.svg",
+//     title: "System <br> Hardening",
+//     description:
+//       "Secure configurations for PLCs, <br> HMIs, and SCADA servers.",
+//   },
+//   {
+//     icon: "/assets/images/icons/path.svg",
+//     title: "Access Control & <br> Authentication",
+//     description:
+//       "Enforce least-privilege access <br> and multi-factor authentication for OT systems.",
+//   },
+//   {
+//     icon: "/assets/images/icons/path.svg",
+//     title: "Network <br> Segmentation",
+//     description:
+//       "Implement zones and conduits <br> to isolate critical assets.",
+//   },
+//   {
+//     icon: "/assets/images/icons/path.svg",
+//     title: "Monitoring & <br> Threat Detection",
+//     description:
+//       "Continuous visibility into ICS <br> traffic and anomaly detection.",
+//   },
+//   {
+//     icon: "/assets/images/icons/path.svg",
+//     title: "Incident Response <br> Planning",
+//     description: "Develop OT-specific playbooks <br> for rapid containment.",
+//   },
+// ];
 
 const industriesData = {
   sectionTitle: "Industries We Serve",
@@ -125,10 +126,41 @@ without disrupting production.
         ]}
       />
 
-      <SolutionGrid
-        title="Our ICS & SCADA Security Solutions"
-        items={multiCardsItems}
-        align="center"
+      <FiveCards
+        heading="Our Endpoint Security Solutions"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "System Hardening",
+            description:
+              "Secure configurations for PLCs, HMIs, and SCADA servers.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Access Control & Authentication",
+            description:
+              "Enforce least-privilege access and multi-factor authentication for OT systems.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Network Segmentation",
+            description:
+              "Implement zones and conduits to isolate critical assets.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Monitoring & Threat Detection",
+            description:
+              "Continuous visibility into ICS traffic and anomaly detection.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Incident Response Planning",
+            description:
+              "Develop OT-specific playbooks for rapid containment.",
+          },
+        ]}
       />
 
       <WhyChooseSection

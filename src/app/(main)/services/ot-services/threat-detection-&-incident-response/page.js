@@ -12,6 +12,7 @@ import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
 import FourBoxSection from "@/components/services/FourBox";
 import BenefitsGrid from "@/components/services/BenefitsGrid";
+import SixCards from "@/components/services/SixCards";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -171,10 +172,47 @@ that contains threats without impacting critical processes.
         ]}
       />
 
-      <SolutionGrid
-        title="Our ICS & SCADA Security Solutions"
-        items={multiCardsItems}
-        align="center"
+      <SixCards
+        heading="Our Facility Management Services Include"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Passive OT Network <br> Monitoring",
+            description:
+              "Non-intrusive analysis of ICS/ <br> SCADA traffic (e.g., Modbus, DNP3, <br> IEC 104) to avoid <br> impacting controllers and field <br> devices.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Behavior & <br> Anomaly Detection",
+            description:
+              "Baseline “known-good” operational patterns; <br> alert on deviations such as unexpected <br> firmware changes, unauthorized ladder logic <br> downloads, or unusual command <br> sequences.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Use-Case & Playbook <br> Catalog (OT-Specific)",
+            description:
+              "Predefined detections and response steps for <br> common OT scenarios: ransomware on <br> engineering workstations, unauthorized remote <br> sessions, rogue PLC programming, and <br> HMI tampering.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Incident Response <br> Runbooks",
+            description:
+              "OT-safe procedures for triage, <br> containment, and recovery— <br> coordinated with plant <br> operations, EHS, and maintenance <br> teams.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Forensics & Root <br> Cause Analysis",
+            description:
+              "Evidence collection (logs, packets, <br> controller state) with minimal <br> downtime; root-cause <br> findings and corrective actions.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Post-Incident <br> Hardening",
+            description:
+              "Recommendations and implementation <br> support: tightening ACLs, refining <br> zones/conduits, MFA for remote sessions, <br> change-control on programming terminals.",
+          },
+        ]}
       />
 
       <WhyChooseSection

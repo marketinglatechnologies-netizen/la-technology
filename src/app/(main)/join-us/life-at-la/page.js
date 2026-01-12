@@ -64,7 +64,7 @@ export default function AboutPage() {
           </div>
 
           {/* RIGHT FULL IMAGE */}
-          <div className="rounded-2xl overflow-hidden h-[600px]">
+          <div className="rounded-2xl overflow-hidden h-[380px] sm:h-[500px] lg:h-[600px]">
             <img
               src="/assets/images/join-us/team.png"
               alt="Life at LA Technologies"
@@ -179,7 +179,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
@@ -292,7 +292,7 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
-    <EmployeeTestimonials />;
+    <EmployeeTestimonials />
 
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">

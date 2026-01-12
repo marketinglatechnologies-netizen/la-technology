@@ -66,13 +66,13 @@ export default function SOC() {
             alt: "Data monitoring",
           },
         ]}
-        title="Protect Your Most Valuable Asset—Your Data"
-        description="In today’s digital-first world, cyber threats are more advanced, persistent, and damaging than ever before. From ransomware and phishing attacks to insider threats and data breaches, businesses face constant risks that can disrupt operations and compromise sensitive data. Traditional security measures are no longer enough—you need a dedicated team monitoring your environment around the clock.That’s where LA Technologies’ SOC-as-a-Service comes in. We provide a fully managed Security Operations Center (SOC) that acts as an extension of your IT team, delivering continuous threat detection, rapid incident response, and proactive defense—all without the cost and complexity of building your own SOC"
+        title="Stay Ahead of Cyber Threats with 24/7 Security Monitoring"
+        description="In today’s digital-first world, cyber threats are more advanced, persistent, and damaging than ever before. From ransomware and phishing attacks to insider threats and data breaches, businesses face constant risks that can disrupt operations and compromise sensitive data. Traditional security measures are no longer enough—you need a dedicated team monitoring your environment around the clock."
       />
 
       <InfoCtaSection
         title="What is SOC-as-a-Service?"
-        description="SOC-as-a-Service is a subscription-based model that gives you access to enterprise-grade security operations without heavy upfront investment..."
+        description="SOC-as-a-Service is a subscription-based model that gives you access to enterprise-grade security operations without heavy upfront investment. Our experts leverage advanced SIEM tools, threat intelligence, and automation to monitor, detect, and respond to security incidents in real time—keeping your business safe and compliant."
       />
 
       <section className="w-full py-20 bg-white">
