@@ -53,7 +53,7 @@ export default function NOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/noc/noc-banner.jpg"
           title="NOC As A Service"
           titleTag="h1"
           description={`Round-the-clock NOC services designed to defend modern enterprises.`}

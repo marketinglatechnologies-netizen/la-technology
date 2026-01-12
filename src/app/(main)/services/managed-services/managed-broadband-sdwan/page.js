@@ -64,7 +64,7 @@ export default function ManagedBroadbandSDWAN() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/managed-broadband-service/managed-broadband-service.jpg"
           title="Managed Broadband + SDWAN"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}

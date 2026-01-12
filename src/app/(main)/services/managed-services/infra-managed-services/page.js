@@ -46,7 +46,7 @@ export default function SOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/Infra-managed-services/Infra-managed-services.jpg"
           title="Infra Managed Services"
           titleTag="h1"
           description={`Round-the-clock Infra Managed Services designed to defend modern enterprises.`}

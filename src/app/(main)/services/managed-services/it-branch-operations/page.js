@@ -43,7 +43,7 @@ export default function ITBranchOperations() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/services/IT-branch-operations/IT-branch-operations.jpg"
         title="IT Branch Operations"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}

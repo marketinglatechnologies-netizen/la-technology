@@ -81,7 +81,7 @@ export default function SecurityAssessment() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/services/security-assessment/security-assessment-banner.jpg"
         title="Security Assessment"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
