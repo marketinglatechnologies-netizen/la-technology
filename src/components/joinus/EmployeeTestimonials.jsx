@@ -106,7 +106,7 @@ export default function EmployeeTestimonials() {
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-20 h-20 rounded-full object-cover object-top"
                     />
                   </div>
 
