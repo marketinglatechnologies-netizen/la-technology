@@ -162,70 +162,86 @@ export default function HomePage() {
               </h2>
 
               <div className="space-y-8">
-                {/* Item 1 */}
-                <div className="flex gap-5">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
-                    01
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Unmatched Industry Knowledge
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Partnering with us means working with a team that
-                      prioritizes your growth, security, and long-term success.
-                    </p>
-                  </div>
+              {/* Item 1 */}
+              <div className="flex gap-5">
+                    <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+                  <img
+                      src="assets/images/home/industry.png"
+                      alt="Unmatched Industry Knowledge"
+                      className="w-12 h-12 object-contain"
+                  />
                 </div>
+              <div>
+              <h4 className="font-semibold text-gray-900 mb-1">
+                 Unmatched Industry Knowledge
+              </h4>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                  Partnering with us means working with a team that prioritizes your
+                  growth, security, and long-term success.
+              </p>
+            </div>
+          </div>
 
                 {/* Item 2 */}
-                <div className="flex gap-5">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
-                    02
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Comprehensive Solutions
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      From infrastructure to cybersecurity, we provide
-                      end-to-end services under one roof.
-                    </p>
-                  </div>
-                </div>
+  <div className="flex gap-5">
+    <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+      <img
+        src="assets/images/home/solution.png"
+        alt="Comprehensive Solutions"
+        className="w-12 h-12 object-contain"
+      />
+    </div>
+    <div>
+      <h4 className="font-semibold text-gray-900 mb-1">
+        Comprehensive Solutions
+      </h4>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        From infrastructure to cybersecurity, we provide end-to-end services
+        under one roof.
+      </p>
+    </div>
+  </div>
 
                 {/* Item 3 */}
-                <div className="flex gap-5">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
-                    03
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Future-Ready Innovation
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      We adopt emerging technologies to ensure your business
-                      stays competitive and resilient.
-                    </p>
-                  </div>
-                </div>
+    <div className="flex gap-5">
+    <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+      <img
+        src="assets/images/home/innovation.png"
+        alt="Future-Ready Innovation"
+        className="w-12 h-12 object-contain"
+      />
+    </div>
+    <div>
+      <h4 className="font-semibold text-gray-900 mb-1">
+        Future-Ready Innovation
+      </h4>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        We adopt emerging technologies to ensure your business stays
+        competitive and resilient.
+      </p>
+    </div>
+  </div>
 
                 {/* Item 4 */}
-                <div className="flex gap-5">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold flex-shrink-0">
-                    04
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
-                      Commitment to Excellence
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      Our client-first approach guarantees reliable support,
-                      measurable outcomes, and lasting partnerships.
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <div className="flex gap-5">
+    <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
+      <img
+        src="assets/images/home/excellence.png"
+        alt="Commitment to Excellence"
+        className="w-12 h-12 object-contain"
+      />
+    </div>
+    <div>
+      <h4 className="font-semibold text-gray-900 mb-1">
+        Commitment to Excellence
+      </h4>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        Our client-first approach guarantees reliable support, measurable
+        outcomes, and lasting partnerships.
+      </p>
+    </div>
+  </div>
+</div>
             </div>
 
             {/* RIGHT IMAGES */}

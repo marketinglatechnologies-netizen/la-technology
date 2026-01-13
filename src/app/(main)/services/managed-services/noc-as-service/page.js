@@ -17,31 +17,31 @@ export const metadata = {
 
 const benefitsData = [
   {
-    icon: "/assets/images/services/noc/ai.png",
+    icon: "/assets/images/services/noc/key1.png",
     title: "24×7 Monitoring & Remediation",
     description:
       "Continuous oversight of servers, networks, applications, and databases.",
   },
   {
-    icon: "/assets/images/services/noc/cost.png",
+    icon: "/assets/images/services/noc/key2.png",
     title: "Cost-Effective Scaling",
     description:
       "Expand your service offerings without increasing headcount or infrastructure costs.",
   },
   {
-    icon: "/assets/images/services/noc/reduce.png",
+    icon: "/assets/images/services/noc/key3.png",
     title: "Reduce Alert Fatigue",
     description:
       "We handle alerts and minimize false positives, freeing your engineers for strategic work.",
   },
   {
-    icon: "/assets/images/services/noc/partner.png",
+    icon: "/assets/images/services/noc/key4.png",
     title: "Preferred Pricing for Partners",
     description:
       "Competitive pricing models designed for MSPs and VARs to maximize margins.",
   },
   {
-    icon: "/assets/images/services/noc/device.png",
+    icon: "/assets/images/services/noc/key5.png",
     title: "Your Tools, Your Way",
     description:
       "We integrate with your existing RMM tools to ensure consistency and leverage your investments.",
@@ -109,7 +109,7 @@ on strategic, high-margin projects.
               "Level 1, 2 & 3 resolution staff for comprehensive issue handling.",
           },
           {
-            icon: "/assets/images/services/soc/feature3.png",
+            icon: "/assets/images/services/soc/feature-3.png",
             title: "Agile Pod",
             description:
               "Dedicated NOC team with Level 2 & 3 technical personnel tailored to your needs.",
@@ -121,7 +121,7 @@ on strategic, high-margin projects.
               "Remote administration and migration support for project-based requirements.",
           },
           {
-            icon: "/assets/images/services/soc/feature4.png",
+            icon: "/assets/images/services/soc/feature-5.png",
             title: "Managed Business Continuity",
             description:
               "24×7 managed data protection and disaster recovery services.",
@@ -136,24 +136,24 @@ on strategic, high-margin projects.
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/noc/partner1.png",
             title: "Increase Recurring Revenue",
             text: "Increase Recurring Revenue",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/noc/partner2.png",
             title: "Certified Expertise",
             text: "Our NOC teams include engineers skilled in OS, networking, backup, databases, security, and virtualization.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/noc/partner3.png",
             title: "Dedicated Resources",
             text: "Form your own Agile Pod with the right mix of Level 2 & 3 engineers for evolving needs.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/noc/partner4.png",
             title: "Enhanced Customer Satisfaction",
             text: "Improve uptime, reliability, and retention with proactive IT operations.",
           },

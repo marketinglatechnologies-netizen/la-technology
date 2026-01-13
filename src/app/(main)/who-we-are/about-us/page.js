@@ -34,7 +34,7 @@ export default function AboutPage() {
             {/* LEFT BIG IMAGE */}
             <div className="rounded-xl overflow-hidden h-[420px]">
               <Image
-                src="/assets/images/about-us/who-we-are-1.jpg"
+                src="/assets/images/about-us/about-us-2.jpg"
                 alt="Cybersecurity Dashboard"
                 width={600}
                 height={420}
@@ -46,7 +46,7 @@ export default function AboutPage() {
             <div className="grid grid-rows-2 gap-4 h-[420px]">
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/assets/images/about-us/who-we-are-2.jpg"
+                  src="/assets/images/about-us/about-us-right1.jpg"
                   alt="Security Monitoring"
                   width={600}
                   height={210}
@@ -56,7 +56,7 @@ export default function AboutPage() {
 
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/assets/images/about-us/who-we-are-3.jpg"
+                  src="/assets/images/about-us/about-us-right2.jpg"
                   width={600}
                   height={210}
                   className="w-full h-full object-cover"
@@ -137,7 +137,7 @@ export default function AboutPage() {
           {/* Right Image */}
           <div className="relative h-[460px] w-full rounded-2xl overflow-hidden">
             <Image
-              src="/assets/images/about-us/intro.jpg"
+              src="/assets/images/about-us/who-we-are.jpg"
               alt="Who We Are - LA Technologies"
               width={500}
               height={350}
@@ -173,7 +173,7 @@ export default function AboutPage() {
        <div className="flex gap-4 lg:justify-end">
          <div className="rounded-xl overflow-hidden w-[240px] h-[200px]">
            <Image
-             src="/assets/images/about-us/growth1.jpg"
+             src="/assets/images/about-us/about-us-driving-growth-1.jpg"
              alt="Growth"
              width={240}
              height={200}
@@ -183,7 +183,7 @@ export default function AboutPage() {
      
          <div className="rounded-xl overflow-hidden w-[240px] h-[300px]">
            <Image
-             src="/assets/images/about-us/growth2.jpg"
+             src="/assets/images/about-us/about-us-driving-growth-2.jpg"
              alt="Empowering"
              width={240}
              height={240}
@@ -202,7 +202,7 @@ export default function AboutPage() {
                <div className="flex gap-4 order-2 lg:order-1">
                  <div className="rounded-xl overflow-hidden w-[240px] h-[300px]">
                    <Image
-                     src="/assets/images/about-us/growth3.jpg"
+                     src="/assets/images/about-us/about-us-building-future.jpg"
                      alt="Future"
                      width={300}
                      height={240}
@@ -212,7 +212,7 @@ export default function AboutPage() {
      
                  <div className="rounded-xl overflow-hidden w-[240px] h-[200px]">
                    <Image
-                     src="/assets/images/about-us/growth4.jpg"
+                     src="/assets/images/about-us/about-us-building-future-2.jpg"
                      alt="Security"
                      width={300}
                      height={200}
@@ -256,7 +256,7 @@ export default function AboutPage() {
              <div className="flex gap-4 lg:justify-end">
                  <div className="rounded-xl overflow-hidden w-[240px] h-[200px]">
                    <Image
-                     src="/assets/images/about-us/growth5.jpg"
+                     src="/assets/images/about-us/about-us-committed-to-excellnece-1.jpg"
                      alt="Excellence"
                      width={300}
                      height={200}
@@ -266,7 +266,7 @@ export default function AboutPage() {
      
                  <div className="rounded-xl overflow-hidden w-[240px] h-[300px]">
                    <Image
-                     src="/assets/images/about-us/growth6.jpg"
+                     src="/assets/images/about-us/about-us-committed-to-excellnece-2.jpg"
                      alt="Infrastructure"
                      width={240}
                      height={240}
@@ -375,74 +375,81 @@ export default function AboutPage() {
      
                  <div className="space-y-6">
      
-                   {/* ITEM 1 */}
-                   <div className="flex items-start gap-4">
-                     <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-sm font-semibold">
-                       01
-                     </div>
-                     <div>
-                       <h4 className="font-semibold text-gray-900">
-                         Founded in 2003
-                       </h4>
-                       <p className="text-gray-600 text-sm">
-                         With 20+ years of industry expertise
-                       </p>
-                     </div>
-                   </div>
+                  {/* Item 1 */}
+                    <div className="flex gap-4 items-start">
+                      <img
+                        src="/assets/images/about-us/founded.png"
+                        alt="Founded in 2003"
+                        className="w-12 h-12 object-contain flex-shrink-0"
+                      />
+                      <div>
+                        <h4 className="font-semibold text-gray-900">
+                          Founded in 2003
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                          With 20+ years of industry expertise
+                        </p>
+                      </div>
+                    </div>
      
-                   {/* ITEM 2 */}
-                   <div className="flex items-start gap-4">
-                     <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-sm font-semibold">
-                       02
-                     </div>
-                     <div>
-                       <h4 className="font-semibold text-gray-900">
-                         Certified professionals
-                       </h4>
-                       <p className="text-gray-600 text-sm">
-                         Deep domain knowledge
-                       </p>
-                     </div>
-                   </div>
+                   {/* Item 2 */}
+  <div className="flex gap-4 items-start">
+    <img
+      src="/assets/images/about-us/professional.png"
+      alt="Certified professionals"
+      className="w-12 h-12 object-contain flex-shrink-0"
+    />
+    <div>
+      <h4 className="font-semibold text-gray-900">
+        Certified professionals
+      </h4>
+      <p className="text-gray-600 text-sm">
+        With deep domain knowledge
+      </p>
+    </div>
+  </div>
      
-                   {/* ITEM 3 */}
-                   <div className="flex items-start gap-4">
-                     <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-sm font-semibold">
-                       03
-                     </div>
-                     <div>
-                       <h4 className="font-semibold text-gray-900">
-                         Global partnerships
-                       </h4>
-                       <p className="text-gray-600 text-sm">
-                         With leading technology providers
-                       </p>
-                     </div>
-                   </div>
+                   {/* Item 3 */}
+  <div className="flex gap-4 items-start">
+    <img
+      src="/assets/images/about-us/partnership.png"
+      alt="Global partnerships"
+      className="w-9 h-9 object-contain flex-shrink-0"
+    />
+    <div>
+      <h4 className="font-semibold text-gray-900">
+        Global partnerships
+      </h4>
+      <p className="text-gray-600 text-sm">
+        With leading technology providers
+      </p>
+    </div>
+  </div>
      
-                   {/* ITEM 4 */}
-                   <div className="flex items-start gap-4">
-                     <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-100 text-orange-600 text-sm font-semibold">
-                       04
-                     </div>
-                     <div>
-                       <h4 className="font-semibold text-gray-900">
-                         24/7 support
-                       </h4>
-                       <p className="text-gray-600 text-sm">
-                         For uninterrupted security and peace of mind
-                       </p>
-                     </div>
-                   </div>
-     
-                 </div>
+                   {/* Item 4 */}
+  <div className="flex gap-4 items-start">
+    <img
+      src="/assets/images/about-us/support.png"
+      alt="24/7 support"
+      className="w-9 h-9 object-contain flex-shrink-0"
+    />
+    <div>
+      <h4 className="font-semibold text-gray-900">
+        24/7 support
+      </h4>
+      <p className="text-gray-600 text-sm">
+        For uninterrupted security and peace of mind
+      </p>
+    </div>
+  </div>
+</div>
                </div>
      
                {/* RIGHT IMAGE */}
                <div className="flex justify-center lg:justify-end">
                  <div className="rounded-2xl overflow-hidden max-w-md">
                    <Image
-                     src="/assets/images/about-us/stand-out.jpg"
+                     src="/assets/images/about-us/about-us-why-we-stand-out.jpg"
                      alt="Cybersecurity Innovation"
                      width={520}
                      height={380}
@@ -465,7 +472,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/assets/images/about-us/alliances1.jpg"
+                src="/assets/images/about-us/about-us-accreditations-and-alliances-1.jpg"
                 alt="Team Celebration"
                 width={400}
                 height={300}
@@ -475,7 +482,7 @@ export default function AboutPage() {
 
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/assets/images/about-us/Alliance2.jpg"
+                src="/assets/images/about-us/about-us-accreditations-and-alliances-2.jpg"
                 alt="Training Session"
                 width={400}
                 height={300}
@@ -485,7 +492,7 @@ export default function AboutPage() {
 
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/assets/images/about-us/Alliance3.jpg"
+                src="/assets/images/about-us/about-us-accreditations-and-alliances-3.jpg"
                 alt="Corporate Professionals"
                 width={400}
                 height={300}
@@ -495,7 +502,7 @@ export default function AboutPage() {
 
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/assets/images/about-us/Alliance4.jpg"
+                src="/assets/images/about-us/about-us-accreditations-and-alliances-4.jpg"
                 alt="Business Collaboration"
                 width={400}
                 height={300}
@@ -582,7 +589,7 @@ export default function AboutPage() {
         {/* IMAGE CARD */}
         <div className="rounded-2xl overflow-hidden mb-8">
           <Image
-            src="/assets/images/about-us/secure-scale-succeed.jpg"
+            src="/assets/images/about-us/about-us-secure-scale-succeed.jpg"
             alt="Cybersecurity protection"
             width={1200}
             height={450}

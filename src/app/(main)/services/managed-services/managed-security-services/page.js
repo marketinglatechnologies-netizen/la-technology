@@ -16,13 +16,13 @@ export const metadata = {
 
 const features = [
   {
-    icon: "/assets/images/services/soc/feature1.png",
+    icon: "/assets/images/services/managed-security-services/service1.png",
     title: "24/7 Threat Monitoring & Detection",
     description:
       "Continuous surveillance of networks, endpoints, and cloud environments using next-gen SIEM and analytics.",
   },
   {
-    icon: "/assets/images/services/soc/feature3.png",
+    icon: "/assets/images/services/managed-security-services/service2.png",
     title: "Rapid Incident Response",
     description:
       "Our certified analysts investigate and contain threats immediately, minimizing downtime and damage.",
@@ -86,37 +86,37 @@ operations in-house, you can rely on our certified experts to protect your busin
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/managed-security-service/service1.png",
             title: "Threat Monitoring & Detection",
             description:
               "Real-time monitoring of networks, endpoints, and cloud environments using advanced SIEM tools.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/managed-security-service/service2.png",
             title: "Incident Response & Remediation",
             description:
               "Rapid containment and resolution of security incidents to minimize downtime and damage.",
           },
           {
-            icon: "/assets/images/services/soc/feature3.png",
+            icon: "/assets/images/services/managed-security-service/service3.png",
             title: "Firewall & Network Security Management",
             description:
               "Configuration, monitoring, and optimization of firewalls, IDS/IPS, and VPNs.",
           },
           {
-            icon: "/assets/images/services/soc/feature4.png",
+            icon: "/assets/images/services/managed-security-service/service4.png",
             title: "Endpoint Protection",
             description:
               "Advanced antivirus, EDR, and patch management for endpoints.",
           },
           {
-            icon: "/assets/images/services/soc/feature4.png",
+            icon: "/assets/images/services/managed-security-service/service5.png",
             title: "Vulnerability Management",
             description:
               "Regular scans and remediation to eliminate weaknesses before attackers exploit them.",
           },
           {
-            icon: "/assets/images/services/soc/feature3.png",
+            icon: "/assets/images/services/managed-security-service/service6.png",
             title: "Compliance & Reporting",
             description:
               "Support for GDPR, HIPAA, PCI DSS, ISO 27001 through detailed logs and audit-ready reports.",
@@ -128,24 +128,24 @@ operations in-house, you can rely on our certified experts to protect your busin
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/managed-security-service/choose1.png",
             title: "24×7 Security Operations",
             text: "Continuous monitoring and response by certified security professionals.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/managed-security-service/choose2.png",
             title: "Cost-Effective & Scalable",
             text: "Enterprise-grade security without the cost of building an in-house SOC.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/managed-security-service/choose3.png",
             title: "Proactive Defense",
             text: "Threat hunting and vulnerability management to prevent breaches before they occur.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/managed-security-service/choose4.png",
             title: "Tailored Solutions",
             text: "Customized security strategies aligned with your business needs and compliance requirements.",
           },

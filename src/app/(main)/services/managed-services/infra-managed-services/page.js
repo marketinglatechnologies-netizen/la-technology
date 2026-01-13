@@ -80,31 +80,31 @@ infrastructure so you can focus on innovation and growth."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/infra-managed-services/service1.png",
             title: "Server & Compute Management",
             description:
               "Deployment, monitoring, patching, and performance optimization for physical and virtual servers.",
           },
           {
-            icon: "/assets/images/services/soc/feature3.png",
+            icon: "/assets/images/services/infra-managed-services/service2.png",
             title: "Storage & Backup Solutions",
             description:
               "Secure data storage, backup automation, and disaster recovery planning.",
           },
           {
-            icon: "/assets/images/services/soc/feature3.png",
+            icon: "/assets/images/services/infra-managed-services/service3.png",
             title: "Network Management",
             description:
               "Configuration, monitoring, and troubleshooting for routers, switches, firewalls, and  WAN/LAN environments.",
           },
           {
-            icon: "/assets/images/services/soc/feature4.png",
+            icon: "/assets/images/services/infra-managed-services/service4.png",
             title: "Monitoring & Performance Management",
             description:
               "24×7 proactive monitoring to prevent downtime and ensure optimal performance.",
           },
           {
-            icon: "/assets/images/services/soc/feature4.png",
+            icon: "/assets/images/services/infra-managed-services/service5.png",
             title: "Security & Compliance",
             description:
               "Regular updates, vulnerability management, and compliance with industry standards.",
@@ -117,24 +117,24 @@ infrastructure so you can focus on innovation and growth."
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/infra-managed-services/choose1.png",
             title: "End-to-End Expertise",
             text: "From cabling to cloud, we manage every layer of your IT infrastructure.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/infra-managed-services/choose2.png",
             title: "Cost Efficiency",
             text: "Reduce overhead and eliminate the need for large in-house teams.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/infra-managed-services/choose3.png",
             title: "Scalability",
             text: "Services tailored for startups, SMBs, and large enterprises.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/infra-managed-services/choose4.png",
             title: "Certified Professionals",
             text: "Skilled engineers with expertise in networking, storage, virtualization, and security.",
           },
