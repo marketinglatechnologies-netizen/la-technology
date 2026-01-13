@@ -170,7 +170,7 @@ export default function AboutPage() {
               <br /><br />
               This is how we tackle cyber challenges, grow as a team, and make
               decisions that strengthen both our mission and the security of
-              the digital world. And in those moments, you understand: this is
+              the digital world, and in those moments, you understand: this is
               how we raise the bar. Not through pressure. Through purpose.
             </p>
           </div>
