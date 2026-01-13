@@ -118,7 +118,7 @@ without disrupting production.
       />
 
       <InfoList
-        title="Why ICS & SCADA Security Mattersy?"
+        title="Why ICS & SCADA Security Matters?"
         items={[
           "Legacy systems often lack patching and modern security controls.",
           "Remote access and vendor connections increase attack surfaces.",
@@ -202,8 +202,7 @@ without disrupting production.
         description="With LA Technologies, you gain peace of mind knowing your ICS and SCADA systems are
 secure—without compromising productivity."
       />
-      <GradientCtaBanner text="Ready to strengthen OT threat detection and response?
-" />
+      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
     </>
   );
 }

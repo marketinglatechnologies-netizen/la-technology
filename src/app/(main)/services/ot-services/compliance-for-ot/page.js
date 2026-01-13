@@ -125,7 +125,7 @@ maintaining uptime and safety."
       />
 
       <FiveCards
-        heading="Our Endpoint Security Solutions"
+        heading="Our Compliance Solutions"
         headingTag="h2"
         items={[
           {

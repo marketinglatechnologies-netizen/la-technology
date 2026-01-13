@@ -105,13 +105,12 @@ export default function Page() {
             alt: "Data monitoring",
           },
         ]}
-        title="Control Vendor and Maintenance Access Without Compromising Safety"
+        title="Enable Safe, Controlled Connectivity to Your OT Environment"
         description="Remote access is essential for OT environments—vendors, integrators, and maintenance
 teams often need to connect to industrial systems for troubleshooting and updates. But
 uncontrolled remote access is one of the biggest attack vectors for ransomware and
 targeted OT breaches. <br>
-LA Technologies’ Secure Remote Access solutions ensure that remote connectivity to
-OT systems is safe, monitored, and compliant with security best practices."
+LA Technologies’ Secure Remote Access solution ensures that remote connectivity to OT systems is safe, monitored, and compliant with security best practices—while also managing privileged accounts during these sessions."
       />
 
       <InfoList
@@ -124,7 +123,7 @@ OT systems is safe, monitored, and compliant with security best practices."
       />
 
       <SixCards
-        heading="Our Facility Management Services Include"
+        heading="Our Secure Remote Access Features"
         headingTag="h2"
         items={[
           {
@@ -141,15 +140,15 @@ OT systems is safe, monitored, and compliant with security best practices."
           },
            {
             icon: "/assets/images/icons/path.svg",
-            title: "Multi-Factor Authentication (MFA)",
-            description:
-              "Enforce strong authentication for all remote users.",
-          },
-          {
-            icon: "/assets/images/icons/path.svg",
             title: "Just-in-Time Access",
             description:
               "Provide temporary access for vendors and revoke automatically after use.",
+          },
+          {
+            icon: "/assets/images/icons/path.svg",
+            title: "Session Recording & Audit Trails",
+            description:
+              "Capture full activity logs for compliance and forensic analysis.",
           },
           {
             icon: "/assets/images/icons/path.svg",
@@ -198,7 +197,7 @@ OT systems is safe, monitored, and compliant with security best practices."
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Remote Access, Our Control"
+        heading="Your Remote Access, Secured"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"

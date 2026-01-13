@@ -127,7 +127,7 @@ secure zones and conduits without disrupting production.
       />
 
       <FiveCards
-        heading="Our Endpoint Security Solutions"
+        heading="Our Network Segmentation Solutions"
         headingTag="h2"
         items={[
           {
