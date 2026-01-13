@@ -299,7 +299,7 @@ that contains threats without impacting critical processes.
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Network, Our Shield"
+        heading="Your Operations, Our Response"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"

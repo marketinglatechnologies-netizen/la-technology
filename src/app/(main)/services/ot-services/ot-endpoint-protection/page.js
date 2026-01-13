@@ -311,7 +311,7 @@ industrial processes.
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Network, Our Shield"
+        heading="Your Endpoints, Our Protection"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"

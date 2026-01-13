@@ -129,39 +129,7 @@ export default function LaAi() {
           </div>
         </div>
       </section>
-      <section className="w-full py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div
-          className="flex flex-col md:flex-row items-start md:items-center
-                     justify-between gap-6
-                     rounded-2xl px-8 py-8
-                     bg-gradient-to-r from-[#E11D48] to-[#F97316]"
-        >
-          {/* Left Content */}
-          <div>
-            <h3 className="text-white text-2xl md:text-3xl font-semibold mb-2">
-              OUR VISION
-            </h3>
-
-            <p className="text-white/90 text-sm md:text-base max-w-2xl">
-              To empower organizations with future-ready AI solutions that
-              simplify operations, strengthen security, and unlock new
-              possibilities across IT and business ecosystems.
-            </p>
-          </div>
-
-          {/* CTA Button */}
-          <button
-            className="shrink-0 bg-white text-[#E11D48]
-                       text-sm font-medium
-                       px-6 py-3 rounded-lg
-                       hover:bg-white/90 transition"
-          >
-            Talk to an Expert
-          </button>
-        </div>
-      </div>
-    </section>
+   
      <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
 

@@ -222,7 +222,7 @@ export default function DataSecurity() {
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain complete control and protection for your critical data—across every branch and endpoint."
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="Ready to secure your data?" />
     </>
   );
 }

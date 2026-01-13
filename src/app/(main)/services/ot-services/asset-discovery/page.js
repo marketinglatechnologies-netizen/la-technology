@@ -196,7 +196,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Operations, Our Protection"
+        heading="Your Visibility, Our Expertise"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"

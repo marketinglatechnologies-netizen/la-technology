@@ -150,7 +150,8 @@ improved efficiency."
 business is protected against evolving threats. We work behind the scenes so you can
 focus on growth and innovation."
               />
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+              <GradientCtaBanner text="Ready to augment your IT team?
+" />
   </>
   );
 }

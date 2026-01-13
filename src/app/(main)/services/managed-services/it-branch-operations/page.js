@@ -146,6 +146,12 @@ Why Multi-Location IT Branch Operations Matter
       description:
         "Policy rollouts and audit readiness for every branch.",
     },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Compliance & Audits ",
+      description:
+        "Policy rollouts and audit readiness for every branch.",
+    },
   ]}
 />
 

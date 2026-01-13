@@ -459,7 +459,7 @@ export default function SecurityAssessment() {
     </div>
   </div>
 </section>
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+              <GradientCtaBanner text="Ready to assess your security posture across locations?" />
   </>
   );
 }
