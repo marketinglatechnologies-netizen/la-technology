@@ -37,9 +37,9 @@ export default function HomePage() {
     {
       type: "image",
       src: "/assets/images/home/home-banner.jpg", // Based on your "Building Technology" mockup
-      title: "Building Technology That Moves Business Forward",
+      title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
       description:
-        "We design and build scalable technology solutions <br /> that help brands grow, innovate, and succeed.",
+        "We Design and Implement Cybersecurity Solutions to Scale Businesses ",
       titleTag: "h1",
       descTag: "p",
       titleClassName: "lg:text-[40px] lg:tracking-[2%] lg:font-[700]",
