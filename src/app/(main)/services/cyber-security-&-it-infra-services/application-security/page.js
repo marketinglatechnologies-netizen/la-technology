@@ -210,12 +210,7 @@ sensitive data and maintain trust."
         description="With LA Technologies, you gain peace of mind knowing your applications are secure—so
 your business can innovate without risk."
       />
-<<<<<<< HEAD
-      <GradientCtaBanner text="Ready to secure your applications?
-" buttonText="Request a Network Assessment"/>
-=======
-      <GradientCtaBanner text="Ready to secure your applications?" />
->>>>>>> 4bf6e6b685ad63b291ba2b68cb8c13de70598ba0
+      <GradientCtaBanner text="Ready to secure your applications?" buttonText="Request a Network Assessment"/>
     </>
   );
 }
