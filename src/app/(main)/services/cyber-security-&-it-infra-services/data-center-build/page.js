@@ -59,7 +59,7 @@ export default function FacilityManagement() {
       />
 
       <InfoCtaSection
-        title="LA Technologies for Data Center Solutions?"
+        title="LA Technologies for Data Center Solutions:"
         description="With over 50 years of combined experience, our certified professionals design and implement data centers that meet the highest standards of reliability, efficiency, and security. We ensure your infrastructure supports business continuity and future growth."
       />
 

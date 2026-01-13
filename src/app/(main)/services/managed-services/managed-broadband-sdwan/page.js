@@ -198,7 +198,7 @@ export default function ManagedBroadbandSDWAN() {
       industries={industries}
     />
       <ImageHighlightSection
-        heading="Your Security, Our Priority"
+        heading="Your Network, Smarter and Safer"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"

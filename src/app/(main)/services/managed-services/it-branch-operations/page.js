@@ -144,43 +144,52 @@ Why Multi-Location IT Branch Operations Matter
       icon: "/assets/images/icons/path.svg",
       title: "Asset & License Governance",
       description:
+        "Inventory and compliance across all locations.",
+    },
+    {
+      icon: "/assets/images/icons/path.svg",
+      title: "Compliance & Audits",
+      description:
         "Policy rollouts and audit readiness for every branch.",
     },
   ]}
 />
 
   <WhyChooseSection
+<<<<<<< Updated upstream
           heading="Benefits for Multi-Branch Enterprises"
+=======
+          heading="Our Multi-Location Operating Model"
+>>>>>>> Stashed changes
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
               icon: "/assets/images/home/icon1.png",
-              title: "Consistency Across All Locations",
-              text: "Standardized configurations and policies reduce variability.",
+              title: "Centralized Command Center (NOC/SOC)",
+              text: "24×7 monitoring and incident response for all branches.",
             },
             {
               icon: "/assets/images/home/icon2.png",
-              title: "Lower Operational Costs",
-              text: "Centralized management and automation reduce on-site dependencies.",
+              title: "Standardized Playbooks",
+              text: "Golden configurations and security baselines applied across locations.",
             },
             {
               icon: "/assets/images/home/icon2.png",
-              title: "Single Point of Accountability",
-              text: "One partner managing networks, endpoints, security, and support.",
+              title: "Hybrid Support",
+              text: "Remote-first with scheduled on-site visits for critical issues.",
             },
           ]}
           featuresRight={[
             {
               icon: "/assets/images/home/icon3.png",
-              title: "Enhanced Security Posture",
-              text: "Continuous monitoring and rapid incident response across branches.",
+              title: "Change & Release Management",
+              text: "Controlled deployments across multiple branches with rollback plans.",
             },
             {
               icon: "/assets/images/home/icon4.png",
-              title: "Business Continuity",
-              text: "High availability design and tested recovery procedures.",
-            },
-          
+              title: "Vendor Coordination",
+              text: "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
+            },     
              {
               icon: "/assets/images/home/icon4.png",
               title: "Scalability",
@@ -196,7 +205,11 @@ Why Multi-Location IT Branch Operations Matter
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies, multi-location IT operations become predictable, secure, and easy to scale."
               />
+<<<<<<< Updated upstream
               <GradientCtaBanner text="Ready to streamline IT across your branches?" buttonText="Request a Branch Operations Assessment"/>
+=======
+              <GradientCtaBanner text="Ready to streamline IT across your branches?" />
+>>>>>>> Stashed changes
   </>
   );
 }
