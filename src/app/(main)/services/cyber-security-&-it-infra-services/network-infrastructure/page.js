@@ -521,7 +521,9 @@ export default function FacilityManagement() {
 
      <IndustryGrid data={industriesData} />
 
-      <GradientCtaBanner text="Ready to modernize your network infrastructure?" />
+      <GradientCtaBanner text="Ready to modernize your network infrastructure?"
+      buttonText="Request a Network Assessment"
+      />
     </>
   );
 }

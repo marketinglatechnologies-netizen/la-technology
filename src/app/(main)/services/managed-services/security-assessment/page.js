@@ -198,8 +198,15 @@ export default function SecurityAssessment() {
       description:
         "Practical fixes, quick wins, and phased improvements.",
     },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Validation & Sign‑off",
+      description:
+        "Review actions taken, update evidence, and finalize reports.",
+    },
   ]}
 />
+
 <section className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         
@@ -340,8 +347,8 @@ export default function SecurityAssessment() {
           featuresLeft={[
             {
               icon: "/assets/images/services/soc/cost.png",
-              title: "Consistent Templates",
-              text: "Baselines applied across all branches uniformly.",
+              title: "Consistent Templates & Baselines",
+              text: "Applied across all branches uniformly.",
             },
             {
               icon: "/assets/images/services/soc/scalable.png",
@@ -357,31 +364,40 @@ export default function SecurityAssessment() {
             },
             {
               icon: "/assets/images/services/soc/global.png",
-              title: "Centralized Repository",
+              title: "Centralized Evidence Repository",
               text: "Evidence repository for audits and reviews.",
             },
           ]}
         />
         <ImageTabsSection
-                heading="Who Needs SOC-as-a-Service?"
+                heading="Benefits with LA Technologies"
                 headingTag="h2"
                 tabs={[
                   {
-                    label: "Businesses with short-term IT projects",
+                    label: "Clear Visibility of risks across IT and OT environments",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
-                    label: "Organizations facing skill shortages",
+                    label: "Actionable Roadmap with practical, cost-aware recommendations",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
-                    label: "Companies scaling operations rapidly",
+                    label: "Audit Confidence with evidence-backed compliance posture",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
-                    label: "Enterprises seeking niche technology expertise",
+                    label: "Reduced Attack Surface through standardized configurations",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
+                  {
+                    label: "Faster Remediation enabled by on-ground and remote teams",
+                    image: "/assets/images/industries/tabimage.jpg",
+                  },
+                  {
+                    label:"Faster Remediation enabled by on-ground and remote teams ",
+                    image: "/assets/images/industries/tabimage.jpg",
+
+                  }
                 ]}
               />
               <section className="w-full py-20 bg-white">
@@ -454,7 +470,7 @@ export default function SecurityAssessment() {
     </div>
   </div>
 </section>
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+              <GradientCtaBanner text="Ready to assess your security posture across locations?" />
   </>
   );
 }

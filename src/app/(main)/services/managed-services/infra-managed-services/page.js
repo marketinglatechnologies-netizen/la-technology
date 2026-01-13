@@ -113,7 +113,7 @@ infrastructure so you can focus on innovation and growth."
       />
  
       <WhyChooseSection
-        heading="Why Choose LA Technologies?"
+        heading="What LA Technologies Provide as Solutions:"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {

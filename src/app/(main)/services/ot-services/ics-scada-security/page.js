@@ -87,7 +87,7 @@ export default function ApplicationSecurity() {
       <div>
         <InnerPageBanner
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
-          title="Application Security"
+          title="ICS & SCADA Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
         />
@@ -118,16 +118,16 @@ without disrupting production.
       />
 
       <InfoList
-        title="Our Security Philosophy"
+        title="Why ICS & SCADA Security Matters?"
         items={[
-          "Proactive monitoring instead of reactive fixes.",
-          "Zero-trust architecture for all network layers.",
-          "Continuous compliance with global standards.",
+          "Legacy systems often lack patching and modern security controls.",
+          "Remote access and vendor connections increase attack surfaces.",
+          "A single breach can halt operations and cause financial and safety risks.",
         ]}
       />
 
       <FiveCards
-        heading="Our Endpoint Security Solutions"
+        heading="Our ICS & SCADA Security Solutions"
         headingTag="h2"
         items={[
           {
@@ -199,7 +199,8 @@ without disrupting production.
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you gain peace of mind knowing your ICS and SCADA systems are
+secure—without compromising productivity."
       />
       <GradientCtaBanner text="Ready to secure your industrial control systems?" />
     </>

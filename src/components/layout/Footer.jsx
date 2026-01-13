@@ -123,7 +123,7 @@ export default function Footer() {
               <p className="font-bold text-[#DC2A3C] mb-1">Location:</p>
               <p className="leading-relaxed">
                 101 B, Pinnacle Corporate Park, B Wing, First Floor, CTS 4207
-                Part, Bandra Karla Complex, Bandra (East), Mumbai 400051
+                Part, Bandra Kurla Complex, Bandra (East), Mumbai 400051
               </p>
             </div>
 

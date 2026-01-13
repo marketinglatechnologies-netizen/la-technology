@@ -167,15 +167,15 @@ industrial processes.
           {
             title: "Legacy & constrained devices",
             description:
-              " Many OT endpoints run unsupported OS or proprietary applications that limit traditional security controls.",
+              "Many OT endpoints run unsupported OS or proprietary applications that limit traditional security controls.",
           },
           {
-            title: "Lateral movement risk",
+            title: "High-impact risks",
             description:
               "A single compromised HMI or engineering workstation can halt lines, corrupt PLC logic, or trigger unsafe states.",
           },
           {
-            title: "Safety & uptime",
+            title: "Operational constraints",
             description:
               "Security must respect change-control windows, vendor tooling, and process safety—no intrusive agents or aggressive scans.",
           },
@@ -183,7 +183,7 @@ industrial processes.
       />
 
       <SixCards
-        heading="Our Managed Security Services Include"
+        heading="What We Deliver"
         headingTag="h2"
         items={[
           {
@@ -311,12 +311,12 @@ industrial processes.
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Network, Our Shield"
+        heading="Your Endpoints, Our Protection"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain a segmented, secure OT network—without compromising
-operational efficiency."
+        description="With LA Technologies, you get OT‑aware endpoint protection that defends critical devices
+without disrupting production."
       />
 
       <GradientCtaBanner text="Ready to secure OT endpoints ?" />

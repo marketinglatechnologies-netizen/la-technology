@@ -106,7 +106,7 @@ export default function DataSecurity() {
 
         {/* HEADING */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-          Why OT Endpoint Protection Matters
+          Why Data Security Matters
         </h2>
 
         {/* CARDS */}
@@ -130,7 +130,7 @@ export default function DataSecurity() {
     </section> 
 
     <EightCards
-  heading="Our Data Security Capabilities"
+  heading="Our Data Security Solutions"
   headingTag="h2"
   items={[
     {
@@ -222,7 +222,7 @@ export default function DataSecurity() {
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain complete control and protection for your critical data—across every branch and endpoint."
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="Ready to secure your data?" />
     </>
   );
 }

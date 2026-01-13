@@ -173,7 +173,7 @@ that contains threats without impacting critical processes.
       />
 
       <SixCards
-        heading="Our Facility Management Services Include"
+        heading="What We Deliver"
         headingTag="h2"
         items={[
           {
@@ -299,12 +299,13 @@ that contains threats without impacting critical processes.
       <IndustryGrid data={industriesData} />
 
       <ImageHighlightSection
-        heading="Your Network, Our Shield"
+        heading="Your Operations, Our Response"
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain a segmented, secure OT network—without compromising
-operational efficiency."
+        description="With LA Technologies, you get OT‑aware detection and incident response that protects
+both safety and uptime.
+."
       />
 
       <GradientCtaBanner text="Ready to strengthen OT threat detection and response?" />

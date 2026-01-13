@@ -17,7 +17,7 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const industriesData =  {
+const industriesData = {
   sectionTitle: "Industries We Serve",
   items: [
     {
@@ -56,14 +56,13 @@ const industriesData =  {
 export default function FacilityManagement() {
   return (
     <>
-      
-        <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
-          title="Cloud Security"
-          titleTag="h1"
-          description={`Round-the-clock Endpoint SecurityServices designed to defend modern enterprises.`}
-        />
-     
+      <InnerPageBanner
+        bgImage="/assets/images/about-us/banner.jpg"
+        title="Cloud Security"
+        titleTag="h1"
+        description={`Round-the-clock Endpoint SecurityServices designed to defend modern enterprises.`}
+      />
+
       <FeatureHighlightSection
         images={[
           {
@@ -79,14 +78,13 @@ export default function FacilityManagement() {
             alt: "Data monitoring",
           },
         ]}
-        title="Secure Your Applications, Protect Your Business"
+        title="Secure Your Cloud Environment—Protect Data, Applications, and Access"
         description="Applications are the backbone of modern business—but they’re also a prime target for
 cyberattacks. Vulnerabilities in web apps, APIs, and enterprise software can lead to data
 breaches, financial loss, and compliance failures.
 LA Technologies’ Application Security solutions help you identify, remediate, and
-prevent application-level threats, ensuring your business remains secure and compliant.
-"
-      />
+prevent application-level threats, ensuring your business remains secure and compliant."/>
+
       <FourBoxSection
         heading="Why Cloud Security Matters"
         headingTag="h2"
@@ -197,7 +195,7 @@ prevent application-level threats, ensuring your business remains secure and com
           },
         ]}
       />
-       <IndustryGrid data={industriesData} />
+      <IndustryGrid data={industriesData} />
       <ImageHighlightSection
         heading="Your Cloud, Secured"
         headingTag="h2"

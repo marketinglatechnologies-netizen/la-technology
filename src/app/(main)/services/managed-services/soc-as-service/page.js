@@ -109,7 +109,7 @@ export default function SOC() {
       </section>
 
       <WhyChooseSection
-        heading="Why Choose LA Technologies SOC-as-a-Service?"
+        heading="LA Technologies SOC-as-a-Service:"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
@@ -137,7 +137,7 @@ export default function SOC() {
         ]}
       />
       <ImageTabsSection
-        heading="Who Needs SOC-as-a-Service?"
+        heading="Benefits of SOC-as-a-Service:"
         headingTag="h2"
         tabs={[
           {

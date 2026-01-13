@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/home/testimonials";
 import dynamic from "next/dynamic";
 import VendorLogo from "@/components/home/vendorslogo";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import IndustryGrid from "@/components/sections/IndustrySection";
 
 export default function HomePage() {
   const caseStudies = [
@@ -84,16 +85,6 @@ export default function HomePage() {
         id: "ites",
         title: "ITES",
         image: "/assets/images/home/ites.png",
-      },
-      {
-        id: "service-providers",
-        title: "Service Providers",
-        image: "/assets/images/home/service-providers.png",
-      },
-      {
-        id: "others",
-        title: "Others",
-        image: "/assets/images/home/others.png",
       },
     ],
   };
@@ -280,37 +271,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
-            {industriesData.sectionTitle}
-          </h2>
+       <IndustryGrid data={industriesData} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {industriesData.items.map((item) => (
-              <div
-                key={item.id}
-                className="relative group overflow-hidden rounded-2xl
-                     w-full h-[auto] lg:h-[360px] mx-auto"
-              >
-                {/* Image */}
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-
-                {/* Label */}
-                {/* <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                  <span className="bg-black/60 text-white text-sm px-5 py-2 rounded-full">
-                    {item.title}
-                  </span>
-                </div> */}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="bg-[#FFF7EB] py-20">
         <div className="max-w-7xl mx-auto bg-white lg:px-6 md:px-6 px-4 py-16">
           <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">

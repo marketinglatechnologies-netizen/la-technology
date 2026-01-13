@@ -92,7 +92,7 @@ improved efficiency."
   ]}
 />
   <WhyChooseSection
-          heading="Why Choose LA Technologies?"
+          heading="What LA Technologies Helps You With:"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
@@ -120,7 +120,7 @@ improved efficiency."
           ]}
         />
         <ImageTabsSection
-                heading="Who Needs SOC-as-a-Service?"
+                heading="Where Is IT Staff Augmentation Required?"
                 headingTag="h2"
                 tabs={[
                   {
@@ -150,7 +150,12 @@ improved efficiency."
 business is protected against evolving threats. We work behind the scenes so you can
 focus on growth and innovation."
               />
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+<<<<<<< HEAD
+              <GradientCtaBanner text="Ready to augment your IT team?
+" />
+=======
+              <GradientCtaBanner text="Ready to augment your IT team?" />
+>>>>>>> 4bf6e6b685ad63b291ba2b68cb8c13de70598ba0
   </>
   );
 }

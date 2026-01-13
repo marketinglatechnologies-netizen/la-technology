@@ -124,7 +124,7 @@ operations in-house, you can rely on our certified experts to protect your busin
         ]}
       />
       <WhyChooseSection
-        heading="Why Choose LA Technologies?"
+        heading="Partner Up with LA Technologies for Managed Security Services:"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
@@ -174,7 +174,7 @@ operations in-house, you can rely on our certified experts to protect your busin
         ]}
       />
       <ImageHighlightSection
-        heading="Your Security, Our Priority"
+        heading="Your Security, Our Responsibility"
         headingTag="h2"
         imageSrc="/assets/images/services/soc/security.png"
         imageAlt="Cybersecurity monitoring dashboard"
