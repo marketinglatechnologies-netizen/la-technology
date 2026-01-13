@@ -185,7 +185,7 @@ sensitive data and maintain trust."
         </div>
       </section>
       <ImageTabsSection
-        heading="Who Needs Endpoint Security?"
+        heading="Who Needs Application Security?"
         headingTag="h2"
         tabs={[
           {
@@ -210,7 +210,7 @@ sensitive data and maintain trust."
         description="With LA Technologies, you gain peace of mind knowing your applications are secure—so
 your business can innovate without risk."
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" buttonText="Request a Network Assessment"/>
     </>
   );
 }

@@ -223,6 +223,37 @@ export default function LaAi() {
 
       </div>
     </section>
+    <section className="w-full bg-white py-10">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    <div className="relative rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-orange-400 px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+
+      {/* LEFT CONTENT */}
+      <div className="max-w-3xl text-white">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">
+          OUR VISION
+        </h2>
+        <p className="text-sm md:text-base leading-relaxed opacity-95">
+          To empower organizations with future-ready AI solutions that simplify operations,
+          strengthen security, and unlock new possibilities across IT and business ecosystems.
+        </p>
+      </div>
+
+      {/* RIGHT CTA */}
+      <div className="shrink-0">
+        <button
+          className="bg-white text-orange-600 px-6 py-2.5 rounded-lg text-sm font-semibold 
+                     hover:bg-orange-50 transition shadow"
+        >
+          Talk to an Expert
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
     </>
   );
 }

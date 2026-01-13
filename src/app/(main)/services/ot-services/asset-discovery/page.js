@@ -200,9 +200,9 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain peace of mind knowing your applications are secure—so business can innovate without risk."
+        description="With LA Technologies, you gain a clear picture of your OT environment—so you can secure"
       />
-      <GradientCtaBanner text="Ready to secure your industrial control systems?" />
+      <GradientCtaBanner text="Ready to discover and secure your OT assets?" />
     </>
   );
 }

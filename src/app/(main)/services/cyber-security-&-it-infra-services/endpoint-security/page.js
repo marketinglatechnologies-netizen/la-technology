@@ -123,7 +123,7 @@ complete visibility, control, and protection across all endpoints.
                 
                 {/* Heading */}
                 <h2 className="text-2xl font-semibold text-gray-900 mb-10">
-                  Standards & Frameworks We Align To
+                  Supported Technologies
                 </h2>
         
                 {/* Cards */}
@@ -220,7 +220,7 @@ complete visibility, control, and protection across all endpoints.
                 description="With LA Technologies, you gain peace of mind knowing every endpoint is secure—so your
 business can thrive without disruption."
               />
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+              <GradientCtaBanner text="Ready to secure your endpoints?" />
   </>
   );
 }

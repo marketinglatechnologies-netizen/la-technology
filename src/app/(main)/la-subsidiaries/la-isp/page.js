@@ -253,8 +253,27 @@ export default function LaIsPage() {
               </div>
             ))}
           </div>
+         
         </div>
+         
+            <div className="flex justify-center items-center p-16 m-0">
+  <button
+    className="inline-flex items-center gap-1 rounded-lg 
+               bg-gradient-to-r from-red-500 to-orange-500 
+               px-6 py-3 text-white text-sm font-medium 
+               hover:opacity-90 transition"
+  >
+    <span className="inline-flex items-center justify-center w-5 h-5">
+      <img src="/assets/images/home/phone2.svg" alt="Phone" />
+    </span>
+    Talk to an Expert
+  </button>
+</div>
+
       </section>
+     
+
+
     </>
   );
 }

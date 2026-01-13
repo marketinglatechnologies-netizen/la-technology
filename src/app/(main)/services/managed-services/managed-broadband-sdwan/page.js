@@ -202,9 +202,9 @@ export default function ManagedBroadbandSDWAN() {
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
+        description="With LA Technologies, you get a fully managed broadband and SD-WAN solution that delivers speed, security, and simplicity."
       />
-      <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+      <GradientCtaBanner text="Ready to transform your network?" />
     </>
   );
 }

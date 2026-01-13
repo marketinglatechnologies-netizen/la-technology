@@ -303,8 +303,9 @@ that contains threats without impacting critical processes.
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain a segmented, secure OT network—without compromising
-operational efficiency."
+        description="With LA Technologies, you get OT‑aware detection and incident response that protects
+both safety and uptime.
+."
       />
 
       <GradientCtaBanner text="Ready to strengthen OT threat detection and response?" />

@@ -315,8 +315,8 @@ industrial processes.
         headingTag="h2"
         imageSrc="/assets/images/industries/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
-        description="With LA Technologies, you gain a segmented, secure OT network—without compromising
-operational efficiency."
+        description="With LA Technologies, you get OT‑aware endpoint protection that defends critical devices
+without disrupting production."
       />
 
       <GradientCtaBanner text="Ready to secure OT endpoints ?" />

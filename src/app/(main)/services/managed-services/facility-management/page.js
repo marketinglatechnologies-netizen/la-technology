@@ -101,35 +101,35 @@ reliable, cost-effective solutions"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
+              icon: "/assets/images/services/facility-management/Certified.png",
               title: "Certified IT Professionals",
               text: "Skilled engineers with expertise in networking, servers, storage, and end-user support.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/facility-management/Cost.png",
               title: "Cost Efficiency",
               text: "Reduce operational overhead with flexible engagement models.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
+              icon: "/assets/images/services/facility-management/Scalability.png",
               title: "Scalability",
               text: "Services tailored for single-site or multi-location enterprises.",
             },
             {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/facility-management/Approach.png",
               title: "Proactive Approach",
               text: "Prevent issues before they impact business operations.",
             },
           ]}
         />
         <ImageTabsSection
-                heading="Who Needs SOC-as-a-Service?"
+                heading="Who Needs Facility Management Services?"
                 headingTag="h2"
                 tabs={[
                   {
-                    label: "Businesses with short-term IT projects",
+                    label: "Enterprises with large IT infrastructure",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
@@ -151,11 +151,10 @@ reliable, cost-effective solutions"
                 headingTag="h2"
                 imageSrc="/assets/images/industries/security.jpg"
                 imageAlt="Cybersecurity monitoring dashboard"
-                description="With LA Technologies as your security partner, you gain peace of mind knowing your
-business is protected against evolving threats. We work behind the scenes so you can
-focus on growth and innovation."
+                description="With LA Technologies, you gain access to top-tier IT professionals without the complexity
+of permanent hiring. We help you stay agile, competitive, and ready for any challenge."
               />
-              <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
+              <GradientCtaBanner text="Ready to augment your IT team?" />
   </>
   );
 }
