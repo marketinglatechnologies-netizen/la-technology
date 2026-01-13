@@ -374,11 +374,7 @@ export default function SecurityAssessment() {
                 headingTag="h2"
                 tabs={[
                   {
-<<<<<<< Updated upstream
-                    label: "Clear Visibility of risks across IT and OT environments ",
-=======
                     label: "Clear Visibility of risks across IT and OT environments",
->>>>>>> Stashed changes
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
@@ -391,13 +387,10 @@ export default function SecurityAssessment() {
                   },
                   {
                     label: "Reduced Attack Surface through standardized configurations",
-<<<<<<< Updated upstream
-=======
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
                     label: "Faster Remediation enabled by on-ground and remote teams",
->>>>>>> Stashed changes
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {

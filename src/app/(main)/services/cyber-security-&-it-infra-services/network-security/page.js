@@ -224,12 +224,7 @@ optional—it’s essential.
                 description="With LA Technologies, you gain peace of mind knowing your network is secure—so your
 business can operate without disruption"
               />
-<<<<<<< Updated upstream
-              <GradientCtaBanner text="Ready to strengthen your network security?
-" />
-=======
               <GradientCtaBanner text="Ready to strengthen your network security?" />
->>>>>>> Stashed changes
   </>
   );
 }

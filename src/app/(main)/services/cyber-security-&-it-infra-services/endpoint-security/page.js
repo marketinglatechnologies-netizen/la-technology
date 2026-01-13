@@ -52,83 +52,6 @@ LA Technologies’ Endpoint Security solutions safeguard every device with advan
 lead to data breaches, financial loss, and reputational damage. Our solutions provide
 complete visibility, control, and protection across all endpoints.
 "
-<<<<<<< Updated upstream
-                />
-                <FiveCards
-  heading="Our Endpoint Security Solutions"
-  headingTag="h2"
-  items={[
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Next-Generation Antivirus (NGAV)",
-      description:
-        "Advanced protection against malware, ransomware, and zero-day exploits.",
-    },
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Endpoint Detection & Response (EDR)",
-      description:
-        "Real-time threat detection, investigation, and automated response.",
-    },
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Threat Hunting & Incident Response",
-      description:
-        "Proactive threat hunting and rapid containment of security incidents.",
-    },
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Device Encryption & Data Loss Prevention (DLP)",
-      description:
-        "Secure sensitive data and prevent unauthorized access.",
-    },
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Patch Management & Vulnerability Scanning",
-      description:
-        "Regular updates and scans to eliminate security gaps.",
-    },
-  ]}
-/>
-  <WhyChooseSection
-          heading="Benefits of LA Technologies Endpoint Security"
-          centerImage="/assets/images/services/soc/whychoose.png"
-          featuresLeft={[
-            {
-              icon: "/assets/images/services/soc/cost.png",
-              title: "Comprehensive Protection",
-              text: "Defend against known and unknown threats with AI-driven security.",
-            },
-            {
-              icon: "/assets/images/services/soc/scalable.png",
-              title: "Centralized Management",
-              text: "Simplify endpoint security with unified dashboards and reporting.",
-            },
-          ]}
-          featuresRight={[
-            {
-              icon: "/assets/images/services/soc/alert.png",
-              title: "Compliance Ready",
-              text: "Meet regulatory requirements like GDPR, HIPAA, and PCI DSS.",
-            },
-            {
-              icon: "/assets/images/services/soc/global.png",
-              title: "Scalable & Flexible",
-              text: "Solutions tailored for SMBs and large enterprises.",
-            },
-          ]}
-        />
-        <section className="w-full py-16 bg-white">
-              <div className="max-w-7xl mx-auto px-6">
-                
-                {/* Heading */}
-                <h2 className="text-2xl font-semibold text-gray-900 mb-10">
-                  Supported Technologies
-                </h2>
-        
-                {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-=======
       />
       <FiveCards
         heading="Our Endpoint Security Solutions"
@@ -200,7 +123,6 @@ complete visibility, control, and protection across all endpoints.
           <h2 className="text-2xl font-semibold text-gray-900 mb-10">
             Supported Technologies
           </h2>
->>>>>>> Stashed changes
 
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -288,14 +210,8 @@ complete visibility, control, and protection across all endpoints.
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing every endpoint is secure—so your
 business can thrive without disruption."
-<<<<<<< Updated upstream
-              />
-              <GradientCtaBanner text="Ready to secure your endpoints?" />
-  </>
-=======
       />
       <GradientCtaBanner text="Ready to secure your endpoints?"/>
     </>
->>>>>>> Stashed changes
   );
 }

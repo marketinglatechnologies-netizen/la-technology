@@ -156,11 +156,7 @@ Why Multi-Location IT Branch Operations Matter
 />
 
   <WhyChooseSection
-<<<<<<< Updated upstream
-          heading="Benefits for Multi-Branch Enterprises"
-=======
           heading="Our Multi-Location Operating Model"
->>>>>>> Stashed changes
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
@@ -205,11 +201,7 @@ Why Multi-Location IT Branch Operations Matter
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies, multi-location IT operations become predictable, secure, and easy to scale."
               />
-<<<<<<< Updated upstream
-              <GradientCtaBanner text="Ready to streamline IT across your branches?" buttonText="Request a Branch Operations Assessment"/>
-=======
               <GradientCtaBanner text="Ready to streamline IT across your branches?" />
->>>>>>> Stashed changes
   </>
   );
 }
