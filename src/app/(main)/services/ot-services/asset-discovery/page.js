@@ -128,7 +128,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       />
 
       <FiveCards
-        heading="Our Endpoint Security Solutions"
+        heading="Our Asset Discovery Solutions"
         headingTag="h2"
         items={[
           {

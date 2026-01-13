@@ -198,8 +198,15 @@ export default function SecurityAssessment() {
       description:
         "Practical fixes, quick wins, and phased improvements.",
     },
+    {
+      icon: "/assets/images/icons/speed.svg",
+      title: "Validation & Sign‑off",
+      description:
+        "Review actions taken, update evidence, and finalize reports.",
+    },
   ]}
 />
+
 <section className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         
@@ -340,8 +347,8 @@ export default function SecurityAssessment() {
           featuresLeft={[
             {
               icon: "/assets/images/services/soc/cost.png",
-              title: "Consistent Templates",
-              text: "Baselines applied across all branches uniformly.",
+              title: "Consistent Templates & Baselines",
+              text: "Applied across all branches uniformly.",
             },
             {
               icon: "/assets/images/services/soc/scalable.png",
@@ -357,7 +364,7 @@ export default function SecurityAssessment() {
             },
             {
               icon: "/assets/images/services/soc/global.png",
-              title: "Centralized Repository",
+              title: "Centralized Evidence Repository",
               text: "Evidence repository for audits and reviews.",
             },
           ]}
@@ -367,7 +374,7 @@ export default function SecurityAssessment() {
                 headingTag="h2"
                 tabs={[
                   {
-                    label: "Clear Visibility of risks across IT and OT environments ",
+                    label: "Clear Visibility of risks across IT and OT environments",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {
@@ -380,6 +387,10 @@ export default function SecurityAssessment() {
                   },
                   {
                     label: "Reduced Attack Surface through standardized configurations",
+                    image: "/assets/images/industries/tabimage.jpg",
+                  },
+                  {
+                    label: "Faster Remediation enabled by on-ground and remote teams",
                     image: "/assets/images/industries/tabimage.jpg",
                   },
                   {

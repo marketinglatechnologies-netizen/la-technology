@@ -132,7 +132,7 @@ on strategic, high-margin projects.
       <BenefitsGrid heading="Key Benefits" items={benefitsData} columns={4} />
 
       <WhyChooseSection
-        heading="Why Partner with LA Technologies?"
+        heading="LA Technologies as your Trusted Cybersecurity Partner:"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
@@ -160,7 +160,7 @@ on strategic, high-margin projects.
         ]}
       />
       <ImageTabsSection
-        heading="Who Needs NOC-as-a-Service?"
+        heading="Businesses That Need NOC-as-a-Service:"
         headingTag="h2"
         tabs={[
           {

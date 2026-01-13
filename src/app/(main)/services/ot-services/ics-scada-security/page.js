@@ -118,7 +118,7 @@ without disrupting production.
       />
 
       <InfoList
-        title="Why ICS & SCADA Security Mattersy?"
+        title="Why ICS & SCADA Security Matters?"
         items={[
           "Legacy systems often lack patching and modern security controls.",
           "Remote access and vendor connections increase attack surfaces.",

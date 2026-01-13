@@ -58,7 +58,7 @@ optional—it’s essential.
 "
                 />
                 <FiveCards
-  heading="Our Endpoint Security Solutions"
+  heading="Our Network Security Solutions"
   headingTag="h2"
   items={[
     {
@@ -224,8 +224,7 @@ optional—it’s essential.
                 description="With LA Technologies, you gain peace of mind knowing your network is secure—so your
 business can operate without disruption"
               />
-              <GradientCtaBanner text="Ready to strengthen your network security?
-" />
+              <GradientCtaBanner text="Ready to strengthen your network security?" />
   </>
   );
 }

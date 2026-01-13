@@ -97,7 +97,7 @@ reliable, cost-effective solutions"
 />
 
   <WhyChooseSection
-          heading="Why Choose LA Technologies?"
+          heading="Partner Up With LA Technologies:"
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
@@ -147,14 +147,13 @@ reliable, cost-effective solutions"
                 ]}
               />
               <ImageHighlightSection
-                heading="Your Team, Our Talent"
+                heading="Your IT, Our Responsibility"
                 headingTag="h2"
                 imageSrc="/assets/images/industries/security.jpg"
                 imageAlt="Cybersecurity monitoring dashboard"
-                description="With LA Technologies, you gain access to top-tier IT professionals without the complexity
-of permanent hiring. We help you stay agile, competitive, and ready for any challenge."
+                description="With LA Technologies as your facility management partner, you gain reliable IT operations, improved efficiency, and reduced downtime, so you can focus on your core business."
               />
-              <GradientCtaBanner text="Ready to augment your IT team?" />
+              <GradientCtaBanner text="Ready to streamline your IT operations?" />
   </>
   );
 }

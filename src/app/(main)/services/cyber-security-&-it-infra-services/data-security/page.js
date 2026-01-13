@@ -106,7 +106,7 @@ export default function DataSecurity() {
 
         {/* HEADING */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-          Why OT Endpoint Protection Matters
+          Why Data Security Matters
         </h2>
 
         {/* CARDS */}
@@ -130,7 +130,7 @@ export default function DataSecurity() {
     </section> 
 
     <EightCards
-  heading="Our Data Security Capabilities"
+  heading="Our Data Security Solutions"
   headingTag="h2"
   items={[
     {

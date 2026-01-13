@@ -167,15 +167,15 @@ industrial processes.
           {
             title: "Legacy & constrained devices",
             description:
-              " Many OT endpoints run unsupported OS or proprietary applications that limit traditional security controls.",
+              "Many OT endpoints run unsupported OS or proprietary applications that limit traditional security controls.",
           },
           {
-            title: "Lateral movement risk",
+            title: "High-impact risks",
             description:
               "A single compromised HMI or engineering workstation can halt lines, corrupt PLC logic, or trigger unsafe states.",
           },
           {
-            title: "Safety & uptime",
+            title: "Operational constraints",
             description:
               "Security must respect change-control windows, vendor tooling, and process safety—no intrusive agents or aggressive scans.",
           },
@@ -183,7 +183,7 @@ industrial processes.
       />
 
       <SixCards
-        heading="Our Managed Security Services Include"
+        heading="What We Deliver"
         headingTag="h2"
         items={[
           {

@@ -173,7 +173,7 @@ that contains threats without impacting critical processes.
       />
 
       <SixCards
-        heading="Our Facility Management Services Include"
+        heading="What We Deliver"
         headingTag="h2"
         items={[
           {
