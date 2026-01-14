@@ -190,7 +190,7 @@ optional—it’s essential.
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                      Sophos
+                      Sophoss
                     </p>
                   </div>
         
