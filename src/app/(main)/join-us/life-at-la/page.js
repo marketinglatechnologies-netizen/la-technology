@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/join-us/Life-at-banner.jpg"
+        bgImage="/assets/images/join-us/tech-banner.jpg"
         title="Where People Power Innovation"
         titleTag="h1"
         description={`Experience a workplace built on collaboration, learning, and impact.`}
