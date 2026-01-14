@@ -183,7 +183,7 @@ industrial processes.
       />
 
       <SixCards
-        heading="What We Deliver"
+        heading="Our Application Security Solutions"
         headingTag="h2"
         items={[
           {
