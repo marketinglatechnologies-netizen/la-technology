@@ -145,7 +145,7 @@ optional—it’s essential.
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                       Palo Alto Networks
+                      Fortinet
                     </p>
                   </div>
         
@@ -160,7 +160,7 @@ optional—it’s essential.
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                      Cisco
+                      Palo Alto Networks
                     </p>
                   </div>
         
@@ -175,7 +175,7 @@ optional—it’s essential.
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                      Sophos
+                      Cisco
                     </p>
                   </div>
         
@@ -190,7 +190,7 @@ optional—it’s essential.
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                      CrowdStrike Falcon
+                      Sophos
                     </p>
                   </div>
         
