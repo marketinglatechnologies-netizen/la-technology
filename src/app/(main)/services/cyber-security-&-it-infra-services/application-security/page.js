@@ -49,7 +49,7 @@ prevent application-level threats, ensuring your business remains secure and com
 "
       />
       <InfoCtaSection
-        title="Application Security: A Critical Layer of Protection"
+        title="Why Application Security Matters?"
         description="Hackers increasingly target applications to bypass traditional network defenses. With apps
 accessible over multiple networks and devices, securing them is critical to protect
 sensitive data and maintain trust."
@@ -59,42 +59,42 @@ sensitive data and maintain trust."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/application-security/service1.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Web Application Firewall (WAF)",
             description:
               "Protect apps from common attacks like SQL injection and XSS.",
           },
           {
-            icon: "/assets/images/services/application-security/service2.png",
+            icon: "/assets/images/icons/path.svg",
             title: "API Security",
             description:
               "Secure APIs against unauthorized access and data leaks.",
           },
           {
-            icon: "/assets/images/services/application-security/service3.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Secure Code Review & Testing",
             description:
               "Identify vulnerabilities early in the development lifecycle.",
           },
           {
-            icon: "/assets/images/services/application-security/service4.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Authentication & Authorization Controls",
             description: "Ensure only verified users access your applications.",
           },
           {
-            icon: "/assets/images/services/application-security/service3.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Encryption & Data Protection",
             description:
               "Safeguard sensitive data during storage and transmission.",
           },
           {
-            icon: "/assets/images/services/application-security/service6.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Logging & Monitoring",
             description:
               "Detect anomalies and track access for forensic analysis.",
           },
           {
-            icon: "/assets/images/services/application-security/service7.png",
+            icon: "/assets/images/icons/path.svg",
             title: "Vulnerability Assessment & Penetration Testing (VAPT)",
             description:
               "Comprehensive testing to uncover and remediate weaknesses.",
@@ -107,26 +107,26 @@ sensitive data and maintain trust."
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/application-security/choose1.png",
+            icon: "/assets/images/services/soc/cost.png",
             title: "Prevent Data Breaches",
             text: "Block exploits before they compromise sensitive information.",
           },
           {
-            icon: "/assets/images/services/application-security/choose2.png",
+            icon: "/assets/images/services/soc/scalable.png",
             title: " Ensure Compliance",
             text: "Meet OWASP, PCI DSS, and industry security standards.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/application-security/choose3.png",
-            title: "Expert Guidance",
-            text: "Certified security professionals with deep application security expertise.",
+            icon: "/assets/images/services/soc/alert.png",
+            title: "Continuous Protection",
+            text: "Ongoing assessments and updates to stay ahead of evolving threats.",
           },
           {
-            icon: "/assets/images/services/application-security/choose4.png",
-            title: "Expert Management",
-            text: "Certified professionals ensure optimal configuration and monitoring.",
+            icon: "/assets/images/services/soc/global.png",
+            title: "Expert Guidance",
+            text: "Certified security professionals with deep application security expertise.",
           },
         ]}
       />
@@ -210,7 +210,8 @@ sensitive data and maintain trust."
         description="With LA Technologies, you gain peace of mind knowing your applications are secure—so
 your business can innovate without risk."
       />
-      <GradientCtaBanner text="Ready to secure your applications?" buttonText="Request a Network Assessment"/>
+      <GradientCtaBanner text="Ready to secure your applications?
+" buttonText="Request a Network Assessment"/>
     </>
   );
 }
