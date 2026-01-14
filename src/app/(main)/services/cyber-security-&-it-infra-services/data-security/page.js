@@ -134,49 +134,49 @@ export default function DataSecurity() {
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service1.png",
       title: "Data Encryption",
       description:
         "Protect data at rest and in transit with strong encryption standards.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service2.png",
       title: "Data Loss Prevention (DLP)",
       description:
         "Monitor and control sensitive data movement across endpoints and networks.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service3.png",
       title: "Access Control & Identity Management",
       description:
         "Enforce least privilege and MFA for secure data access.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service4.png",
       title: "Endpoint Protection",
       description:
         "Secure laptops, desktops, and mobile devices against malware and unauthorized access.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service5.png",
       title: "Email & File Security",
       description:
         "Prevent phishing, malware, and unauthorized file sharing.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service6.png",
       title: "Backup & Recovery",
       description:
         "Ensure reliable data backups and fast restoration in case of incidents.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service7.png",
       title: "Data Classification & Governance",
       description:
         "Identify sensitive data and apply appropriate protection policies.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/data-security/service8.png",
       title: "Insider Threat Management",
       description:
         "Detect and prevent unauthorized data access or exfiltration.",
@@ -190,24 +190,24 @@ export default function DataSecurity() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/data-security/choose1.png",
             title: "Prevent Data Breaches",
             text: "Reduce risk of unauthorized access and data theft.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/data-security/choose2.png",
             title: "Ensure Compliance",
             text: "Meet regulatory and industry standards effortlessly. ",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/data-security/choose3.png",
             title: "Improve Visibility",
             text: "Track data movement and enforce security policies across all locations.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/data-security/choose4.png",
             title: "Business Continuity",
             text: "Minimize downtime with robust backup and recovery strategies.",
           },

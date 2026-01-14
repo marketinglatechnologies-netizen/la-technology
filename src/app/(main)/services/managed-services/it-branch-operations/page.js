@@ -99,62 +99,56 @@ Why Multi-Location IT Branch Operations Matter
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service1.png",
       title: "Network & Connectivity",
       description:
         "Broadband/MPLS/4G/5G links, SD-WAN, firewalls, VPNs, routing & switching.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service2.png",
       title: "Wi-Fi & Access",
       description:
         "Secure SSIDs (Corp/Guest), NAC policies, captive portal, bandwidth management.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service3.png",
       title: "Endpoint & Server Ops",
       description:
         "Windows/macOS endpoints, POS devices, local servers, patching.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service4.png",
       title: "Identity & Access Management",
       description:
         "AD / Azure AD, MFA, role-based access, password policies.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service5.png",
       title: "Security Operations",
       description:
         "EDR/XDR, email security, DLP policies, web filtering, vulnerability management.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service6.png",
       title: "Local Apps & IoT",
       description:
         "Printers, CCTV/NVR, IoT device onboarding.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service7.png",
       title: "ITSM & Helpdesk",
       description:
         "Centralized ticketing for all branches with SLA tracking.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service8.png",
       title: "Asset & License Governance",
       description:
         "Inventory and compliance across all locations.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-branch-operations/service9.png",
       title: "Compliance & Audits",
-      description:
-        "Policy rollouts and audit readiness for every branch.",
-    },
-    {
-      icon: "/assets/images/icons/path.svg",
-      title: "Compliance & Audits ",
       description:
         "Policy rollouts and audit readiness for every branch.",
     },
@@ -166,34 +160,34 @@ Why Multi-Location IT Branch Operations Matter
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
+              icon: "/assets/images/services/it-branch-operations/choose1.png",
               title: "Centralized Command Center (NOC/SOC)",
               text: "24×7 monitoring and incident response for all branches.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/it-branch-operations/choose2.png",
               title: "Standardized Playbooks",
               text: "Golden configurations and security baselines applied across locations.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/it-branch-operations/choose3.png",
               title: "Hybrid Support",
               text: "Remote-first with scheduled on-site visits for critical issues.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
+              icon: "/assets/images/services/it-branch-operations/choose4.png",
               title: "Change & Release Management",
               text: "Controlled deployments across multiple branches with rollback plans.",
             },
             {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/it-branch-operations/choose5.png",
               title: "Vendor Coordination",
               text: "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
             },     
              {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/it-branch-operations/choose6.png",
               title: "Scalability",
               text: "Rapid onboarding for new branches with templated deployments.",
             },

@@ -163,43 +163,43 @@ export default function SecurityAssessment() {
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service1.png",
       title: "Planning & Scoping",
       description:
         "Planning & Scoping define sites, systems, and priorities; agree on timelines and stakeholders.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service2.png",
       title: "Data Collection",
       description:
         "Workshops, configuration reviews, log analysis, and controlled testing.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service3.png",
       title: "Technical Testing",
       description:
         "Vulnerability scanning, configuration benchmarking, and sample validation.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service4.png",
       title: "Gap Analysis",
       description:
         "Map findings to standards and your business impact.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service5.png",
       title: "Risk Prioritization",
       description:
         "Rate risks by likelihood, impact, and ease of remediation.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service6.png",
       title: "Recommendations & Roadmap",
       description:
         "Practical fixes, quick wins, and phased improvements.",
     },
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/security-assessment/service6.png",
       title: "Validation & Sign‑off",
       description:
         "Review actions taken, update evidence, and finalize reports.",

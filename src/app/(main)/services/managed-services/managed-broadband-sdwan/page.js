@@ -121,37 +121,37 @@ export default function ManagedBroadbandSDWAN() {
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/speed.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service1.png",
       title: "High-Speed Broadband Connectivity",
       description:
         "Reliable internet access tailored to your business needs.",
     },
     {
-      icon: "/assets/images/icons/wan.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service2.png",
       title: "SD-WAN Orchestration",
       description:
         "Intelligent routing for optimal application performance and reduced latency.",
     },
     {
-      icon: "/assets/images/icons/vector.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service3.png",
       title: "Centralized Management ",
       description:
         "Single-pane-of-glass visibility for all branch and remote connections.",
     },
     {
-      icon: "/assets/images/icons/securtiy.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service4.png",
       title: "Integrated Security",
       description:
         "Built-in firewall, encryption, and threat detection for secure data flow.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service5.png",
       title: "Dynamic Path Selection",
       description:
         "RAutomatically route traffic over the best available link for performance. ",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/managed-broadband-sdwan/service6.png",
       title: "Cloud Optimization",
       description:
         "Direct, secure access to cloud services without backhauling traffic.",
@@ -164,29 +164,29 @@ export default function ManagedBroadbandSDWAN() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/home/icon1.png",
+            icon: "/assets/images/services/managed-broadband-sdwan/choose1.png",
             title: "Enhanced Performance",
             text: "Improve application speed and user experience across all locations.",
           },
           {
-            icon: "/assets/images/home/icon2.png",
+            icon: "/assets/images/services/managed-broadband-sdwan/choose2.png",
             title: "Cost Efficiency",
             text: "Reduce dependency on expensive MPLS circuits.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/home/icon3.png",
+            icon: "/assets/images/services/managed-broadband-sdwan/choose3.png",
             title: "Scalability",
             text: "Easily add new branches or remote sites without complex configurations.",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/managed-broadband-sdwan/choose4.png",
             title: "Security & Compliancee",
             text: "Protect data with advanced encryption and policy enforcement requirements.",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/managed-broadband-sdwan/choose5.png",
             title: "24/7 Monitoring & Support",
             text: "Proactive management to ensure uptime and reliability.",
           },

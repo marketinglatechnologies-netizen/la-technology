@@ -58,31 +58,31 @@ complete visibility, control, and protection across all endpoints.
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/endpoint-security/service1.png",
             title: "Next-Generation Antivirus (NGAV)",
             description:
               "Advanced protection against malware, ransomware, and zero-day exploits.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/endpoint-security/service2.png",
             title: "Endpoint Detection & Response (EDR)",
             description:
               "Real-time threat detection, investigation, and automated response.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/endpoint-security/service3.png",
             title: "Threat Hunting & Incident Response",
             description:
               "Proactive threat hunting and rapid containment of security incidents.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/endpoint-security/service4.png",
             title: "Device Encryption & Data Loss Prevention (DLP)",
             description:
               "Secure sensitive data and prevent unauthorized access.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/endpoint-security/service5.png",
             title: "Patch Management & Vulnerability Scanning",
             description:
               "Regular updates and scans to eliminate security gaps.",
@@ -94,24 +94,24 @@ complete visibility, control, and protection across all endpoints.
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/endpoint-security/choose1.png",
             title: "Comprehensive Protection",
             text: "Defend against known and unknown threats with AI-driven security.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/endpoint-security/choose2.png",
             title: "Centralized Management",
             text: "Simplify endpoint security with unified dashboards and reporting.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/endpoint-security/choose3.png",
             title: "Compliance Ready",
             text: "Meet regulatory requirements like GDPR, HIPAA, and PCI DSS.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/endpoint-security/choose4.png",
             title: "Scalable & Flexible",
             text: "Solutions tailored for SMBs and large enterprises.",
           },
