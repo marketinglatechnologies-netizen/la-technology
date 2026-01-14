@@ -93,7 +93,7 @@ export default function ManagedBroadbandSDWAN() {
 
         {/* HEADING */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-          Why Managed Broadband + SD-WAN Matters
+          The Importance of Managed Broadband + SD-WAN
         </h2>
 
         {/* CARDS */}
@@ -205,7 +205,7 @@ export default function ManagedBroadbandSDWAN() {
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you get a fully managed broadband and SD-WAN solution that delivers speed, security, and simplicity."
       />
-      <GradientCtaBanner text="Ready to transform your network?" />
+      <GradientCtaBanner text="Ready to transform your network?"/>
     </>
   );
 }

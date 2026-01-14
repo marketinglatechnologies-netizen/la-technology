@@ -16,7 +16,7 @@ export default function IndustryGrid({
     columns === 4 ? "lg:w-[calc(25%-1.5rem)]" : "lg:w-[calc(33.33%-1.5rem)]";
 
   return (
-    <section className="bg-white overflow-hidden">
+    <section className="bg-white overflow-hidden mb-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         {/* Responsive Heading */}
         {data.sectionTitle && (

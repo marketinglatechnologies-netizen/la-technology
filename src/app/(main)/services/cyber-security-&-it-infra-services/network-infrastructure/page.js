@@ -9,6 +9,7 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import Image from "next/image";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import InfoList from "@/components/ui/InfoList";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -39,12 +40,12 @@ const industriesData = {
       title: "Healthcare Networks",
       image: "/assets/images/industries/bfsi.jpg",
     },
-     {
+    {
       id: "Logistics & Distribution ",
       title: "Logistics & Distribution ",
       image: "/assets/images/industries/education.jpg",
     },
-     {
+    {
       id: "Education (Campuses & Centers)",
       title: "Education (Campuses & Centers)",
       image: "/assets/images/industries/manufacturing.jpg",
@@ -148,7 +149,7 @@ export default function FacilityManagement() {
       />
 
       <FourBoxSection
-        heading="Why Network Infrastructure Matters"
+        heading="Network Infrastructure for Business Continuity"
         headingTag="h2"
         items={[
           {
@@ -519,10 +520,35 @@ export default function FacilityManagement() {
         ]}
       />
 
-     <IndustryGrid data={industriesData} />
+      <IndustryGrid data={industriesData} />
 
-      <GradientCtaBanner text="Ready to modernize your network infrastructure?"
-      buttonText="Request a Network Assessment"
+      <InfoList
+        title="Sample Use Cases"
+        items={[
+          "Rapid branch setup with pre-configured kits and standardized SSIDs",
+          "Migration from flat LAN to segmented, policy-controlled VLANs",
+          "Dual-ISP deployment with automatic failover and SLA monitoring",
+          "NAC rollouts to control device onboarding across all branches",
+          "Wi‑Fi redesign to eliminate dead zones and improve client experience",
+        ]}
+      />
+
+      <section className="w-full py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 lg:px-6">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+            Build a Network You Can Trust
+          </h2>
+
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl">
+            With LA Technologies, your network becomes faster, safer, and easier
+            to operate—across every location.
+          </p>
+        </div>
+      </section>
+
+      <GradientCtaBanner
+        text="Ready to modernize your network infrastructure?"
+        buttonText="Request a Network Assessment"
       />
     </>
   );

@@ -47,7 +47,7 @@ to your network is growing rapidly, creating new attack surfaces for cybercrimin
 LA Technologies’ Endpoint Security solutions safeguard every device with advanced protection against malware, ransomware, and zero-day threats—ensuring your business stays secure and compliant."
       />
       <InfoCtaSection
-        title="Why Endpoint Security Matters"
+        title="Endpoint Security in Today’s Threat Landscape"
         description="Every endpoint is a potential entry point for attackers. A single compromised device can
 lead to data breaches, financial loss, and reputational damage. Our solutions provide
 complete visibility, control, and protection across all endpoints.

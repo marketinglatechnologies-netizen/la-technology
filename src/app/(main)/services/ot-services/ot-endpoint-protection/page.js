@@ -161,7 +161,7 @@ industrial processes.
       />
 
       <FourBoxSection
-        heading="Why OT Endpoint Protection Matters"
+        heading="Protecting Safety-Critical OT Endpoints"
         headingTag="h2"
         items={[
           {
@@ -319,7 +319,7 @@ industrial processes.
 without disrupting production."
       />
 
-      <GradientCtaBanner text="Ready to secure OT endpoints ?" />
+      <GradientCtaBanner text="Ready to secure OT endpoints ?" buttonText="Request an OT Risk Assessment"/>
     </>
   );
 }

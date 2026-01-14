@@ -86,7 +86,7 @@ LA Technologies’ Application Security solutions help you identify, remediate, 
 prevent application-level threats, ensuring your business remains secure and compliant."/>
 
       <FourBoxSection
-        heading="Why Cloud Security Matters"
+        heading="Cloud Security Matters"
         headingTag="h2"
         items={[
           {

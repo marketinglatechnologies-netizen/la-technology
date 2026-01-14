@@ -49,7 +49,7 @@ prevent application-level threats, ensuring your business remains secure and com
 "
       />
       <InfoCtaSection
-        title="Why Application Security Matters?"
+        title="Application Security: A Critical Layer of Protection"
         description="Hackers increasingly target applications to bypass traditional network defenses. With apps
 accessible over multiple networks and devices, securing them is critical to protect
 sensitive data and maintain trust."

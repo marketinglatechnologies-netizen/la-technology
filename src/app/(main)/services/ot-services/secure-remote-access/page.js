@@ -17,6 +17,29 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
+const otPamFeatures = [
+  {
+    id: 1,
+    title: "Centralized Credential Vault",
+    description: "Securely store and rotate privileged credentials.",
+  },
+  {
+    id: 2,
+    title: "Role-Based Access Control",
+    description: "Enforce least privilege principles for critical OT assets.",
+  },
+  {
+    id: 3,
+    title: "Automated Password Rotation",
+    description: "Eliminate shared or static credentials.",
+  },
+  {
+    id: 4,
+    title: "Session Monitoring",
+    description: "Track and record all privileged activities for compliance.",
+  },
+];
+
 const multiCardsItems = [
   {
     icon: "/assets/images/icons/path.svg",
@@ -114,7 +137,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
       />
 
       <InfoList
-        title="Why Secure Remote Access Matters"
+        title="Reducing Remote Access Risk"
         items={[
           " Unrestricted VPNs and shared credentials create major security gaps.",
           "Attackers exploit remote access tools to deploy malware or manipulate control systems.",
@@ -135,10 +158,9 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
           {
             icon: "/assets/images/icons/path.svg",
             title: "Multi-Factor Authentication (MFA)",
-            description:
-              "Enforce strong authentication for all remote users.",
+            description: "Enforce strong authentication for all remote users.",
           },
-           {
+          {
             icon: "/assets/images/icons/path.svg",
             title: "Just-in-Time Access",
             description:
@@ -153,8 +175,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
           {
             icon: "/assets/images/icons/path.svg",
             title: "Secure Jump Hosts",
-            description:
-              "Isolate remote sessions from critical OT networks.",
+            description: "Isolate remote sessions from critical OT networks.",
           },
           {
             icon: "/assets/images/icons/path.svg",
@@ -196,6 +217,43 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
 
       <IndustryGrid data={industriesData} />
 
+      <section className="w-full py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Heading */}
+          <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#2D1F1F] mb-4">
+            Integrated OT Privileged Access Management
+          </h2>
+
+          {/* Description */}
+          <p className="text-center text-sm md:text-base text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
+            Privileged accounts in OT environments hold the keys to critical
+            industrial assets. If compromised, they can override safety controls
+            and disrupt operations. Our integrated OT PAM capabilities include:
+          </p>
+
+          {/* Gradient Divider */}
+          <div className="mb-16 h-[3px] w-full max-w-6xl mx-auto bg-gradient-to-r from-orange-500 to-red-600 rounded-full" />
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {otPamFeatures.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-2xl p-6 border border-orange-100
+                         shadow-[0_8px_24px_rgba(255,140,0,0.15)]"
+              >
+                <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ImageHighlightSection
         heading="Your Remote Access, Secured"
         headingTag="h2"
@@ -204,7 +262,10 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
         description="With LA Technologies, you enable secure, monitored remote access—without compromising safety or productivity."
       />
 
-      <GradientCtaBanner text="Ready to secure remote access to your OT environment?" />
+      <GradientCtaBanner
+        text="Ready to secure remote access to your OT environment?"
+        buttonText="Request an OT Risk Assessment"
+      />
     </>
   );
 }

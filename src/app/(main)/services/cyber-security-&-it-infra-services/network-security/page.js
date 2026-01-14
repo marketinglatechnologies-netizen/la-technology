@@ -50,7 +50,7 @@ perimeter and internal systems, ensuring confidentiality, integrity, and availab
 critical resources.
 " />
           <InfoCtaSection
-                  title="Why Network Security Matters?"
+                  title="Securing Your Business Networks Against Evolving Attacks"
                   description="A single breach can expose sensitive data, halt operations, and damage your reputation.
 With increasing connectivity and remote access, securing your network is no longer
 optional—it’s essential.

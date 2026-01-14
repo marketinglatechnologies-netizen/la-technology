@@ -118,7 +118,7 @@ secure zones and conduits without disrupting production.
       />
 
       <InfoList
-        title="Why Network Segmentation Matters ?"
+        title="Containing Breaches with Network Segmentation"
         items={[
           "Flat networks allow attackers to move freely once inside.",
           "Compliance frameworks (IEC 62443, NIST) mandate segmentation.",
@@ -202,7 +202,7 @@ secure zones and conduits without disrupting production.
         description="With LA Technologies, you gain a segmented, secure OT network—without compromising
 operational efficiency."
       />
-      <GradientCtaBanner text="Ready to implement secure OT segmentation?" />
+      <GradientCtaBanner text="Ready to implement secure OT segmentation?" buttonText="Request an OT Risk Assessment"/>
     </>
   );
 }

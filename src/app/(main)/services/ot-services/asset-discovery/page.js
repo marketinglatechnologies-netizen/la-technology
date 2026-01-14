@@ -119,7 +119,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       />
 
       <InfoList
-        title="Why Asset Discovery Matters"
+        title="Asset Discovery for Security and Compliance"
         items={[
           "Unidentified assets can become entry points for attackers.",
           "Manual inventory processes are time-consuming and error-prone.",
@@ -202,7 +202,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain a clear picture of your OT environment—so you can secure"
       />
-      <GradientCtaBanner text="Ready to discover and secure your OT assets?" />
+      <GradientCtaBanner text="Ready to discover and secure your OT assets?" buttonText="Request an OT Risk Assessment"/>
     </>
   );
 }

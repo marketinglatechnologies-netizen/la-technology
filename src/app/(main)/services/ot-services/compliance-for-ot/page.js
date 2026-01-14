@@ -116,7 +116,7 @@ maintaining uptime and safety."
       />
 
       <InfoList
-        title="Why OT Compliance Matters"
+        title="OT Compliance & Risk Management"
         items={[
           "Non-compliance can lead to fines, reputational damage, and operational shutdowns.",
           "OT systems often lack built-in security controls, making compliance challenging.",
@@ -200,7 +200,7 @@ maintaining uptime and safety."
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you achieve OT compliance without compromising productivity or safety."
       />
-      <GradientCtaBanner text="Ready to align your OT environment with global standards?" />
+      <GradientCtaBanner text="Ready to align your OT environment with global standards?" buttonText="Request an OT Compliance Assessment"/>
     </>
   );
 }

@@ -151,7 +151,7 @@ that contains threats without impacting critical processes.
       />
 
       <FourBoxSection
-        heading="Why OT‑Focused TDIR Matters ?"
+        heading="OT-Focused TDIR for Security and Safety"
         headingTag="h2"
         items={[
           {
@@ -308,7 +308,7 @@ both safety and uptime.
 ."
       />
 
-      <GradientCtaBanner text="Ready to strengthen OT threat detection and response?" />
+      <GradientCtaBanner text="Ready to strengthen OT threat detection and response?" buttonText="Request an OT Risk Assessment"/>
     </>
   );
 }
