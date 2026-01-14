@@ -45,7 +45,7 @@ export default function SOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/soc/soc-service-banner.jpg"
+          bgImage="/assets/images/services/soc/SOC-banner.jpg"
           title="SOC As A Service"
           titleTag="h1"
           description={`Round-the-clock SOC services designed to defend modern enterprises.`}
@@ -54,15 +54,15 @@ export default function SOC() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/soc/SOC-1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/soc/SOC-2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/soc/SOC-3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -110,7 +110,7 @@ export default function SOC() {
 
       <WhyChooseSection
         heading="LA Technologies SOC-as-a-Service:"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/soc/1/soc-whychoose-la.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/Cost-Effective.svg",
@@ -142,26 +142,26 @@ export default function SOC() {
         tabs={[
           {
             label: "Businesses handling sensitive customer data",
-            image: "/assets/images/services/soc/tab1.png",
+            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-1.jpg",
           },
           {
             label: "Organizations in regulated industries",
-            image: "/images/soc-tab-2.jpg",
+            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-2.jpg",
           },
           {
             label: "Companies migrating workloads to the cloud",
-            image: "/images/soc-tab-3.jpg",
+            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-3.jpg",
           },
           {
             label: "Enterprises lacking in-house security expertise",
-            image: "/images/soc-tab-4.jpg",
+            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-4.jpg",
           },
         ]}
       />
       <ImageHighlightSection
         heading="Your Security, Our Priority"
         headingTag="h2"
-        imageSrc="/assets/images/services/soc/security.png"
+        imageSrc="/assets/images/services/soc/soc-security priority.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
       />

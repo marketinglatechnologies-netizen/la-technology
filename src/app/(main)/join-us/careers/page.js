@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/careers/banner-global.jpg"
+        bgImage="/assets/images/careers/career-banner.jpg"
         title="Build Your Career With Us"
         titleTag="h1"
         description={`Join a global team where innovation, growth, and opportunity come together.`}
@@ -43,10 +43,10 @@ export default function AboutPage() {
           {/* RIGHT IMAGE GRID */}
           <div className="grid grid-cols-2 gap-6">
 
-            <ImageCard src="talent-1.jpg" />
-            <ImageCard src="talent-2.jpg" />
-            <ImageCard src="talent-3.jpg" />
-            <ImageCard src="talent-4.jpg" />
+            <ImageCard src="career-1.png" />
+            <ImageCard src="career-2.jpg" />
+            <ImageCard src="career-3.png" />
+            <ImageCard src="career-4.jpg" />
 
           </div>
 

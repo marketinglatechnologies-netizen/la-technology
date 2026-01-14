@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/join-us/banner.jpg"
+        bgImage="/assets/images/join-us/Life-at-banner.jpg"
         title="Where People Power Innovation"
         titleTag="h1"
         description={`Experience a workplace built on collaboration, learning, and impact.`}
@@ -306,16 +306,16 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* COLUMN 1 */}
-          <Column offset="lg:mt-0" images={["glam.png", "glam.png"]} />
+          <Column offset="lg:mt-0" images={["img1.jpg", "img2.jpg"]} />
 
           {/* COLUMN 2 */}
-          <Column offset="lg:mt-5" images={["glam.png", "glam.png"]} />
+          <Column offset="lg:mt-5" images={["img3.jpg", "img4.jpg"]} />
 
           {/* COLUMN 3 */}
-          <Column offset="lg:mt-10" images={["glam.png", "glam.png"]} />
+          <Column offset="lg:mt-10" images={["img5.jpg", "img6.jpg"]} />
 
           {/* COLUMN 4 */}
-          <Column offset="lg:mt-16" images={["glam.png", "glam.png"]} />
+          <Column offset="lg:mt-16" images={["img7.jpg", "img8.jpg"]} />
 
         </div>
       </div>

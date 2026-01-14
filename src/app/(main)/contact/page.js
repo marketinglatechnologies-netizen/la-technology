@@ -79,7 +79,7 @@ export default function ContactPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/contact/contact.png"
+        bgImage="/assets/images/contact/contact.jpg"
         title="We'd Love to Hear from You"
         titleTag="h1"
         description={`We’re here to help you with secure, scalable, and <br> reliable technology solutions.`}

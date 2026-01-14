@@ -199,7 +199,7 @@ export default function LaAi() {
       {/* LEFT CONTENT */}
       <div className="max-w-3xl text-white">
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          OUR VISION
+          OUR VISION 
         </h2>
         <p className="text-sm md:text-base leading-relaxed opacity-95">
           To empower organizations with future-ready AI solutions that simplify operations,

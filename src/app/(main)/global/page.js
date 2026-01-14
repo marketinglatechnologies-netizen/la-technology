@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/careers/banner.jpg"
+        bgImage="/assets/images/global/gloablpresence-banner.jpg"
         title="A Worldwide Network of Innovation"
         titleTag="h1"
         description={`From Asia to the Middle East, LA Technologies delivers cutting-edge cybersecurity and IT solutions wherever businesses grow.`}
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div className="flex flex-col gap-6">
                 <div className="rounded-2xl overflow-hidden h-[180px]">
                   <img
-                    src="/assets/images/careers/global-2.jpg"
+                    src="/assets/images/global/global-presence-empowering-2.jpg"
                     alt="Cyber infrastructure"
                     className="w-full h-full object-cover"
                   />
@@ -47,7 +47,7 @@ export default function AboutPage() {
 
                 <div className="rounded-2xl overflow-hidden h-[180px]">
                   <img
-                    src="/assets/images/careers/global-3.jpg"
+                    src="/assets/images/global/global-presence-empowering-3.jpg"
                     alt="Secure data center"
                     className="w-full h-full object-cover"
                   />
