@@ -103,7 +103,7 @@ export default function LaBootCamp() {
           title="LA Bootcamps – Learn Cybersecurity from Industry Experts "
           titleTag="h1"
           description={`Your gateway to hands-on cybersecurity training, powered by LA Technologies. `}
-          
+           showWebsiteCta={true}       
         />
       </div>
 
