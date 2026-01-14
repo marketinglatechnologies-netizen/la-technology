@@ -66,7 +66,7 @@ export default function AboutPage() {
           {/* RIGHT FULL IMAGE */}
           <div className="rounded-2xl overflow-hidden h-[380px] sm:h-[500px] lg:h-[600px]">
             <img
-              src="/assets/images/join-us/team.png"
+              src="/assets/images/join-us/life-la-li-team.jpg"
               alt="Life at LA Technologies"
               className="w-full h-full object-cover"
             />
@@ -128,7 +128,7 @@ export default function AboutPage() {
             <div className="row-span-2 flex items-center">
               <div className="rounded-2xl overflow-hidden h-[280px] w-full">
                 <img
-                  src="/assets/images/join-us/culture1.jpg"
+                  src="/assets/images/join-us/culture1-1.jpg"
                   alt="Team collaboration"
                   className="w-full h-full object-cover"
                 />
@@ -138,7 +138,7 @@ export default function AboutPage() {
             {/* TOP RIGHT IMAGE */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/culture2.jpg"
+                src="/assets/images/join-us/culture2-2.jpg"
                 alt="Team meeting"
                 className="w-full h-full object-cover"
               />
@@ -147,7 +147,7 @@ export default function AboutPage() {
             {/* BOTTOM RIGHT IMAGE */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/culture3.jpg"
+                src="/assets/images/join-us/culture3-3.jpg"
                 alt="Cyber lab discussion"
                 className="w-full h-full object-cover"
               />
@@ -238,7 +238,7 @@ export default function AboutPage() {
             {/* IMAGE 1 */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/growth1.jpg"
+                src="/assets/images/join-us/growth-1.jpg"
                 alt="Team celebration"
                 className="w-full h-full object-cover"
               />
@@ -247,7 +247,7 @@ export default function AboutPage() {
             {/* IMAGE 2 */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/growth2.jpg"
+                src="/assets/images/join-us/growth-2.jpg"
                 alt="Learning at work"
                 className="w-full h-full object-cover"
               />
@@ -256,7 +256,7 @@ export default function AboutPage() {
             {/* IMAGE 3 */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/growth3.jpg"
+                src="/assets/images/join-us/growth-3.jpg"
                 alt="Professional growth"
                 className="w-full h-full object-cover"
               />
@@ -265,7 +265,7 @@ export default function AboutPage() {
             {/* IMAGE 4 */}
             <div className="rounded-2xl overflow-hidden h-[200px]">
               <img
-                src="/assets/images/join-us/growth4.jpg"
+                src="/assets/images/join-us/growth-4.jpg"
                 alt="Team collaboration"
                 className="w-full h-full object-cover"
               />

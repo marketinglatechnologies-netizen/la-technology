@@ -90,7 +90,7 @@ export default function AboutPage() {
     <section className="pt-0 pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 flex justify-center">
         <img
-          src="/assets/images/careers/map.jpg"
+          src="/assets/images/global/global-map.jpg"
           alt="LA Tech Global Presence"
           className="w-full max-w-6xl object-contain"
         />
