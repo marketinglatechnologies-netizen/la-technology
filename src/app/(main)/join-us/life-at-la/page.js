@@ -306,16 +306,16 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* COLUMN 1 */}
-          <Column offset="lg:mt-0" images={["img1.jpg", "img2.jpg"]} />
+          <Column offset="lg:mt-0" images={["team1.png", "team2.png"]} />
 
           {/* COLUMN 2 */}
-          <Column offset="lg:mt-5" images={["img3.jpg", "img4.jpg"]} />
+          <Column offset="lg:mt-5" images={["team3.png", "team4.png"]} />
 
           {/* COLUMN 3 */}
-          <Column offset="lg:mt-10" images={["img5.jpg", "img6.jpg"]} />
+          <Column offset="lg:mt-10" images={["team5.png", "team6.png"]} />
 
           {/* COLUMN 4 */}
-          <Column offset="lg:mt-16" images={["img7.jpg", "img8.jpg"]} />
+          <Column offset="lg:mt-16" images={["team7.png", "team8.png"]} />
 
         </div>
       </div>
