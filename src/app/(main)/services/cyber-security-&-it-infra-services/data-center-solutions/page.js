@@ -73,31 +73,31 @@ security. We ensure your infrastructure supports business continuity and future 
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/data-center-solutions/service1.png",
             title: "Data Center Design & Implementation",
             description:
               "Complete turnkey solutions—from planning and civil works to electrical, mechanical, and IT fit-out.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/data-center-solutions/service2.png",
             title: "Legacy Data Center Optimization",
             description:
               "Improve efficiency, reduce power usage (PUE), and extend the life of existing facilities.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/data-center-solutions/service3.png",
             title: "Modular & Containerized Data Centers",
             description:
               "Scalable, cost-effective solutions that adapt to changing business needs.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/data-center-solutions/service4.png",
             title: "Power & Cooling Solutions",
             description:
               "Precision cooling systems and energy-efficient power distribution for maximum uptime.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/data-center-solutions/service5.png",
             title: "Structured Cabling & Rack Solutions",
             description:
               "Industry-compliant cabling, rack layout, and space planning for optimal performance.",
@@ -110,24 +110,24 @@ security. We ensure your infrastructure supports business continuity and future 
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/home/icon1.png",
+            icon: "/assets/images/services/data-center-solutions/choose1.png",
             title: "High Availability & Resilience",
             text: "Ensure business continuity with robust design and redundancy.",
           },
           {
-            icon: "/assets/images/home/icon2.png",
+            icon: "/assets/images/services/data-center-solutions/choose2.png",
             title: "Cost Efficiency",
             text: "Reduce operational costs through optimized power and cooling.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/home/icon3.png",
+            icon: "/assets/images/services/data-center-solutions/choose3.png",
             title: "Scalability",
             text: "Modular designs that grow with your business.",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/data-center-solutions/choose4.png",
             title: "Compliance Ready",
             text: "Adherence to global standards and best practices.",
           },

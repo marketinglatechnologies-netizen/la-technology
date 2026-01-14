@@ -363,7 +363,7 @@ export default function FacilityManagement() {
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-50 mb-4">
                 <Image
-                  src="/icons/switching-routing.svg"
+                  src="/assets/images/services/network-infrastructure/service1.png"
                   alt="Switching Routing"
                   width={26}
                   height={26}
@@ -381,7 +381,7 @@ export default function FacilityManagement() {
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-50 mb-4">
                 <Image
-                  src="/icons/firewall-security.svg"
+                  src="/assets/images/services/network-infrastructure/service2.png"
                   alt="Firewalls Security"
                   width={26}
                   height={26}
@@ -399,7 +399,7 @@ export default function FacilityManagement() {
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-50 mb-4">
                 <Image
-                  src="/icons/wifi-nac.svg"
+                  src="/assets/images/services/network-infrastructure/service3.png"
                   alt="WiFi NAC"
                   width={26}
                   height={26}
@@ -415,7 +415,7 @@ export default function FacilityManagement() {
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-orange-50 mb-4">
                 <Image
-                  src="/icons/monitoring.svg"
+                  src="/assets/images/services/network-infrastructure/service4.png"
                   alt="Monitoring"
                   width={26}
                   height={26}
@@ -496,24 +496,24 @@ export default function FacilityManagement() {
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/home/icon1.png",
+            icon: "/assets/images/services/network-infrastructure/choose1.png",
             title: "High Performance & Reliability",
             text: "Through robust, standards-based design",
           },
           {
-            icon: "/assets/images/home/icon2.png",
+            icon: "/assets/images/services/network-infrastructure/choose2.png",
             title: "Lower Operational Risk",
             text: "via proactive monitoring and tested runbooks",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/home/icon3.png",
+            icon: "/assets/images/services/network-infrastructure/choose3.png",
             title: "Stronger Security",
             text: "with segmentation, NAC, and enforced policies",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/network-infrastructure/choose4.png",
             title: "Scalable Rollouts",
             text: "using templates and centralized orchestration",
           },

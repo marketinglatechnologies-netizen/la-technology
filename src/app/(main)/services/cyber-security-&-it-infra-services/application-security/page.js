@@ -59,42 +59,42 @@ sensitive data and maintain trust."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service1.png",
             title: "Web Application Firewall (WAF)",
             description:
               "Protect apps from common attacks like SQL injection and XSS.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service2.png",
             title: "API Security",
             description:
               "Secure APIs against unauthorized access and data leaks.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service3.png",
             title: "Secure Code Review & Testing",
             description:
               "Identify vulnerabilities early in the development lifecycle.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service4.png",
             title: "Authentication & Authorization Controls",
             description: "Ensure only verified users access your applications.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service3.png",
             title: "Encryption & Data Protection",
             description:
               "Safeguard sensitive data during storage and transmission.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service6.png",
             title: "Logging & Monitoring",
             description:
               "Detect anomalies and track access for forensic analysis.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/application-security/service7.png",
             title: "Vulnerability Assessment & Penetration Testing (VAPT)",
             description:
               "Comprehensive testing to uncover and remediate weaknesses.",
@@ -107,24 +107,24 @@ sensitive data and maintain trust."
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/application-security/choose1.png",
             title: "Prevent Data Breaches",
             text: "Block exploits before they compromise sensitive information.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/application-security/choose2.png",
             title: " Ensure Compliance",
             text: "Meet OWASP, PCI DSS, and industry security standards.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/application-security/choose3.png",
             title: "Expert Guidance",
             text: "Certified security professionals with deep application security expertise.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/application-security/choose4.png",
             title: "Expert Management",
             text: "Certified professionals ensure optimal configuration and monitoring.",
           },

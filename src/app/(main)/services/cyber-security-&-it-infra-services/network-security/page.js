@@ -62,31 +62,31 @@ optional—it’s essential.
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/network-security/service1.png",
       title: "Firewall Management",
       description:
         "Deployment, configuration, and monitoring of next-generation firewalls.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/network-security/service2.png",
       title: "Intrusion Detection & Prevention (IDS/IPS)",
       description:
         "Real-time threat detection, investigation, and automated response.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/network-security/service3.png",
       title: "Secure VPN & Remote Access",
       description:
         "Encrypted connections for secure remote workforce access.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/network-security/service4.png",
       title: "Network Segmentation & Zero Trust Architecture",
       description:
         "Limit lateral movement and enforce least-privilege access.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/network-security/service5.png",
       title: "Email & Web Security Gateways",
       description:
         "Protect against phishing, spam, and malicious URLs.",
@@ -98,24 +98,24 @@ optional—it’s essential.
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/services/soc/cost.png",
+              icon: "/assets/images/services/network-security/choose1.png",
               title: "Comprehensive Protection",
               text: "Defend against external and internal threats with layered security.",
             },
             {
-              icon: "/assets/images/services/soc/scalable.png",
+              icon: "/assets/images/services/network-security/choose2.png",
               title: "Regulatory Compliance",
               text: "Meet standards like GDPR, HIPAA, and PCI DSS",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/services/soc/alert.png",
+              icon: "/assets/images/services/network-security/choose3.png",
               title: "Scalable Solutions",
               text: "Designed for SMBs and large enterprises.",
             },
             {
-              icon: "/assets/images/services/soc/global.png",
+              icon: "/assets/images/services/network-security/choose4.png",
               title: "Expert Management",
               text: "Certified professionals ensure optimal configuration and monitoring.",
             },

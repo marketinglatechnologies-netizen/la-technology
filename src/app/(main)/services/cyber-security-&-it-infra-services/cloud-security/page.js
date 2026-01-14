@@ -117,49 +117,49 @@ prevent application-level threats, ensuring your business remains secure and com
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service1.png",
             title: "Identity & Access Management (IAM)",
             description:
               "Enforce MFA, role-based access, and least privilege principles.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service2.png",
             title: "Cloud Configuration Hardening",
             description:
               "Secure AWS, Azure, and Google Cloud environments against misconfigurations.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service3.png",
             title: "Data Encryption",
             description:
               "Protect data at rest and in transit with strong encryption standards.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service4.png",
             title: "Cloud Workload Protection",
             description:
               "Secure virtual machines, containers, and serverless functions.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service5.png",
             title: "Threat Detection & Response",
             description:
               "Continuous monitoring for anomalies and real-time incident response.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service6.png",
             title: "Compliance & Governance",
             description:
               "Align with standards like ISO 27001, GDPR, and local regulations.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service7.png",
             title: "Secure API & Integration",
             description:
               "Protect APIs from unauthorized access and data exposure.",
           },
           {
-            icon: "/assets/images/services/soc/feature1.png",
+            icon: "/assets/images/services/cloud-security/service8.png",
             title: "Backup & Disaster Recovery",
             description:
               "Ensure resilience with automated cloud backups and tested recovery plans.",
@@ -172,24 +172,24 @@ prevent application-level threats, ensuring your business remains secure and com
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/home/icon1.png",
+            icon: "/assets/images/services/cloud-security/choose1.png",
             title: "Prevent Data Breaches",
             text: "Eliminate misconfigurations and enforce strong access controls.",
           },
           {
-            icon: "/assets/images/home/icon2.png",
+            icon: "/assets/images/services/cloud-security/choose2.png",
             title: "Ensure Compliance",
             text: "Meet regulatory and industry standards effortlessly.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/home/icon3.png",
+            icon: "/assets/images/services/cloud-security/choose3.png",
             title: "Improve Visibility",
             text: "Gain centralized monitoring and reporting across all cloud services.",
           },
           {
-            icon: "/assets/images/home/icon4.png",
+            icon: "/assets/images/services/cloud-security/choose4.png",
             title: "Operational Continuity",
             text: "Minimize downtime with proactive threat detection and recovery strategies.",
           },
