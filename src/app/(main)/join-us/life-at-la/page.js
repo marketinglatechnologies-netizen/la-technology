@@ -14,7 +14,7 @@ export default function AboutPage() {
     <main>
       <InnerPageBanner
        bgImage="/assets/images/join-us/Tech-banner.jpg"
-        title="Where People Power Innovation.."
+        title="Where People Power Innovation"
         titleTag="h1"
         description={`Experience a workplace built on collaboration, learning, and impact.`}
       />
