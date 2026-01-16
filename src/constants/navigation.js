@@ -43,10 +43,10 @@ export const NAV_LINKS = [
             label: "IT Staff Augmentation",
             href: "/services/managed-services/it-staff-augmentation",
           },
-          {
-            label: "Facility Management Services",
-            href: "/services/managed-services/facility-management",
-          },
+          // {
+          //   label: "Facility Management Services",
+          //   href: "/services/managed-services/facility-management",
+          // },
           {
             label: "Security Assessment",
             href: "/services/managed-services/security-assessment",
