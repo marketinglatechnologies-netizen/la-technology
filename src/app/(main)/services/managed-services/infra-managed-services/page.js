@@ -56,7 +56,7 @@ export default function SOC() {
         images={[
           {
             src: "/assets/images/services/soc/soc1.png",
-            alt: "Security dashboard",
+            alt: "Security",
           },
           {
             src: "/assets/images/services/soc/soc2.png",
@@ -163,7 +163,7 @@ infrastructure so you can focus on innovation and growth."
         ]}
       />
       <ImageHighlightSection
-        heading="Your Infrastructure, Our Responsibility"
+        heading="Your Infrastructure , Our Responsibility"
         headingTag="h2"
         imageSrc="/assets/images/services/soc/security.png"
         imageAlt="Cybersecurity monitoring dashboard"
