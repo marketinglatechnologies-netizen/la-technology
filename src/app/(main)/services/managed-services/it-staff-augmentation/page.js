@@ -20,7 +20,7 @@ export default function ITBranchOperations() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/services/IT-staff-augmentation/it-staff-augmentation.jpg"
+        bgImage="/assets/images/services/IT-staff-augmentation/IT-staff-augmentation.jpg"
         title="IT Staff Augmentation"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -60,31 +60,31 @@ improved efficiency."
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/services/it-staff-augmentation/service1.png",
+      icon: "/assets/images/icons/path.svg",
       title: "On-Demand IT Talent",
       description:
         "Access certified professionals for networking, cloud, cybersecurity, DevOps, and more.",
     },
     {
-      icon: "/assets/images/services/it-staff-augmentation/service2.png",
+      icon: "/assets/images/icons/path.svg",
       title: "Flexible Engagement Models",
       description:
         "Hire resources on hourly, monthly, or project-based contracts.",
     },
     {
-      icon: "/assets/images/services/it-staff-augmentation/service3.png",
+      icon: "/assets/images/icons/path.svg",
       title: "Specialized Expertise",
       description:
         "Configuration, monitoring, and optimSkilled engineers for niche technologies like virtualization, cloud migration, and security operations.ization of firewalls, IDS/IPS, and VPNs.",
     },
     {
-      icon: "/assets/images/services/it-staff-augmentation/service4.png",
+      icon: "/assets/images/icons/path.svg",
       title: "Rapid Deployment",
       description:
         "Quickly scale your team to meet project deadlines and business goals.",
     },
     {
-      icon: "/assets/images/services/it-staff-augmentation/service5.png",
+      icon: "/assets/images/icons/path.svg",
       title: "End-to-End Support",
       description:
         "From onboarding to performance monitoring, we ensure smooth integration.",
@@ -96,24 +96,24 @@ improved efficiency."
           centerImage="/assets/images/services/soc/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/services/it-staff-augmentation/choose1.png",
+              icon: "/assets/images/home/icon1.png",
               title: "Certified Professionals",
               text: "Experts in networking, cloud, security, and enterprise IT solutions.",
             },
             {
-              icon: "/assets/images/services/it-staff-augmentation/choose2.png",
+              icon: "/assets/images/home/icon2.png",
               title: "Cost Efficiency",
               text: "Reduce hiring costs and eliminate long recruitment cycles.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/services/it-staff-augmentation/choose3.png",
+              icon: "/assets/images/home/icon3.png",
               title: "Scalability",
               text: "Scale up or down based on project requirements.",
             },
             {
-              icon: "/assets/images/services/it-staff-augmentation/choose4.png",
+              icon: "/assets/images/home/icon4.png",
               title: "Domain Expertise",
               text: "Experience across industries including BFSI, healthcare, manufacturing, and IT services.",
             },
@@ -150,7 +150,8 @@ improved efficiency."
 business is protected against evolving threats. We work behind the scenes so you can
 focus on growth and innovation."
               />
-              <GradientCtaBanner text="Ready to augment your IT team?" />
+              <GradientCtaBanner text="Ready to augment your IT team?
+" />
   </>
   );
 }
