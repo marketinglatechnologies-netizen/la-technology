@@ -67,7 +67,7 @@ export default function SOC() {
             alt: "Data monitoring",
           },
         ]}
-        title="Optimize, Secure, and Scale Your IT Environment"
+        title="Optimize, Secure, and Scale Your IT Environment.."
         description="Modern businesses rely on a robust IT infrastructure to stay competitive. From servers and
 storage to networking and virtualization, managing these components efficiently is
 critical—but it can be complex and resource-intensive.LA Technologies’ Infrastructure Managed Services provide end-to-end management of
