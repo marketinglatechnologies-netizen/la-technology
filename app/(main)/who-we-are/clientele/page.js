@@ -31,7 +31,7 @@ export default function Clientele() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/clientele.jpg"
+        bgImage="/assets/images/about-us/clientele-banner.jpg"
         title="Partners in Growth"
         titleTag="h1"
         description={`Collaborating with businesses to deliver measurable impact.`}

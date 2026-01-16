@@ -56,27 +56,27 @@ const industriesData = {
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/ics-scada-security/manufacturing.jpg",
     },
     {
       id: "energyUtilities",
       title: "Energy & Utilities",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/ics-scada-security/energy-utilities.jpg",
     },
     {
       id: "oilNGas",
       title: "Oil & Gas",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/ics-scada-security/oil.jpg",
     },
     {
       id: "transportation",
       title: "Transportation",
-      image: "/assets/images/industries/transportation.jpg",
+      image: "/assets/images/services/ics-scada-security/transportation.jpg",
     },
     {
       id: "criticalInfrastructure",
       title: "Critical Infrastructure",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/ics-scada-security/infrastructure.jpg",
     },
   ],
 };
@@ -95,15 +95,15 @@ export default function ApplicationSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/ics-scada-security/protect1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/ics-scada-security/protect2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/ics-scada-security/protect3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -165,7 +165,7 @@ without disrupting production.
 
       <WhyChooseSection
         heading="Benefits of LA Technologies ICS & SCADA Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/ics-scada-security/whychoose.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/ics-scada-security/choose1.png",
@@ -197,7 +197,7 @@ without disrupting production.
       <ImageHighlightSection
         heading="Your Operations, Our Protection"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/ics-scada-security/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing your ICS and SCADA systems are
 secure—without compromising productivity."

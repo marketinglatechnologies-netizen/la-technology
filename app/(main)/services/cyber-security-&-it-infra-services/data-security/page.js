@@ -42,32 +42,32 @@ const items = [
     {
       id: "bfsi",
       title: "BFSI",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/data-security/bfsi.jpg",
     },
     {
       id: "healthcare",
       title: "Healthcare",
-      image: "/assets/images/industries/healthcare.jpg",
+      image: "/assets/images/services/data-security/healthcare.jpeg",
     },
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/data-security/manufacturing.jpg",
     },
     {
       id: "retail",
       title: "Retail",
-      image: "/assets/images/industries/retail.jpg",
+      image: "/assets/images/services/data-security/retail1.png",
     },
     {
       id: "education",
       title: "Education",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/data-security/education1.jpg",
     },
     {
       id: "Government and public sector",
       title: "Government & public sector",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/data-security/government.jpg",
     },
   ],
 };
@@ -77,7 +77,7 @@ export default function DataSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/data-security/banner.jpg"
           title="Data Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -86,15 +86,15 @@ export default function DataSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/data-security/protect1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/data-security/protect2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/data-security/protect3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -187,7 +187,7 @@ export default function DataSecurity() {
     
       <WhyChooseSection
         heading="Benefits of LA Technologies Data Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/data-security/benefits.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/data-security/choose1.png",
@@ -218,11 +218,11 @@ export default function DataSecurity() {
       <ImageHighlightSection
         heading="Your Data, Always Secure"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/data-security/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain complete control and protection for your critical data—across every branch and endpoint."
       />
-      <GradientCtaBanner text="Ready to secure your data?" />
+      <GradientCtaBanner text="Ready to secure your data?"/>
     </>
   );
 }

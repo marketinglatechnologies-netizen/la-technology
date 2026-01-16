@@ -20,7 +20,7 @@ export default function ITBranchOperations() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/services/IT-staff-augmentation/it-staff-augmentation.jpg"
+        bgImage="/assets/images/services/it-staff-augmentation/banner.jpg"
         title="IT Staff Augmentation"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -29,15 +29,15 @@ export default function ITBranchOperations() {
     <FeatureHighlightSection
             images={[
               {
-                src: "/assets/images/services/soc/soc1.png",
+                src: "/assets/images/services/it-staff-augmentation/scale1.jpg",
                 alt: "Security dashboard",
               },
               {
-                src: "/assets/images/services/soc/soc2.png",
+                src: "/assets/images/services/it-staff-augmentation/scale2.jpg",
                 alt: "Developer working",
               },
               {
-                src: "/assets/images/services/soc/soc3.png",
+                src: "/assets/images/services/it-staff-augmentation/scale3.jpg",
                 alt: "Data monitoring",
               },
             ]}
@@ -93,7 +93,7 @@ improved efficiency."
 />
   <WhyChooseSection
           heading="What LA Technologies Helps You With:"
-          centerImage="/assets/images/services/soc/whychoose.png"
+          centerImage="/assets/images/services/it-staff-augmentation/whychoose.jpg"
           featuresLeft={[
             {
               icon: "/assets/images/services/it-staff-augmentation/choose1.png",
@@ -125,26 +125,26 @@ improved efficiency."
                 tabs={[
                   {
                     label: "Businesses with short-term IT projects",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff-augmentation/tab1.jpg",
                   },
                   {
                     label: "Organizations facing skill shortages",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff-augmentation/tab2.jpg",
                   },
                   {
                     label: "Companies scaling operations rapidly",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff-augmentation/tab3.png",
                   },
                   {
                     label: "Enterprises seeking niche technology expertise",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff-augmentation/tab4.png",
                   },
                 ]}
               />
               <ImageHighlightSection
                 heading="Your Team, Our Talent"
                 headingTag="h2"
-                imageSrc="/assets/images/industries/security.jpg"
+                imageSrc="/assets/images/services/it-staff-augmentation/security.jpg"
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies as your security partner, you gain peace of mind knowing your
 business is protected against evolving threats. We work behind the scenes so you can

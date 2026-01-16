@@ -20,7 +20,7 @@ export default function FacilityManagement() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/services/facility-management/facility-management-service-banner.jpg"
+        bgImage="/assets/images/services/facility-management/banner.png"
         title="Facility Management Services"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -29,15 +29,15 @@ export default function FacilityManagement() {
     <FeatureHighlightSection
             images={[
               {
-                src: "/assets/images/services/soc/soc1.png",
+                src: "/assets/images/services/facility-management/end1.png",
                 alt: "Security dashboard",
               },
               {
-                src: "/assets/images/services/soc/soc2.png",
+                src: "/assets/images/services/facility-management/end2.png",
                 alt: "Developer working",
               },
               {
-                src: "/assets/images/services/soc/soc3.png",
+                src: "/assets/images/services/facility-management/end3.png",
                 alt: "Data monitoring",
               },
             ]}
@@ -98,27 +98,27 @@ reliable, cost-effective solutions"
 
   <WhyChooseSection
           heading="Partner Up With LA Technologies:"
-          centerImage="/assets/images/services/soc/whychoose.png"
+          centerImage="/assets/images/services/facility-management/whychoose.png"
           featuresLeft={[
             {
-              icon: "/assets/images/services/facility-management/Certified.png",
+              icon: "/assets/images/services/facility-management/certified.png",
               title: "Certified IT Professionals",
               text: "Skilled engineers with expertise in networking, servers, storage, and end-user support.",
             },
             {
-              icon: "/assets/images/services/facility-management/Cost.png",
+              icon: "/assets/images/services/facility-management/cost.png",
               title: "Cost Efficiency",
               text: "Reduce operational overhead with flexible engagement models.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/services/facility-management/Scalability.png",
+              icon: "/assets/images/services/facility-management/scalability.png",
               title: "Scalability",
               text: "Services tailored for single-site or multi-location enterprises.",
             },
             {
-              icon: "/assets/images/services/facility-management/Approach.png",
+              icon: "/assets/images/services/facility-management/approach.png",
               title: "Proactive Approach",
               text: "Prevent issues before they impact business operations.",
             },
@@ -130,26 +130,26 @@ reliable, cost-effective solutions"
                 tabs={[
                   {
                     label: "Enterprises with large IT infrastructure",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/facility-management/tab1.png",
                   },
                   {
                     label: "Organizations facing skill shortages",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/facility-management/tab2.png",
                   },
                   {
                     label: "Companies scaling operations rapidly",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/facility-management/tab3.png",
                   },
                   {
                     label: "Enterprises seeking niche technology expertise",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/facility-management/tab4.png",
                   },
                 ]}
               />
               <ImageHighlightSection
                 heading="Your IT, Our Responsibility"
                 headingTag="h2"
-                imageSrc="/assets/images/industries/security.jpg"
+                imageSrc="/assets/images/services/facility-management/security.png"
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies as your facility management partner, you gain reliable IT operations, improved efficiency, and reduced downtime, so you can focus on your core business."
               />

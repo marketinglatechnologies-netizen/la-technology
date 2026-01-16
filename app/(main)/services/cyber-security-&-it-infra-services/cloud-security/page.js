@@ -57,7 +57,7 @@ export default function FacilityManagement() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/services/cloud-security/banner.png"
         title="Cloud Security"
         titleTag="h1"
         description={`Round-the-clock Endpoint SecurityServices designed to defend modern enterprises.`}
@@ -66,15 +66,15 @@ export default function FacilityManagement() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/cloud-security/secure1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/cloud-security/secure2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/cloud-security/secure3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -169,7 +169,7 @@ prevent application-level threats, ensuring your business remains secure and com
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Cloud Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/cloud-security/center.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/cloud-security/choose1.png",
@@ -199,7 +199,7 @@ prevent application-level threats, ensuring your business remains secure and com
       <ImageHighlightSection
         heading="Your Cloud, Secured"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/cloud-security/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you get end-to-end protection for your cloud environment—covering identity, data, and workloads."
       />

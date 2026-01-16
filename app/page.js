@@ -86,7 +86,7 @@ export default function HomePage() {
         title: "ITES",
         image: "/assets/images/home/ites1.jpg",
       },
-      {
+           {
         id: "service providers",
         title: "Service Providers",
         image: "/assets/images/home/service-providers.jpg",
@@ -152,7 +152,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <ServicesSection />
+      
       <section className="py-20">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -248,34 +250,34 @@ export default function HomePage() {
             {/* RIGHT IMAGES */}
             <div className="relative">
               <div className="flex gap-5">
-                <img src="/assets/images/home/us.png" />
+                <img src="/assets/images/home/home-main.png" />
               </div>
               {/* Top small image */}
-              <div className="absolute -top-10 left-0 p-2 hidden">
+              {/* <div className="absolute -top-10 left-0 p-2 hidden">
                 <img
-                  src="/assets/images/home/industry1.jpg"
+                  src="/assets/images/home/experience.png"
                   alt="20+ Years Experience"
                   className="rounded-xl w-48"
                 />
-              </div>
+              </div> */}
 
               {/* Bottom image */}
-              <div className="absolute -bottom-8 left-12  p-2 hidden">
+              {/* <div className="absolute -bottom-8 left-12  p-2 hidden">
                 <img
                   src="/assets/images/home/industry2.jpg"
                   alt="Cybersecurity Laptop"
                   className="rounded-xl w-64"
                 />
-              </div>
+              </div> */}
 
               {/* Main image */}
-              <div className="ml-auto w-[360px] p-3 hidden">
+              {/* <div className="ml-auto w-[360px] p-3 hidden">
                 <img
                   src="/assets/images/home/industry3.jpg"
                   alt="Cyber Security Shield"
                   className="rounded-2xl"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -294,7 +296,7 @@ export default function HomePage() {
               <Link key={item.id} href={item.link} className="group block">
                 <div
                   className="relative overflow-hidden rounded-2xl
-                   w-full h-[260px] lg:h-[360px]"
+                 w-full h-[auto] lg:h-[360px] mx-auto"
                 >
                   {/* Image */}
                   <img
@@ -303,19 +305,11 @@ export default function HomePage() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-black/30" />
-
-                  {/* Title */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div
-                      className="bg-black/20 backdrop-blur-sm
-                       text-white text-sm font-medium
-                       px-4 py-3 rounded-xl text-center
-                       leading-snug"
-                    >
+                  {/* TEXT OVERLAY */}
+                  <div className="absolute bottom-5 w-full bg-black/30 backdrop-blur-sm px-4 py-3">
+                    <p className="text-white text-sm font-semibold leading-snug line-clamp-2 text-center">
                       {item.title}
-                    </div>
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -341,14 +335,14 @@ export default function HomePage() {
                 title: "Cybersecurity Best Practices",
                 description:
                   "Tips to protect your business from evolving threats.",
-                image: "/assets/images/home/case-study.jpg",
+                image: "/assets/images/home/home2.jpg",
               },
               {
                 date: "Dec 4",
                 title: "Cybersecurity Best Practices",
                 description:
                   "Tips to protect your business from evolving threats.",
-                image: "/assets/images/home/case-study.jpg",
+                image: "/assets/images/home/home2.jpg",
               },
             ].map((item, index) => (
               <div

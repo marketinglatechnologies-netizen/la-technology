@@ -62,15 +62,15 @@ export default function NOC() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/noc/scale1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/noc/scale2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/noc/scale3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -133,7 +133,7 @@ on strategic, high-margin projects.
 
       <WhyChooseSection
         heading="LA Technologies as your Trusted Cybersecurity Partner:"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/noc/trusted.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/noc/partner1.png",
@@ -165,16 +165,16 @@ on strategic, high-margin projects.
         tabs={[
           {
             label: "MSPs and VARs looking to expand service offerings",
-            image: "/assets/images/services/soc/tab1.png",
+            image: "/assets/images/services/noc/tab1.png",
           },
           {
             label: "Businesses seeking 24×7 IT infrastructure monitoring",
-            image: "/images/soc-tab-2.jpg",
+            image: "/assets/images/services/noc/tab2.png",
           },
           {
             label:
               "Organizations aiming to reduce operational costs and complexity",
-            image: "/images/soc-tab-3.jpg",
+            image: "/assets/images/services/noc/tab3.png",
           },
           // {
           //   label: "Enterprises lacking in-house security expertise",
@@ -185,7 +185,7 @@ on strategic, high-margin projects.
       <ImageHighlightSection
         heading="Your Operations, Our Expertise"
         headingTag="h2"
-        imageSrc="/assets/images/services/soc/security.png"
+        imageSrc="/assets/images/services/noc/operations.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies as your NOC partner, you gain flexibility, scalability, and peace of
 mind. We work behind the scenes to keep your IT environment running smoothly—so you

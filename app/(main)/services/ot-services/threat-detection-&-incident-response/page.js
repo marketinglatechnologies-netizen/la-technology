@@ -25,37 +25,37 @@ const multiCardsItems = [
     icon: "/assets/images/icons/path.svg",
     title: "Passive OT Network Monitoring",
     description:
-      "Non-intrusive analysis of ICS/ <br> SCADA traffic (e.g., Modbus, DNP3, <br> IEC 104) to avoid <br> impacting controllers and field <br> devices.",
+      "Non-intrusive analysis of ICS/  SCADA traffic (e.g., Modbus, DNP3,  IEC 104) to avoid  impacting controllers and field  devices.",
   },
   {
     icon: "/assets/images/icons/path.svg",
     title: "Behavior & Anomaly Detection",
     description:
-      "Baseline “known-good” operational patterns; <br> alert on deviations such as unexpected <br> firmware changes, unauthorized ladder logic <br> downloads, or unusual command <br> sequences.",
+      "Baseline “known-good” operational patterns;  alert on deviations such as unexpected  firmware changes, unauthorized ladder logic  downloads, or unusual command  sequences.",
   },
   {
     icon: "/assets/images/icons/path.svg",
     title: "Use-Case & Playbook Catalog (OT-Specific)",
     description:
-      "Predefined detections and response steps for <br> common OT scenarios: ransomware on <br> engineering workstations, unauthorized remote <br> sessions, rogue PLC programming, and <br> HMI tampering.",
+      "Predefined detections and response steps for  common OT scenarios: ransomware on  engineering workstations, unauthorized remote  sessions, rogue PLC programming, and  HMI tampering.",
   },
   {
     icon: "/assets/images/icons/path.svg",
     title: "Incident Response Runbooks",
     description:
-      "OT-safe procedures for triage, <br> containment, and recovery— <br> coordinated with plant <br> operations, EHS, and maintenance <br> teams.",
+      "OT-safe procedures for triage,  containment, and recovery—  coordinated with plant  operations, EHS, and maintenance  teams.",
   },
   {
     icon: "/assets/images/icons/path.svg",
     title: "Forensics & Root Cause Analysis",
     description:
-      "Evidence collection (logs, packets, <br> controller state) with minimal <br> downtime; root-cause <br> findings and corrective actions.",
+      "Evidence collection (logs, packets,  controller state) with minimal  downtime; root-cause  findings and corrective actions.",
   },
   {
     icon: "/assets/images/icons/path.svg",
     title: "Post-Incident Hardening",
     description:
-      "Recommendations and implementation <br> support: tightening ACLs, refining <br> zones/conduits, MFA for remote sessions, <br> change-control on programming terminals.",
+      "Recommendations and implementation  support: tightening ACLs, refining  zones/conduits, MFA for remote sessions,  change-control on programming terminals.",
   },
 ];
 
@@ -123,7 +123,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
           title="Threat Detection & Incident Response"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
+          description={`Round-the-clock Endpoint Security Services designed to  defend modern enterprises.`}
         />
       </div>
       <FeatureHighlightSection
@@ -178,39 +178,39 @@ that contains threats without impacting critical processes.
         items={[
           {
             icon: "/assets/images/services/threat-detection-incident-response/service1.png",
-            title: "Passive OT Network <br> Monitoring",
+            title: "Passive OT Network Monitoring",
             description:
-              "Non-intrusive analysis of ICS/ <br> SCADA traffic (e.g., Modbus, DNP3, <br> IEC 104) to avoid <br> impacting controllers and field <br> devices.",
+              "Non-intrusive analysis of ICS/ SCADA traffic (e.g., Modbus, DNP3,  IEC 104) to avoid  impacting controllers and field  devices.",
           },
           {
             icon: "/assets/images/services/threat-detection-incident-response/service2.png",
-            title: "Behavior & <br> Anomaly Detection",
+            title: "Behavior &  Anomaly Detection",
             description:
-              "Baseline “known-good” operational patterns; <br> alert on deviations such as unexpected <br> firmware changes, unauthorized ladder logic <br> downloads, or unusual command <br> sequences.",
+              "Baseline “known-good” operational patterns;  alert on deviations such as unexpected  firmware changes, unauthorized ladder logic  downloads, or unusual command  sequences.",
           },
           {
             icon: "/assets/images/services/threat-detection-incident-response/service3.png",
-            title: "Use-Case & Playbook <br> Catalog (OT-Specific)",
+            title: "Use-Case & Playbook Catalog (OT-Specific)",
             description:
-              "Predefined detections and response steps for <br> common OT scenarios: ransomware on <br> engineering workstations, unauthorized remote <br> sessions, rogue PLC programming, and <br> HMI tampering.",
+              "Predefined detections and response steps for  common OT scenarios: ransomware on  engineering workstations, unauthorized remote  sessions, rogue PLC programming, and  HMI tampering.",
           },
           {
             icon: "/assets/images/services/threat-detection-incident-response/service4.png",
-            title: "Incident Response <br> Runbooks",
+            title: "Incident ResponseRunbooks",
             description:
-              "OT-safe procedures for triage, <br> containment, and recovery— <br> coordinated with plant <br> operations, EHS, and maintenance <br> teams.",
+              "OT-safe procedures for triage, containment, and recovery— coordinated with plant operations, EHS, and maintenance  teams.",
           },
           {
             icon: "/assets/images/services/threat-detection-incident-response/service5.png",
-            title: "Forensics & Root <br> Cause Analysis",
+            title: "Forensics & Root  Cause Analysis",
             description:
-              "Evidence collection (logs, packets, <br> controller state) with minimal <br> downtime; root-cause <br> findings and corrective actions.",
+              "Evidence collection (logs, packets, controller state) with minimal downtime; root-cause  findings and corrective actions.",
           },
           {
             icon: "/assets/images/services/threat-detection-incident-response/service6.png",
-            title: "Post-Incident <br> Hardening",
+            title: "Post-Incident  Hardening",
             description:
-              "Recommendations and implementation <br> support: tightening ACLs, refining <br> zones/conduits, MFA for remote sessions, <br> change-control on programming terminals.",
+              "Recommendations and implementation support: tightening ACLs, refining zones/conduits, MFA for remote sessions,  change-control on programming terminals.",
           },
         ]}
       />

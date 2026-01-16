@@ -39,23 +39,23 @@ const items = [
   const industries = [
     {
       title: "BFSI",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/managed-broadband-sdwan/bfsi.jpg",
     },
     {
       title: "Healthcare",
-      image: "/assets/images/industries/healthcare.jpg",
+      image: "/assets/images/services/managed-broadband-sdwan/healthcare.jpg",
     },
     {
       title: "Manufacturing",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/managed-broadband-sdwan/manufac.jpg",
     },
     {
       title: "Retail & Branch networking",
-      image: "/assets/images/industries/retail.jpg",
+      image: "/assets/images/services/managed-broadband-sdwan/retail.jpg",
     },
     {
       title: "Education",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/managed-broadband-sdwan/education.jpg",
     },
   ];
 
@@ -64,7 +64,7 @@ export default function ManagedBroadbandSDWAN() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/managed-broadband-service/managed-broadband-service.jpg"
+          bgImage="/assets/images/services/managed-broadband-sdwan/banner.jpg"
           title="Managed Broadband + SDWAN"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -73,15 +73,15 @@ export default function ManagedBroadbandSDWAN() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/managed-broadband-sdwan/reliable1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/managed-broadband-sdwan/reliable2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/managed-broadband-sdwan/reliable3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -161,7 +161,7 @@ export default function ManagedBroadbandSDWAN() {
     
       <WhyChooseSection
         heading="Benefits of LA Technologies Managed Broadband + SD-WAN "
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/managed-broadband-sdwan/whychoose.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/managed-broadband-sdwan/choose1.png",
@@ -201,7 +201,7 @@ export default function ManagedBroadbandSDWAN() {
         heading="Your Network, Smarter and Safer 
 "
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/managed-broadband-sdwan/network.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you get a fully managed broadband and SD-WAN solution that delivers speed, security, and simplicity."
       />

@@ -76,7 +76,7 @@ export default function ITBranchOperations() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/IT-branch-operations/IT-branch-operations.jpg"
+          bgImage="/assets/images/services/it-branch-operations/banner.jpg"
           title="IT Branch Operations"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -85,15 +85,15 @@ export default function ITBranchOperations() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/IT-branch-operations/reliable1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/IT-branch-operations/reliable2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/IT-branch-operations/reliable3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -250,7 +250,7 @@ export default function ITBranchOperations() {
 
       <WhyChooseSection
         heading="Benefits for Multi-Branch Enterprises"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/it-branch-operations/benefits.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/it-branch-operations/choose1.png",
@@ -290,7 +290,7 @@ export default function ITBranchOperations() {
       <ImageHighlightSection
         heading="Run Every Branch Like Your Best Branch"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/it-branch-operations/branch.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, multi-location IT operations become predictable, secure, and easy to scale."
       />
