@@ -5,7 +5,7 @@ export const NAV_LINKS = [
     dropdown: [
       { label: "About us", href: "/who-we-are/about-us" },
       // { label: "Meet Our Leaders", href: "/who-we-are/meet-our-leaders" },
-      { label: "Clientele", href: "/who-we-are/clientele" },
+      // { label: "Clientele", href: "/who-we-are/clientele" },
     ],
   },
   {
@@ -153,7 +153,7 @@ export const NAV_LINKS = [
     href: "/",
     dropdown: [
       { label: "Blogs", href: "/insights/blogs" },
-      { label: "Podcast", href: "/insights/podcast" },
+      // { label: "Podcast", href: "/insights/podcast" },
       { label: "CSR", href: "/insights/csr" },
     ],
   },
