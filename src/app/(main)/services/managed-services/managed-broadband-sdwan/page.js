@@ -192,7 +192,7 @@ export default function ManagedBroadbandSDWAN() {
           },
         ]}
       />
-      <IndustryGrid data={industries} />
+      {/* <IndustryGrid data={industries} /> */}
       
 
       <ImageHighlightSection
