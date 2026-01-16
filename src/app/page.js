@@ -339,10 +339,10 @@ export default function HomePage() {
               },
               {
                 date: "Dec 4",
-                title: "Cybersecurity Best Practices",
+                title: "Basic Cybersecurity Safety Guidelines",
                 description:
-                  "Tips to protect your business from evolving threats.",
-                image: "/assets/images/home/home2.jpg",
+                  "Basic practices used to protect systems and cyber threats",
+                image: "/assets/images/home/case-study.jpg",
               },
             ].map((item, index) => (
               <div
