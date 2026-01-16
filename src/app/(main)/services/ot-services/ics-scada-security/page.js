@@ -192,7 +192,7 @@ without disrupting production.
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
 
       <ImageHighlightSection
         heading="Your Operations, Our Protection"

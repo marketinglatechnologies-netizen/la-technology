@@ -520,7 +520,7 @@ export default function FacilityManagement() {
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
 
       <InfoList
         title="Sample Use Cases"

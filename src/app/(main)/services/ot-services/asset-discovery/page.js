@@ -193,7 +193,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
 
       <ImageHighlightSection
         heading="Your Visibility, Our Expertise"

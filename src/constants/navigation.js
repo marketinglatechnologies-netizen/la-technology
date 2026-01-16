@@ -76,10 +76,10 @@ export const NAV_LINKS = [
             label: "Cloud Security",
             href: "/services/cyber-security-&-it-infra-services/cloud-security",
           },
-          {
-            label: "Data Center Build",
-            href: "/services/cyber-security-&-it-infra-services/data-center-build",
-          },
+          // {
+          //   label: "Data Center Build",
+          //   href: "/services/cyber-security-&-it-infra-services/data-center-build",
+          // },
           {
             label: "Network Infrastructure",
             href: "/services/cyber-security-&-it-infra-services/network-infrastructure",

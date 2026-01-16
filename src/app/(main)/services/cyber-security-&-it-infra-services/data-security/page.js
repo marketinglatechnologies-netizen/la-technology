@@ -214,7 +214,7 @@ export default function DataSecurity() {
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
       <ImageHighlightSection
         heading="Your Data, Always Secure"
         headingTag="h2"

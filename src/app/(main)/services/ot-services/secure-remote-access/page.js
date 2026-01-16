@@ -215,7 +215,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
 
       <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">

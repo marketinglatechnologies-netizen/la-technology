@@ -191,7 +191,7 @@ maintaining uptime and safety."
         ]}
       />
 
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
 
       <ImageHighlightSection
         heading="Your Compliance, Our Expertise"

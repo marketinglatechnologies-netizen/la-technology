@@ -195,7 +195,7 @@ prevent application-level threats, ensuring your business remains secure and com
           },
         ]}
       />
-      <IndustryGrid data={industriesData} />
+      {/* <IndustryGrid data={industriesData} /> */}
       <ImageHighlightSection
         heading="Your Cloud, Secured"
         headingTag="h2"
