@@ -543,7 +543,7 @@ export default function AboutPage() {
           {/* ISO 9001 */}
           <div className="flex items-center justify-center">
             <Image
-              src="/assets/images/about-us/iso-2015.png"
+              src="/assets/images/about-us/iso-9001.png"
               alt="ISO 9001:2015 Certification"
               width={180}
               height={120}
@@ -554,7 +554,7 @@ export default function AboutPage() {
           {/* ISO 27001 */}
           <div className="flex items-center justify-center">
             <Image
-              src="/assets/images/about-us/iso-2022.png"
+              src="/assets/images/about-us/iso-27001.png"
               alt="ISO 27001:2022 Certification"
               width={180}
               height={120}
