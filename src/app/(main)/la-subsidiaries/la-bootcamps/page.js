@@ -62,7 +62,7 @@ const whyChooseData = [
 const programsData = [
   {
     id: 1,
-    image: "/assets/images/la/bootcamps/program1.png",
+    image: "/assets/images/la/bootcamps/cybersecurity.jpg",
     title: "Certification in Cybersecurity",
     duration: "4 Months",
     description:
@@ -70,7 +70,7 @@ const programsData = [
   },
   {
     id: 2,
-    image: "/assets/images/la/bootcamps/program2.png",
+    image: "/assets/images/la/bootcamps/pg-diploma.png",
     title: "PG Diploma in Cybersecurity",
     duration: "12 Months",
     description:
@@ -78,7 +78,7 @@ const programsData = [
   },
   {
     id: 3,
-    image: "/assets/images/la/bootcamps/program3.png",
+    image: "/assets/images/la/bootcamps/diploma-cyber.png",
     title: "Diploma in Cybersecurity",
     duration: "24 Months",
     description:
@@ -86,7 +86,7 @@ const programsData = [
   },
   {
     id: 4,
-    image: "/assets/images/la/bootcamps/program4.png",
+    image: "/assets/images/la/bootcamps/customized.jpg",
     title: "Customized Programs",
     duration: "Flexible",
     description:
@@ -99,7 +99,7 @@ export default function LaBootCamp() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/la/bootcamps/bootcamp-bg.png"
+          bgImage="/assets/images/la/bootcamps/bootcamp-banner.jpg"
           title="LA Bootcamps – Learn Cybersecurity from Industry Experts "
           titleTag="h1"
           description={`Your gateway to hands-on cybersecurity training, powered by LA Technologies. `}
@@ -156,7 +156,7 @@ export default function LaBootCamp() {
     {/* Right Tall Image */}
     <div className="row-span-2 rounded-2xl overflow-hidden">
       <img
-        src="/assets/images/la/bootcamps/abt3.png"
+        src="/assets/images/la/bootcamps/abt3.jpg"
         alt="Security operations center"
         className="w-full h-full object-cover"
       />

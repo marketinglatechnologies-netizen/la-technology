@@ -20,37 +20,37 @@ export const metadata = {
 
 const multiCardsItems = [
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service1.png",
     title: "Centralized Credential <br> Vault",
     description:
       "Securely store and rotate privileged <br> credentials for OT systems.",
   },
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service2.png",
     title: "Granular Access <br> Control",
     description:
       "Assign role-based permissions and <br> enforce least privilege principles.",
   },
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service3.png",
     title: "Just-in-Time <br> Access",
     description:
       "Provide temporary, time-bound <br> access to critical OT assets.",
   },
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service4.png",
     title: "Session Monitoring & <br> Recording",
     description:
       "Track and record all privileged <br> activities for compliance and <br> forensic analysis.",
   },
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service5.png",
     title: "Automated Password <br> Rotation",
     description:
       "Eliminate shared or static credentials <br> across OT environments.",
   },
   {
-    icon: "/assets/images/icons/path.svg",
+    icon: "/assets/images/services/ot-privileged-access-management/service6.png",
     title: "Integration with Secure <br> Remote Access",
     description:
       "Combine PAM with remote access <br> controls for complete security.",
@@ -132,37 +132,37 @@ reducing risk, and maintaining operational continuity."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service1.png",
             title: "Centralized Credential <br> Vault",
             description:
               "Securely store and rotate privileged <br> credentials for OT systems.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service2.png",
             title: "Granular Access Control",
             description:
               "Assign role-based permissions and enforce least privilege principles.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service3.png",
             title: "Just-in-Time Access",
             description:
               "Provide temporary, time-bound access to critical OT assets.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service4.png",
             title: "Session Monitoring & Recording",
             description:
               "Track and record all privileged activities for compliance and forensic analysis.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service5.png",
             title: "Automated Password Rotation",
             description:
               "Eliminate shared or static credentials across OT environments.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-privileged-access-management/service6.png",
             title: "Integration with Secure Remote Access",
             description:
               "Combine PAM with remote access controls for complete security.",
@@ -175,24 +175,24 @@ reducing risk, and maintaining operational continuity."
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/ot-privileged-access-management/choose1.png",
             title: "Reduce Cyber Risk",
             text: "Prevent unauthorized access to critical OT systems.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/ot-privileged-access-management/choose2.png",
             title: "Ensure Compliance",
             text: "Meet IEC 62443 and other industry standards effortlessly.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/ot-privileged-access-management/choose3.png",
             title: "Improve Visibility",
             text: "Gain full insight into privileged activities across OT networks.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/ot-privileged-access-management/choose4.png",
             title: "Operational Safety",
             text: "Minimize downtime and maintain safety during maintenance operations.",
           },

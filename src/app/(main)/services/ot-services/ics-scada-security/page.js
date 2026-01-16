@@ -56,27 +56,27 @@ const industriesData = {
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/ics-scada-security/manufacturing.jpg",
     },
     {
       id: "energyUtilities",
       title: "Energy & Utilities",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/ics-scada-security/energy-utilities.jpg",
     },
     {
       id: "oilNGas",
       title: "Oil & Gas",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/ics-scada-security/oil.jpg",
     },
     {
       id: "transportation",
       title: "Transportation",
-      image: "/assets/images/industries/transportation.jpg",
+      image: "/assets/images/services/ics-scada-security/transportation.jpg",
     },
     {
       id: "criticalInfrastructure",
       title: "Critical Infrastructure",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/ics-scada-security/infrastructure.jpg",
     },
   ],
 };
@@ -86,7 +86,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/ics-scada-security/banner.jpg"
           title="ICS & SCADA Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -95,15 +95,15 @@ export default function ApplicationSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/ics-scada-security/protect1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/ics-scada-security/protect2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/ics-scada-security/protect3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -131,31 +131,31 @@ without disrupting production.
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ics-scada-security/service1.png",
             title: "System Hardening",
             description:
               "Secure configurations for PLCs, HMIs, and SCADA servers.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ics-scada-security/service2.png",
             title: "Access Control & Authentication",
             description:
               "Enforce least-privilege access and multi-factor authentication for OT systems.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ics-scada-security/service3.png",
             title: "Network Segmentation",
             description:
               "Implement zones and conduits to isolate critical assets.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ics-scada-security/service4.png",
             title: "Monitoring & Threat Detection",
             description:
               "Continuous visibility into ICS traffic and anomaly detection.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ics-scada-security/service5.png",
             title: "Incident Response Planning",
             description:
               "Develop OT-specific playbooks for rapid containment.",
@@ -165,27 +165,27 @@ without disrupting production.
 
       <WhyChooseSection
         heading="Benefits of LA Technologies ICS & SCADA Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/ics-scada-security/whychoose.jpg"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/ics-scada-security/choose1.png",
             title: "Minimize Downtime",
             text: "Prevent disruptions to critical operations.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/ics-scada-security/choose2.png",
             title: "Reduce Risk",
             text: "Protect against ransomware and targeted attacks.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/ics-scada-security/choose3.png",
             title: "Ensure Compliance",
             text: "Align with IEC 62443, NIST, and industry standards.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/ics-scada-security/choose4.png",
             title: "Expert Guidance",
             text: "Certified OT security professionals with industrial expertise.",
           },
@@ -197,7 +197,7 @@ without disrupting production.
       <ImageHighlightSection
         heading="Your Operations, Our Protection"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/ics-scada-security/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing your ICS and SCADA systems are
 secure—without compromising productivity."

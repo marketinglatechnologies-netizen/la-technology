@@ -20,7 +20,7 @@ export default function ITBranchOperations() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/services/IT-staff-augmentation/IT-staff-augmentation.jpg"
+        bgImage="/assets/images/services/it-staff/banner.jpg"
         title="IT Staff Augmentation"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -29,15 +29,15 @@ export default function ITBranchOperations() {
     <FeatureHighlightSection
             images={[
               {
-                src: "/assets/images/services/soc/soc1.png",
+                src: "/assets/images/services/it-staff/scale1.jpg",
                 alt: "Security dashboard",
               },
               {
-                src: "/assets/images/services/soc/soc2.png",
+                src: "/assets/images/services/it-staff/scale2.jpg",
                 alt: "Developer working",
               },
               {
-                src: "/assets/images/services/soc/soc3.png",
+                src: "/assets/images/services/it-staff/scale3.jpg",
                 alt: "Data monitoring",
               },
             ]}
@@ -60,31 +60,31 @@ improved efficiency."
   headingTag="h2"
   items={[
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-staff/service1.png",
       title: "On-Demand IT Talent",
       description:
         "Access certified professionals for networking, cloud, cybersecurity, DevOps, and more.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-staff/service2.png",
       title: "Flexible Engagement Models",
       description:
         "Hire resources on hourly, monthly, or project-based contracts.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-staff/service3.png",
       title: "Specialized Expertise",
       description:
         "Configuration, monitoring, and optimSkilled engineers for niche technologies like virtualization, cloud migration, and security operations.ization of firewalls, IDS/IPS, and VPNs.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-staff/service4.png",
       title: "Rapid Deployment",
       description:
         "Quickly scale your team to meet project deadlines and business goals.",
     },
     {
-      icon: "/assets/images/icons/path.svg",
+      icon: "/assets/images/services/it-staff/service5.png",
       title: "End-to-End Support",
       description:
         "From onboarding to performance monitoring, we ensure smooth integration.",
@@ -93,27 +93,27 @@ improved efficiency."
 />
   <WhyChooseSection
           heading="What LA Technologies Helps You With:"
-          centerImage="/assets/images/services/soc/whychoose.png"
+          centerImage="/assets/images/services/it-staff/whychoose.jpg"
           featuresLeft={[
             {
-              icon: "/assets/images/home/icon1.png",
+              icon: "/assets/images/services/it-staff/choose1.png",
               title: "Certified Professionals",
               text: "Experts in networking, cloud, security, and enterprise IT solutions.",
             },
             {
-              icon: "/assets/images/home/icon2.png",
+              icon: "/assets/images/services/it-staff/choose2.png",
               title: "Cost Efficiency",
               text: "Reduce hiring costs and eliminate long recruitment cycles.",
             },
           ]}
           featuresRight={[
             {
-              icon: "/assets/images/home/icon3.png",
+              icon: "/assets/images/services/it-staff/choose3.png",
               title: "Scalability",
               text: "Scale up or down based on project requirements.",
             },
             {
-              icon: "/assets/images/home/icon4.png",
+              icon: "/assets/images/services/it-staff/choose4.png",
               title: "Domain Expertise",
               text: "Experience across industries including BFSI, healthcare, manufacturing, and IT services.",
             },
@@ -125,33 +125,32 @@ improved efficiency."
                 tabs={[
                   {
                     label: "Businesses with short-term IT projects",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff/tab1.jpg",
                   },
                   {
                     label: "Organizations facing skill shortages",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff/tab2.jpg",
                   },
                   {
                     label: "Companies scaling operations rapidly",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff/tab3.png",
                   },
                   {
                     label: "Enterprises seeking niche technology expertise",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/it-staff/tab4.png",
                   },
                 ]}
               />
               <ImageHighlightSection
                 heading="Your Team, Our Talent"
                 headingTag="h2"
-                imageSrc="/assets/images/industries/security.jpg"
+                imageSrc="/assets/images/services/it-staff/security.jpg"
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies as your security partner, you gain peace of mind knowing your
 business is protected against evolving threats. We work behind the scenes so you can
 focus on growth and innovation."
               />
-              <GradientCtaBanner text="Ready to augment your IT team?
-" />
+              <GradientCtaBanner text="Ready to augment your IT team?" />
   </>
   );
 }

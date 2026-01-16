@@ -129,31 +129,31 @@ maintaining uptime and safety."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/compliance-for-ot/service1.png",
             title: "Gap Assessment & Compliance Mapping",
             description:
               "Identify gaps against IEC 62443, NIST, and industry-specific standards.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/compliance-for-ot/service2.png",
             title: "Policy Development & Documentation",
             description:
               "Create OT-specific security policies, procedures, and governance frameworks.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/compliance-for-ot/service3.png",
             title: "Access Control & Privilege Management",
             description:
               "Implement least-privilege access and secure remote connections.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/compliance-for-ot/service4.png",
             title: "Incident Response & Reporting",
             description:
               "Develop OT-focused IR plans and maintain audit-ready logs.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/compliance-for-ot/service5.png",
 
             title: "Continuous Compliance Monitoring",
             description:
@@ -167,24 +167,24 @@ maintaining uptime and safety."
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/compliance-for-ot/choose1.png",
             title: "Reduce Regulatory Risk",
             text: "Avoid penalties and maintain operational licenses.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/compliance-for-ot/choose2.png",
             title: "Audit-Ready Documentation",
             text: "Simplify compliance audits with structured reports.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/compliance-for-ot/choose3.png",
             title: "Improve Security Posture",
             text: "Align with global best practices for OT environments.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/compliance-for-ot/choose4.png",
             title: "Expert Guidance",
             text: "Certified professionals with deep knowledge of OT standards.",
           },

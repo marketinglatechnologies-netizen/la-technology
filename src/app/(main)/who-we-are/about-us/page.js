@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/about-us/about-us-banner.jpg"
         title="Driven by Innovation"
         titleTag="h1"
         description={`Our team combines technology, strategy, and <br> creativity to deliver meaningful digital experiences.`}

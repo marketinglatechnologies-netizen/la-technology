@@ -22,6 +22,7 @@ export default function FeatureHighlightSection({
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
+              unoptimized
             />
           </div>
 
@@ -34,6 +35,7 @@ export default function FeatureHighlightSection({
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                unoptimized
               />
             </div>
 
@@ -44,6 +46,7 @@ export default function FeatureHighlightSection({
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                unoptimized
               />
             </div>
           </div>

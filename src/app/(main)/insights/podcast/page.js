@@ -9,27 +9,27 @@ export const metadata = {
 const whatYouWillHearData = [
   {
     id: 1,
-    image: "/assets/images/insights/podcast1.png",
+    image: "/assets/images/insights/cybersecurity.jpg",
     title: "Cybersecurity Deep Dives",
     description: "Explore strategies to combat evolving threats.",
   },
   {
     id: 2,
-    image: "/assets/images/insights/podcast2.png",
+    image: "/assets/images/insights/ai.jpg",
     title: "AI & Automation Talks",
     description:
       "Understand how artificial intelligence is transforming businesses.",
   },
   {
     id: 3,
-    image: "/assets/images/insights/podcast3.png",
+    image: "/assets/images/insights/networking.jpg",
     title: "Networking & Cloud Innovations",
     description:
       "Learn about the latest in connectivity and IT infrastructure.",
   },
   {
     id: 4,
-    image: "/assets/images/insights/podcast4.png",
+    image: "/assets/images/insights/leadership.jpg",
     title: "Leadership Perspectives",
     description: "Hear from industry leaders and LA Technologies experts.",
   },
@@ -61,7 +61,7 @@ export default function PodcastPage() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/insights/podcast-bg.png"
+          bgImage="/assets/images/insights/podcast-banner.jpg"
           title="Conversations that matter. Ideas that inspire."
           titleTag="h1"
           description={`Our podcast series brings you expert discussions, industry insights, and thought leadership on the topics shaping the future of technology.`}
@@ -138,7 +138,7 @@ export default function PodcastPage() {
         {/* Right Image */}
         <div className="rounded-2xl overflow-hidden">
           <img
-            src="/assets/images/insights/podcast-mic.png"
+            src="/assets/images/insights/why-listen.jpg"
             alt="Podcast microphones"
             className="w-full h-full object-cover"
           />

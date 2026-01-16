@@ -35,7 +35,7 @@ const coreServices = [
 const trustedConnectivityData = [
   {
     id: 1,
-    image: "/assets/images/la/isp/connect1.png",
+    image: "/assets/images/la/isp/network.png",
     title: "Network Performance & Reliability",
     points: [
       "99.99% Uptime for mission-critical networks",
@@ -46,7 +46,7 @@ const trustedConnectivityData = [
   },
   {
     id: 2,
-    image: "/assets/images/la/isp/connect2.png",
+    image: "/assets/images/la/isp/customer.png",
     title: "Customer-Centric Approach",
     points: [
       "Transparent billing and customer-focused initiatives",
@@ -56,7 +56,7 @@ const trustedConnectivityData = [
   },
   {
     id: 3,
-    image: "/assets/images/la/isp/connect3.png",
+    image: "/assets/images/la/isp/value.jpg",
     title: "Value-Added Services",
     points: [
       "Cybersecurity packages for secure connectivity",
@@ -67,7 +67,7 @@ const trustedConnectivityData = [
   },
   {
     id: 4,
-    image: "/assets/images/la/isp/connect4.png",
+    image: "/assets/images/la/isp/innovation.png",
     title: "Innovation & Future Roadmap",
     points: [
       "Exploring 5G-based enterprise solutions",
@@ -83,7 +83,7 @@ export default function LaIsPage() {
     <>
       <section>
         <InnerPageBanner
-          bgImage="/assets/images/la/isp/isp-bg.png"
+          bgImage="/assets/images/la/isp/la-isp-banner.jpg"
           title="LA ISP – Enterprise Connectivity Solutions "
           titleTag="h1"
           description={`Empowering businesses with reliable, high-performance <br>internet services across India. `}
@@ -98,7 +98,7 @@ export default function LaIsPage() {
             <div className="flex items-center h-full">
               <div className="rounded-2xl overflow-hidden w-full">
                 <img
-                  src="/assets/images/la/isp/isp1.png"
+                  src="/assets/images/la/isp/left1.jpg"
                   alt="Global connectivity network"
                   className="w-full h-full object-cover"
                 />
@@ -109,7 +109,7 @@ export default function LaIsPage() {
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/isp/isp2.png"
+                  src="/assets/images/la/isp/left2.png"
                   alt="Enterprise infrastructure"
                   className="w-full h-full object-cover"
                 />
@@ -117,7 +117,7 @@ export default function LaIsPage() {
 
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/isp/isp3.png"
+                  src="/assets/images/la/isp/left3.jpg"
                   alt="Fiber connectivity"
                   className="w-full h-full object-cover"
                 />

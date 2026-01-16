@@ -19,7 +19,7 @@ export default function EndpointSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/endpoint-security/banner.png"
           title="Endpoint Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -28,15 +28,15 @@ export default function EndpointSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/endpoint-security/protect1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/endpoint-security/protect2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/endpoint-security/protect3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -91,7 +91,7 @@ complete visibility, control, and protection across all endpoints.
       />
       <WhyChooseSection
         heading="Benefits of LA Technologies Endpoint Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/endpoint-security/whychoose.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/endpoint-security/choose1.png",
@@ -130,7 +130,7 @@ complete visibility, control, and protection across all endpoints.
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/endpoint-security/carbon-cloud.png"
                   alt="NIST CSF"
                   fill
                   className="object-cover"
@@ -143,7 +143,7 @@ complete visibility, control, and protection across all endpoints.
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/endpoint-security/sophos.png"
                   alt="ISO 27001"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ complete visibility, control, and protection across all endpoints.
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/endpoint-security/microsoft.png"
                   alt="IEC 62443"
                   fill
                   className="object-cover"
@@ -171,7 +171,7 @@ complete visibility, control, and protection across all endpoints.
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/endpoint-security/crowdstrike.png"
                   alt="CERT-In"
                   fill
                   className="object-cover"
@@ -191,22 +191,22 @@ complete visibility, control, and protection across all endpoints.
         tabs={[
           {
             label: "Businesses with remote workforce",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/endpoint-security/tab1.png",
           },
           {
             label: "Organizations handling sensitive data",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/endpoint-security/tab2.png",
           },
           {
             label: "Enterprises seeking compliance and risk reduction",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/endpoint-security/tab3.png",
           },
         ]}
       />
       <ImageHighlightSection
         heading="Your Devices, Our Defense"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/endpoint-security/security.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing every endpoint is secure—so your
 business can thrive without disruption."

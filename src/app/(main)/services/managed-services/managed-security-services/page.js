@@ -46,7 +46,7 @@ export default function SOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/managed-security-service/managed-security-service.jpg"
+          bgImage="/assets/images/services/managed-security-service/managed-security-service-banner.jpg"
           title="Managed Security Service"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -55,15 +55,15 @@ export default function SOC() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/managed-security-service/managed-security-service-1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/managed-security-service/managed-security-service-2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/managed-security-service/managed-security-service-3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -125,7 +125,7 @@ operations in-house, you can rely on our certified experts to protect your busin
       />
       <WhyChooseSection
         heading="Partner Up with LA Technologies for Managed Security Services:"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/managed-security-service/whychoose.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/managed-security-service/choose1.png",
@@ -157,26 +157,26 @@ operations in-house, you can rely on our certified experts to protect your busin
         tabs={[
           {
             label: "Businesses handling sensitive customer data",
-            image: "/assets/images/services/soc/tab1.png",
+            image: "/assets/images/services/managed-security-service/tab1.jpg",
           },
           {
             label: "Organizations in regulated industries",
-            image: "/images/soc-tab-2.jpg",
+            image: "/assets/images/services/managed-security-service/tab2.jpg",
           },
           {
             label: "Companies migrating workloads to the cloud",
-            image: "/images/soc-tab-3.jpg",
+            image: "/assets/images/services/managed-security-service/tab3.jpg",
           },
           {
             label: "Enterprises lacking in-house security expertise",
-            image: "/images/soc-tab-4.jpg",
+            image: "/assets/images/services/managed-security-service/tab4.jpg",
           },
         ]}
       />
       <ImageHighlightSection
         heading="Your Security, Our Responsibility"
         headingTag="h2"
-        imageSrc="/assets/images/services/soc/security.png"
+        imageSrc="/assets/images/services/managed-security-service/security.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="Cybersecurity is not optional—it’s essential. With LA Technologies as your trusted SOC partner, you gain visibility, control, and peace of mind. We work behind the scenes to keep your business secure so you can focus on growth and innovation."
       />

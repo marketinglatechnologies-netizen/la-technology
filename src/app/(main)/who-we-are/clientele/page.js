@@ -1,5 +1,6 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import LogoSlider from "@/components/sections/LogoSlider";
+import TestimonialsSection from "@/components/joinus/testimonials-clientele";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,7 +31,7 @@ export default function Clientele() {
   return (
     <main>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/clientele.jpg"
+        bgImage="/assets/images/about-us/clientele-banner.jpg"
         title="Partners in Growth"
         titleTag="h1"
         description={`Collaborating with businesses to deliver measurable impact.`}
@@ -40,49 +41,8 @@ export default function Clientele() {
       </section>
     
 
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-
-        {/* TITLE */}
-        <h2 className="text-center text-3xl font-semibold text-gray-900 mb-14">
-          What Our Clients Say
-        </h2>
-
-        {/* TESTIMONIAL CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="bg-[#FFF5E8] rounded-2xl p-8 shadow-sm"
-            >
-              <p className="text-gray-700 leading-relaxed mb-6">
-                “{item.text}”
-              </p>
-
-              <div className="flex items-center gap-4">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={48}
-                  height={48}
-                  className="rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-gray-900">
-                    {item.name}
-                  </p>
-                  <p className="text-sm text-gray-500">
-                    {item.role}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
-  
+    <TestimonialsSection />
+    
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 

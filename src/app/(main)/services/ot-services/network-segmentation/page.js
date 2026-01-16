@@ -131,31 +131,31 @@ secure zones and conduits without disrupting production.
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service1.png",
             title: "Zone & Conduit Design",
             description:
               "Logical separation of OT assets <br> based on criticality and <br> function.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service2.png",
             title: "Firewall & Access Control Policies",
             description:
               "Enforce strict communication rules between zones.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service3.png",
             title: "Secure Remote Access Integration",
             description:
               "Ensure vendor and maintenance access is limited to specific zones.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service4.png",
             title: "Monitoring & Validation",
             description:
               "Continuous verification of segmentation policies and <br> traffic flows.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service5.png",
             title: "Compliance Alignment",
             description:
               "Implement segmentation strategies that meet industry <br> standards.",
@@ -168,24 +168,24 @@ secure zones and conduits without disrupting production.
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/asset-discovery/choose1.png",
             title: "Reduce Attack Surface",
             text: "Limit lateral movement and contain threats.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/asset-discovery/choose2.png",
             title: "Improve Resilience",
             text: "Isolate critical systems to maintain uptime during incidents.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/asset-discovery/choose3.png",
             title: "Ensure Compliance",
             text: "Meet regulatory and industry security requirements.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/asset-discovery/choose4.png",
             title: "Expert Design & Implementation",
             text: "Certified professionals with OT and network security expertise.",
           },

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const servicesData = {
   "Managed Services": [
@@ -8,55 +9,115 @@ const servicesData = {
       title: "SOC-as-a-Service",
       description: "Stay Ahead of Cyber Threats with 24/7 Security Monitoring",
       icon: "/assets/images/home/icon1.png",
+      link: "/services/managed-services/soc-as-service", // Example link
     },
     {
       title: "NOC-as-a-Service",
       description: "Scale Your IT Operations Without Increasing Overhead",
       icon: "/assets/images/home/icon2.png",
+      link: "/services/managed-services/noc-as-service", // Example link
     },
     {
       title: "Infrastructure Managed Services",
-      description: "Optimize, Secure, and Scale Your IT Environment Efficiently",
+      description:
+        "Optimize, Secure, and Scale Your IT Environment Efficiently",
       icon: "/assets/images/home/icon3.png",
+      link: "/services/managed-services/infra-managed-services", // Example link
     },
     {
       title: "Managed Security Services",
       description: "Comprehensive Protection for Your Digital Assets",
       icon: "/assets/images/home/icon4.png",
+      link: "/services/managed-services/managed-security-services", // Example link
     },
     {
       title: "IT Staff Augmentation",
-      description: "Scale Your Team with Certified IT Experts",
+      description: "Scale Your Team Efficiently with Certified IT Experts",
       icon: "/assets/images/home/icon5.png",
+      link: "/services/managed-services/it-staff-augmentation", // Example link
     },
     {
       title: "Facility Management Services",
-      description: "End-to-End IT Support for Your Business",
+      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
       icon: "/assets/images/home/icon6.png",
+      link: "/services/managed-services/facility-management", // Example link
     },
   ],
-  "Technology Services": [
+  "Cyber Security & IT Infra Services": [
     {
       title: "Cloud Services",
       description: "Secure and Scalable Cloud Infrastructure",
-      icon: "/assets/images/home/icon5.png",
+      icon: "/assets/images/home/icon1.png",
+      link: "/services/cyber-security-&-it-infra-services/cloud-security",
     },
     {
       title: "Application Services",
       description: "Modern and Secure Application Development",
+      icon: "/assets/images/home/icon2.png",
+      link: "/services/cyber-security-&-it-infra-services/application-security",
+    },
+    {
+      title: "Data Center Build",
+      description: "Robust and Efficient Data Center Construction",
+      icon: "/assets/images/home/icon3.png",
+      link: "/services/cyber-security-&-it-infra-services/data-center-build",
+    },
+    {
+      title: "Data Center Solutions",
+      description: "Comprehensive Data Center Management Solutions",
+      icon: "/assets/images/home/icon4.png",
+      link: "/services/cyber-security-&-it-infra-services/data-center-solutions",
+    },
+    {
+      title: "Data Security",
+      description: "Protecting Your Data Across All Platforms",
+      icon: "/assets/images/home/icon5.png",
+      link: "/services/cyber-security-&-it-infra-services/data-security",
+    },
+    {
+      title: "Endpoint Security",
+      description: "Comprehensive Security for All Devices",
       icon: "/assets/images/home/icon6.png",
+      link: "/services/cyber-security-&-it-infra-services/endpoint-security",
     },
   ],
+
   "OT Security": [
     {
       title: "ICS & SCADA Security",
       description: "Protect Industrial Control Systems",
-      icon: "/assets/images/home/icon6.png", 
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/ics-scada-security", // Correct link path
     },
     {
       title: "OT Endpoint Protection",
       description: "Secure OT Devices and Endpoints",
       icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/ot-endpoint-protection", // Correct link path
+    },
+    {
+      title: "Asset Discovery",
+      description: "Discover OT Assets in Your Network",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/asset-discovery",
+    },
+    {
+      title: "Compliance for OT",
+      description: "Ensure Compliance for OT Environments",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/compliance-for-ot",
+    },
+    {
+      title: "Network Segmentation",
+      description: "Segment Your OT Network for Security",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/network-segmentation",
+    },
+    {
+      title: "OT Privileged Access Management",
+      description: "Manage Privileged Access in OT Environments",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/ot-privileged-access-management",
     },
   ],
 };
@@ -117,14 +178,16 @@ export default function ServicesSection() {
               </p>
 
               {/* CTA */}
-              <button className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E11D48] to-[#F97316] text-white text-sm px-4 py-2 rounded-md transition">
-                <img
-                  src="/assets/images/home/send.svg"
-                  alt={service.title}
-                  className="w-5 h-5"
-                />
-                <span>Check Details</span>
-              </button>
+              <Link href={service.link}>
+                <button className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E11D48] to-[#F97316] text-white text-sm px-4 py-2 rounded-md transition">
+                  <img
+                    src="/assets/images/home/send.svg"
+                    alt={service.title}
+                    className="w-5 h-5"
+                  />
+                  <span>Check Details</span>
+                </button>
+              </Link>
             </div>
           ))}
         </div>

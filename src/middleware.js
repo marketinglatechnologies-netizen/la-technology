@@ -35,13 +35,12 @@
 //     "/((?!api|_next/static|_next/image|favicon.ico).*)",
 //   ],
 // };
-
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
   const response = NextResponse.next();
 
-  // 1. Prevent Clickjacking (your site cannot be framed)
+  // 1. Prevent Clickjacking
   response.headers.set("X-Frame-Options", "DENY");
 
   // 2. Prevent MIME sniffing
@@ -50,7 +49,7 @@ export function middleware(request) {
   // 3. Referrer policy
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 
-  // 4. Content Security Policy (FIXED FOR GOOGLE MAPS)
+  // 4. Content Security Policy
   response.headers.set(
     "Content-Security-Policy",
     [
@@ -58,7 +57,8 @@ export function middleware(request) {
       "frame-src https://www.google.com https://www.google.com/maps;",
       "script-src 'self' 'unsafe-inline' https://www.google.com;",
       "style-src 'self' 'unsafe-inline';",
-      "img-src 'self' data: https://www.google.com https://maps.gstatic.com;",
+      // Added blob: and verified 'self' for internal Next.js optimization paths
+      "img-src 'self' data: blob: https://www.google.com https://maps.gstatic.com;",
       "font-src 'self';",
     ].join(" ")
   );
@@ -66,10 +66,7 @@ export function middleware(request) {
   return response;
 }
 
-// Run only on pages
+// Single, clean matcher that excludes all static assets and internal Next routes
 export const config = {
-  matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
-  ],
+  matcher: ["/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)"],
 };
-

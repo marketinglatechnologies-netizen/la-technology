@@ -31,7 +31,7 @@ export default function BlogPage() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/blogs/blogs-banner.jpg"
         title="Stay Informed Stay Ahead"
         titleTag="h1"
         description={`Our blog is your go-to resource for the latest trends, expert opinions, and actionable insights in Cybersecurity, AI, Networking, and Digital Transformation.`}
@@ -139,17 +139,38 @@ export default function BlogPage() {
 
             {/* RIGHT IMAGE (SINGLE IMAGE) */}
             <div className="flex justify-center lg:justify-end">
-              <div className="rounded-3xl overflow-hidden shadow-lg">
-                <img
-                  src="/assets/images/blogs/blog-im.png" // 👈 replace with your image path
-                  alt="Cybersecurity Shield"
-                  className="w-full max-w-md object-cover"
-                />
+              <div className="flex justify-center lg:justify-end">
+                <div className="grid grid-cols-2 grid-rows-[200px_200px] gap-6 w-[480px]">
+                  {/* TOP LEFT – GRADIENT */}
+                  <div className="rounded-3xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+
+                  {/* TOP RIGHT – IMAGE (SPANS 2 ROWS) */}
+                  <div className="row-span-2 rounded-3xl overflow-hidden">
+                    <img
+                      src="/assets/images/blogs/why1.jpg"
+                      alt="Blog Keyboard"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* BOTTOM LEFT – IMAGE */}
+                  <div className="rounded-3xl overflow-hidden">
+                    <img
+                      src="/assets/images/blogs/why2.jpg"
+                      alt="Writing Blog"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* BOTTOM RIGHT – GRADIENT */}
+                  <div className="rounded-3xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
     </>
   );
 }

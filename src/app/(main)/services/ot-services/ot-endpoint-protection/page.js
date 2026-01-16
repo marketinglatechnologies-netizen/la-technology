@@ -97,25 +97,25 @@ const industriesData = {
 };
 const benefitsData = [
   {
-    icon: "/assets/images/industries/greybox.jpg",
+    icon: "/assets/images/services/ot-endpoint-protection/benefit1.png",
     title: "Reduce Ransomware & Logic Tampering Risk",
     description:
       "Block unauthorized executables and monitor high‑risk activities on engineering devices.",
   },
   {
-    icon: "/assets/images/industries/greybox.jpg",
+    icon: "/assets/images/services/ot-endpoint-protection/benefit2.png",
     title: "Protect Safety & Uptime",
     description:
       "OT‑safe controls that respect process constraints and vendor requirements.",
   },
   {
-    icon: "/assets/images/industries/greybox.jpg",
+    icon: "/assets/images/services/ot-endpoint-protection/benefit3.png",
     title: "Strengthen Governance",
     description:
       "Complete audit trails of admin actions, USB transfers, and configuration changes.",
   },
   {
-    icon: "/assets/images/industries/greybox.jpg",
+    icon: "/assets/images/services/ot-endpoint-protection/benefit4.png",
     title: "Compliance Alignment",
     description:
       "Controls mapped to industrial security practices (e.g., IEC 62443 principles) and internal EHS/quality policies.",
@@ -187,44 +187,44 @@ industrial processes.
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service1.png",
             title: "OT-Safe Endpoint Hardening",
             description:
               "Baseline configurations for HMIs, historians, and engineering stations (services, accounts, policies, removable media controls) tailored to vendor guidance.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service2.png",
             title: "Application Control / Allow-Listing",
             description:
               "Permit only trusted engineering tools and runtime binaries; block unauthorized executables and scripts to prevent logic tampering and malware execution.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service3.png",
             title:
               "Advanced Endpoint Protection (Agented or Agentless Options)",
             description:
               "Deploy EDR/XDR where feasible on Windows/Linux endpoints; use agentless monitoring for constrained systems to observe changes and suspicious behaviors without impacting controllers.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service4.png",
             title: "Removable Media  Governance",
             description:
               "Control and scan USB usage on programming laptops; enforce cryptographic signing of ladder logic/firmware files and maintain transfer logs.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service5.png",
             title: "Privilege & Session Controls",
             description:
               "Enforce least privilege on engineering accounts, MFA for  admin access, and session recording on maintenance activities (links with OT Privileged  Access Management).",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service6.png",
             title: "Patch &  Compensating Controls",
             description:
               "Plan patching aligned to shutdown  windows; for unpatchable assets, implement compensating controls (isolation, ACLs, app control, enhanced monitoring).",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/ot-endpoint-protection/service7.png",
             title: "Change Control & Integrity Monitoring",
             description:
               "Track and approve PLC/HMI project hanges; alert on unauthorized firmware updates,logic downloads, or configuration drifts.",
@@ -237,24 +237,24 @@ industrial processes.
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/ot-endpoint-protection/choose1.png",
             title: "Asset Discovery",
             text: "Validate endpoint inventory, owners, and criticality.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/ot-endpoint-protection/choose2.png",
             title: "Network Segmentation",
             text: "Place endpoints in appropriate zones; restrict conduits to required protocols.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/ot-endpoint-protection/choose3.png",
             title: "Threat Detection & IR",
             text: "Stream endpoint events to OT monitoring; use OT‑specific runbooks for safe containment.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/ot-endpoint-protection/choose4.png",
             title: "Vulnerability Management",
             text: "Prioritize endpoint findings and plan remediation without impacting production.",
           },
@@ -279,29 +279,29 @@ industrial processes.
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/ot-endpoint-protection/engage1.png",
             title: "Discovery & Feasibility Assessment",
             text: " Identify endpoint types, OS/vendor constraints, and operational windows.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/ot-endpoint-protection/engage2.png",
             title: "Control Design ",
             text: "Define allow‑lists, hardening baselines, privilege policies, and monitoring integrations.",
           },
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/ot-endpoint-protection/engage3.png",
             title: "Pilot & Compatibility Tests",
             text: "Validate controls with vendor tools and plant operations; adjust for OT safety.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/ot-endpoint-protection/engage4.png",
             title: "Rollout",
             text: "Phased deployment aligned to change windows; documented procedures and training.",
           },
           {
-            icon: "/assets/images/industries/greybox.jpg",
+            icon: "/assets/images/services/ot-endpoint-protection/engage5.png",
             title: "Operate & Improve",
             text: "Continuous monitoring, periodic reviews, and updates to baselines and allow‑lists.",
           },

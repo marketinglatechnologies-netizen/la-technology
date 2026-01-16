@@ -12,45 +12,45 @@ export const metadata = {
   description:
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
-const benefitsData = {
-  title: "Benefits",
-  items: [
-    {
-      id: 1,
-      title: "Centralized Command Center (NOC/SOC)",
-      description: "24×7 monitoring and incident response for all branches.",
-      row: "top",
-    },
-    {
-      id: 2,
-      title: "Standardized Playbooks",
-      description:
-        "Golden configurations and security baselines applied across locations.",
-      row: "top",
-    },
-    {
-      id: 3,
-      title: "Hybrid Support",
-      description:
-        "Remote-first with scheduled on-site visits for critical issues.",
-      row: "top",
-    },
-    {
-      id: 4,
-      title: "Change & Release Management",
-      description:
-        "Controlled deployments across multiple branches with rollback plans.",
-      row: "bottom",
-    },
-    {
-      id: 5,
-      title: "Vendor Coordination",
-      description:
-        "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
-      row: "bottom",
-    },
-  ],
-};
+// const benefitsData = {
+//   title: "Benefits",
+//   items: [
+//     {
+//       id: 1,
+//       title: "Centralized Command Center (NOC/SOC)",
+//       description: "24×7 monitoring and incident response for all branches.",
+//       row: "top",
+//     },
+//     {
+//       id: 2,
+//       title: "Standardized Playbooks",
+//       description:
+//         "Golden configurations and security baselines applied across locations.",
+//       row: "top",
+//     },
+//     {
+//       id: 3,
+//       title: "Hybrid Support",
+//       description:
+//         "Remote-first with scheduled on-site visits for critical issues.",
+//       row: "top",
+//     },
+//     {
+//       id: 4,
+//       title: "Change & Release Management",
+//       description:
+//         "Controlled deployments across multiple branches with rollback plans.",
+//       row: "bottom",
+//     },
+//     {
+//       id: 5,
+//       title: "Vendor Coordination",
+//       description:
+//         "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
+//       row: "bottom",
+//     },
+//   ],
+// };
 
 const items = [
   {
@@ -76,7 +76,7 @@ export default function ITBranchOperations() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/IT-branch-operations/IT-branch-operations.jpg"
+          bgImage="/assets/images/services/it-branch/banner.jpg"
           title="IT Branch Operations"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -85,15 +85,15 @@ export default function ITBranchOperations() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/it-branch/reliable1.jpg",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/it-branch/reliable2.jpg",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/it-branch/reliable3.jpg",
             alt: "Data monitoring",
           },
         ]}
@@ -128,53 +128,53 @@ export default function ITBranchOperations() {
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/it-branch-operations/service1.png",
+            icon: "/assets/images/services/it-branch/service1.png",
             title: "Network & Connectivity",
             description:
               "Broadband/MPLS/4G/5G links, SD-WAN, firewalls, VPNs, routing & switching.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service2.png",
+            icon: "/assets/images/services/it-branch/service2.png",
             title: "Wi-Fi & Access",
             description:
               "Secure SSIDs (Corp/Guest), NAC policies, captive portal, bandwidth management.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service3.png",
+            icon: "/assets/images/services/it-branch/service3.png",
             title: "Endpoint & Server Ops",
             description:
               "Windows/macOS endpoints, POS devices, local servers, patching.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service4.png",
+            icon: "/assets/images/services/it-branch/service4.png",
             title: "Identity & Access Management",
             description:
               "AD / Azure AD, MFA, role-based access, password policies.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service5.png",
+            icon: "/assets/images/services/it-branch/service5.png",
             title: "Security Operations",
             description:
               "EDR/XDR, email security, DLP policies, web filtering, vulnerability management.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service6.png",
+            icon: "/assets/images/services/it-branch/service6.png",
             title: "Local Apps & IoT",
             description: "Printers, CCTV/NVR, IoT device onboarding.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service7.png",
+            icon: "/assets/images/services/it-branch/service7.png",
             title: "ITSM & Helpdesk",
             description:
               "Centralized ticketing for all branches with SLA tracking.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service8.png",
+            icon: "/assets/images/services/it-branch/service8.png",
             title: "Asset & License Governance",
             description: "Inventory and compliance across all locations.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/service9.png",
+            icon: "/assets/images/services/it-branch/service9.png",
             title: "Compliance & Audits",
             description:
               "Policy rollouts and audit readiness for every branch.",
@@ -186,7 +186,7 @@ export default function ITBranchOperations() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Heading */}
           <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#2D1F1F]">
-            Benefits
+            Our Multi-Location Operating Model
           </h2>
 
           {/* Gradient Line */}
@@ -247,41 +247,40 @@ export default function ITBranchOperations() {
           </div>
         </div>
       </section>
-      
 
       <WhyChooseSection
-        heading="Our Multi-Location Operating Model"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        heading="Benefits for Multi-Branch Enterprises"
+        centerImage="/assets/images/services/it-branch/benefits.jpg"
         featuresLeft={[
           {
-            icon: "/assets/images/services/it-branch-operations/choose1.png",
-            title: "Centralized Command Center (NOC/SOC)",
-            text: "24×7 monitoring and incident response for all branches.",
+            icon: "/assets/images/services/it-branch/choose1.png",
+            title: "Consistency Across All Locations",
+            text: "Standardized configurations and policies reduce variability.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/choose2.png",
-            title: "Standardized Playbooks",
-            text: "Golden configurations and security baselines applied across locations.",
+            icon: "/assets/images/services/it-branch/choose2.png",
+            title: "Lower Operational Costs",
+            text: "Centralized management and automation reduce on-site dependencies.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/choose3.png",
-            title: "Hybrid Support",
-            text: "Remote-first with scheduled on-site visits for critical issues.",
+            icon: "/assets/images/services/it-branch/choose3.png",
+            title: "Single Point of Accountability",
+            text: "One partner managing networks, endpoints, security, and support.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/it-branch-operations/choose4.png",
-            title: "Change & Release Management",
-            text: "Controlled deployments across multiple branches with rollback plans.",
+            icon: "/assets/images/services/it-branch/choose4.png",
+            title: "Enhanced Security Posture",
+            text: "Continuous monitoring and rapid incident response across branches.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/choose5.png",
-            title: "Vendor Coordination",
-            text: "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
+            icon: "/assets/images/services/it-branch/choose5.png",
+            title: "Business Continuity",
+            text: "High availability design and tested recovery procedures.",
           },
           {
-            icon: "/assets/images/services/it-branch-operations/choose6.png",
+            icon: "/assets/images/services/it-branch/choose6.png",
             title: "Scalability",
             text: "Rapid onboarding for new branches with templated deployments.",
           },
@@ -291,7 +290,7 @@ export default function ITBranchOperations() {
       <ImageHighlightSection
         heading="Run Every Branch Like Your Best Branch"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/it-branch/branch.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, multi-location IT operations become predictable, secure, and easy to scale."
       />

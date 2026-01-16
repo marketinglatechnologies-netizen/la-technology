@@ -32,7 +32,7 @@ export default function IndustryGrid({
           - sm:flex-row: Side-by-side on tablet/desktop
           - justify-center: Centers the last row if odd
         */}
-        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-8 mb-8 md:mb-12">
           {data.items.map((item, index) => (
             <motion.div
               key={item.id}
@@ -45,7 +45,7 @@ export default function IndustryGrid({
                 w-full 
                 sm:w-[calc(50%-0.75rem)] 
                 ${desktopWidth}
-                h-[320px] md:h-[380px]
+                h-[300px] md:h-[420px]
               `}
             >
               {/* Image with zoom effect */}

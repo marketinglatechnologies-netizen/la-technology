@@ -46,7 +46,7 @@ export default function SOC() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/Infra-managed-services/infra-managed-services.jpg"
+          bgImage="/assets/images/services/infra/infra-banner.jpg"
           title="Infra Managed Services"
           titleTag="h1"
           description={`Round-the-clock Infra Managed Services designed to defend modern enterprises.`}
@@ -55,19 +55,19 @@ export default function SOC() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
-            alt: "Security",
+            src: "/assets/images/services/infra/infra-services-1.jpg",
+            alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/infra/infra-services-2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/infra/infra-services-3.jpg",
             alt: "Data monitoring",
           },
         ]}
-        title="Optimize, Secure, and Scale Your IT Environment.."
+        title="Optimize, Secure, and Scale Your IT Environment"
         description="Modern businesses rely on a robust IT infrastructure to stay competitive. From servers and
 storage to networking and virtualization, managing these components efficiently is
 critical—but it can be complex and resource-intensive.LA Technologies’ Infrastructure Managed Services provide end-to-end management of
@@ -80,61 +80,62 @@ infrastructure so you can focus on innovation and growth."
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/services/infra-managed-services/service1.png",
+            icon: "/assets/images/services/infra/service1.png",
             title: "Server & Compute Management",
             description:
               "Deployment, monitoring, patching, and performance optimization for physical and virtual servers.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/service2.png",
+            icon: "/assets/images/services/infra/service2.png",
             title: "Storage & Backup Solutions",
             description:
               "Secure data storage, backup automation, and disaster recovery planning.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/service3.png",
+            icon: "/assets/images/services/infra/service3.png",
             title: "Network Management",
             description:
               "Configuration, monitoring, and troubleshooting for routers, switches, firewalls, and  WAN/LAN environments.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/service4.png",
+            icon: "/assets/images/services/infra/service4.png",
             title: "Monitoring & Performance Management",
             description:
               "24×7 proactive monitoring to prevent downtime and ensure optimal performance.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/service5.png",
+            icon: "/assets/images/services/infra/service5.png",
             title: "Security & Compliance",
             description:
               "Regular updates, vulnerability management, and compliance with industry standards.",
           },
         ]}
       />
- 
+
       <WhyChooseSection
         heading="What LA Technologies Provide as Solutions:"
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/infra-managed-services/choose1.png",
+            icon: "/assets/images/services/infra/choose1.png",
             title: "End-to-End Expertise",
             text: "From cabling to cloud, we manage every layer of your IT infrastructure.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/choose2.png",
+            icon: "/assets/images/services/infra/choose2.png",
             title: "Cost Efficiency",
             text: "Reduce overhead and eliminate the need for large in-house teams.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/infra-managed-services/choose3.png",
+            icon: "/assets/images/services/infra/choose3.png",
             title: "Scalability",
+
             text: "Services tailored for startups, SMBs, and large enterprises.",
           },
           {
-            icon: "/assets/images/services/infra-managed-services/choose4.png",
+            icon: "/assets/images/services/infra/choose4.png",
             title: "Certified Professionals",
             text: "Skilled engineers with expertise in networking, storage, virtualization, and security.",
           },
@@ -146,26 +147,26 @@ infrastructure so you can focus on innovation and growth."
         tabs={[
           {
             label: "Structured Cabling & Physical Infrastructure",
-            image: "/assets/images/services/soc/tab1.png",
+            image: "/assets/images/services/infra/tab1.png",
           },
           {
             label: "Data Center Design & Implementation",
-            image: "/images/soc-tab-2.jpg",
+            image: "/assets/images/services/infra/tab2.jpg",
           },
           {
             label: "Power & Cooling Solutions",
-            image: "/images/soc-tab-3.jpg",
+            image: "/assets/images/services/infra/tab3.jpg",
           },
           {
             label: "Disaster Recovery & Business Continuity",
-            image: "/images/soc-tab-4.jpg",
+            image: "/assets/images/services/infra/tab4.jpg",
           },
         ]}
       />
       <ImageHighlightSection
-        heading="Your Infrastructure , Our Responsibility"
+        heading="Your Infrastructure, Our Responsibility"
         headingTag="h2"
-        imageSrc="/assets/images/services/soc/security.png"
+        imageSrc="/assets/images/services/infra/cta.jpg"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies as your infrastructure partner, you gain reliability, security, and scalability—without the complexity of managing it all yourself."
       />

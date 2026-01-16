@@ -9,28 +9,28 @@ export const metadata = {
 const csrPillarsData = [
   {
     id: 1,
-    image: "/assets/images/insights/csr1.png",
+    image: "/assets/images/insights/digital.jpg",
     title: "Digital Literacy & Education",
     description:
       "We conduct workshops and bootcamps to equip students and professionals with essential cybersecurity and IT skills.",
   },
   {
     id: 2,
-    image: "/assets/images/insights/csr2.png",
+    image: "/assets/images/insights/community.jpg",
     title: "Community Development",
     description:
       "Supporting local initiatives that foster skill development, employment opportunities, and inclusive growth.",
   },
   {
     id: 3,
-    image: "/assets/images/insights/csr3.png",
+    image: "/assets/images/insights/green-it.jpg",
     title: "Sustainability & Green IT",
     description:
       "Advocating eco-friendly practices in technology deployment and operations to reduce environmental impact.",
   },
   {
     id: 4,
-    image: "/assets/images/insights/csr1.png",
+    image: "/assets/images/insights/social.jpg",
     title: "Social Impact Projects",
     description:
       "Collaborating with NGOs and educational institutions to bridge the digital divide and promote equal access to technology.",
@@ -42,7 +42,7 @@ export default function AboutPage() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/insights/csr-bg.png"
+          bgImage="/assets/images/insights/csr-banner.jpg"
           title="Technology with a Purpose. Impact that Matters.         "
           titleTag="h1"
           description={`At LA Technologies, we believe in creating value beyond business. Our CSR initiatives focus on empowering communities, promoting education, and driving sustainable development through technology.`}

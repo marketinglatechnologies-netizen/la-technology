@@ -167,7 +167,7 @@ export default function ContactPage() {
 
                 <div>
                   <label className="text-sm font-medium">
-                    Email Addres<span className="text-red-500">*</span>
+                    Email Address<span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"

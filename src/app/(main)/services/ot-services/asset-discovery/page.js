@@ -132,31 +132,31 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service1.png",
             title: "Automated Asset Inventory",
             description:
               "Discover all OT devices, including PLCs, HMIs, sensors, and engineering workstations.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service2.png",
             title: "Passive Network Scanning",
             description:
               "Non-intrusive methods to avoid disrupting critical  operations.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service3.png",
             title: "Asset Classification & Risk Scoring",
             description:
               "Categorize assets by criticality and vulnerability exposure.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service4.png",
             title: "Continuous Monitoring",
             description:
               "Track changes in asset configurations and detect unauthorized devices.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/asset-discovery/service5.png",
             title: "Integration with OT Security Tools",
             description:
               "Seamless integration with threat detection and vulnerability management platforms.",
@@ -169,24 +169,24 @@ infrastructure, helping you identify, classify, and monitor every connected devi
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/asset-discovery/choose1.png",
             title: "Reduce Blind Spots",
             text: "Gain complete visibility into your OT environment.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/asset-discovery/choose2.png",
             title: "Improve Security Posture",
             text: "Identify and mitigate risks before attackers exploit them.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/asset-discovery/choose3.png",
             title: "Ensure Compliance",
             text: "Maintain accurate asset records for audits and regulatory requirements.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/asset-discovery/choose4.png",
             title: "Operational Efficiency",
             text: "Automate inventory and reduce manual effort.",
           },

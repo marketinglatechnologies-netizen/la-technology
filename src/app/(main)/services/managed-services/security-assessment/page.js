@@ -7,7 +7,6 @@ import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
-import InfoList from "@/components/ui/InfoList";
 import Image from "next/image";
 
 export const metadata = {
@@ -19,6 +18,7 @@ export const metadata = {
 const items = [
   {
     title: "Network Security",
+    image: "/assets/images/services/security-assessment/network.png",
     points: [
       "Firewall rules, segmentation, VPN configurations",
       "Routing/switching baselines, remote access policies",
@@ -27,6 +27,7 @@ const items = [
   },
   {
     title: "Endpoint & Server Security",
+    image: "/assets/images/services/security-assessment/endpoint.png",
     points: [
       "Patch status, AV/EDR, hardening baselines",
       "Local admin usage, removable media, application control",
@@ -35,6 +36,7 @@ const items = [
   },
   {
     title: "Identity & Access",
+    image: "/assets/images/services/security-assessment/identity.png",
     points: [
       "AD/Azure AD hygiene (users, groups, roles)",
       "MFA usage, privileged access controls",
@@ -43,6 +45,7 @@ const items = [
   },
   {
     title: "Email & Web Security",
+    image: "/assets/images/services/security-assessment/email.png",
     points: [
       "Anti-phishing, anti-malware",
       "SPF/DKIM/DMARC",
@@ -51,6 +54,7 @@ const items = [
   },
   {
     title: "OT / Industrial Security (if applicable)",
+    image: "/assets/images/services/security-assessment/ot.png",
     points: [
       "Network segmentation between IT/OT",
       "Remote vendor access governance and jump hosts",
@@ -60,6 +64,7 @@ const items = [
   },
   {
     title: "Physical & Environmental",
+    image: "/assets/images/services/security-assessment/physical.png",
     points: [
       "Access controls, surveillance, secure racks and wiring",
       "Device labeling, asset custody, visitor/vendor processes",
@@ -67,6 +72,7 @@ const items = [
   },
   {
     title: "Policies & Governance",
+    image: "/assets/images/services/security-assessment/policy.png",
     points: [
       "Security policies, SOPs, incident response runbooks",
       "Roles & responsibilities, training & awareness",
@@ -80,7 +86,7 @@ export default function SecurityAssessment() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/security-assessment/security-assessment-banner.jpg"
+          bgImage="/assets/images/services/security-assessment/banner.png"
           title="Security Assessment"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -89,15 +95,15 @@ export default function SecurityAssessment() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/security-assessment/risk1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/security-assessment/risk2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/security-assessment/risk3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -105,7 +111,7 @@ export default function SecurityAssessment() {
         description="A strong security posture starts with knowing where you’re exposed. LA Technologies’ Security Assessment provides a comprehensive, evidence-based evaluation of your IT and OT environments—so you can make informed decisions, fix critical gaps, and enforce consistent security across all locations."
       />
       <FourBoxSection
-        heading="Uncovering Vulnerabilities Through Security Assessments"
+        heading="Why Security Assessment Matters"
         headingTag="h2"
         items={[
           {
@@ -131,7 +137,7 @@ export default function SecurityAssessment() {
         ]}
       />
 
-      <section className="max-w-7xl mx-auto px-6 py-6">
+      <section className="max-w-7xl mx-auto px-8 py-6">
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-2xl font-semibold">Assessment Scope</h2>
@@ -143,7 +149,24 @@ export default function SecurityAssessment() {
         {/* ROW 1 – 4 CARDS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {items.slice(0, 4).map((item, index) => (
-            <Card key={index} item={item} />
+            <div
+              key={index}
+              className="border border-orange-400 rounded-xl p-6 bg-white"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-40 object-cover rounded-lg mb-4"
+              />
+              <h4 className="text-orange-500 font-semibold mb-3">
+                {item.title}
+              </h4>
+              <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                {item.points.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
 
@@ -151,7 +174,24 @@ export default function SecurityAssessment() {
         <div className="mt-10 flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
             {items.slice(4).map((item, index) => (
-              <Card key={index} item={item} />
+              <div
+                key={index}
+                className="border border-orange-400 rounded-xl p-6 bg-white"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-40 object-cover rounded-lg mb-4"
+                />
+                <h4 className="text-orange-500 font-semibold mb-3">
+                  {item.title}
+                </h4>
+                <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                  {item.points.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
@@ -218,7 +258,7 @@ export default function SecurityAssessment() {
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/security-assessment/nist.png"
                   alt="NIST CSF"
                   fill
                   className="object-cover"
@@ -233,7 +273,7 @@ export default function SecurityAssessment() {
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/security-assessment/iso.png"
                   alt="ISO 27001"
                   fill
                   className="object-cover"
@@ -248,7 +288,7 @@ export default function SecurityAssessment() {
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/security-assessment/iec.png"
                   alt="IEC 62443"
                   fill
                   className="object-cover"
@@ -263,7 +303,7 @@ export default function SecurityAssessment() {
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/security-assessment/cert.png"
                   alt="CERT-In"
                   fill
                   className="object-cover"
@@ -278,7 +318,7 @@ export default function SecurityAssessment() {
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/security-assessment/oem.png"
                   alt="OEM Best Practices"
                   fill
                   className="object-cover"
@@ -297,37 +337,37 @@ export default function SecurityAssessment() {
         subheading="Tangible outcomes from our comprehensive assessment process."
         items={[
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature1.png",
             title: "Executive Summary",
             description:
               "Clear overview of risks and business impact, designed for leadership review.",
           },
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature2.png",
             title: "Detailed Findings Report",
             description:
               "Evidence, severity ratings, and affected assets for technical teams.",
           },
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature3.png",
             title: "Prioritized Remediation Plan",
             description:
               "Quick wins, medium-term actions, and strategic upgrades to improve posture.",
           },
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature4.png",
             title: "Policy & Config Baselines",
             description:
               "Templates for standardization across branches and new deployments.",
           },
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature5.png",
             title: "SLA-Ready Action Tracker",
             description:
               "Assign tasks, owners, and due dates—ready for immediate execution.",
           },
           {
-            icon: "/assets/images/icons/speed.svg",
+            icon: "/assets/images/services/security-assessment/feature6.png",
             title: "Review Workshop",
             description:
               "Walkthrough with stakeholders to align next steps and clarify findings.",
@@ -337,72 +377,56 @@ export default function SecurityAssessment() {
 
       <WhyChooseSection
         heading="Multi-Location Coverage"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/security-assessment/center.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/security-assessment/coverage1.png",
             title: "Consistent Templates & Baselines",
             text: "Applied across all branches uniformly.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/security-assessment/coverage2.png",
             title: "Comparative Scorecards",
             text: "Highlight site-wise risk differences effectively.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/security-assessment/coverage3.png",
             title: "Phased Remediation Plan",
             text: "Designed for efficient region-wise rollout",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/security-assessment/coverage4.png",
             title: "Centralized Evidence Repository",
             text: "Evidence repository for audits and reviews.",
           },
         ]}
       />
-
-      <InfoList
-        title="Typical Findings We Fix"
-        items={[
-          "Overly permissive firewall rules and flat networks",
-          "Unused/legacy accounts and weak passwords",
-          "Missing MFA for privileged operations",
-          "Unpatched endpoints and unmanaged devices",
-          "Inconsistent logging and alerting across sites",
-        ]}
-      />
-
       <ImageTabsSection
         heading="Benefits with LA Technologies"
         headingTag="h2"
         tabs={[
           {
             label: "Clear Visibility of risks across IT and OT environments",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/security-assessment/tab1.png",
           },
           {
             label:
               "Actionable Roadmap with practical, cost-aware recommendations",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/security-assessment/tab2.png",
           },
           {
             label: "Audit Confidence with evidence-backed compliance posture",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/security-assessment/tab3.png",
           },
           {
             label: "Reduced Attack Surface through standardized configurations",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/security-assessment/tab4.jpg",
           },
           {
             label: "Faster Remediation enabled by on-ground and remote teams",
-            image: "/assets/images/industries/tabimage.jpg",
-          },
-          {
-            label: "Faster Remediation enabled by on-ground and remote teams ",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/security-assessment/tab5.png",
           },
         ]}
       />
@@ -416,7 +440,7 @@ export default function SecurityAssessment() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md transition">
+            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
               <h3 className="text-lg font-semibold text-red-500 mb-2">
                 Rapid Security Health Check
               </h3>
@@ -435,7 +459,7 @@ export default function SecurityAssessment() {
             </div>
 
             {/* Card 2 (Highlighted) */}
-            <div className="rounded-2xl border-2 border-red-500 p-8 text-center shadow-sm">
+            <div className="rounded-2xl border-2 border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
               <h3 className="text-lg font-semibold text-red-500 mb-2">
                 Comprehensive Assessment
               </h3>
@@ -454,7 +478,7 @@ export default function SecurityAssessment() {
             </div>
 
             {/* Card 3 */}
-            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md transition">
+            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
               <h3 className="text-lg font-semibold text-red-500 mb-2">
                 OT-Focused Assessment
               </h3>
@@ -475,6 +499,7 @@ export default function SecurityAssessment() {
           </div>
         </div>
       </section>
+
       <GradientCtaBanner text="Ready to assess your security posture across locations?" />
     </>
   );

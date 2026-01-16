@@ -150,35 +150,35 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
         headingTag="h2"
         items={[
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service1.png",
             title: "Granular Access Control",
             description:
               "Limit remote access to specific zones, assets, and time windows.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service2.png",
             title: "Multi-Factor Authentication (MFA)",
             description: "Enforce strong authentication for all remote users.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service3.png",
             title: "Just-in-Time Access",
             description:
               "Provide temporary access for vendors and revoke automatically after use.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service4.png",
             title: "Session Recording & Audit Trails",
             description:
               "Capture full activity logs for compliance and forensic analysis.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service5.png",
             title: "Secure Jump Hosts",
             description: "Isolate remote sessions from critical OT networks.",
           },
           {
-            icon: "/assets/images/icons/path.svg",
+            icon: "/assets/images/services/secure-remote-access/service6.png",
             title: "Integration with OT Privileged Access Management",
             description:
               "Manage and monitor privilegedaccounts during remote sessions.",
@@ -191,24 +191,24 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
         centerImage="/assets/images/services/soc/whychoose.png"
         featuresLeft={[
           {
-            icon: "/assets/images/services/soc/cost.png",
+            icon: "/assets/images/services/secure-remote-access/choose1.png",
             title: "Reduce Attack Surface",
             text: "Eliminate uncontrolled remote connections and shared credentials.",
           },
           {
-            icon: "/assets/images/services/soc/scalable.png",
+            icon: "/assets/images/services/secure-remote-access/choose2.png",
             title: "Ensure Compliance",
             text: "Meet IEC 62443 and industry security requirements.",
           },
         ]}
         featuresRight={[
           {
-            icon: "/assets/images/services/soc/alert.png",
+            icon: "/assets/images/services/secure-remote-access/choose3.png",
             title: "Improve Visibility",
             text: "Monitor and record all remote activities for accountability.",
           },
           {
-            icon: "/assets/images/services/soc/global.png",
+            icon: "/assets/images/services/secure-remote-access/choose4.png",
             title: "Operational Safety",
             text: "Maintain uptime and prevent unauthorized changes during remote work.",
           },

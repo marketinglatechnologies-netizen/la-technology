@@ -10,49 +10,49 @@ export const metadata = {
 const whatWeDoData = [
   {
     id: 1,
-    icon: "/assets/images/la/ai/card1.png",
+    icon: "/assets/images/la/ai/service1.png",
     title: "Generative AI Solutions & Services",
     description:
       "Research, design, and deployment of advanced AI tools for diverse industries, enabling efficiency and innovation.",
   },
   {
     id: 2,
-    icon: "/assets/images/la/ai/card2.png",
+    icon: "/assets/images/la/ai/service2.png",
     title: "AI-Powered Cybersecurity Tools",
     description:
       "Revolutionizing defense mechanisms with intelligent threat detection, prevention, and mitigation—making security proactive and simplified.",
   },
   {
     id: 3,
-    icon: "/assets/images/la/ai/card3.png",
+    icon: "/assets/images/la/ai/service3.png",
     title: "AI-Driven IT Automation",
     description:
       "Tools for advanced IT integration and managed services, reducing manual intervention and optimizing workflows.",
   },
   {
     id: 4,
-    icon: "/assets/images/la/ai/card4.png",
+    icon: "/assets/images/la/ai/service4.png",
     title: "Multi-Cloud Automation",
     description:
       "AI-based orchestration and management tools for seamless deployment and centralized control across cloud platforms.",
   },
   {
     id: 5,
-    icon: "/assets/images/la/ai/card5.png",
+    icon: "/assets/images/la/ai/service5.png",
     title: "AI for Data Analytics",
     description:
       "Advanced analytics solutions to convert enterprise data into actionable insights for smarter decision-making.",
   },
   {
     id: 6,
-    icon: "/assets/images/la/ai/card6.png",
+    icon: "/assets/images/la/ai/service6.png",
     title: "Domain-Specific AI Agents",
     description:
       "Custom AI agents for industry-specific needs, along with general-purpose AI assistants.",
   },
   {
     id: 7,
-    icon: "/assets/images/la/ai/card7.png",
+    icon: "/assets/images/la/ai/service7.png",
     title: "Hosted Gen AI Solutions",
     description:
       "Enterprise-ready platforms to democratize AI adoption and accelerate innovation.",
@@ -64,7 +64,7 @@ export default function LaAi() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/la/ai/ai-bg.png"
+          bgImage="/assets/images/la/ai/ai-banner.jpg"
           title="LA AI – Driving Innovation with Artificial Intelligence"
           titleTag="h1"
           description={`Empowering businesses with next-generation AI solutions for cybersecurity, IT automation, and multi-cloud management.`}
@@ -77,7 +77,7 @@ export default function LaAi() {
             {/* Top Left – Image */}
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/assets/images/la/ai/ai1.png"
+                src="/assets/images/la/ai/abt1.png"
                 alt="AI Security Shield"
                 className="w-full h-full object-cover"
               />
@@ -92,7 +92,7 @@ export default function LaAi() {
             {/* Bottom Right – Image */}
             <div className="rounded-2xl overflow-hidden">
               <img  
-                src="/assets/images/la/ai/ai4.png"
+                src="/assets/images/la/ai/abt2.png"
                 alt="AI Protection Network"
                 className="w-full h-full object-cover"
               />
