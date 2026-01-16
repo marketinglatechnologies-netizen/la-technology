@@ -9,14 +9,14 @@ const testimonialsData = {
   heading:
     "What our clients have to say about the services we provide at LA Technologies",
   items: [
-    {
-      id: 1,
-      quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra1.png",
-    },
+    // {
+    //   id: 1,
+    //   quote:
+    //     "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
+    //   name: "Rajendra Naidu",
+    //   designation: "CEO, Founder",
+    //   image: "/assets/images/home/rajendra1.png",
+    // },
     {
       id: 2,
       quote:
@@ -25,14 +25,14 @@ const testimonialsData = {
       designation: "CEO, Founder",
       image: "/assets/images/home/rajendra2.png",
     },
-    {
-      id: 3,
-      quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra1.png",
-    },
+    // {
+    //   id: 3,
+    //   quote:
+    //     "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
+    //   name: "Rajendra Naidu",
+    //   designation: "CEO, Founder",
+    //   image: "/assets/images/home/rajendra1.png",
+    // },
     {
       id: 4,
       quote:
@@ -41,14 +41,14 @@ const testimonialsData = {
       designation: "CEO, Founder",
       image: "/assets/images/home/rajendra2.png",
     },
-    {
-      id: 5,
-      quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra1.png",
-    },
+    // {
+    //   id: 5,
+    //   quote:
+    //     "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
+    //   name: "Rajendra Naidu",
+    //   designation: "CEO, Founder",
+    //   image: "/assets/images/home/rajendra1.png",
+    // },
     {
       id: 6,
       quote:

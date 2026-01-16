@@ -32,7 +32,7 @@ export default function VendorLogo() {
         </div>
       </div>
       {/* Marquee */}
-      <Marquee speed={60} pauseOnHover gradient={false}>
+      <Marquee speed={60} gradient={false}>
         {[
           "/assets/images/home/opswat.png",
           "/assets/images/home/fortinet.png",

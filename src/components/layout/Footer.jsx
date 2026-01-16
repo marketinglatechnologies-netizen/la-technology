@@ -148,6 +148,11 @@ export default function Footer() {
             </div>
 
             <div className="mb-4">
+              <p className="font-bold text-[#DC2A3C] mb-1">Availability:</p>
+              <p>Monday to Friday, 10:00 AM – 7:00 PM</p>
+            </div>
+
+            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">Sales & General Inquiries:</p>
               <p className="lowercase">sales@la-technologiesindia.com</p>
             </div>
@@ -157,11 +162,14 @@ export default function Footer() {
               <p className="lowercase">recruitment@la-technologiesindia.com</p>
             </div>
 
-            <div>
+            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">Contact us:</p>
               <p>9136487172</p>
             </div>
+
+
           </div>
+          
         </div>
       </div>
 
