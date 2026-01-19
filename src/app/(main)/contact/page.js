@@ -99,7 +99,7 @@ export default function ContactPage() {
                   <span className="text-orange-500">
                     <img src="/assets/images/home/call.svg" alt="call" />
                   </span>
-                  <span className="text-sm font-medium">+91 022 6182 8400</span>
+                  <span className="text-sm font-medium">9136487172</span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">

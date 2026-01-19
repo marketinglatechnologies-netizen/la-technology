@@ -20,7 +20,7 @@ export default function NetworkSecurity() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/services/network-security/banner.png"
         title="Network Security"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -29,15 +29,15 @@ export default function NetworkSecurity() {
     <FeatureHighlightSection
             images={[
               {
-                src: "/assets/images/services/soc/soc1.png",
+                src: "/assets/images/services/network-security/secure1.png",
                 alt: "Security dashboard",
               },
               {
-                src: "/assets/images/services/soc/soc2.png",
+                src: "/assets/images/services/network-security/secure2.png",
                 alt: "Developer working",
               },
               {
-                src: "/assets/images/services/soc/soc3.png",
+                src: "/assets/images/services/network-security/secure3.png",
                 alt: "Data monitoring",
               },
             ]}
@@ -95,7 +95,7 @@ optional—it’s essential.
 />
   <WhyChooseSection
           heading="Benefits of LA Technologies Network Security"
-          centerImage="/assets/images/services/soc/whychoose.png"
+          centerImage="/assets/images/services/network-security/benefits.png"
           featuresLeft={[
             {
               icon: "/assets/images/services/network-security/choose1.png",
@@ -138,7 +138,7 @@ optional—it’s essential.
                   <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
                     <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                       <Image
-                        src="/assets/images/industries/greybox.jpg"
+                        src="/assets/images/services/network-security/fortinet.png"
                         alt="Fortinet"
                         fill
                         className="object-cover"
@@ -153,7 +153,7 @@ optional—it’s essential.
                   <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
                     <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                       <Image
-                        src="/assets/images/industries/greybox.jpg"
+                        src="/assets/images/services/network-security/palo.png"
                         alt="ISO 27001"
                         fill
                         className="object-cover"
@@ -168,7 +168,7 @@ optional—it’s essential.
                   <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
                     <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                       <Image
-                        src="/assets/images/industries/greybox.jpg"
+                        src="/assets/images/services/network-security/cisco.png"
                         alt="IEC 62443"
                         fill
                         className="object-cover"
@@ -183,7 +183,7 @@ optional—it’s essential.
                   <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
                     <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                       <Image
-                        src="/assets/images/industries/greybox.jpg"
+                        src="/assets/images/services/network-security/sophos.png"
                         alt="CERT-In"
                         fill
                         className="object-cover"
@@ -203,15 +203,15 @@ optional—it’s essential.
                 tabs={[
                   {
                     label: "Businesses with multiple branch offices",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/network-security/who1.png",
                   },
                   {
                     label: "Organizations handling sensitive data",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/network-security/who2.png",
                   },
                   {
                     label: "Enterprises seeking compliance and risk reduction",
-                    image: "/assets/images/industries/tabimage.jpg",
+                    image: "/assets/images/services/network-security/who3.png",
                   },
                   
                 ]}
@@ -219,7 +219,7 @@ optional—it’s essential.
               <ImageHighlightSection
                 heading="Your Network, Our Shield"
                 headingTag="h2"
-                imageSrc="/assets/images/industries/security.jpg"
+                imageSrc="/assets/images/services/network-security/cta.png"
                 imageAlt="Cybersecurity monitoring dashboard"
                 description="With LA Technologies, you gain peace of mind knowing your network is secure—so your
 business can operate without disruption"
