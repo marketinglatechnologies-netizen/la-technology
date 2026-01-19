@@ -507,7 +507,7 @@ export default function FacilityManagement() {
 
       <WhyChooseSection
         heading="Benefits with LA Technologies"
-        centerImage="/assets/images/services/network-infrastructure/benefit.png"
+        centerImage="/assets/images/services/network-infrastructure/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/network-infrastructure/choose1.png",

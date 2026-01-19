@@ -77,23 +77,23 @@ export default function Footer() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">Who We Are</Link>
+                <Link href="/who-we-are/about-us">Who We Are</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/services">What We Do</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/global">Global Presence</Link>
               </li>
               <li>
-                <Link href="/careers">Careers</Link>
+                <Link href="/join-us/careers">Careers</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/subsidiaries">LA Subsidiaries</Link>
               </li>
               <li>
                 <Link href="/insights">Insights</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact">Contact Us</Link>
               </li>
@@ -103,13 +103,71 @@ export default function Footer() {
           {/* Column 3: Services */}
           <div className="md:col-span-3">
             <h3 className="text-[#DC2A3C] font-bold mb-6 text-sm">Services</h3>
+
             <ul className="space-y-2 text-[13px] text-gray-600">
-              <li>IT infrastructure solution</li>
-              <li>Data Centre Solutions</li>
-              <li>Security Solution</li>
-              <li>Disaster Solution</li>
-              <li>Cloud Security</li>
-              <li>Operational-support</li>
+              <li>
+                <Link
+                  href="/services/managed-services/soc-as-service"
+                >
+                  SOC-as-a-Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/managed-services/noc-as-service"
+                >
+                  NOC-as-a-Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/managed-services/it-infra-managed-services"
+                >
+                  Infra Managed Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/cyber-security-&-it-infra-services/data-security"
+                >
+                  Data Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/cyber-security-&-it-infra-services/endpoint-security"
+                >
+                  Endpoint Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/cyber-security-&-it-infra-services/netwwork-security"
+                >
+                  Network Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/ot-services/ics-scada-security"
+                >
+                  ICS & SCADA Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/ot-services/asset-discovery"
+                >
+                  Asset Discovery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/ot-services/network-segmentation"
+                >
+                  Network Segmentation
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -153,11 +211,13 @@ export default function Footer() {
             </div>
 
             <div className="mb-4">
-              <p className="font-bold text-[#DC2A3C] mb-1">Sales & General Inquiries:</p>
+              <p className="font-bold text-[#DC2A3C] mb-1">
+                Sales & General Inquiries:
+              </p>
               <p className="lowercase">sales@la-technologiesindia.com</p>
             </div>
 
-              <div className="mb-4">
+            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">Job Inquiries:</p>
               <p className="lowercase">recruitment@la-technologiesindia.com</p>
             </div>
@@ -166,10 +226,7 @@ export default function Footer() {
               <p className="font-bold text-[#DC2A3C] mb-1">Contact us:</p>
               <p>9136487172</p>
             </div>
-
-
           </div>
-          
         </div>
       </div>
 
