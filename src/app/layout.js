@@ -29,8 +29,8 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    default: "YourCompany Security",
-    template: "%s | YourCompany Security",
+    default: "LA Technologies",
+    template: "%s | LA Technologies",
   },
   description: "Bespoke cybersecurity services.",
 };
