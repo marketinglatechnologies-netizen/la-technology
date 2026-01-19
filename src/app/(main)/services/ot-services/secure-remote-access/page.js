@@ -107,7 +107,7 @@ export default function Page() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/secure-remote-access/banner.png"
           title="Secure Remote Access"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
@@ -116,15 +116,15 @@ export default function Page() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/secure-remote-access/control1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/secure-remote-access/control2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/secure-remote-access/control3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -188,7 +188,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Secure Remote Access"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/secure-remote-access/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/secure-remote-access/choose1.png",
@@ -257,7 +257,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
       <ImageHighlightSection
         heading="Your Remote Access, Secured"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/secure-remote-access/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you enable secure, monitored remote access—without compromising safety or productivity."
       />

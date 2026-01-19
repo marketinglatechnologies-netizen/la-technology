@@ -120,8 +120,9 @@ export default function ContactPage() {
                     />
                   </span>
                   <span className="text-sm font-medium leading-relaxed">
-                    101B, Pinnacle Corporate Park B Wing, First Floor, CTS 4207,
-                    Pant Nagar Kurla Complex, East, Mumbai, Maharashtra 400098
+                    101 B, Pinnacle Corporate Park, B Wing, First Floor, CTS
+                    4207 Part, Bandra Kurla Complex, Bandra (East), Mumbai
+                    400051
                   </span>
                 </div>
               </div>

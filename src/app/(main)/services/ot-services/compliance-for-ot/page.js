@@ -86,7 +86,7 @@ export default function Page() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/compliance-for-ot/banner.png"
           title="Compliance for OT"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
@@ -95,15 +95,15 @@ export default function Page() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/compliance-for-ot/achieve1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/compliance-for-ot/achieve2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/compliance-for-ot/achieve3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -164,7 +164,7 @@ maintaining uptime and safety."
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Compliance Services"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/compliance-for-ot/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/compliance-for-ot/choose1.png",
@@ -196,7 +196,7 @@ maintaining uptime and safety."
       <ImageHighlightSection
         heading="Your Compliance, Our Expertise"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/compliance-for-ot/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you achieve OT compliance without compromising productivity or safety."
       />

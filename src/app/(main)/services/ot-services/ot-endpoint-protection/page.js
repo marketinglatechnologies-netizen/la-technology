@@ -127,7 +127,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/ot-endpoint-protection/banner.png"
           title="OT Endpoint Protection"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
@@ -146,15 +146,15 @@ industrial processes.
 "
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/ot-endpoint-protection/secure1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/ot-endpoint-protection/secure2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/ot-endpoint-protection/secure3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -234,7 +234,7 @@ industrial processes.
 
       <WhyChooseSection
         heading="Integration Across OT Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/ot-endpoint-protection/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/ot-endpoint-protection/choose1.png",
@@ -276,7 +276,7 @@ industrial processes.
 
       <WhyChooseSection
         heading="How Engagement Works ?"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/ot-endpoint-protection/engagement.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/ot-endpoint-protection/engage1.png",
@@ -313,7 +313,7 @@ industrial processes.
       <ImageHighlightSection
         heading="Your Endpoints, Our Protection"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/ot-endpoint-protection/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you get OT‑aware endpoint protection that defends critical devices
 without disrupting production."

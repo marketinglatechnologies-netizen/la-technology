@@ -19,7 +19,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/application-security/banner.png"
           title="Application Security"
           titleTag="h1"
           description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
@@ -28,15 +28,15 @@ export default function ApplicationSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/application-security/secure1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/application-security/secure2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/application-security/secure3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -104,7 +104,7 @@ sensitive data and maintain trust."
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Application Security"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/application-security/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/soc/cost.png",
@@ -143,7 +143,7 @@ sensitive data and maintain trust."
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/application-security/owasp.png"
                   alt="Fortinet"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ sensitive data and maintain trust."
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/application-security/leading.png"
                   alt="ISO 27001"
                   fill
                   className="object-cover"
@@ -171,7 +171,7 @@ sensitive data and maintain trust."
             <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/assets/images/industries/greybox.jpg"
+                  src="/assets/images/services/application-security/industry.png"
                   alt="IEC 62443"
                   fill
                   className="object-cover"
@@ -190,22 +190,22 @@ sensitive data and maintain trust."
         tabs={[
           {
             label: "Businesses running web applications or APIs",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/application-security/tab1.png",
           },
           {
             label: "Organizations handling sensitive customer data",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/application-security/tab2.png",
           },
           {
             label: "Enterprises seeking compliance and risk reduction",
-            image: "/assets/images/industries/tabimage.jpg",
+            image: "/assets/images/services/application-security/tab3.png",
           },
         ]}
       />
       <ImageHighlightSection
         heading="Your Applications, Our Shield"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/application-security/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain peace of mind knowing your applications are secure—so
 your business can innovate without risk."

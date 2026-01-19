@@ -65,27 +65,27 @@ const industriesData = {
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/threat-detection-incident-response/industries1.png",
     },
     {
       id: "energyUtilities",
       title: "Energy & Utilities",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/threat-detection-incident-response/industries2.png",
     },
     {
       id: "oilNGas",
       title: "Oil & Gas",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/threat-detection-incident-response/industries3.png",
     },
     {
       id: "transportation",
       title: "Transportation",
-      image: "/assets/images/industries/transportation.jpg",
+      image: "/assets/images/services/threat-detection-incident-response/industries4.png",
     },
     {
       id: "criticalInfrastructure",
       title: "Critical Infrastructure",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/threat-detection-incident-response/industries5.png",
     },
   ],
 };
@@ -120,7 +120,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/threat-detection-incident-response/banner.png"
           title="Threat Detection & Incident Response"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to  defend modern enterprises.`}
@@ -136,15 +136,15 @@ that contains threats without impacting critical processes.
 "
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/threat-detection-incident-response/detect1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/threat-detection-incident-response/detect2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/threat-detection-incident-response/detect3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -217,7 +217,7 @@ that contains threats without impacting critical processes.
 
       <WhyChooseSection
         heading="Key Capabilities"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/threat-detection-incident-response/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/threat-detection-incident-response/choose1.png",
@@ -259,7 +259,7 @@ that contains threats without impacting critical processes.
 
       <WhyChooseSection
         heading="How Engagement Works ?"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/threat-detection-incident-response/engagement.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/threat-detection-incident-response/engage1.png",
@@ -301,7 +301,7 @@ that contains threats without impacting critical processes.
       <ImageHighlightSection
         heading="Your Operations, Our Response"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/threat-detection-incident-response/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you get OT‑aware detection and incident response that protects
 both safety and uptime.

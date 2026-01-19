@@ -55,6 +55,7 @@ const industriesData = {
 export const whatWeDeliverData = [
   {
     title: "Network Architecture & Design",
+    image: " /assets/images/services/network-infrastructure/network.png",
     points: [
       "Site surveys, topology design (LAN/WAN), IP scheme and VLAN planning",
       "Network segmentation for users, servers, IoT, and OT environments",
@@ -63,6 +64,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Routing, Switching & Firewalls",
+    image: "/assets/images/services/network-infrastructure/routing.png",
     points: [
       "Core/distribution/access switching with QoS and ACLs",
       "Dynamic routing (OSPF/BGP) and policy-based routing",
@@ -71,6 +73,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Secure Wi-Fi",
+    image: "/assets/images/services/network-infrastructure/wifi.png",
     points: [
       "Enterprise Wi-Fi planning (coverage maps, capacity, RF optimization)",
       "Role-based SSIDs (corporate/guest), captive portals, bandwidth management",
@@ -79,6 +82,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "WAN & Branch Connectivity",
+    image: "/assets/images/services/network-infrastructure/wan.png",
     points: [
       "Broadband/MPLS/4G/5G integration with path redundancy",
       "SD-WAN design for intelligent link selection and policy-based traffic steering",
@@ -87,6 +91,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Data Center & Server Room",
+    image: "/assets/images/services/network-infrastructure/data.png",
     points: [
       "Rack layout, structured cabling, power and environmental standards",
       "Core switch/firewall clustering, link aggregation, segmentation",
@@ -95,6 +100,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Network Access Control (NAC)",
+    image: "/assets/images/services/network-infrastructure/nac.png",
     points: [
       "Identity-based access (802.1X/MAB), posture checks, guest workflows",
       "Device profiling for endpoints, printers, CCTV, POS, and OT devices",
@@ -102,6 +108,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Monitoring & Observability",
+    image: "/assets/images/services/network-infrastructure/monitoring.png",
     points: [
       "NMS setup (SNMP/Flow), health dashboards, alerts, and runbooks",
       "Link performance, utilization trends, and SLA reporting",
@@ -110,6 +117,7 @@ export const whatWeDeliverData = [
   },
   {
     title: "Security Hardening & Policies",
+    image: "/assets/images/services/network-infrastructure/security.png",
     points: [
       "Standardized configurations, least privilege, and admin access control",
       "VPN standards (site-to-site/remote), key rotation, and logging",
@@ -123,7 +131,7 @@ export default function FacilityManagement() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/about-us/banner.jpg"
+          bgImage="/assets/images/services/network-infrastructure/banner.png"
           title="Network Infrastructure"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
@@ -132,15 +140,15 @@ export default function FacilityManagement() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/network-infrastructure/design1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/network-infrastructure/design2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/network-infrastructure/design3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -187,10 +195,16 @@ export default function FacilityManagement() {
             {whatWeDeliverData.map((item, index) => (
               <div
                 key={index}
-                className="rounded-xl border border-orange-300 bg-white p-5"
+                className="rounded-xl border border-orange-300 bg-white p-5 flex flex-col"
               >
-                {/* Image Placeholder */}
-                <div className="h-32 w-full rounded-lg bg-gray-200 mb-4" />
+                {/* Image */}
+                <div className="mb-4 h-32 w-full overflow-hidden rounded-lg">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
 
                 {/* Title */}
                 <h3 className="text-sm font-semibold text-orange-600 mb-3">
@@ -220,7 +234,7 @@ export default function FacilityManagement() {
               {/* Tall image */}
               <div className="row-span-2 rounded-xl overflow-hidden">
                 <Image
-                  src="/images/operations/team-working.jpg"
+                  src="/assets/images/services/network-infrastructure/location1.png"
                   alt="Team working in office"
                   width={600}
                   height={800}
@@ -231,7 +245,7 @@ export default function FacilityManagement() {
               {/* Top right image */}
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/operations/code-screen.jpg"
+                  src="/assets/images/services/network-infrastructure/location2.png"
                   alt="Code on screen"
                   width={600}
                   height={400}
@@ -242,7 +256,7 @@ export default function FacilityManagement() {
               {/* Bottom right image */}
               <div className="rounded-xl overflow-hidden">
                 <Image
-                  src="/images/operations/data-center.jpg"
+                  src="/assets/images/services/network-infrastructure/location3.png"
                   alt="Data center team"
                   width={600}
                   height={400}
@@ -436,21 +450,21 @@ export default function FacilityManagement() {
         tabs={[
           {
             label: "L1 Response: 15–30 minutes for priority incidents",
-            image: "/assets/images/services/soc/tab1.png",
+            image: "/assets/images/services/network-infrastructure/tab1.png",
           },
           {
             label:
               "P1 Restoration Target: ≤ 2 hours with failover/contingency plans",
-            image: "/images/soc-tab-2.jpg",
+            image: "/assets/images/services/network-infrastructure/tab2.png",
           },
           {
             label:
               "Configuration Changes: Scheduled with approvals and impact analysis",
-            image: "/images/soc-tab-3.jpg",
+            image: "/assets/images/services/network-infrastructure/tab3.png",
           },
           {
             label: "Uptime Targets: 99.5%–99.9% based on design redundancy",
-            image: "/images/soc-tab-4.jpg",
+            image: "/assets/images/services/network-infrastructure/tab4.png",
           },
         ]}
       />
@@ -493,7 +507,7 @@ export default function FacilityManagement() {
 
       <WhyChooseSection
         heading="Benefits with LA Technologies"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/network-infrastructure/benefit.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/network-infrastructure/choose1.png",

@@ -56,27 +56,27 @@ const industriesData = {
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/network-segmentation/industries1.png",
     },
     {
       id: "energyUtilities",
       title: "Energy & Utilities",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/network-segmentation/industries2.png",
     },
     {
       id: "oilNGas",
       title: "Oil & Gas",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/network-segmentation/industries3.png",
     },
     {
       id: "transportation",
       title: "Transportation",
-      image: "/assets/images/industries/transportation.jpg",
+      image: "/assets/images/services/network-segmentation/industries4.png",
     },
     {
       id: "criticalInfrastructure",
       title: "Critical Infrastructure",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/network-segmentation/industries5.png",
     },
   ],
 };
@@ -86,7 +86,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/network-segmentation/banner.png"
           title="Network Segmentation"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
@@ -95,15 +95,15 @@ export default function ApplicationSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/network-segmentation/divide1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/network-segmentation/divide2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/network-segmentation/divide3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -165,7 +165,7 @@ secure zones and conduits without disrupting production.
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Network Segmentation"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/network-segmentation/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/asset-discovery/choose1.png",
@@ -197,7 +197,7 @@ secure zones and conduits without disrupting production.
       <ImageHighlightSection
         heading="Your Network, Our Shield"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/network-segmentation/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain a segmented, secure OT network—without compromising
 operational efficiency."

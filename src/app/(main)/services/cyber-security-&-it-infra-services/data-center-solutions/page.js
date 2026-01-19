@@ -17,15 +17,15 @@ export const metadata = {
 const expertiseData = [
   {
     title: "Certified Data Center Design Professionals (CDCDP)",
-    image: "/assets/images/services/data-center/expertise.png",
+    image: "/assets/images/services/data-center-solutions/expertise1.png",
   },
   {
     title: "RCDD-certified cabling experts with experience",
-    image: "/assets/images/services/data-center/expertise.png",
+    image: "/assets/images/services/data-center-solutions/expertise2.png",
   },
   {
     title: "Experienced project managers and infrastructure engineers",
-    image: "/assets/images/services/data-center/expertise.png",
+    image: "/assets/images/services/data-center-solutions/expertise3.png",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function FacilityManagement() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/about-us/banner.jpg"
+        bgImage="/assets/images/services/data-center-solutions/banner.png"
         title="Data Center Solutions"
         titleTag="h1"
         description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
@@ -42,15 +42,15 @@ export default function FacilityManagement() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/data-center-solutions/build1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/data-center-solutions/build2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/data-center-solutions/build3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -107,7 +107,7 @@ security. We ensure your infrastructure supports business continuity and future 
 
       <WhyChooseSection
         heading="Benefits of Our Data Center Solutions"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/data-center-solutions/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/data-center-solutions/choose1.png",
@@ -180,7 +180,7 @@ security. We ensure your infrastructure supports business continuity and future 
       <ImageHighlightSection
         heading="Your Data Center, Our Expertise"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/data-center-solutions/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="From small server rooms to large-scale enterprise facilities, LA Technologies ensures your data center is built for performance, reliability, and future growth."
       />

@@ -87,7 +87,7 @@ export default function ApplicationSecurity() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/asset-discovery/banner.png"
           title="Asset Discovery"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
@@ -96,15 +96,15 @@ export default function ApplicationSecurity() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/asset-discovery/gain1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/asset-discovery/gain2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/asset-discovery/gain3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -166,7 +166,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
 
       <WhyChooseSection
         heading="Benefits of LA Technologies Asset Discovery"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/asset-discovery/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/asset-discovery/choose1.png",
@@ -198,7 +198,7 @@ infrastructure, helping you identify, classify, and monitor every connected devi
       <ImageHighlightSection
         heading="Your Visibility, Our Expertise"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/asset-discovery/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain a clear picture of your OT environment—so you can secure"
       />

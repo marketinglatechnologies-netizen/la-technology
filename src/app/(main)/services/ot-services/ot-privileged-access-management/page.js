@@ -63,27 +63,27 @@ const industriesData = {
     {
       id: "manufacturing",
       title: "Manufacturing",
-      image: "/assets/images/industries/bfsi.jpg",
+      image: "/assets/images/services/ot-privileged-access-management/industries1.png",
     },
     {
       id: "energyUtilities",
       title: "Energy & Utilities",
-      image: "/assets/images/industries/education.jpg",
+      image: "/assets/images/services/ot-privileged-access-management/industries2.png",
     },
     {
       id: "oilNGas",
       title: "Oil & Gas",
-      image: "/assets/images/industries/manufacturing.jpg",
+      image: "/assets/images/services/ot-privileged-access-management/industries3.png",
     },
     {
       id: "transportation",
       title: "Transportation",
-      image: "/assets/images/industries/transportation.jpg",
+      image: "/assets/images/services/ot-privileged-access-management/industries4.png",
     },
     {
       id: "criticalInfrastructure",
       title: "Critical Infrastructure",
-      image: "/assets/images/industries/criticalInfra.jpg",
+      image: "/assets/images/services/ot-privileged-access-management/industries5.png",
     },
   ],
 };
@@ -93,7 +93,7 @@ export default function Page() {
     <>
       <div>
         <InnerPageBanner
-          bgImage="/assets/images/services/ICS-SCADA/banner.jpg"
+          bgImage="/assets/images/services/ot-privileged-access-management/banner.png"
           title="OT Privileged Access Management"
           titleTag="h1"
           description={`Round-the-clock Endpoint Security
@@ -104,15 +104,15 @@ export default function Page() {
       <FeatureHighlightSection
         images={[
           {
-            src: "/assets/images/services/soc/soc1.png",
+            src: "/assets/images/services/ot-privileged-access-management/control1.png",
             alt: "Security dashboard",
           },
           {
-            src: "/assets/images/services/soc/soc2.png",
+            src: "/assets/images/services/ot-privileged-access-management/control2.png",
             alt: "Developer working",
           },
           {
-            src: "/assets/images/services/soc/soc3.png",
+            src: "/assets/images/services/ot-privileged-access-management/control3.png",
             alt: "Data monitoring",
           },
         ]}
@@ -172,7 +172,7 @@ reducing risk, and maintaining operational continuity."
 
       <WhyChooseSection
         heading="Benefits of LA Technologies OT PAM"
-        centerImage="/assets/images/services/soc/whychoose.png"
+        centerImage="/assets/images/services/ot-privileged-access-management/benefits.png"
         featuresLeft={[
           {
             icon: "/assets/images/services/ot-privileged-access-management/choose1.png",
@@ -204,7 +204,7 @@ reducing risk, and maintaining operational continuity."
       <ImageHighlightSection
         heading="Your Privileged Access, Secured"
         headingTag="h2"
-        imageSrc="/assets/images/industries/security.jpg"
+        imageSrc="/assets/images/services/ot-privileged-access-management/cta.png"
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain complete control over privileged accounts—without
 compromising uptime or safety."
