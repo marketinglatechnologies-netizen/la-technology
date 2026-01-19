@@ -181,9 +181,9 @@ complete visibility, control, and protection across all endpoints.
             </div>
           </div>
         </div>
-        <p className="mt-3 text-xs text-gray-500 italic text-right pr-15">
+        {/* <p className="mt-3 text-xs text-gray-500 italic text-right pr-15">
           (Based on your OEM partnerships)
-        </p>
+        </p> */}
       </section>
       <ImageTabsSection
         heading="Where Endpoint Security Is Required:"
