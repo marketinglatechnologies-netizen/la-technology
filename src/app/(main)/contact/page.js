@@ -344,7 +344,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full py-16 bg-white">
+      <section className="w-full pb-15 bg-white">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <h2 className="text-center text-xl md:text-2xl font-semibold mb-8">
             How to reach our location
