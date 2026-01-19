@@ -20,7 +20,7 @@ export default function NetworkSecurity() {
     <>
     <div>
       <InnerPageBanner
-        bgImage="/assets/images/services/network-security/banner.png"
+        bgImage="/assets/images/services/network-security/banner-network.png"
         title="Network Security"
         titleTag="h1"
         description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
