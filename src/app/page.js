@@ -86,7 +86,7 @@ export default function HomePage() {
         title: "ITES",
         image: "/assets/images/home/ites1.jpg",
       },
-           {
+      {
         id: "service providers",
         title: "Service Providers",
         image: "/assets/images/home/service-providers.jpg",
@@ -135,7 +135,7 @@ export default function HomePage() {
               </div>
 
               <Link
-                href="/about"
+                href="/who-we-are/about-us"
                 className="relative z-10 inline-flex items-center justify-center gap-3 bg-la-gradient px-10 py-3 rounded-xl font-normal shadow-xl hover:opacity-90 transition-all active:scale-95"
               >
                 {/* icon with forced visibility */}
@@ -154,7 +154,7 @@ export default function HomePage() {
       </section>
 
       <ServicesSection />
-      
+
       <section className="py-20">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -318,7 +318,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
@@ -332,17 +332,21 @@ export default function HomePage() {
             {[
               {
                 date: "Dec 4",
-                title: "Cybersecurity Best Practices",
+                title:
+                  "The Future of Enterprise IT – How AI and Automation Are Transforming Business Operations",
                 description:
-                  "Tips to protect your business from evolving threats.",
-                image: "/assets/images/home/home2.jpg",
+                  "Enterprise IT is undergoing a massive transformation. Businesses today are moving beyond",
+                image: "/assets/images/blogs/blog2.png",
+                link: "/insights/blogs/the-future-of-enterprise-it",
               },
               {
                 date: "Dec 4",
-                title: "Basic Cybersecurity Safety Guidelines",
+                title:
+                  "Why Zero Trust Security Is Becoming Mandatory for Modern Businesses",
                 description:
-                  "Basic practices used to protect systems and cyber threats",
-                image: "/assets/images/home/case-study.jpg",
+                  "Cyberattacks are becoming more advanced, more frequent, and far more damaging than ever before",
+                image: "/assets/images/blogs/blog1.png",
+                link: "/insights/blogs/why-zero-trust-security-is-becoming-mandatory-for-modern-businesses",
               },
             ].map((item, index) => (
               <div
@@ -382,15 +386,17 @@ export default function HomePage() {
                   </div>
 
                   {/* CTA Button */}
-                  <button
-                    className="shrink-0 w-11 h-11 rounded-xl
-                         bg-gradient-to-r from-[#E11D48] to-[#F97316]
-                         flex items-center justify-center
-                         text-white hover:opacity-90 transition"
-                    aria-label="Read more"
-                  >
-                    <img src="/assets/images/home/send.svg" />
-                  </button>
+
+                  <Link href={item.link} aria-label="Read more">
+                    <button
+                      className="shrink-0 w-11 h-11 rounded-xl
+               bg-gradient-to-r from-[#E11D48] to-[#F97316]
+               flex items-center justify-center
+               text-white hover:opacity-90 transition"
+                    >
+                      <img src="/assets/images/home/send.svg" alt="Read more" />
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -421,20 +427,11 @@ export default function HomePage() {
             </h2>
 
             {/* CTA Button */}
-            <button
-              className="shrink-0 inline-flex items-center gap-2
-             text-[var(--la-orange)] bg-white
-             text-sm font-medium
-             px-6 py-3 rounded-lg
-             hover:bg-gray-100 transition"
-            >
-              <img
-                src="/assets/images/home/phone.svg"
-                alt="Phone"
-                className="w-4 h-4"
-              />
-              <span>Talk to an Expert</span>
-            </button>
+            <GradientCtaBanner
+              text=""
+              buttonText="Talk to an Expert"
+              iconSrc="/assets/images/home/phone.svg"
+            />
           </div>
         </div>
       </section>

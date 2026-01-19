@@ -193,6 +193,9 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
+                      maxLength={10}  
+                      pattern="[0-9]{10}"
+                      inputMode="numeric"
                       value={formData.mobile}
                       onChange={(e) =>
                         setFormData({ ...formData, mobile: e.target.value })

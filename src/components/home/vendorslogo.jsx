@@ -1,6 +1,7 @@
 "use client";
 
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 export default function VendorLogo() {
   return (
@@ -17,18 +18,20 @@ export default function VendorLogo() {
             </p>
           </div>
 
-          <button
-            className="inline-flex items-center gap-2
-                             bg-gradient-to-r from-[#E11D48] to-[#F97316]
-                             text-white text-sm px-5 py-2.5 rounded-lg"
-          >
-            <img
-              src="/assets/images/home/phone2.svg"
-              alt="Phone"
-              className="w-4 h-4"
-            />
-            <span> Talk to an Expert</span>
-          </button>
+          <Link href="/contact">
+            <button
+              className="inline-flex items-center gap-2
+               bg-gradient-to-r from-[#E11D48] to-[#F97316]
+               text-white text-sm px-5 py-2.5 rounded-lg"
+            >
+              <img
+                src="/assets/images/home/phone2.svg"
+                alt="Phone"
+                className="w-4 h-4"
+              />
+              <span>Talk to an Expert</span>
+            </button>
+          </Link>
         </div>
       </div>
       {/* Marquee */}
@@ -40,12 +43,18 @@ export default function VendorLogo() {
           "/assets/images/home/txone.png",
           "/assets/images/home/netskope.png",
           "/assets/images/home/varonis.png",
+          "/assets/images/home/opswat.png",
+          "/assets/images/home/fortinet.png",
+          "/assets/images/home/solarwinds.png",
+          "/assets/images/home/txone.png",
+          "/assets/images/home/netskope.png",
+          "/assets/images/home/varonis.png",
         ].map((logo, i) => (
-          <div key={i} className="mx-10 flex items-center">
+          <div key={i} className="mx-6 flex items-center">
             <img
               src={logo}
               alt="Vendor logo"
-              className="h-full w-full object-contain"
+              className="h-15 w-auto object-contain"
             />
           </div>
         ))}

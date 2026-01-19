@@ -9,56 +9,67 @@ import "swiper/css";
 const testimonials = [
   {
     name: "Rajendra Kadu",
+    designation: "Senior Operations Manager",
     image: "/assets/images/join-us/team/rajendra.jpeg",
     text: "LA is making a Positive Impact. Here they care about their people. Across LA Technologies, from operations to our support functions we focus on making a positive impact to our customers by working collectively to provide meaningful and action-oriented solutions.",
   },
   {
     name: "Rohini Kalambe",
+    designation: "Diversity & Inclusion Lead",
     image: "/assets/images/join-us/team/rohini.jpeg",
     text: "LA Technologies has transparent leadership and great benefits. Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I’m proud to be part of the LA family.",
   },
   {
     name: "Irfan Khan",
+    designation: "Senior Software Engineer",
     image: "/assets/images/join-us/team/irfan.jpeg",
     text: "I am proud to say I work at LA Technologies. The company truly values its employees and enables us to grow and feel passionate about our careers. Great learning experience.",
   },
   {
     name: "Shubham",
+    designation: "Graduate Engineer Trainee",
     image: "/assets/images/join-us/team/shubham.jpeg",
     text: "When I first joined LA Technologies as a recent graduate, I was looking for a platform where I could engage in meaningful work and grow along the way.",
   },
   {
     name: "Jerry Jacob",
+    designation: "Project Coordinator",
     image: "/assets/images/join-us/team/jerry.jpg",
     text: "One of the things I enjoy most about working here is the teamwork. Even on hectic days, we pull together where needed.",
   },
   {
     name: "Imran Khan",
+    designation: "Technical Support Specialist",
     image: "/assets/images/join-us/team/imran.jpeg",
     text: "Working at LA is a wonderful experience. My team is filled with lovely people and we have great benefits.",
   },
   {
     name: "Shreya Chaurasia",
+    designation: "Business Analyst",
     image: "/assets/images/join-us/team/shreya.jpeg",
     text: "The workplace and culture is fantastic. I’ve had opportunities to grow and take on more responsibility.",
   },
   {
     name: "Avinash Bamanale",
+    designation: "DevOps Engineer",
     image: "/assets/images/join-us/team/avinash.jpeg",
     text: "I was surprised at how quickly I felt comfortable here. The team is welcoming, supportive, and collaborative.",
   },
   {
     name: "Shravani Adsul",
+    designation: "Human Resources Executive",
     image: "/assets/images/join-us/team/shravani.jpeg",
     text: "LA Technologies welcomed me with open arms and empowered me to share my perspective and make a difference.",
   },
   {
     name: "Aaditya Avasthi",
+    designation: "Product Manager",
     image: "/assets/images/join-us/team/aaditya.jpg",
     text: "Joining LA has been one of the most rewarding decisions of my career. I’m encouraged to innovate and grow.",
   },
   {
     name: "Jyoti Maurya",
+    designation: "Information Security Analyst",
     image: "/assets/images/join-us/team/jyoti.jpeg",
     text: "I appreciate the proactive approach to security and the strong culture of collaboration and learning.",
   },
@@ -99,8 +110,12 @@ export default function EmployeeTestimonials() {
                   </div>
 
                   <p className="mt-4 text-base font-bold text-black text-center leading-tight">
-                    {item.name.split(" ")[0]} <br />
+                    {item.name.split(" ")[0]}&nbsp;
                     {item.name.split(" ").slice(1).join(" ")}
+                  </p>
+
+                  <p className="mt-1 text-xs text-red-500 font-medium text-center">
+                    {item.designation}
                   </p>
                 </div>
 

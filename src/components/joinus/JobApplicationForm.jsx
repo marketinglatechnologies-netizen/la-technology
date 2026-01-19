@@ -149,7 +149,7 @@ export default function JobApplicationForm() {
             <Input label="First Name" name="firstName" required />
             <Input label="Last Name" name="lastName" required />
             <Input label="Email Id" name="email" type="email" required />
-            <Input label="Mobile Number" name="mobile" required />
+            <Input label="Mobile Number" name="mobile"  maxLength={10}  pattern="[0-9]{10}"  inputMode="numeric" required />
             <Select
               label="Job Title"
               name="jobTitle"
