@@ -4,7 +4,7 @@ export const NAV_LINKS = [
     href: "/",
     dropdown: [
       { label: "About us", href: "/who-we-are/about-us" },
-      // { label: "Meet Our Leaders", href: "/who-we-are/meet-our-leaders" },
+      { label: "Meet Our Leaders", href: "/who-we-are/meet-our-leaders" },
       // { label: "Clientele", href: "/who-we-are/clientele" },
     ],
   },
