@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, MapPin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MapPin, X, Youtube } from "lucide-react";
 
 const SOCIAL_LINKS = [
-  { name: "Facebook", icon: Facebook, href: "#" },
-  { name: "Instagram", icon: Instagram, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-  { name: "YouTube", icon: Youtube, href: "#" },
+  { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61575532165684" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/latech_india/" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/latechnologiesindia/" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@LATechnologies-India" },
+  { name: "X", icon: X, href: "https://x.com/latech_india" },
 ];
 
 export default function Footer() {
