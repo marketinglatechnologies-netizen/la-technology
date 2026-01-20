@@ -117,17 +117,17 @@ complete visibility, control, and protection across all endpoints.
           },
         ]}
       />
-      <section className="w-full py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* <section className="w-full py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6"> */}
           {/* Heading */}
-          <h2 className="text-2xl font-semibold text-gray-900 mb-10">
+          {/* <h2 className="text-2xl font-semibold text-gray-900 mb-10">
             Supported Technologies
-          </h2>
+          </h2> */}
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"> */}
             {/* Card 1 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/endpoint-security/carbon-cloud.png"
@@ -137,10 +137,10 @@ complete visibility, control, and protection across all endpoints.
                 />
               </div>
               <p className="text-sm font-semibold">Carbon Black Cloud™ </p>
-            </div>
+            </div> */}
 
             {/* Card 2 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/endpoint-security/sophos.png"
@@ -150,10 +150,10 @@ complete visibility, control, and protection across all endpoints.
                 />
               </div>
               <p className="text-sm font-semibold">Sophos Intercept X</p>
-            </div>
+            </div> */}
 
             {/* Card 3 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/endpoint-security/microsoft.png"
@@ -165,10 +165,10 @@ complete visibility, control, and protection across all endpoints.
               <p className="text-sm font-semibold">
                 Microsoft Defender for Endpoint
               </p>
-            </div>
+            </div> */}
 
             {/* Card 4 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/endpoint-security/crowdstrike.png"
@@ -179,12 +179,12 @@ complete visibility, control, and protection across all endpoints.
               </div>
               <p className="text-sm font-semibold">CrowdStrike Falcon</p>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         {/* <p className="mt-3 text-xs text-gray-500 italic text-right pr-15">
           (Based on your OEM partnerships)
         </p> */}
-      </section>
+      {/* </section> */}
       <ImageTabsSection
         heading="Where Endpoint Security Is Required:"
         headingTag="h2"

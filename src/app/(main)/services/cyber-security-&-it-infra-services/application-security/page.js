@@ -130,17 +130,17 @@ sensitive data and maintain trust."
           },
         ]}
       />
-      <section className="w-full py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* <section className="w-full py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6"> */}
           {/* Heading */}
-          <h2 className="text-2xl font-semibold text-gray-900 mb-10">
+          {/* <h2 className="text-2xl font-semibold text-gray-900 mb-10">
             Supported Technologies
-          </h2>
+          </h2> */}
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> */}
             {/* Card 1 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/application-security/owasp.png"
@@ -150,10 +150,10 @@ sensitive data and maintain trust."
                 />
               </div>
               <p className="text-sm font-semibold">OWASP-aligned tools</p>
-            </div>
+            </div> */}
 
             {/* Card 2 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/application-security/leading.png"
@@ -165,10 +165,10 @@ sensitive data and maintain trust."
               <p className="text-sm font-semibold">
                 Leading WAF and API security platforms
               </p>
-            </div>
+            </div> */}
 
             {/* Card 3 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
+            {/* <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
               <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/assets/images/services/application-security/industry.png"
@@ -183,7 +183,7 @@ sensitive data and maintain trust."
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <ImageTabsSection
         heading="Who Needs Application Security?"
         headingTag="h2"
