@@ -36,11 +36,29 @@ const servicesData = {
       icon: "/assets/images/home/icon5.png",
       link: "/services/managed-services/it-staff-augmentation", // Example link
     },
+    // {
+    //   title: "Facility Management Services",
+    //   description: "End-to-End IT Support for Your Business with Scalable Technology Management",
+    //   icon: "/assets/images/home/icon6.png",
+    //   link: "/services/managed-services/facility-management", // Example link
+    // },
     {
-      title: "Facility Management Services",
+      title: "Managed Broadband + SDWAN",
       description: "End-to-End IT Support for Your Business with Scalable Technology Management",
       icon: "/assets/images/home/icon6.png",
-      link: "/services/managed-services/facility-management", // Example link
+      link: "/services/managed-services/managed-broadband-sdwan", // Example link
+    },
+    {
+      title: "IT Branch Operations",
+      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/managed-services/it-branch-operations", // Example link
+    },
+     {
+      title: "Security Assessment",
+      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/managed-services/security-assessment", // Example link
     },
   ],
   "Cyber Security & IT Infra Services": [
