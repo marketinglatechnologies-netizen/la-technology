@@ -13,7 +13,7 @@ const partners = [
   "txone",
   "netskope",
   "varonus",
-  "sentinelone",
+  "sentinelones",
   "sophos",
   "kasperky",
   "juniper",
