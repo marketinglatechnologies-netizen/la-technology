@@ -1,7 +1,7 @@
 ---
 title: The Future of Enterprise IT – How AI and Automation Are Transforming Business Operations 
 description: Enterprise IT is undergoing a massive transformation. Businesses today are moving beyond
-image: /assets/images/blogs/blog2.png
+image: /assets/images/blogs/blog1.jpg
 date: 2025-01-10
 ---
 

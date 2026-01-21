@@ -1,7 +1,7 @@
 ---
 title: Why Zero Trust Security Is Becoming Mandatory for Modern Businesses
 description: Cyberattacks are becoming more advanced, more frequent, and far more damaging than ever before
-image: /assets/images/blogs/blog1.png
+image: /assets/images/blogs/blog2.jpeg
 date: 2025-01-10
 ---
 

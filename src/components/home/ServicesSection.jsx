@@ -65,25 +65,25 @@ const servicesData = {
      {
       title: "Data Security",
       description: "Protecting Your Data Across All Platforms",
-      icon: "/assets/images/home/icon5.png",
+      icon: "/assets/images/home/data.png",
       link: "/services/cyber-security-&-it-infra-services/data-security",
     },
     {
       title: "Endpoint Security",
       description: "Comprehensive Security for All Devices",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/endpoint.png",
       link: "/services/cyber-security-&-it-infra-services/endpoint-security",
     },
      {
       title: "Network Security",
       description: "Comprehensive Security for All Devices",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/network.png",
       link: "/services/cyber-security-&-it-infra-services/network-security",
     },
      {
       title: "Application Security",
       description: "Modern and Secure Application Development",
-      icon: "/assets/images/home/icon2.png",
+      icon: "/assets/images/home/application.png",
       link: "/services/cyber-security-&-it-infra-services/application-security",
     },
     {
@@ -107,7 +107,7 @@ const servicesData = {
     {
       title: "Data Center Solutions",
       description: "Comprehensive Data Center Management Solutions",
-      icon: "/assets/images/home/icon4.png",
+      icon: "/assets/images/home/data1.png",
       link: "/services/cyber-security-&-it-infra-services/data-center-solutions",
     },
   ],
@@ -116,31 +116,31 @@ const servicesData = {
     {
       title: "ICS & SCADA Security",
       description: "Protect Industrial Control Systems",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/icon1.png",
       link: "/services/ot-services/ics-scada-security", // Correct link path
     },
     {
       title: "Asset Discovery",
       description: "Discover OT Assets in Your Network",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/icon2.png",
       link: "/services/ot-services/asset-discovery",
     },
     {
       title: "Network Segmentation",
       description: "Segment Your OT Network for Security",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/icon3.png",
       link: "/services/ot-services/network-segmentation",
     },
     {
       title: "Threat Detection & Incident Response",
       description: "Detect and Respond to OT Threats",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/icon4.png",
       link: "/services/ot-services/threat-detection-incident-response", // Correct link path
     },
     {
       title: "OT Endpoint Protection",
       description: "Secure OT Devices and Endpoints",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/network.png",
       link: "/services/ot-services/ot-endpoint-protection", // Correct link path
     },
     {
@@ -152,7 +152,7 @@ const servicesData = {
      {
       title: "Secure Remote Access",
       description: "Secure Remote Access for OT Environments",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/data1.png",
       link: "/services/ot-services/secure-remote-access",
     },
     {

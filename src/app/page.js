@@ -315,7 +315,7 @@ export default function HomePage() {
                   "The Future of Enterprise IT – How AI and Automation Are Transforming Business Operations",
                 description:
                   "Enterprise IT is undergoing a massive transformation. Businesses today are moving beyond",
-                image: "/assets/images/blogs/blog2.png",
+                image: "/assets/images/blogs/blog1.jpg",
                 link: "/insights/blogs/the-future-of-enterprise-it",
               },
               {
@@ -324,7 +324,7 @@ export default function HomePage() {
                   "Why Zero Trust Security Is Becoming Mandatory for Modern Businesses",
                 description:
                   "Cyberattacks are becoming more advanced, more frequent, and far more damaging than ever before",
-                image: "/assets/images/blogs/blog1.png",
+                image: "/assets/images/blogs/blog2.jpeg",
                 link: "/insights/blogs/why-zero-trust-security-is-becoming-mandatory-for-modern-businesses",
               },
             ].map((item, index) => (
