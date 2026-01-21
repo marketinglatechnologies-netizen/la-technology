@@ -1,6 +1,7 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import Link from "next/link";
 import Image from "next/image";
+import ClientLogos from "@/components/sections/ClientLogos";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -162,45 +163,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-     <section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-
-    {/* Heading */}
-    <div className="text-center mb-14">
-  <h2 className="text-3xl font-semibold text-gray-900">
-    Clients We Serve
-  </h2>
- <div className="w-[80%] h-[1px] bg-orange-400 mx-auto mt-4" />
-</div>
-
-    {/* Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
-      {clients.map((client, index) => (
-        <div
-          key={index}
-          className={`
-            flex items-center justify-center py-10 px-5
-            border-gray-200
-            ${index % 3 !== 2 ? "lg:border-r" : ""}
-            ${index < 6 ? "lg:border-b" : ""}
-            ${index % 2 !== 1 ? "sm:border-0" : ""}
-            ${index < 4 ? "sm:border-b" : ""}
-            border-b sm:border-b-0
-          `}
-        >
-          <img
-            src={client.src}
-            alt={client.alt}
-            className="max-h-16 object-contain"
-          />
-        </div>
-      ))}
-
-    </div>
-  </div>
-</section>
-
+ 
+     <ClientLogos/>
 
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">

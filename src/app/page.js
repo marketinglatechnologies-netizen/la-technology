@@ -101,11 +101,6 @@ export default function HomePage() {
         title: "Government",
         image: "/assets/images/home/government.jpg",
       },
-      {
-        id: "others",
-        title: "Others",
-        image: "/assets/images/home/others.jpg",
-      },
     ],
   };
 
