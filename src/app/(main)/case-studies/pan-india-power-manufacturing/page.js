@@ -15,6 +15,7 @@ export default function NetskopeSecurity() {
     organizationType: "Large Commercial Bank",
     geography:
       "Pan-India (Thermal, Hydro, Solar plants, substations, R&D and service centers)",
+       size: "20,000",
     securitySolutions: [
       "FortiSRA – Secure Remote Access",
       "Forti Authenticator – MFA",

@@ -15,6 +15,7 @@ export default function NetskopeSecurity() {
     organizationType: "Large Commercial Bank",
     geography:
       "Nationwide (Branches, Head Office, Data Centers, Remote Workforce)",
+    size: "20,000",
     securitySolutions: [
       "Netskope Secure Web Gateway (SWG)",
       "Netskope Endpoint Data Loss Prevention (DLP)",

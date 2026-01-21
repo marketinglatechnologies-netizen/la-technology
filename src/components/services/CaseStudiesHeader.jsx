@@ -4,6 +4,7 @@ export default function IndustryAndScope({ title, data }) {
     industry,
     organizationType,
     geography,
+    size,
     securitySolutions,
   } = data;
 
@@ -30,6 +31,14 @@ export default function IndustryAndScope({ title, data }) {
               <p className="font-semibold">Organization Type :</p>
               <p className="text-gray-700">{organizationType}</p>
             </div>
+
+            {/* Column 2 */}
+          <div>
+            <p className="font-semibold mb-1">Deployment Size</p>
+            <p className="text-gray-700 leading-relaxed">
+              {size}
+            </p>
+          </div>
           </div>
 
           {/* Column 2 */}
@@ -39,6 +48,7 @@ export default function IndustryAndScope({ title, data }) {
               {geography}
             </p>
           </div>
+          
 
           {/* Column 3 */}
           <div>
@@ -51,6 +61,8 @@ export default function IndustryAndScope({ title, data }) {
               ))}
             </ul>
           </div>
+
+          
         </div>
       </div>
     </section>
