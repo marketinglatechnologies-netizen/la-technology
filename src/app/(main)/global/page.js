@@ -8,6 +8,18 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
+const clients = [
+  { src: "/assets/images/clients/bdx.png", alt: "BDX Data Centers" },
+  { src: "/assets/images/clients/smt.png", alt: "SMT" },
+  { src: "/assets/images/clients/lintasarta.png", alt: "Lintasarta" },
+  { src: "/assets/images/clients/travelex.png", alt: "Travelex" },
+  { src: "/assets/images/clients/meru.png", alt: "Meru" },
+  { src: "/assets/images/clients/dneg.png", alt: "DNEG Animation" },
+  { src: "/assets/images/clients/flag.png", alt: "Flag Telecom" },
+  { src: "/assets/images/clients/gcx.png", alt: "GCX" },
+  { src: "/assets/images/clients/hgc.png", alt: "HGC" },
+];
+
 export default function AboutPage() {
   return (
     <main>
@@ -108,7 +120,7 @@ export default function AboutPage() {
                 "TECHPARK, SINGAPORE 408564",
                 "408564",
               ]}
-            mapEmbedUrl="https://www.google.com/maps?q=10%20Ubi%20Crescent%20Singapore&output=embed"
+              mapEmbedUrl="https://www.google.com/maps?q=10%20Ubi%20Crescent%20Singapore&output=embed"
             />
 
             {/* HONG KONG */}
@@ -120,7 +132,7 @@ export default function AboutPage() {
                 "DES VOEUX ROAD CENTRAL SHEUNG",
                 "WAN HONG KONG",
               ]}
-               mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7615661553996!2d114.14869297254648!3d22.287020079696116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007dca7166e7%3A0x8a5abfac53e5a792!2sChampion%20Building!5e0!3m2!1sen!2sin!4v1767962366037!5m2!1sen!2sin"
+              mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7615661553996!2d114.14869297254648!3d22.287020079696116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404007dca7166e7%3A0x8a5abfac53e5a792!2sChampion%20Building!5e0!3m2!1sen!2sin!4v1767962366037!5m2!1sen!2sin"
             />
 
             {/* INDONESIA */}
@@ -132,7 +144,7 @@ export default function AboutPage() {
                 "HR Rasuna Said Kav. C-5, Jakarta Selatan",
                 "Indonesia",
               ]}
-               mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253814.08780938858!2d106.63725438327133!3d-6.284080755562121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1767962748036!5m2!1sen!2sin"
+              mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253814.08780938858!2d106.63725438327133!3d-6.284080755562121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta%2C%20Indonesia!5e0!3m2!1sen!2sin!4v1767962748036!5m2!1sen!2sin"
             />
 
             {/* DUBAI */}
@@ -144,11 +156,51 @@ export default function AboutPage() {
                 "MOHAMED ALAWADHI, Office 103 B",
                 "Owned by NASER AHMED SAEED",
               ]}
-               mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767962695372!5m2!1sen!2sin"
+              mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462561.6574537445!2d55.22748795!3d25.076022449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1767962695372!5m2!1sen!2sin"
             />
           </div>
         </div>
       </section>
+
+     <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Heading */}
+    <div className="text-center mb-14">
+  <h2 className="text-3xl font-semibold text-gray-900">
+    Clients We Serve
+  </h2>
+ <div className="w-[80%] h-[1px] bg-orange-400 mx-auto mt-4" />
+</div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+      {clients.map((client, index) => (
+        <div
+          key={index}
+          className={`
+            flex items-center justify-center py-10 px-5
+            border-gray-200
+            ${index % 3 !== 2 ? "lg:border-r" : ""}
+            ${index < 6 ? "lg:border-b" : ""}
+            ${index % 2 !== 1 ? "sm:border-0" : ""}
+            ${index < 4 ? "sm:border-b" : ""}
+            border-b sm:border-b-0
+          `}
+        >
+          <img
+            src={client.src}
+            alt={client.alt}
+            className="max-h-16 object-contain"
+          />
+        </div>
+      ))}
+
+    </div>
+  </div>
+</section>
+
 
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -188,7 +240,7 @@ function ImageCard({ src }) {
 }
 
 /* OFFICE CARD */
-function OfficeCard({ country, company, address, mapEmbedUrl }){
+function OfficeCard({ country, company, address, mapEmbedUrl }) {
   return (
     <div>
       {/* MAP */}
