@@ -4,6 +4,8 @@ import FiveCards from "@/components/services/FiveCards";
 import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import FourBoxSection from "@/components/services/FourBox";
+import BenefitsGrid from "@/components/services/BenefitsGrid";
 import EightCards from "@/components/services/EightCards";
 import Image from "next/image";
 
@@ -71,6 +73,33 @@ const items = [
   },
 ];
 
+const benefitsData = [
+  {
+    title: "Centralized Command Center (NOC/SOC)",
+    description: "24×7 monitoring and incident response for all branches.",
+  },
+  {
+    title: "Standardized Playbooks",
+    description:
+      "Golden configurations and security baselines applied across locations.",
+  },
+  {
+    title: "Hybrid Support",
+    description:
+      "Remote-first with scheduled on-site visits for critical issues.",
+  },
+  {
+    title: "Change & Release Management",
+    description:
+      "Controlled deployments across multiple branches with rollback plans.",
+  },
+  {
+    title: "Vendor Coordination",
+    description:
+      "One-stop ownership of ISP, OEM, and third-party escalations for all sites.",
+  },
+];
+
 export default function ITBranchOperations() {
   return (
     <>
@@ -100,29 +129,34 @@ export default function ITBranchOperations() {
         title="End-to-End IT Management Across Multiple Branch Locations—Reliable, Secure, and Scalable "
         description="Managing IT for multiple branch locations is challenging—different geographies, diverse teams, and varying infrastructure create complexity in consistency, security, and uptime. LA Technologies’ IT Branch Operations provides centralized control and standardized processes for all your branches, ensuring seamless operations across every location. "
       />
-      <section className="py-8 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          {/* HEADING */}
-          <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-            Managing Multi-Location IT Branch Operations Effectively
-          </h2>
 
-          {/* CARDS */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="border border-orange-300 rounded-xl p-6 text-left hover:shadow-md transition"
-              >
-                <h3 className="font-semibold mb-3 text-black">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FourBoxSection
+        heading="Managing Multi-Location IT Branch Operations Effectively"
+        headingTag="h2"
+        items={[
+          {
+            title: "Fragmented Management ",
+            description:
+              "Different tools and vendors per branch lead to inconsistency and downtime. ",
+          },
+          {
+            title: "Security Exposure",
+            description:
+              "Distributed endpoints and unmanaged Wi‑Fi increase risk across locations.",
+          },
+          {
+            title: "Operational Overheads",
+            description:
+              "Local troubleshooting and on-site support consume time and budget",
+          },
+          {
+            title: "Business Continuity Needs",
+            description:
+              "Branches require reliable connectivity and proactive monitoring. ",
+          },
+        ]}
+      />
+
       <EightCards
         heading="What We Manage Across Multiple Branches"
         headingTag="h2"
@@ -182,71 +216,7 @@ export default function ITBranchOperations() {
         ]}
       />
 
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Heading */}
-          <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#2D1F1F]">
-            Our Multi-Location Operating Model
-          </h2>
-
-          {/* Gradient Line */}
-          <div className="mt-4 mb-16 h-[3px] w-full max-w-5xl mx-auto bg-gradient-to-r from-orange-500 to-red-600 rounded-full" />
-
-          {/* Top Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            <div className="bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_8px_24px_rgba(255,140,0,0.15)]">
-              <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                Centralized Command Center (NOC/SOC)
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                24×7 monitoring and incident response for all branches.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_8px_24px_rgba(255,140,0,0.15)]">
-              <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                Standardized Playbooks
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Golden configurations and security baselines applied across
-                locations.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_8px_24px_rgba(255,140,0,0.15)]">
-              <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                Hybrid Support
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Remote-first with scheduled on-site visits for critical issues.
-              </p>
-            </div>
-          </div>
-
-          {/* Bottom Row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_8px_24px_rgba(255,140,0,0.15)]">
-              <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                Change & Release Management
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Controlled deployments across multiple branches with rollback
-                plans.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_8px_24px_rgba(255,140,0,0.15)]">
-              <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                Vendor Coordination
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                One-stop ownership of ISP, OEM, and third-party escalations for
-                all sites.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BenefitsGrid heading="Our Multi-Location Operating Model" items={benefitsData} columns={4} />
 
       <WhyChooseSection
         heading="Benefits for Multi-Branch Enterprises"

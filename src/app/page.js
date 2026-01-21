@@ -252,32 +252,6 @@ export default function HomePage() {
               <div className="flex gap-5">
                 <img src="/assets/images/home/home-main.png" />
               </div>
-              {/* Top small image */}
-              {/* <div className="absolute -top-10 left-0 p-2 hidden">
-                <img
-                  src="/assets/images/home/experience.png"
-                  alt="20+ Years Experience"
-                  className="rounded-xl w-48"
-                />
-              </div> */}
-
-              {/* Bottom image */}
-              {/* <div className="absolute -bottom-8 left-12  p-2 hidden">
-                <img
-                  src="/assets/images/home/industry2.jpg"
-                  alt="Cybersecurity Laptop"
-                  className="rounded-xl w-64"
-                />
-              </div> */}
-
-              {/* Main image */}
-              {/* <div className="ml-auto w-[360px] p-3 hidden">
-                <img
-                  src="/assets/images/home/industry3.jpg"
-                  alt="Cyber Security Shield"
-                  className="rounded-2xl"
-                />
-              </div> */}
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import FiveCards from "@/components/services/FiveCards";
+import OurExpertise from "@/components/sections/OurExpertise";
 import Image from "next/image";
 
 export const metadata = {
@@ -134,48 +135,8 @@ security. We ensure your infrastructure supports business continuity and future 
         ]}
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Cards */}
-          <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl font-semibold mb-10">
-          Our Expertise
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {expertiseData.map((item, index) => (
-            <div
-              key={index}
-              className="mx-auto w-[320px]"
-            >
-              <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-                
-                {/* Image */}
-                <div className="relative h-[180px] w-full">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="px-6 py-5">
-                  <p className="text-[15px] font-semibold text-gray-900 leading-snug">
-                    {item.title}
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          ))}
-        </div>
-
-      </div>
-        </div>
-      </section>
+      <OurExpertise />
 
       <ImageHighlightSection
         heading="Your Data Center, Our Expertise"

@@ -5,9 +5,12 @@ import InfoCtaSection from "@/components/services/InfoCtaSection";
 import SixCards from "@/components/services/SixCards";
 import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageTabsSection from "@/components/services/ImageTabsSection";
+import AssessmentScope from "@/components/sections/assesment";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import Image from "next/image";
+import StandardsFrameworks from "@/components/sections/StandardFramework";
+import EngagementOptions from "@/components/sections/EngagementOptions";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -137,65 +140,7 @@ export default function SecurityAssessment() {
         ]}
       />
 
-      <section className="max-w-7xl mx-auto px-8 py-6">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-2xl font-semibold">Assessment Scope</h2>
-          <p className="text-gray-500 mt-2">
-            We tailor the assessment to your environment and priorities.
-          </p>
-        </div>
-
-        {/* ROW 1 – 4 CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {items.slice(0, 4).map((item, index) => (
-            <div
-              key={index}
-              className="border border-orange-400 rounded-xl p-6 bg-white"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h4 className="text-orange-500 font-semibold mb-3">
-                {item.title}
-              </h4>
-              <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm">
-                {item.points.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        {/* ROW 2 – 3 CARDS (CENTERED) */}
-        <div className="mt-10 flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
-            {items.slice(4).map((item, index) => (
-              <div
-                key={index}
-                className="border border-orange-400 rounded-xl p-6 bg-white"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-40 object-cover rounded-lg mb-4"
-                />
-                <h4 className="text-orange-500 font-semibold mb-3">
-                  {item.title}
-                </h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm">
-                  {item.points.map((point, idx) => (
-                    <li key={idx}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AssessmentScope />
 
       <SixCards
         heading="Our Methodology"
@@ -245,92 +190,8 @@ export default function SecurityAssessment() {
         ]}
       />
 
-      <section className="w-full py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Heading */}
-          <h2 className="text-2xl font-semibold text-gray-900 mb-10">
-            Standards & Frameworks We Align To
-          </h2>
+      <StandardsFrameworks />
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {/* Card 1 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/assets/images/services/security-assessment/nist.png"
-                  alt="NIST CSF"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm font-semibold">
-                NIST Cybersecurity Framework (CSF)
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/assets/images/services/security-assessment/iso.png"
-                  alt="ISO 27001"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm font-semibold">
-                ISO/IEC 27001 (controls and audit readiness)
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/assets/images/services/security-assessment/iec.png"
-                  alt="IEC 62443"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm font-semibold">
-                IEC 62443 (for industrial/OT environments)
-              </p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/assets/images/services/security-assessment/cert.png"
-                  alt="CERT-In"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm font-semibold">
-                CERT-In advisories (India-specific guidance)
-              </p>
-            </div>
-
-            {/* Card 5 */}
-            <div className="border border-gray-200 rounded-xl p-4 shadow-sm">
-              <div className="relative h-36 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/assets/images/services/security-assessment/oem.png"
-                  alt="OEM Best Practices"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-sm font-semibold">
-                OEM Best Practices (firewalls, endpoints & network gear)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <SixCards
         heading="Deliverables You Receive"
         headingTag="h2"
@@ -430,76 +291,8 @@ export default function SecurityAssessment() {
           },
         ]}
       />
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Heading */}
-          <h2 className="text-center text-3xl font-semibold text-gray-900 mb-14">
-            Engagement Options
-          </h2>
 
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
-              <h3 className="text-lg font-semibold text-red-500 mb-2">
-                Rapid Security Health Check
-              </h3>
-
-              <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
-                1–2 Weeks
-              </p>
-
-              <p className="text-gray-600 mb-8">
-                Quick baseline and top risks assessment for rapid insights.
-              </p>
-
-              <button className="px-8 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-50 transition">
-                Get Started
-              </button>
-            </div>
-
-            {/* Card 2 (Highlighted) */}
-            <div className="rounded-2xl border-2 border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
-              <h3 className="text-lg font-semibold text-red-500 mb-2">
-                Comprehensive Assessment
-              </h3>
-
-              <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
-                3–6 Weeks
-              </p>
-
-              <p className="text-gray-600 mb-8">
-                Full-scope multi-location deep dive into all assets.
-              </p>
-
-              <button className="px-8 py-2 rounded-full bg-red-500 text-white font-medium hover:bg-red-600 transition">
-                Learn More
-              </button>
-            </div>
-
-            {/* Card 3 */}
-            <div className="rounded-2xl border border-gray-200 p-8 text-center hover:shadow-md hover:border-red-500 transition">
-              <h3 className="text-lg font-semibold text-red-500 mb-2">
-                OT-Focused Assessment
-              </h3>
-
-              <p className="text-xs font-semibold text-gray-400 uppercase mb-4">
-                Specialized
-              </p>
-
-              <p className="text-gray-600 mb-8">
-                Tailored specifically for industrial and operational
-                environments.
-              </p>
-
-              <button className="px-8 py-2 rounded-full border border-red-500 text-red-500 font-medium hover:bg-red-50 transition">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <EngagementOptions />
       <GradientCtaBanner text="Ready to assess your security posture across locations?" />
     </>
   );

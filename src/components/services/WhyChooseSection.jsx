@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function WhyChooseSection({
   heading,
@@ -9,48 +10,90 @@ export default function WhyChooseSection({
   featuresRight = [],
 }) {
   return (
-    <section className="w-full py-20 bg-white">
+   <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
+
+        {/* Heading */}
+        <motion.h2
+          className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
+        >
           {heading}
-        </h2>
+        </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          {/* Left Features */}
-          <div className="space-y-20">
-            {featuresLeft.map((item, idx) => (
-              <Feature
-                key={idx}
-                icon={item.icon}
-                title={item.title}
-                text={item.text}
-              />
-            ))}
-          </div>
 
-          {/* Center Image */}
-          <div className="flex justify-center">
+          {/* LEFT FEATURES */}
+          <motion.div
+            className="space-y-20"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.2 } }
+            }}
+          >
+            {featuresLeft.map((item, idx) => (
+              <motion.div
+                key={idx}
+                variants={{
+                  hidden: { opacity: 0, y: 24 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+              >
+                <Feature {...item} />
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* CENTER IMAGE */}
+          <motion.div
+            className="flex justify-center"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <div className="relative w-[300px] h-[420px] rounded-2xl overflow-hidden">
               <Image
                 src={centerImage}
-                alt="Why choosee"
+                alt="Why choose"
                 fill
                 className="object-cover"
               />
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right Features */}
-          <div className="space-y-20">
+          {/* RIGHT FEATURES */}
+          <motion.div
+            className="space-y-20"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.2 } }
+            }}
+          >
             {featuresRight.map((item, idx) => (
-              <Feature
+              <motion.div
                 key={idx}
-                icon={item.icon}
-                title={item.title}
-                text={item.text}
-              />
+                variants={{
+                  hidden: { opacity: 0, y: 24 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
+              >
+                <Feature {...item} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

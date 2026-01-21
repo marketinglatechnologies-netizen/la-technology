@@ -5,6 +5,7 @@ import WhyChooseSection from "@/components/services/WhyChooseSection";
 import ImageTabsSection from "@/components/services/ImageTabsSection";
 import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import FourCards from "@/components/services/FourCards";
 import Image from "next/image";
 
 export const metadata = {
@@ -75,38 +76,36 @@ export default function SOC() {
         description="SOC-as-a-Service is a subscription-based model that gives you access to enterprise-grade security operations without heavy upfront investment. Our experts leverage advanced SIEM tools, threat intelligence, and automation to monitor, detect, and respond to security incidents in real time—keeping your business safe and compliant."
       />
 
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Heading */}
-          <h2 className="text-2xl md:text-3xl text-center text-gray-900 mb-16">
-            Key Features of Our SOC-as-a-Service
-          </h2>
-
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-            {features.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col max-w-xs mx-auto"
-              >
-                <Image
-                  src={item.icon}
-                  alt={item.title}
-                  width={48}
-                  height={48}
-                  className="mb-4"
-                />
-
-                <h4 className="text-base text-gray-900 mb-3 text-left">{item.title}</h4>
-
-                <p className="text-sm text-gray-600 leading-relaxed text-left">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FourCards
+        heading="Our Data Center Services"
+        headingTag="h2"
+        cards={[
+          {
+            icon: "/assets/images/services/soc/24.png",
+            title: "24/7 Threat Monitoring & Detection",
+            description:
+              "Continuous surveillance of networks, endpoints, and cloud environments using next-gen SIEM and analytics.",
+          },
+          {
+            icon: "/assets/images/services/soc/Incident-Response.png",
+            title: "Rapid Incident Response",
+            description:
+              "Our certified analysts investigate and contain threats immediately, minimizing downtime and damage.",
+          },
+          {
+            icon: "/assets/images/services/soc/feature3.png",
+            title: "Proactive Vulnerability Management",
+            description:
+              "Regular scans and remediation recommendations to prevent potential breaches before they occur.",
+          },
+          {
+            icon: "/assets/images/services/soc/feature4.png",
+            title: "Compliance & Reporting",
+            description:
+              "Stay aligned with GDPR, HIPAA, PCI DSS, ISO 27001 through detailed logs, reports, and audit support.",
+          },
+        ]}
+      />
 
       <WhyChooseSection
         heading="LA Technologies SOC-as-a-Service:"
@@ -142,19 +141,23 @@ export default function SOC() {
         tabs={[
           {
             label: "Businesses handling sensitive customer data",
-            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-1.jpg",
+            image:
+              "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-1.jpg",
           },
           {
             label: "Organizations in regulated industries",
-            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-2.jpg",
+            image:
+              "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-2.jpg",
           },
           {
             label: "Companies migrating workloads to the cloud",
-            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-3.jpg",
+            image:
+              "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-3.jpg",
           },
           {
             label: "Enterprises lacking in-house security expertise",
-            image: "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-4.jpg",
+            image:
+              "/assets/images/services/soc/soc-Who-Needs-SOC-as-a-Service-4.jpg",
           },
         ]}
       />

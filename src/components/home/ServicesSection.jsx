@@ -31,6 +31,18 @@ const servicesData = {
       link: "/services/managed-services/managed-security-services", // Example link
     },
     {
+      title: "Managed Broadband + SDWAN",
+      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/managed-services/managed-broadband-sdwan", // Example link
+    },
+     {
+      title: "IT Branch Operations",
+      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/managed-services/it-branch-operations", // Example link
+    },
+    {
       title: "IT Staff Augmentation",
       description: "Scale Your Team Efficiently with Certified IT Experts",
       icon: "/assets/images/home/icon5.png",
@@ -42,18 +54,6 @@ const servicesData = {
     //   icon: "/assets/images/home/icon6.png",
     //   link: "/services/managed-services/facility-management", // Example link
     // },
-    {
-      title: "Managed Broadband + SDWAN",
-      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
-      icon: "/assets/images/home/icon6.png",
-      link: "/services/managed-services/managed-broadband-sdwan", // Example link
-    },
-    {
-      title: "IT Branch Operations",
-      description: "End-to-End IT Support for Your Business with Scalable Technology Management",
-      icon: "/assets/images/home/icon6.png",
-      link: "/services/managed-services/it-branch-operations", // Example link
-    },
      {
       title: "Security Assessment",
       description: "End-to-End IT Support for Your Business with Scalable Technology Management",
@@ -62,31 +62,7 @@ const servicesData = {
     },
   ],
   "Cyber Security & IT Infra Services": [
-    {
-      title: "Cloud Services",
-      description: "Secure and Scalable Cloud Infrastructure",
-      icon: "/assets/images/home/icon1.png",
-      link: "/services/cyber-security-&-it-infra-services/cloud-security",
-    },
-    {
-      title: "Application Services",
-      description: "Modern and Secure Application Development",
-      icon: "/assets/images/home/icon2.png",
-      link: "/services/cyber-security-&-it-infra-services/application-security",
-    },
-    {
-      title: "Data Center Build",
-      description: "Robust and Efficient Data Center Construction",
-      icon: "/assets/images/home/icon3.png",
-      link: "/services/cyber-security-&-it-infra-services/data-center-build",
-    },
-    {
-      title: "Data Center Solutions",
-      description: "Comprehensive Data Center Management Solutions",
-      icon: "/assets/images/home/icon4.png",
-      link: "/services/cyber-security-&-it-infra-services/data-center-solutions",
-    },
-    {
+     {
       title: "Data Security",
       description: "Protecting Your Data Across All Platforms",
       icon: "/assets/images/home/icon5.png",
@@ -98,6 +74,42 @@ const servicesData = {
       icon: "/assets/images/home/icon6.png",
       link: "/services/cyber-security-&-it-infra-services/endpoint-security",
     },
+     {
+      title: "Network Security",
+      description: "Comprehensive Security for All Devices",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/cyber-security-&-it-infra-services/network-security",
+    },
+     {
+      title: "Application Security",
+      description: "Modern and Secure Application Development",
+      icon: "/assets/images/home/icon2.png",
+      link: "/services/cyber-security-&-it-infra-services/application-security",
+    },
+    {
+      title: "Cloud Security",
+      description: "Secure and Scalable Cloud Infrastructure",
+      icon: "/assets/images/home/icon1.png",
+      link: "/services/cyber-security-&-it-infra-services/cloud-security",
+    },
+    // {
+    //   title: "Data Center Build",
+    //   description: "Robust and Efficient Data Center Construction",
+    //   icon: "/assets/images/home/icon3.png",
+    //   link: "/services/cyber-security-&-it-infra-services/data-center-build",
+    // },
+     {
+      title: "Network Infrastructure ",
+      description: "Next-Gen Network Infrastructure Solutions",
+      icon: "/assets/images/home/icon4.png",
+      link: "/services/cyber-security-&-it-infra-services/network-infrastructure",
+    },
+    {
+      title: "Data Center Solutions",
+      description: "Comprehensive Data Center Management Solutions",
+      icon: "/assets/images/home/icon4.png",
+      link: "/services/cyber-security-&-it-infra-services/data-center-solutions",
+    },
   ],
 
   "OT Security": [
@@ -108,16 +120,28 @@ const servicesData = {
       link: "/services/ot-services/ics-scada-security", // Correct link path
     },
     {
-      title: "OT Endpoint Protection",
-      description: "Secure OT Devices and Endpoints",
-      icon: "/assets/images/home/icon6.png",
-      link: "/services/ot-services/ot-endpoint-protection", // Correct link path
-    },
-    {
       title: "Asset Discovery",
       description: "Discover OT Assets in Your Network",
       icon: "/assets/images/home/icon6.png",
       link: "/services/ot-services/asset-discovery",
+    },
+    {
+      title: "Network Segmentation",
+      description: "Segment Your OT Network for Security",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/network-segmentation",
+    },
+    {
+      title: "Threat Detection & Incident Response",
+      description: "Detect and Respond to OT Threats",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/threat-detection-incident-response", // Correct link path
+    },
+    {
+      title: "OT Endpoint Protection",
+      description: "Secure OT Devices and Endpoints",
+      icon: "/assets/images/home/icon6.png",
+      link: "/services/ot-services/ot-endpoint-protection", // Correct link path
     },
     {
       title: "Compliance for OT",
@@ -125,11 +149,11 @@ const servicesData = {
       icon: "/assets/images/home/icon6.png",
       link: "/services/ot-services/compliance-for-ot",
     },
-    {
-      title: "Network Segmentation",
-      description: "Segment Your OT Network for Security",
+     {
+      title: "Secure Remote Access",
+      description: "Secure Remote Access for OT Environments",
       icon: "/assets/images/home/icon6.png",
-      link: "/services/ot-services/network-segmentation",
+      link: "/services/ot-services/secure-remote-access",
     },
     {
       title: "OT Privileged Access Management",

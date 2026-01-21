@@ -6,37 +6,34 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import IndustryGrid from "@/components/sections/IndustrySection";
 import Image from "next/image";
+import FourBoxSection from "@/components/services/FourBox";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
   description:
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
-}
+};
 
 const items = [
-    {
-      title: "Rising Cyber Threats",
-      text:
-        "Rising Cyber Threats Ransomware, phishing, and insider threats target sensitive data. ",
-    },
-    {
-      title: "Regulatory Compliance ",
-      text:
-        " Laws like GDPR, HIPAA, and local data protection mandates require strict controls.",
-    },
-    {
-      title: "Multi-Location Risks ",
-      text:
-        "Distributed offices and remote teams increase exposure to breaches. ",
-    },
-    {
-      title: "Business Continuity ",
-      text:
-        "Data loss or corruption can halt operations and impact customer trust.",
-    },
-  ];
+  {
+    title: "Rising Cyber Threats",
+    text: "Rising Cyber Threats Ransomware, phishing, and insider threats target sensitive data. ",
+  },
+  {
+    title: "Regulatory Compliance ",
+    text: " Laws like GDPR, HIPAA, and local data protection mandates require strict controls.",
+  },
+  {
+    title: "Multi-Location Risks ",
+    text: "Distributed offices and remote teams increase exposure to breaches. ",
+  },
+  {
+    title: "Business Continuity ",
+    text: "Data loss or corruption can halt operations and impact customer trust.",
+  },
+];
 
-  const industriesData =  {
+const industriesData = {
   sectionTitle: "Industries We Serve",
   items: [
     {
@@ -101,90 +98,85 @@ export default function DataSecurity() {
         title="Protect Your Most Valuable Asset—Your Data "
         description="Data is the lifeblood of modern businesses. From customer information to financial records and intellectual property, any compromise can lead to severe financial, operational, and reputational damage. LA Technologies’ Data Security solutions safeguard your data across endpoints, networks, and storage systems—ensuring confidentiality, integrity, and availability."
       />
-      <section className="py-8 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-
-        {/* HEADING */}
-        <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-          Why Data Security Matters
-        </h2>
-
-        {/* CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="border border-orange-300 rounded-xl p-6 text-left hover:shadow-md transition"
-            >
-              <h3 className="font-semibold mb-3 text-black">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section> 
-
-    <EightCards
-  heading="Our Data Security Solutions"
-  headingTag="h2"
-  items={[
-    {
-      icon: "/assets/images/services/data-security/service1.png",
-      title: "Data Encryption",
-      description:
-        "Protect data at rest and in transit with strong encryption standards.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service2.png",
-      title: "Data Loss Prevention (DLP)",
-      description:
-        "Monitor and control sensitive data movement across endpoints and networks.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service3.png",
-      title: "Access Control & Identity Management",
-      description:
-        "Enforce least privilege and MFA for secure data access.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service4.png",
-      title: "Endpoint Protection",
-      description:
-        "Secure laptops, desktops, and mobile devices against malware and unauthorized access.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service5.png",
-      title: "Email & File Security",
-      description:
-        "Prevent phishing, malware, and unauthorized file sharing.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service6.png",
-      title: "Backup & Recovery",
-      description:
-        "Ensure reliable data backups and fast restoration in case of incidents.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service7.png",
-      title: "Data Classification & Governance",
-      description:
-        "Identify sensitive data and apply appropriate protection policies.",
-    },
-    {
-      icon: "/assets/images/services/data-security/service8.png",
-      title: "Insider Threat Management",
-      description:
-        "Detect and prevent unauthorized data access or exfiltration.",
-    },
-  ]}
-/>
-
     
+      <FourBoxSection
+        heading="Why Data Security Matters"
+        headingTag="h2"
+        items={[
+          {
+            title: "Rising Cyber Threats",
+            description: "Rising Cyber Threats Ransomware, phishing, and insider threats target sensitive data. ",
+          },
+          {
+            title: "Regulatory Compliance ",
+            description: " Laws like GDPR, HIPAA, and local data protection mandates require strict controls.",
+          },
+          {
+            title: "Multi-Location Risks ",
+            description: "Distributed offices and remote teams increase exposure to breaches. ",
+          },
+          {
+            title: "Business Continuity ",
+            description: "Data loss or corruption can halt operations and impact customer trust.",
+          },
+        ]}
+      />
+
+      <EightCards
+        heading="Our Data Security Solutions"
+        headingTag="h2"
+        items={[
+          {
+            icon: "/assets/images/services/data-security/service1.png",
+            title: "Data Encryption",
+            description:
+              "Protect data at rest and in transit with strong encryption standards.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service2.png",
+            title: "Data Loss Prevention (DLP)",
+            description:
+              "Monitor and control sensitive data movement across endpoints and networks.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service3.png",
+            title: "Access Control & Identity Management",
+            description:
+              "Enforce least privilege and MFA for secure data access.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service4.png",
+            title: "Endpoint Protection",
+            description:
+              "Secure laptops, desktops, and mobile devices against malware and unauthorized access.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service5.png",
+            title: "Email & File Security",
+            description:
+              "Prevent phishing, malware, and unauthorized file sharing.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service6.png",
+            title: "Backup & Recovery",
+            description:
+              "Ensure reliable data backups and fast restoration in case of incidents.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service7.png",
+            title: "Data Classification & Governance",
+            description:
+              "Identify sensitive data and apply appropriate protection policies.",
+          },
+          {
+            icon: "/assets/images/services/data-security/service8.png",
+            title: "Insider Threat Management",
+            description:
+              "Detect and prevent unauthorized data access or exfiltration.",
+          },
+        ]}
+      />
+
       <WhyChooseSection
         heading="Benefits of LA Technologies Data Security"
         centerImage="/assets/images/services/data-security/benefits.jpg"
@@ -222,7 +214,7 @@ export default function DataSecurity() {
         imageAlt="Cybersecurity monitoring dashboard"
         description="With LA Technologies, you gain complete control and protection for your critical data—across every branch and endpoint."
       />
-      <GradientCtaBanner text="Ready to secure your data?"/>
+      <GradientCtaBanner text="Ready to secure your data?" />
     </>
   );
 }

@@ -10,6 +10,7 @@ import Image from "next/image";
 import InfoList from "@/components/ui/InfoList";
 import SixCards from "@/components/services/SixCards";
 import IndustryGrid from "@/components/sections/IndustrySection";
+import BenefitsGrid from "@/components/services/BenefitsGrid";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -17,7 +18,7 @@ export const metadata = {
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
 
-const otPamFeatures = [
+const benefitsData = [
   {
     id: 1,
     title: "Centralized Credential Vault",
@@ -217,42 +218,7 @@ LA Technologies’ Secure Remote Access solution ensures that remote connectivit
 
       {/* <IndustryGrid data={industriesData} /> */}
 
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          {/* Heading */}
-          <h2 className="text-center text-2xl md:text-3xl font-semibold text-[#2D1F1F] mb-4">
-            Integrated OT Privileged Access Management
-          </h2>
-
-          {/* Description */}
-          <p className="text-center text-sm md:text-base text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
-            Privileged accounts in OT environments hold the keys to critical
-            industrial assets. If compromised, they can override safety controls
-            and disrupt operations. Our integrated OT PAM capabilities include:
-          </p>
-
-          {/* Gradient Divider */}
-          <div className="mb-16 h-[3px] w-full max-w-6xl mx-auto bg-gradient-to-r from-orange-500 to-red-600 rounded-full" />
-
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {otPamFeatures.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white rounded-2xl p-6 border border-orange-100
-                         shadow-[0_8px_24px_rgba(255,140,0,0.15)]"
-              >
-                <h3 className="text-sm md:text-base font-semibold text-[#2D1F1F] mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <BenefitsGrid items={benefitsData} heading="Integrated OT Privileged Access Management" description="Privileged accounts in OT environments hold the keys to critical industrial assets. If compromised, they can override safety controls and disrupt operations. Our integrated OT PAM capabilities include:" columns={4} />
 
       <ImageHighlightSection
         heading="Your Remote Access, Secured"

@@ -1,42 +1,83 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function FiveCards({ heading, headingTag = "h2", items = [] }) {
   const HeadingTag = headingTag;
 
   return (
-    <section className="w-full py-20 bg-white">
+      <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
+
         {/* Heading */}
-        <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
-          {heading}
-        </HeadingTag>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16 font-semibold">
+            {heading}
+          </HeadingTag>
+        </motion.div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{
+            hidden: {},
+            visible: { transition: { staggerChildren: 0.25 } }
+          }}
+        >
           {/* First 3 cards */}
           {items.slice(0, 3).map((item, index) => (
-            <Card
+            <motion.div
               key={index}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-
-          {/* Bottom row */}
-          <div className="lg:col-span-3 flex flex-col sm:flex-col lg:flex-row justify-center gap-12">
-            {items.slice(3, 5).map((item, index) => (
+              variants={{
+                hidden: { opacity: 0, y: 24 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+            >
               <Card
-                key={index}
                 icon={item.icon}
                 title={item.title}
                 description={item.description}
               />
+            </motion.div>
+          ))}
+
+          {/* Bottom row */}
+          <motion.div
+            className="lg:col-span-3 flex flex-col sm:flex-col lg:flex-row justify-center gap-12"
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.25 } }
+            }}
+          >
+            {items.slice(3, 5).map((item, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 24 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.75, ease: "easeOut" }}
+              >
+                <Card
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                />
+              </motion.div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
+
       </div>
     </section>
   );

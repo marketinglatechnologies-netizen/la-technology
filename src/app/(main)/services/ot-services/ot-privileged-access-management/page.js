@@ -21,39 +21,39 @@ export const metadata = {
 const multiCardsItems = [
   {
     icon: "/assets/images/services/ot-privileged-access-management/service1.png",
-    title: "Centralized Credential <br> Vault",
+    title: "Centralized Credential  Vault",
     description:
-      "Securely store and rotate privileged <br> credentials for OT systems.",
+      "Securely store and rotate privileged  credentials for OT systems.",
   },
   {
     icon: "/assets/images/services/ot-privileged-access-management/service2.png",
-    title: "Granular Access <br> Control",
+    title: "Granular Access  Control",
     description:
-      "Assign role-based permissions and <br> enforce least privilege principles.",
+      "Assign role-based permissions and  enforce least privilege principles.",
   },
   {
     icon: "/assets/images/services/ot-privileged-access-management/service3.png",
-    title: "Just-in-Time <br> Access",
+    title: "Just-in-Time  Access",
     description:
-      "Provide temporary, time-bound <br> access to critical OT assets.",
+      "Provide temporary, time-bound  access to critical OT assets.",
   },
   {
     icon: "/assets/images/services/ot-privileged-access-management/service4.png",
-    title: "Session Monitoring & <br> Recording",
+    title: "Session Monitoring &  Recording",
     description:
-      "Track and record all privileged <br> activities for compliance and <br> forensic analysis.",
+      "Track and record all privileged  activities for compliance and  forensic analysis.",
   },
   {
     icon: "/assets/images/services/ot-privileged-access-management/service5.png",
-    title: "Automated Password <br> Rotation",
+    title: "Automated Password  Rotation",
     description:
-      "Eliminate shared or static credentials <br> across OT environments.",
+      "Eliminate shared or static credentials  across OT environments.",
   },
   {
     icon: "/assets/images/services/ot-privileged-access-management/service6.png",
-    title: "Integration with Secure <br> Remote Access",
+    title: "Integration with Secure  Remote Access",
     description:
-      "Combine PAM with remote access <br> controls for complete security.",
+      "Combine PAM with remote access  controls for complete security.",
   },
 ];
 
@@ -133,9 +133,9 @@ reducing risk, and maintaining operational continuity."
         items={[
           {
             icon: "/assets/images/services/ot-privileged-access-management/service1.png",
-            title: "Centralized Credential <br> Vault",
+            title: "Centralized Credential  Vault",
             description:
-              "Securely store and rotate privileged <br> credentials for OT systems.",
+              "Securely store and rotate privileged  credentials for OT systems.",
           },
           {
             icon: "/assets/images/services/ot-privileged-access-management/service2.png",

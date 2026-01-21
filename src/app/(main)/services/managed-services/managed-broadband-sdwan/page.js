@@ -6,31 +6,13 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import IndustryGrid from "@/components/sections/IndustrySection";
 import Image from "next/image";
+import FourBoxSection from "@/components/services/FourBox";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
   description:
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
-
-const items = [
-  {
-    title: "Unpredictable Network Performance",
-    text: "Legacy WAN solutions struggle with bandwidth demands and cloud adoption.",
-  },
-  {
-    title: "High Operational Costs",
-    text: "MPLS and traditional WAN architectures are expensive and inflexible.",
-  },
-  {
-    title: "Security Challenges",
-    text: "Distributed branches and remote users increase exposure to cyber threats.",
-  },
-  {
-    title: "Cloud-First Workloads",
-    text: "Businesses need seamless connectivity to SaaS and cloud applications.",
-  },
-];
 
 const industries = {
   sectionTitle: "Industries We Serve",
@@ -92,29 +74,29 @@ export default function ManagedBroadbandSDWAN() {
         title="Reliable Connectivity with Intelligent Network Management"
         description="Modern businesses rely on fast, secure, and resilient connectivity to keep operations running smoothly. Traditional broadband alone often falls short in delivering the performance and flexibility required for today’s distributed environments. That’s where Managed Broadband + SD-WAN comes in—combining high-speed internet with intelligent software-defined networking for optimized performance, security, and cost efficiency. "
       />
-      <section className="py-8 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          {/* HEADING */}
-          <h2 className="text-2xl md:text-3xl font-semibold mb-12">
-            The Importance of Managed Broadband + SD-WAN
-          </h2>
 
-          {/* CARDS */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="border border-orange-300 rounded-xl p-6 text-left hover:shadow-md transition"
-              >
-                <h3 className="font-semibold mb-3 text-black">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FourBoxSection
+        heading="The Importance of Managed Broadband + SD-WAN"
+        headingTag="h2"
+        items={[
+          {
+            title: "Unpredictable Network Performance",
+            description: "Legacy WAN solutions struggle with bandwidth demands and cloud adoption.",
+          },
+          {
+            title: "High Operational Costs",
+            description: "MPLS and traditional WAN architectures are expensive and inflexible.",
+          },
+          {
+            title: "Security Challenges",
+            description: "Distributed branches and remote users increase exposure to cyber threats.",
+          },
+          {
+            title: "Cloud-First Workloads",
+            description: "Businesses need seamless connectivity to SaaS and cloud applications.",
+          },
+        ]}
+      />
 
       <SixCards
         heading="Our Managed Broadband + SD-WAN Solutions"
@@ -193,7 +175,6 @@ export default function ManagedBroadbandSDWAN() {
         ]}
       />
       {/* <IndustryGrid data={industries} /> */}
-      
 
       <ImageHighlightSection
         heading="Your Network, Smarter and Safer 
