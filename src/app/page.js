@@ -83,13 +83,23 @@ export default function HomePage() {
       },
       {
         id: "ites",
-        title: "ITES",
+        title: " IT/ITES",
         image: "/assets/images/home/ites1.jpg",
       },
       {
         id: "service providers",
         title: "Service Providers",
         image: "/assets/images/home/service-providers.jpg",
+      },
+      {
+        id: "data center",
+        title: "Data Center",
+        image: "/assets/images/home/data-center.jpg",
+      },
+       {
+        id: "government",
+        title: "Government",
+        image: "/assets/images/home/government.jpg",
       },
       {
         id: "others",

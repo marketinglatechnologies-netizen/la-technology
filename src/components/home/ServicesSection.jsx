@@ -39,7 +39,7 @@ const servicesData = {
      {
       title: "IT Branch Operations",
       description: "End-to-End IT Support for Your Business with Scalable Technology Management",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/it.png",
       link: "/services/managed-services/it-branch-operations", // Example link
     },
     {
@@ -57,7 +57,7 @@ const servicesData = {
      {
       title: "Security Assessment",
       description: "End-to-End IT Support for Your Business with Scalable Technology Management",
-      icon: "/assets/images/home/icon6.png",
+      icon: "/assets/images/home/security.png",
       link: "/services/managed-services/security-assessment", // Example link
     },
   ],
