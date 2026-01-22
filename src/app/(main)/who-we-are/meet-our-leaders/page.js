@@ -1,4 +1,6 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
+import GradientCtaBanner from "@/components/services/GradientCtaBanner";
+import PageWrapper from "@/components/services/PageWrapper";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -101,6 +103,7 @@ export default function OurTeam() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           {/* ===== Section Heading ===== */}
+          <PageWrapper>
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Real stories from the team shaping our
@@ -108,6 +111,7 @@ export default function OurTeam() {
               culture and success.
             </h2>
           </div>
+          </PageWrapper>
 
           {/* ===== Video Blocks ===== */}
           <div className="space-y-30">
@@ -122,17 +126,21 @@ export default function OurTeam() {
                     item.align === "right" ? "lg:order-2" : ""
                   }`}
                 >
-                  <video
-                    src={item.video}
-                    controls
-                    preload="metadata"
-                    className="w-full h-auto object-cover rounded-2xl"
-                  />
+                  <PageWrapper>
+                    <video
+                      src={item.video}
+                      controls
+                      preload="metadata"
+                      className="w-full h-auto object-cover rounded-2xl"
+                    />
+                  </PageWrapper>
                 </div>
 
                 {/* Content */}
                 <div>
+                  <PageWrapper>
                   <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                  </PageWrapper>
                   <p className="text-gray-600 leading-relaxed text-justify">
                     {item.description}
                   </p>
@@ -142,26 +150,12 @@ export default function OurTeam() {
           </div>
         </div>
       </section>
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-2xl bg-gradient-to-r from-[#E53935] to-[#F68B2C] px-8 py-6 md:px-12 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* TEXT */}
-            <p className="text-white font-semibold uppercase text-sm md:text-base tracking-wide text-center md:text-left">
-              Driving digital growth with trusted technology solutions –{" "}
-              <br className="hidden md:block" />
-              reach out to us now
-            </p>
 
-            {/* BUTTON */}
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-[#E53935] font-medium px-6 py-3 rounded-lg hover:bg-gray-100 transition"
-            >
-              Talk to an Expert
-            </Link>
-          </div>
-        </div>
-      </section>
+      <GradientCtaBanner
+        text="  Driving digital growth with trusted technology solutions"
+        buttonText="Talk to an Expert"
+        iconSrc="/assets/images/home/phone.svg"
+      />
     </main>
   );
 }

@@ -1,11 +1,11 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
+import PageWrapper from "@/components/services/PageWrapper";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
   description:
     "Learn about LA Technologies' mission to provide industry-compliant security designs.",
 };
-
 
 const whatWeDoData = [
   {
@@ -70,158 +70,160 @@ export default function LaAi() {
           description={`Empowering businesses with next-generation AI solutions for cybersecurity, IT automation, and multi-cloud management.`}
         />
       </div>
-      <section className="w-full bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-          {/* Left Image + Gradient Grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {/* Top Left – Image */}
-            <div className="rounded-2xl overflow-hidden">
-              <img
-                src="/assets/images/la/ai/abt1.png"
-                alt="AI Security Shield"
-                className="w-full h-full object-cover"
-              />
+
+      <PageWrapper>
+        <section className="w-full bg-white py-20">
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            {/* Left Image + Gradient Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Top Left – Image */}
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/assets/images/la/ai/abt1.png"
+                  alt="AI Security Shield"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Top Right – Gradient Block */}
+              <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+
+              {/* Bottom Left – Gradient Block */}
+              <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+
+              {/* Bottom Right – Image */}
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src="/assets/images/la/ai/abt2.png"
+                  alt="AI Protection Network"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
-            {/* Top Right – Gradient Block */}
-            <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+            {/* Right Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+                About LA AI
+              </h2>
 
-            {/* Bottom Left – Gradient Block */}
-            <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
+              <p className="mt-6 text-gray-600 text-base leading-relaxed max-w-xl">
+                LA AI is the innovation arm of LA Technologies, focused on
+                building Gen AI-powered solutions and services that transform
+                how businesses operate. Our mission is to simplify complexity,
+                enhance security, and accelerate digital transformation through
+                cutting-edge AI tools and automation.
+              </p>
 
-            {/* Bottom Right – Image */}
-            <div className="rounded-2xl overflow-hidden">
-              <img  
-                src="/assets/images/la/ai/abt2.png"
-                alt="AI Protection Network"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div> 
-
-          {/* Right Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-              About LA AI
-            </h2>
-
-            <p className="mt-6 text-gray-600 text-base leading-relaxed max-w-xl">
-              LA AI is the innovation arm of LA Technologies, focused on
-              building Gen AI-powered solutions and services that transform how
-              businesses operate. Our mission is to simplify complexity, enhance
-              security, and accelerate digital transformation through
-              cutting-edge AI tools and automation.
-            </p>
-
-            <button
-              className="mt-8 inline-flex items-center gap-3 rounded-lg
+              <button
+                className="mt-8 inline-flex items-center gap-3 rounded-lg
                        bg-gradient-to-r from-[#E11D48] to-[#F97316]
                        px-6 py-3 text-white text-sm font-medium
                        hover:opacity-90 transition"
-            >
-              <img
-                src="/assets/images/home/phone2.svg"
-                alt="Call icon"
-                className="w-4 h-4"
-              />
-              Talk to an Expert
-            </button>
+              >
+                <img
+                  src="/assets/images/home/phone2.svg"
+                  alt="Call icon"
+                  className="w-4 h-4"
+                />
+                Talk to an Expert
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-   
-     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+        </section>
+      </PageWrapper>
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-          What We Do
-        </h2>
+      <PageWrapper>
+        <section className="w-full bg-white py-20">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            {/* Heading */}
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+              What We Do
+            </h2>
 
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          We specialize in AI-driven solutions across multiple domains:
-        </p>
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+              We specialize in AI-driven solutions across multiple domains:
+            </p>
 
-        {/* Gradient Divider */}
-        <div className="mt-8 h-[2px] w-full bg-gradient-to-r from-[#F97316] to-[#E11D48] rounded-full" />
+            {/* Gradient Divider */}
+            <div className="mt-8 h-[2px] w-full bg-gradient-to-r from-[#F97316] to-[#E11D48] rounded-full" />
 
-        {/* Cards */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
-          {whatWeDoData.map((item) => (
-            <div
-              key={item.id}
-              className="rounded-2xl border border-orange-200 bg-white p-6
+            {/* Cards */}
+            <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+              {whatWeDoData.map((item) => (
+                <div
+                  key={item.id}
+                  className="rounded-2xl border border-orange-200 bg-white p-6
                          shadow-lg shadow-orange-200
                          transition"
-            >
-              <img
-                src={item.icon}
-                alt={item.title}
-                className="w-15 h-15 mb-4"
-              />
+                >
+                  <img
+                    src={item.icon}
+                    alt={item.title}
+                    className="w-15 h-15 mb-4"
+                  />
 
-              <h3 className="text-gray-900 font-medium text-base mb-2">
-                {item.title}
-              </h3>
+                  <h3 className="text-gray-900 font-medium text-base mb-2">
+                    {item.title}
+                  </h3>
 
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {item.description}
-              </p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 flex justify-center">
-          <button
-            className="inline-flex items-center gap-2
+            {/* Bottom CTA */}
+            <div className="mt-16 flex justify-center">
+              <button
+                className="inline-flex items-center gap-2
                        bg-gradient-to-r from-[#E11D48] to-[#F97316]
                        text-white text-sm font-medium
                        px-8 py-3 rounded-lg
                        hover:opacity-90 transition"
-          >
-            <img
-              src="/assets/images/home/phone2.svg"
-              alt="Call icon"
-              className="w-4 h-4"
-            />
-            Talk to an Expert
-          </button>
-        </div>
+              >
+                <img
+                  src="/assets/images/home/phone2.svg"
+                  alt="Call icon"
+                  className="w-4 h-4"
+                />
+                Talk to an Expert
+              </button>
+            </div>
+          </div>
+        </section>
+      </PageWrapper>
 
-      </div>
-    </section>
-    <section className="w-full bg-white py-10">
-  <div className="max-w-7xl mx-auto px-4">
-    
-    <div className="relative rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-orange-400 px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <PageWrapper>
+        <section className="w-full bg-white py-10">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="relative rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-orange-400 px-6 py-8 md:px-10 md:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              {/* LEFT CONTENT */}
+              <div className="max-w-3xl text-white">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2">
+                  OUR VISION
+                </h2>
+                <p className="text-sm md:text-base leading-relaxed opacity-95">
+                  To empower organizations with future-ready AI solutions that
+                  simplify operations, strengthen security, and unlock new
+                  possibilities across IT and business ecosystems.
+                </p>
+              </div>
 
-      {/* LEFT CONTENT */}
-      <div className="max-w-3xl text-white">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          OUR VISION 
-        </h2>
-        <p className="text-sm md:text-base leading-relaxed opacity-95">
-          To empower organizations with future-ready AI solutions that simplify operations,
-          strengthen security, and unlock new possibilities across IT and business ecosystems.
-        </p>
-      </div>
-
-      {/* RIGHT CTA */}
-      <div className="shrink-0">
-        <button
-          className="bg-white text-orange-600 px-6 py-2.5 rounded-lg text-sm font-semibold 
+              {/* RIGHT CTA */}
+              <div className="shrink-0">
+                <button
+                  className="bg-white text-orange-600 px-6 py-2.5 rounded-lg text-sm font-semibold 
                      hover:bg-orange-50 transition shadow"
-        >
-          Talk to an Expert
-        </button>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
+                >
+                  Talk to an Expert
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </PageWrapper>
     </>
   );
 }

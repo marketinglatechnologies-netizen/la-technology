@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import PageWrapper from "@/components/services/PageWrapper";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -36,12 +37,15 @@ export default function BlogPage() {
         titleTag="h1"
         description={`Our blog is your go-to resource for the latest trends, expert opinions, and actionable insights in Cybersecurity, AI, Networking, and Digital Transformation.`}
       />
+
+      <PageWrapper>
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-2xl md:text-3xl font-semibold mb-12">
             What You’ll Find Here
           </h1>
 
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogs.map((blog) => (
               <Link
@@ -72,7 +76,10 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      </PageWrapper>
 
+
+      <PageWrapper>
       <section className="py-15 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -136,6 +143,7 @@ export default function BlogPage() {
                 </div>
               </div>
             </div>
+            
 
             {/* RIGHT IMAGE (SINGLE IMAGE) */}
             <div className="flex justify-center lg:justify-end">
@@ -170,6 +178,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      </PageWrapper>
       
     </>
   );

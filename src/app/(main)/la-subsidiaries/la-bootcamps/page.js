@@ -1,4 +1,6 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
+import PageWrapper from "@/components/services/PageWrapper";
+import Link from "next/link";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -103,79 +105,80 @@ export default function LaBootCamp() {
           title="LA Bootcamps – Learn Cybersecurity from Industry Experts "
           titleTag="h1"
           description={`Your gateway to hands-on cybersecurity training, powered by LA Technologies. `}
-           showWebsiteCta={true}       
+          showWebsiteCta={true}
         />
       </div>
 
-      <section className="w-full bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-              About LA Bootcamps
-            </h2>
+      <PageWrapper>
+        <section className="w-full bg-white py-20">
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            {/* Left Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+                About LA Bootcamps
+              </h2>
 
-            <p className="mt-6 text-gray-600 text-base leading-relaxed max-w-xl">
-              LA Bootcamps is a subsidiary of LA Technologies, designed to
-              bridge the gap between academic learning and real-world
-              cybersecurity expertise. Unlike traditional institutes, our
-              students train inside a live corporate environment, gaining
-              exposure to enterprise-grade security operations and real
-              projects.
-            </p>
+              <p className="mt-6 text-gray-600 text-base leading-relaxed max-w-xl">
+                LA Bootcamps is a subsidiary of LA Technologies, designed to
+                bridge the gap between academic learning and real-world
+                cybersecurity expertise. Unlike traditional institutes, our
+                students train inside a live corporate environment, gaining
+                exposure to enterprise-grade security operations and real
+                projects.
+              </p>
 
-            <button
-              className="mt-8 inline-flex items-center gap-3 rounded-lg
+              <button
+                className="mt-8 inline-flex items-center gap-3 rounded-lg
                    bg-gradient-to-r from-red-500 to-orange-500
                    px-6 py-3 text-white text-sm font-medium
                    hover:opacity-90 transition"
-            >
-              <img
-                src="/assets/images/home/phone2.svg"
-                alt="Call icon"
-                className="w-4 h-4"
-              />
-              Talk to an Expert
-            </button>
+              >
+                <img
+                  src="/assets/images/home/phone2.svg"
+                  alt="Call icon"
+                  className="w-4 h-4"
+                />
+                Talk to an Expert
+              </button>
+            </div>
+
+            {/* Right Image Grid */}
+            {/* Image Section */}
+            <div className="flex justify-center">
+              <div className="grid grid-cols-2 gap-4 max-w-sm w-full">
+                {/* Top Left Image */}
+                <div className="rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/images/la/bootcamps/abt1.png"
+                    alt="Cybersecurity infrastructure"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Right Tall Image */}
+                <div className="row-span-2 rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/images/la/bootcamps/abt3.jpg"
+                    alt="Security operations center"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Bottom Left Image */}
+                <div className="rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/images/la/bootcamps/abt2.png"
+                    alt="Data center security"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+      </PageWrapper>
 
-          {/* Right Image Grid */}
-         {/* Image Section */}
-<div className="flex justify-center">
-  <div className="grid grid-cols-2 gap-4 max-w-sm w-full">
-    
-    {/* Top Left Image */}
-    <div className="rounded-2xl overflow-hidden">
-      <img
-        src="/assets/images/la/bootcamps/abt1.png"
-        alt="Cybersecurity infrastructure"
-        className="w-full h-full object-cover"
-      />
-    </div>
-
-    {/* Right Tall Image */}
-    <div className="row-span-2 rounded-2xl overflow-hidden">
-      <img
-        src="/assets/images/la/bootcamps/abt3.jpg"
-        alt="Security operations center"
-        className="w-full h-full object-cover"
-      />
-    </div>
-
-    {/* Bottom Left Image */}
-    <div className="rounded-2xl overflow-hidden">
-      <img
-        src="/assets/images/la/bootcamps/abt2.png"
-        alt="Data center security"
-        className="w-full h-full object-cover"
-      />
-    </div>
-
-  </div>
-</div>
-
-        </div>
-      </section>
+      <PageWrapper>
       <section className="w-full bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}
@@ -212,6 +215,9 @@ export default function LaBootCamp() {
           </div>
         </div>
       </section>
+      </PageWrapper>
+
+      <PageWrapper>
       <section className="w-full bg-[#FFF7EB] py-20">
         <div className="max-w-7xl mx-auto px-6">
           {/* Heading */}
@@ -274,6 +280,10 @@ export default function LaBootCamp() {
           </div>
         </div>
       </section>
+      </PageWrapper>
+
+
+         <PageWrapper>
       <section className="w-full bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           {/* Heading */}
@@ -329,6 +339,9 @@ export default function LaBootCamp() {
           </div>
         </div>
       </section>
+      </PageWrapper>
+
+      <PageWrapper>
       <section className="w-full py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div
@@ -352,6 +365,7 @@ export default function LaBootCamp() {
             </div>
 
             {/* CTA Button */}
+            <Link href="/contact">
             <button
               className="shrink-0 bg-white text-[#E11D48]
                        text-sm font-medium
@@ -360,9 +374,13 @@ export default function LaBootCamp() {
             >
               Talk to an Expert
             </button>
+            </Link>
           </div>
         </div>
       </section>
+      </PageWrapper>
+
+      <PageWrapper>
       <section className="w-full py-16">
         <div className="max-w-7xl mx-auto px-6 flex justify-center">
           <button
@@ -381,7 +399,7 @@ export default function LaBootCamp() {
           </button>
         </div>
       </section>
-      
+      </PageWrapper>
     </>
   );
 }

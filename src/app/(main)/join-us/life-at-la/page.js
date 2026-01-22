@@ -2,6 +2,8 @@ import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import Image from "next/image";
 import Link from "next/link";
 import EmployeeTestimonials from "@/components/joinus/EmployeeTestimonials";
+import PageWrapper from "@/components/services/PageWrapper";
+import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 
 export const metadata = {
   title: "Who We Are | LA TECH Cybersecurity",
@@ -18,7 +20,8 @@ export default function AboutPage() {
         titleTag="h1"
         description={`Experience a workplace built on collaboration, learning, and impact.`}
       />
-
+    
+    <PageWrapper>
     <section className="py-15 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-start">
@@ -58,9 +61,11 @@ export default function AboutPage() {
               </p>
             </div>
 
+            <Link href="/join-us/careers">
             <button className="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
               Explore Careers
             </button>
+            </Link>
           </div>
 
           {/* RIGHT FULL IMAGE */}
@@ -75,7 +80,10 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
- 
+    </PageWrapper>
+
+
+ <PageWrapper>
     <section className="pt-12 bg-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
 
@@ -116,7 +124,10 @@ export default function AboutPage() {
 
       </div>
     </section>
+    </PageWrapper>
    
+
+   <PageWrapper>
    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -178,7 +189,10 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+    </PageWrapper>
 
+
+     <PageWrapper>
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -226,8 +240,9 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+     </PageWrapper>
 
-  
+  <PageWrapper>
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -292,8 +307,13 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
-    <EmployeeTestimonials />
+    </PageWrapper>
 
+    <PageWrapper>
+    <EmployeeTestimonials />
+    </PageWrapper>
+
+    <PageWrapper>
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -320,29 +340,14 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
-     <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    </PageWrapper>
+ 
 
-        <div className="rounded-2xl bg-gradient-to-r from-[#E53935] to-[#F68B2C] px-8 py-6 md:px-12 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-
-          {/* TEXT */}
-          <p className="text-white font-semibold uppercase text-sm md:text-base tracking-wide text-center md:text-left">
-            Driving digital growth with trusted technology solutions – <br className="hidden md:block" />
-            reach out to us now
-          </p>
-
-          {/* BUTTON */}
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-[#E53935] font-medium px-6 py-3 rounded-lg hover:bg-gray-100 transition"
-          >
-            Talk to an Expert
-          </Link>
-
-        </div>
-
-      </div>
-    </section> 
+     <GradientCtaBanner
+            text="  Driving digital growth with trusted technology solutions"
+            buttonText="Talk to an Expert"
+            iconSrc="/assets/images/home/phone.svg"
+          />
 
     </main>
   );

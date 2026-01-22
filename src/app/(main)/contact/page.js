@@ -4,6 +4,7 @@ import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import { useEffect, useState } from "react";
 import { CheckCircle, AlertCircle, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import PageWrapper from "@/components/services/PageWrapper";
 
 // Metadata must be in a separate layout.js or a Server Component.
 // You cannot export metadata from a file with "use client".
@@ -77,7 +78,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main>
+    <>
       <InnerPageBanner
         bgImage="/assets/images/contact/contact.jpg"
         title="We'd Love to Hear from You"
@@ -85,51 +86,56 @@ export default function ContactPage() {
         description={`We’re here to help you with secure, scalable, and <br> reliable technology solutions.`}
       />
 
+      <PageWrapper />
       <section className="w-full py-16 bg-white">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             {/* LEFT INFO CARD */}
-            <div className="bg-[#FFF4E6] rounded-2xl p-8">
-              <h2 className="text-2xl font-semibold mb-6">
-                Get in Touch, We're Here to Help
-              </h2>
+            <PageWrapper>
+              <div className="bg-[#FFF4E6] rounded-2xl p-8">
+                <h2 className="text-2xl font-semibold mb-6">
+                  Get in Touch, We're Here to Help
+                </h2>
 
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">
-                  <span className="text-orange-500">
-                    <img src="/assets/images/home/call.svg" alt="call" />
-                  </span>
-                  <span className="text-sm font-medium">+91 9136487172</span>
-                </div>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">
+                    <span className="text-orange-500">
+                      <img src="/assets/images/home/call.svg" alt="call" />
+                    </span>
+                    <span className="text-sm font-medium">+91 9136487172</span>
+                  </div>
 
-                <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">
-                  <span className="text-orange-500">
-                    <img src="/assets/images/home/letter.svg" alt="email" />
-                  </span>
-                  <span className="text-sm font-medium">
-                    sales@la-technologiesindia.com
-                  </span>
-                </div>
+                  <div className="bg-white rounded-lg p-4 flex items-center gap-3 shadow-sm">
+                    <span className="text-orange-500">
+                      <img src="/assets/images/home/letter.svg" alt="email" />
+                    </span>
+                    <span className="text-sm font-medium">
+                      sales@la-technologiesindia.com
+                    </span>
+                  </div>
 
-                <div className="bg-white rounded-lg p-4 flex items-start gap-3 shadow-sm">
-                  <span className="flex-none w-8 h-8 mt-1">
-                    <img
-                      src="/assets/images/home/location.svg"
-                      alt="Location"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </span>
-                  <span className="text-sm font-medium leading-relaxed">
-                    101 B, Pinnacle Corporate Park, B Wing, First Floor, CTS
-                    4207 Part, Bandra Kurla Complex, Bandra (East), Mumbai
-                    400051
-                  </span>
+                  <div className="bg-white rounded-lg p-4 flex items-start gap-3 shadow-sm">
+                    <span className="flex-none w-8 h-8 mt-1">
+                      <img
+                        src="/assets/images/home/location.svg"
+                        alt="Location"
+                        className="w-8 h-8 object-contain"
+                      />
+                    </span>
+                    <span className="text-sm font-medium leading-relaxed">
+                      101 B, Pinnacle Corporate Park, B Wing, First Floor, CTS
+                      4207 Part, Bandra Kurla Complex, Bandra (East), Mumbai
+                      400051
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </PageWrapper>
 
             {/* RIGHT FORM */}
+  
             <div>
+              <PageWrapper>
               <form
                 onSubmit={handleSubmit}
                 className="grid grid-cols-1 md:grid-cols-2 gap-5"
@@ -193,7 +199,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
-                      maxLength={10}  
+                      maxLength={10}
                       pattern="[0-9]{10}"
                       inputMode="numeric"
                       value={formData.mobile}
@@ -338,12 +344,14 @@ export default function ContactPage() {
                   </AnimatePresence>
                 </div>
               </form>
+              </PageWrapper>
             </div>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
+      <PageWrapper>
       <section className="w-full pb-15 bg-white">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
           <h2 className="text-center text-xl md:text-2xl font-semibold mb-8">
@@ -363,6 +371,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </main>
+      </PageWrapper>
+    
+    </>
   );
 }

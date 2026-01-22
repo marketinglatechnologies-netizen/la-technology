@@ -1,5 +1,28 @@
 "use client";
 
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.14,
+    },
+  },
+};
+
+const rowVariants = {
+  hidden: { opacity: 0, x: 60 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1.05,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 const journeyData = [
   {
     year: "2003",
@@ -61,16 +84,33 @@ export default function JourneySection() {
   return (
     <section className="py-24 bg-white w-full">
       <div className="max-w-6xl mx-auto px-6">
+
         {/* TITLE */}
-        <h2 className="text-center text-2xl font-semibold mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          viewport={{ once: true, amount: 0.6 }}
+          className="text-center text-2xl font-semibold mb-12"
+        >
           A journey of innovation and impact
-        </h2>
+        </motion.h2>
 
         {/* SCROLLABLE LIST */}
-        <div className="max-h-[520px] overflow-y-auto">
+        <motion.div
+          className="max-h-[520px] overflow-y-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.35 }}
+        >
           {journeyData.map((item, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={rowVariants}
               className="grid grid-cols-[80px_1fr_1.2fr] gap-6 py-8 border-b border-gray-200 items-start"
             >
               {/* YEAR */}
@@ -87,9 +127,10 @@ export default function JourneySection() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 {item.description}
               </p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );

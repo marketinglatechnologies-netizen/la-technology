@@ -90,7 +90,7 @@ export default function JobApplicationForm() {
   }
 
   return (
-    <section className="py-6 bg-white">
+    <section className="py-4 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="text-2xl font-semibold mb-8">
           Submit your application and begin your journey with us.
