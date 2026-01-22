@@ -146,7 +146,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/managed-services/it-infra-managed-services">
+                    <Link href="/services/managed-services/infra-managed-services">
                       Infra Managed Services
                     </Link>
                   </li>
@@ -244,7 +244,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services/ot-services/threat-detection-incident-response">
+                    <Link href="/services/ot-services/threat-detection-&-incident-response">
                       Threat Detection & Incident Response
                     </Link>
                   </li>

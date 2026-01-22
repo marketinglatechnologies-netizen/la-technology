@@ -38,9 +38,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RCTSBHK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} flex flex-col min-h-screen antialiased`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5RCTSBHK"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+          ></iframe>
+        </noscript>
+
         <Suspense fallback={null}>
           <Preloader />
         </Suspense>
