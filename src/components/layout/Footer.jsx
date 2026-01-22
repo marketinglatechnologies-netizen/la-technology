@@ -1,11 +1,34 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, MapPin, X, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  MapPin,
+  X,
+  Youtube,
+} from "lucide-react";
 
 const SOCIAL_LINKS = [
-  { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/profile.php?id=61575532165684" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/latech_india/" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/latechnologiesindia/" },
-  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/@LATechnologies-India" },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    href: "https://www.facebook.com/profile.php?id=61575532165684",
+  },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/latech_india/",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/company/latechnologiesindia/",
+  },
+  {
+    name: "YouTube",
+    icon: Youtube,
+    href: "https://www.youtube.com/@LATechnologies-India",
+  },
   { name: "X", icon: X, href: "https://x.com/latech_india" },
 ];
 
@@ -102,83 +125,161 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Services */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-6">
             <h3 className="text-[#DC2A3C] font-bold mb-6 text-sm">Services</h3>
 
-            <ul className="space-y-2 text-[13px] text-gray-600">
-              <li>
-                <Link
-                  href="/services/managed-services/soc-as-service"
-                >
-                  SOC-as-a-Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/managed-services/noc-as-service"
-                >
-                  NOC-as-a-Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/managed-services/it-infra-managed-services"
-                >
-                  Infra Managed Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/cyber-security-&-it-infra-services/data-security"
-                >
-                  Data Security
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/cyber-security-&-it-infra-services/endpoint-security"
-                >
-                  Endpoint Security
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/cyber-security-&-it-infra-services/netwwork-security"
-                >
-                  Network Security
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/ot-services/ics-scada-security"
-                >
-                  ICS & SCADA Security
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/ot-services/asset-discovery"
-                >
-                  Asset Discovery
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/ot-services/network-segmentation"
-                >
-                  Network Segmentation
-                </Link>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Service Group 1 */}
+              <div>
+                <p className="font-bold text-[13px] text-gray-800 mb-3">
+                  Managed Services
+                </p>
+                <ul className="space-y-2 text-[13px] text-gray-600">
+                  <li>
+                    <Link href="/services/managed-services/soc-as-service">
+                      SOC-as-a-Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/noc-as-service">
+                      NOC-as-a-Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/it-infra-managed-services">
+                      Infra Managed Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/managed-security-services">
+                      Managed Security Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/managed-broadband-sdwan">
+                      Managed Broadband + SDWAN
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/it-branch-operations">
+                      IT Branch Operations
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/it-staff-augmentation">
+                      IT Staff Augmentation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/managed-services/security-assessment">
+                      Security Assessment
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Service Group 2 */}
+              <div>
+                <p className="font-bold text-[13px] text-gray-800 mb-3">
+                  Cyber Security
+                </p>
+                <ul className="space-y-2 text-[13px] text-gray-600">
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/data-security">
+                      Data Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/endpoint-security">
+                      Endpoint Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/network-security">
+                      Network Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/application-security">
+                      Application Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/cloud-security">
+                      Cloud Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/network-infrastructure">
+                      Network Infrastructure
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/cyber-security-&-it-infra-services/data-center-solutions">
+                      Data Center Solutions
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Service Group 3 */}
+              <div>
+                <p className="font-bold text-[13px] text-gray-800 mb-3">
+                  OT Services
+                </p>
+                <ul className="space-y-2 text-[13px] text-gray-600">
+                  <li>
+                    <Link href="/services/ot-services/ics-scada-security">
+                      ICS & SCADA Security
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/asset-discovery">
+                      Asset Discovery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/network-segmentation">
+                      Network Segmentation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/threat-detection-incident-response">
+                      Threat Detection & Incident Response
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/ot-endpoint-protection">
+                      OT Endpoint Protection
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/compliance-for-ot">
+                      Compliance for OT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/secure-remote-access">
+                      Secure Remote Access
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/services/ot-services/ot-privileged-access-management">
+                      OT Privileged Access Management
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Column 4: Contact Us */}
-          <div className="md:col-span-3 text-[13px] text-gray-600">
-            <h3 className="text-[#DC2A3C] font-bold mb-6 text-sm">
-              Contact Us
-            </h3>
+        </div>
+        <div className="mt-5 border-t border-gray-200 pt-5 text-[13px] text-gray-600">
+          <h3 className="text-[#DC2A3C] font-bold mb-6 text-sm">Contact Us</h3>
 
-            <div className="mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div>
               <p className="font-bold text-[#DC2A3C] mb-1">Location:</p>
               <p className="leading-relaxed">
                 101 B, Pinnacle Corporate Park, B Wing, First Floor, CTS 4207
@@ -186,11 +287,12 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="mb-4">
+            <div>
               <p className="font-bold text-[#DC2A3C] mb-2">
                 Our Global locations
               </p>
-              <div className="grid grid-cols-2 gap-y-2 gap-x-2 uppercase text-[10px] font-bold">
+
+              <div className="grid grid-cols-2 gap-y-2 gap-x-2 uppercase text-[10px] font-bold mb-3">
                 {["Singapore", "Hong Kong", "Indonesia", "Dubai"].map(
                   (city) => (
                     <span key={city} className="flex items-center gap-1">
@@ -201,29 +303,25 @@ export default function Footer() {
                       />
                       {city}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
 
-            <div className="mb-4">
+            <div>
               <p className="font-bold text-[#DC2A3C] mb-1">Availability:</p>
-              <p>Monday to Friday, 10:00 AM – 7:00 PM</p>
-            </div>
+              <p className="mb-4">Monday to Friday, 10:00 AM – 7:00 PM</p>
 
-            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">
                 Sales & General Inquiries:
               </p>
-              <p className="lowercase">sales@la-technologiesindia.com</p>
-            </div>
+              <p className="lowercase mb-4">sales@la-technologiesindia.com</p>
 
-            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">Job Inquiries:</p>
-              <p className="lowercase">recruitment@la-technologiesindia.com</p>
-            </div>
+              <p className="lowercase mb-4">
+                recruitment@la-technologiesindia.com
+              </p>
 
-            <div className="mb-4">
               <p className="font-bold text-[#DC2A3C] mb-1">Contact us:</p>
               <p>+91 9136487172</p>
             </div>
