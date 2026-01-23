@@ -68,7 +68,7 @@ export default function NetskopeSecurity() {
       "The combined Fortinet and TXOne OT security architecture enabled the power manufacturing organization to achieve comprehensive OT cyber resilience, secure remote access, and long-term operational stability across all India locations. ",
     ],
 
-    image: "/assets/images/services/soc/whychoose.png",
+    image: "/assets/images/home/case2.jpg",
   };
 
   const {

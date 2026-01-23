@@ -68,7 +68,7 @@ export default function NetskopeSecurity() {
       "Enhanced compliance and audit readiness",
     ],
 
-    image: "/assets/images/services/soc/whychoose.png",
+    image: "/assets/images/home/case1.jpg",
   };
 
   const {
