@@ -92,7 +92,7 @@ export default function SecurityAssessment() {
           bgImage="/assets/images/services/security-assessment/banner.png"
           title="Security Assessment"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Identify risks. Prioritize actions. Strengthen posture.`}
         />
       </div>
       <FeatureHighlightSection

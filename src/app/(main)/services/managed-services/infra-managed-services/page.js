@@ -49,7 +49,7 @@ export default function SOC() {
           bgImage="/assets/images/services/infra/infra-banner.jpg"
           title="Infra Managed Services"
           titleTag="h1"
-          description={`Round-the-clock Infra Managed Services designed to defend modern enterprises.`}
+          description={`Run smarter infrastructure. Focus on growth.`}
         />
       </div>
       <FeatureHighlightSection

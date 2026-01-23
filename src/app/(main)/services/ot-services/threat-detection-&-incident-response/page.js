@@ -123,7 +123,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/threat-detection-incident-response/banner.png"
           title="Threat Detection & Incident Response"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to  defend modern enterprises.`}
+          description={`Detect early. Respond fast. Minimize impact.`}
         />
       </div>
       <FeatureHighlightSection

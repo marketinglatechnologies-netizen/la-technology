@@ -66,7 +66,7 @@ export default function FacilityManagement() {
           bgImage="/assets/images/services/network-infrastructure/banner.png"
           title="Network Infrastructure"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`Designed for performance. Built for scale.`}
         />
       </div>
       <FeatureHighlightSection

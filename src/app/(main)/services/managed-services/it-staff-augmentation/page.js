@@ -23,7 +23,7 @@ export default function ITBranchOperations() {
         bgImage="/assets/images/services/it-staff/banner.jpg"
         title="IT Staff Augmentation"
         titleTag="h1"
-        description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+        description={`Skilled professionals, exactly when you need them.`}
       />
     </div>
     <FeatureHighlightSection

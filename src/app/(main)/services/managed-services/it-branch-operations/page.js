@@ -108,7 +108,7 @@ export default function ITBranchOperations() {
           bgImage="/assets/images/services/it-branch/banner.jpg"
           title="IT Branch Operations"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Consistent IT experiences across every branch.`}
         />
       </div>
       <FeatureHighlightSection

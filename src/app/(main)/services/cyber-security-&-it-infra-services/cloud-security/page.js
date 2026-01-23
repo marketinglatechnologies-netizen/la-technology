@@ -60,7 +60,7 @@ export default function FacilityManagement() {
         bgImage="/assets/images/services/cloud-security/banner.png"
         title="Cloud Security"
         titleTag="h1"
-        description={`Round-the-clock Endpoint SecurityServices designed to defend modern enterprises.`}
+        description={`Secure workloads without slowing innovation.`}
       />
 
       <FeatureHighlightSection

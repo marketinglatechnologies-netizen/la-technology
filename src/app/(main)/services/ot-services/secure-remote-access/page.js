@@ -111,7 +111,7 @@ export default function Page() {
           bgImage="/assets/images/services/secure-remote-access/banner.png"
           title="Secure Remote Access"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`Enable access. Maintain control.`}
         />
       </div>
       <FeatureHighlightSection

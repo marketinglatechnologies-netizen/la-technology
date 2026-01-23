@@ -22,7 +22,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/application-security/banner.png"
           title="Application Security"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Build and run applications you can trust.`}
         />
       </div>
       <FeatureHighlightSection

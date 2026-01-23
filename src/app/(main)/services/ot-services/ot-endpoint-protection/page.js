@@ -130,7 +130,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/ot-endpoint-protection/banner.png"
           title="OT Endpoint Protection"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
+          description={`Purpose-built security for industrial endpoints.`}
         />
       </div>
       <FeatureHighlightSection

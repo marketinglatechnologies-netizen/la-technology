@@ -90,7 +90,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/asset-discovery/banner.png"
           title="Asset Discovery"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`See every asset. Control every risk.`}
         />
       </div>
       <FeatureHighlightSection

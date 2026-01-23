@@ -89,7 +89,7 @@ export default function Page() {
           bgImage="/assets/images/services/compliance-for-ot/banner.png"
           title="Compliance for OT"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to defend modern enterprises.`}
+          description={`Meet regulations without compromising uptime.`}
         />
       </div>
       <FeatureHighlightSection

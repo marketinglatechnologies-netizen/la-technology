@@ -89,7 +89,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/network-segmentation/banner.png"
           title="Network Segmentation"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security Services designed to <br> defend modern enterprises.`}
+          description={`Limit blast radius. Strengthen operational resilience.`}
         />
       </div>
       <FeatureHighlightSection

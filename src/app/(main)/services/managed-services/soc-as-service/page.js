@@ -49,7 +49,7 @@ export default function SOC() {
           bgImage="/assets/images/services/soc/SOC-banner.jpg"
           title="SOC As A Service"
           titleTag="h1"
-          description={`Round-the-clock SOC services designed to defend modern enterprises.`}
+          description={`24×7 threat visibility, rapid response, real resilience.`}
         />
       </div>
       <FeatureHighlightSection

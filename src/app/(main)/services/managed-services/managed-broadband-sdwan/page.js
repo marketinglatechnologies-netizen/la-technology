@@ -53,7 +53,7 @@ export default function ManagedBroadbandSDWAN() {
           bgImage="/assets/images/services/managed-broadband-sdwan/banner.jpg"
           title="Managed Broadband + SDWAN"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Reliable connectivity, optimized for performance and security.`}
         />
       </div>
       <FeatureHighlightSection

@@ -89,7 +89,7 @@ export default function ApplicationSecurity() {
           bgImage="/assets/images/services/ics-scada-security/banner.jpg"
           title="ICS & SCADA Security"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Protect critical systems without disrupting operations.`}
         />
       </div>
       <FeatureHighlightSection
