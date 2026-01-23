@@ -77,6 +77,12 @@ const VENDOR_LOGOS = [
   "/assets/images/home/txone.png",
   "/assets/images/home/netskope.png",
   "/assets/images/home/varonis.png",
+  "/assets/images/home/kaspersky.png",
+    "/assets/images/home/juniper.png",
+  "/assets/images/home/indusface.png",
+  "/assets/images/home/wiz.png",
+  "/assets/images/home/aruba.png",
+  "/assets/images/home/riverbed.png",
 ];
 
 export default function VendorLogo() {
@@ -128,10 +134,7 @@ export default function VendorLogo() {
         className="vendor-swiper"
       >
         {[...VENDOR_LOGOS, ...VENDOR_LOGOS].map((logo, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex items-center justify-center"
-          >
+          <SwiperSlide key={index} className="flex items-center justify-center">
             <img
               src={logo}
               alt="Vendor logo"
