@@ -49,7 +49,7 @@ export default function SOC() {
           bgImage="/assets/images/services/managed-security-service/managed-security-service-banner.jpg"
           title="Managed Security Service"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Proactive protection for an evolving threat landscape.`}
         />
       </div>
       <FeatureHighlightSection

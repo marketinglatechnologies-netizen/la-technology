@@ -96,9 +96,7 @@ export default function Page() {
           bgImage="/assets/images/services/ot-privileged-access-management/banner.png"
           title="OT Privileged Access Management"
           titleTag="h1"
-          description={`Round-the-clock Endpoint Security
- Services
- designed to defend modern enterprises.`}
+          description={`Secures privileged access in operational technology environments.`}
         />
       </div>
       <FeatureHighlightSection

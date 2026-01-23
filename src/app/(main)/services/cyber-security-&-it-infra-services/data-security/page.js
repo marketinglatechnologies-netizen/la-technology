@@ -77,7 +77,7 @@ export default function DataSecurity() {
           bgImage="/assets/images/services/data-security/banner.jpg"
           title="Data Security"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Protects sensitive data from breaches and cyber attacks.`}
         />
       </div>
       <FeatureHighlightSection

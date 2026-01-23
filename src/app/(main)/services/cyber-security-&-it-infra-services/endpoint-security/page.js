@@ -22,7 +22,7 @@ export default function EndpointSecurity() {
           bgImage="/assets/images/services/endpoint-security/banner.png"
           title="Endpoint Security"
           titleTag="h1"
-          description={`Round-the-clock Managed Security Services designed to defend modern enterprises.`}
+          description={`Secures endpoints against cyber threats and unauthorized access`}
         />
       </div>
       <FeatureHighlightSection
