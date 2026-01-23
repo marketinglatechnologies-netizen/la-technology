@@ -114,7 +114,7 @@ infrastructure so you can focus on innovation and growth."
 
       <WhyChooseSection
         heading="What LA Technologies Provide as Solutions:"
-        centerImage="/assets/images/services/infra-managed-services/whychoose.jpg"
+        centerImage="/assets/images/services/infra-managed-services/center.jpg"
         featuresLeft={[
           {
             icon: "/assets/images/services/infra/choose1.png",
