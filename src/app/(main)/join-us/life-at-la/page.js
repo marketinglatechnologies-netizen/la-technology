@@ -319,7 +319,7 @@ export default function AboutPage() {
 
         {/* TITLE */}
         <h2 className="text-center text-2xl md:text-4xl font-semibold mb-14">
-          Glam of being a LATechie
+          Glam of being an LATechie
         </h2>
 
         {/* GRID */}

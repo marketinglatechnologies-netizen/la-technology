@@ -270,7 +270,7 @@ export default function SecurityAssessment() {
         tabs={[
           {
             label: "Clear Visibility of risks across IT and OT environments",
-            image: "/assets/images/services/security-assessment/tab1.png",
+            image: "/assets/images/services/security-assessment/tab1.jpg",
           },
           {
             label:

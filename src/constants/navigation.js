@@ -135,7 +135,7 @@ export const NAV_LINKS = [
     label: "Join Us",
     href: "/",
     dropdown: [
-      { label: "Life AT LA", href: "/join-us/life-at-la" },
+      { label: "Life at LA", href: "/join-us/life-at-la" },
       { label: "Careers", href: "/join-us/careers" },
     ],
   },
