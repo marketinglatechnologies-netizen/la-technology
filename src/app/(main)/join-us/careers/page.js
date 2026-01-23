@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
               {/* LEFT CONTENT */}
               <div>
-                <h2 className="text-2xl md:text-3xl font-semibold text-black mb-5">
+                <h2 className="text-2xl md:text-4xl font-semibold text-black mb-5">
                   Where your talent can be best showcased
                 </h2>
 

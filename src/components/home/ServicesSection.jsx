@@ -170,7 +170,7 @@ export default function ServicesSection() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <section className="py-15 bg-[#FFF6E9]">
+    <section className="py-12 bg-[#FFF6E9]">
       <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Heading */}
         <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-10">

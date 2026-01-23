@@ -117,7 +117,7 @@ export default function HomePage() {
       </section>
 
       <PageWrapper>
-        <section className="py-20 bg-white">
+        <section className="py-5 bg-white">
           <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
             <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-15 ">
               {/* Left Side: Using the Common Masonry Component */}

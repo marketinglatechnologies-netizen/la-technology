@@ -20,7 +20,7 @@ export default function SixCards({
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <HeadingTag className="text-2xl md:text-3xl text-center text-gray-900 mb-16">
+          <HeadingTag className="text-3xl md:text-3xl text-center font-semibold text-black mb-16">
             {heading}
           </HeadingTag>
         </motion.div>

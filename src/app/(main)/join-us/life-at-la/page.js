@@ -314,11 +314,11 @@ export default function AboutPage() {
     </PageWrapper>
 
     <PageWrapper>
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* TITLE */}
-        <h2 className="text-center text-2xl md:text-3xl font-semibold mb-14">
+        <h2 className="text-center text-2xl md:text-4xl font-semibold mb-14">
           Glam of being a LATechie
         </h2>
 

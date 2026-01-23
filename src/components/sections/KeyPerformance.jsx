@@ -21,7 +21,7 @@ export default function KeyPerformanceIndicators() {
 
         {/* Heading */}
         <motion.h2
-          className="text-lg font-semibold text-gray-900 mb-2"
+          className="text-3xl font-semibold text-gray-900 mb-2"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -32,7 +32,7 @@ export default function KeyPerformanceIndicators() {
 
         {/* Subheading */}
         <motion.p
-          className="text-sm text-gray-500 mb-10"
+          className="text-medium text-gray-500 mb-10"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

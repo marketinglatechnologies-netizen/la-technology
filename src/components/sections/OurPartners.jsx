@@ -25,7 +25,7 @@ const partners = [
 
 export default function TechnologyPartnersCarousel() {
   return (
-    <section className="py-20 bg-[#faf8f5]">
+    <section className="py-15 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* TITLE */}

@@ -87,7 +87,7 @@ const VENDOR_LOGOS = [
 
 export default function VendorLogo() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-5 bg-white">
       <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-10">

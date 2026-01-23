@@ -99,8 +99,8 @@ export default function AboutPage() {
       </PageWrapper>
 
       <PageWrapper>
-        <section className="w-full bg-[#FFF9F4] py-20">
-          <div className="max-w-7xl mx-auto px-4">
+        <section className="w-full bg-[#FFF9F4] py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-top">
               {/* Left Content */}
               <div>
@@ -546,7 +546,7 @@ export default function AboutPage() {
         </section>
       </PageWrapper>
 
-      <section className="py-20 bg-[#faf8f5]">
+      <section className="py-15 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* TITLE */}
           <PageWrapper>
