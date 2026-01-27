@@ -12,24 +12,6 @@ const testimonialsData = {
     {
       id: 1,
       quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      company: "LA Technologies",
-      image: "/assets/images/home/rajendra2.png",
-    },
-    {
-      id: 2,
-      quote:
-        "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence.",
-      name: "Jayesh Acharya",
-      designation: "Senior IT Manager",
-      company: "Client Organization",
-      image: "/assets/images/clients/jayesh.jpg",
-    },
-    {
-      id: 3,
-      quote:
         "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
       name: "Hemant Sudhakar Marathe",
       designation: "CISO",
@@ -37,7 +19,7 @@ const testimonialsData = {
       image: "/assets/images/clients/hemant.png",
     },
     {
-      id: 4,
+      id: 2,
       quote:
         "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
       name: "Meheriar Patel",
@@ -46,7 +28,34 @@ const testimonialsData = {
       image: "/assets/images/clients/meheriar.png",
     },
     {
-      id: 5,
+      id: 3,
+      quote:
+        "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
+      name: "Kiran R.",
+      designation: "CISO",
+      company: "NKGSB Bank",
+      image: "/assets/images/clients/kiran.png",
+    },
+      {
+      id: 1,
+      quote:
+        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
+      name: "Hemant Sudhakar Marathe",
+      designation: "CISO",
+      company: "Thane Bharat Bank",
+      image: "/assets/images/clients/hemant.png",
+    },
+    {
+      id: 2,
+      quote:
+        "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
+      name: "Meheriar Patel",
+      designation: "GCTO & Director IT",
+      company: "Master Group",
+      image: "/assets/images/clients/meheriar.png",
+    },
+    {
+      id: 3,
       quote:
         "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
       name: "Kiran R.",
