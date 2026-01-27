@@ -309,7 +309,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
 
       <PageWrapper>
         <section className="py-20">

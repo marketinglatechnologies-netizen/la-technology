@@ -10,52 +10,49 @@ const testimonialsData = {
     "What our clients have to say about the services we provide at LA Technologies",
   items: [
     {
+      id: 1,
+      quote:
+        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
+      name: "Rajendra Naidu",
+      designation: "CEO, Founder",
+      company: "LA Technologies",
+      image: "/assets/images/home/rajendra2.png",
+    },
+    {
       id: 2,
       quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra2.png",
+        "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence.",
+      name: "Jayesh Acharya",
+      designation: "Senior IT Manager",
+      company: "Client Organization",
+      image: "/assets/images/clients/jayesh.jpg",
     },
     {
       id: 3,
       quote:
-        "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence.",
-      name: "Jayesh Acharya",
-      designation: "Senior IT Manager",
-      image: "/assets/images/home/jayesh.jpg",
+        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
+      name: "Hemant Sudhakar Marathe",
+      designation: "CISO",
+      company: "Thane Bharat Bank",
+      image: "/assets/images/clients/hemant.png",
     },
     {
       id: 4,
       quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra2.png",
+        "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
+      name: "Meheriar Patel",
+      designation: "GCTO & Director IT",
+      company: "Master Group",
+      image: "/assets/images/clients/meheriar.png",
     },
-     {
-      id: 3,
+    {
+      id: 5,
       quote:
-        "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence.",
-      name: "Jayesh Acharya",
-      designation: "Senior IT Manager",
-      image: "/assets/images/home/jayesh.jpg",
-    },
-   {
-      id: 4,
-      quote:
-        "LA Technologies has transparent leadership and great benefits! Leadership and managers are very transparent and approachable. Working in the diversity and equity domain gives me great satisfaction. I get to do what I believe in. I'm proud to be part of the LA family",
-      name: "Rajendra Naidu",
-      designation: "CEO, Founder",
-      image: "/assets/images/home/rajendra2.png",
-    },
-     {
-      id: 3,
-      quote:
-        "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence.",
-      name: "Jayesh Acharya",
-      designation: "Senior IT Manager",
-      image: "/assets/images/home/jayesh.jpg",
+        "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
+      name: "Kiran R.",
+      designation: "CISO",
+      company: "NKGSB Bank",
+      image: "/assets/images/clients/kiran.png",
     },
   ],
 };
@@ -65,7 +62,7 @@ export default function TestimonialsSection() {
     <section className="bg-gray-50 pt-20">
       <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Heading */}
-        <h2 className="text-center text-xl lg:text-2xl font-semibold text-gray-900 mb-14">
+        <h2 className="text-center text-xl lg:text-3xl font-semibold text-gray-900 mb-10">
           {testimonialsData.heading}
         </h2>
 
@@ -74,7 +71,7 @@ export default function TestimonialsSection() {
           modules={[Pagination, Autoplay]}
           spaceBetween={32}
           slidesPerView={1}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 2500 }}
           pagination={false}
           breakpoints={{
             768: {
@@ -96,13 +93,19 @@ export default function TestimonialsSection() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-15 h-15 object-cover"
+                    className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0"
                   />
-                  <div>
+
+                  <div className="leading-tight">
                     <p className="font-semibold text-gray-900 text-sm">
                       {item.name}
                     </p>
+
                     <p className="text-xs text-gray-600">{item.designation}</p>
+
+                    <p className="text-xs font-medium text-red-500">
+                      {item.company}
+                    </p>
                   </div>
                 </div>
               </div>
