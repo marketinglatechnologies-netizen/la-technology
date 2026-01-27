@@ -84,7 +84,7 @@ export default function NetskopeSecurity() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/careers/banner.jpg"
+        bgImage="/assets/images/home/case1-banner.jpg"
         title="Secure Digital Banking Transformation Using Netskope"
         titleTag="h1"
         description={``}

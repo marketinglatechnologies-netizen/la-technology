@@ -85,7 +85,7 @@ export default function NetskopeSecurity() {
   return (
     <>
       <InnerPageBanner
-        bgImage="/assets/images/careers/banner.jpg"
+        bgImage="/assets/images/home/case2-banner.jpg"
         title=" Pan-India Power Manufacturing OT Cybersecurity Transformation"
         titleTag="h1"
         description={``}
