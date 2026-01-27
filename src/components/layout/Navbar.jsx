@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Logo Section */}
         <Link href="/" className="flex-shrink-0 relative z-[70]">
           <img
-            src="/assets/svgs/logo.svg"
+            src="/assets/svgs/logo.png"
             alt="LA TECH Logo"
             className="h-9 md:h-10 lg:h-11 xl:h-12 w-auto object-contain"
           />
@@ -192,7 +192,7 @@ export default function Navbar() {
               className="fixed inset-y-0 right-0 z-[70] w-full max-w-sm bg-white shadow-2xl flex flex-col"
             >
               <div className="flex items-center justify-between p-6 border-b">
-                <img src="/assets/svgs/logo.svg" alt="Logo" className="h-10" />
+                <img src="/assets/svgs/logo.png" alt="Logo" className="h-10" />
                 <button onClick={closeMobileMenu}>
                   <X size={28} />
                 </button>

@@ -102,7 +102,7 @@ export default function TestimonialsSection() {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0"
+                    className="w-18 h-18 rounded-full object-cover object-top flex-shrink-0"
                   />
 
                   <div className="leading-tight">

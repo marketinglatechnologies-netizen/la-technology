@@ -36,7 +36,7 @@ export default function Preloader() {
           <div className="relative flex flex-col items-center">
             {/* Pulsing Logo */}
             <motion.img
-              src="/assets/svgs/logo.svg"
+              src="/assets/svgs/logo.png"
               alt="Loading..."
               className="h-16 w-auto"
               animate={{
