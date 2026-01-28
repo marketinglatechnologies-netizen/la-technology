@@ -69,7 +69,7 @@ export default function Footer() {
           {/* Column 1: Brand & Socials */}
           <div className="md:col-span-4">
             <div className="text-3xl font-bold flex mb-6 tracking-tight">
-              <img src="/assets/svgs/logo.svg" />
+              <img src="/assets/svgs/logo.png" className="-ml-12" />
             </div>
             <p className="text-gray-600 text-[13px] leading-relaxed mb-8 max-w-xs">
               L A Technologies meets complex business requirements by providing
