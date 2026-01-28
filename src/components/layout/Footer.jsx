@@ -37,32 +37,12 @@ export default function Footer() {
     <footer className="relative bg-la-cream pt-16 overflow-hidden">
       {/* 1. THE GIANT WATERMARK (Now positioned absolutely to match mockup) */}
       <div className="absolute bottom-12 left-0 w-[70%] px-6 z-0 pb-4 pointer-events-none">
-        <svg
-          className="w-full h-auto max-w-[50%] md:max-w-[1200px]"
-          viewBox="0 0 798 109"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            opacity="0.07"
-            d="M-4.82649e-05 108.15V-0.000100017H23.25V84.7499H108V108.15H-4.82649e-05ZM124.544 108.15V22.3499C124.544 18.2499 125.544 14.5499 127.544 11.2499C129.544 7.8499 132.244 5.1499 135.644 3.1499C139.044 1.1499 142.744 0.149898 146.744 0.149898H210.194C214.294 0.149898 217.994 1.1499 221.294 3.1499C224.694 5.1499 227.394 7.8499 229.394 11.2499C231.494 14.5499 232.544 18.2499 232.544 22.3499V108.15H208.994V73.3499H147.794V108.15H124.544ZM147.794 49.9499H208.994V23.5499H147.794V49.9499ZM349.875 108.15V23.5499H307.575V0.149898H415.575V23.5499H373.275V108.15H349.875ZM434.593 108.15V0.149898H534.343V23.5499H458.143V42.4499H519.493V65.8499H458.143V84.7499H534.343V108.15H434.593ZM578.837 108.15C574.737 108.15 570.987 107.15 567.587 105.15C564.287 103.15 561.637 100.5 559.637 97.1999C557.637 93.7999 556.637 90.0499 556.637 85.9499V22.3499C556.637 18.2499 557.637 14.5499 559.637 11.2499C561.637 7.8499 564.287 5.1499 567.587 3.1499C570.987 1.1499 574.737 0.149898 578.837 0.149898H664.337V23.5499H584.837C583.237 23.5499 581.987 23.9499 581.087 24.7499C580.287 25.5499 579.887 26.7999 579.887 28.4999V79.7999C579.887 81.3999 580.287 82.6499 581.087 83.5499C581.987 84.3499 583.237 84.7499 584.837 84.7499H664.337V108.15H578.837ZM687.627 108.15V0.149898H710.877V42.4499H774.627V0.149898H797.877V108.15H774.627V65.8499H710.877V108.15H687.627Z"
-            fill="url(#paint0_linear_footer)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_footer"
-              x1="-8.55"
-              y1="50.15"
-              x2="807.45"
-              y2="50.15"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#E0183D" />
-              <stop offset="1" stopColor="#F48129" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+    <img
+      src="/assets/svgs/logo.png"
+      alt="Logo watermark"
+      className="w-full max-w-[50%] md:max-w-[1200px] opacity-[0.07]"
+    />
+  </div>
 
       <div className="lg:px-6 max-w-7xl md:px-6 mx-auto px-4 relative z-10 pb-20 lg:px-6 md:px-6 px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
