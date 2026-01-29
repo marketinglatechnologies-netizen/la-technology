@@ -15,7 +15,7 @@ const items = [
     title: "Lawrence Albert, Founder & CEO",
     description:
       "Lawrence brings over two decades of experience in the IT and cybersecurity domain. He founded LA Technologies with a vision to deliver enterprise‑grade, future‑ready security and network solutions across industries. Under his leadership, the company has grown into a trusted technology partner for leading BFSI, IT/ITES, and large enterprises across India. Lawrence continues to drive innovation, strategic partnerships, and organizational excellence at LA Technologies.",
-    video: "/assets/videos/lawrence-albert.mp4",
+    video: "",
     align: "left",
   },
   {
