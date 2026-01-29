@@ -50,21 +50,21 @@ export function middleware(request) {
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 
   // 4. Content Security Policy
-  response.headers.set(
-    "Content-Security-Policy",
-    [
-      "default-src 'self';",
-      // Added googletagmanager for the script itself
-      "script-src 'self' 'unsafe-inline' https://www.google.com https://www.googletagmanager.com;",
-      "style-src 'self' 'unsafe-inline';",
-      // Added googletagmanager and google-analytics for tracking pixels
-      "img-src 'self' data: blob: https://www.google.com https://maps.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com;",
-      "font-src 'self';",
-      // Added connect-src so GTM can send data out to Google Analytics
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;",
-      "frame-src https://www.google.com https://www.google.com/maps https://www.googletagmanager.com;",
-    ].join(" "),
-  );
+ // 4. Content Security Policy
+response.headers.set(
+  "Content-Security-Policy",
+  [
+    "default-src 'self';",
+    "frame-src https://www.google.com https://www.googletagmanager.com https://www.google.com/maps;",
+    // Added https://www.googletagmanager.com here:
+    "script-src 'self' 'unsafe-inline' https://www.google.com https://www.googletagmanager.com;",
+    "style-src 'self' 'unsafe-inline';",
+    "img-src 'self' data: blob: https://www.google.com https://maps.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com;",
+    "font-src 'self';",
+    // Added connect-src to allow data to be sent back to Google
+    "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;",
+  ].join(" ")
+);
 
   return response;
 }
