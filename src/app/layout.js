@@ -40,7 +40,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
       {/* GTM Head Script */}
-      <Script id="google-tag-manager" strategy="afterInteractive">
+      <Script
+        src={`https://www.googletagmanager.com/gtm.js?id=GTM-5RCTSBHK`}
+        strategy="afterInteractive"
+      />
+      <Script id="gtm-init" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  `}
+      </Script>
+      {/* <Script id="google-tag-manager" strategy="afterInteractive">
         {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -48,7 +58,7 @@ export default function RootLayout({ children }) {
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-5RCTSBHK');
           `}
-      </Script>
+      </Script> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} flex flex-col min-h-screen antialiased`}
       >
