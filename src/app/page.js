@@ -309,7 +309,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <TestimonialsSection />
+      <TestimonialsSection heading="What our clients have to say about the services we provide at LA Technologies" />
 
       <PageWrapper>
         <section className="py-20">
