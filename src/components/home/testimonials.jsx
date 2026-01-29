@@ -37,7 +37,7 @@ const testimonialsData = {
       image: "/assets/images/clients/kiran.png",
     },
       {
-      id: 1,
+      id: 4,
       quote:
         "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
       name: "Hemant Sudhakar Marathe",
@@ -46,7 +46,7 @@ const testimonialsData = {
       image: "/assets/images/clients/hemant.png",
     },
     {
-      id: 2,
+      id: 5,
       quote:
         "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
       name: "Meheriar Patel",
@@ -55,7 +55,7 @@ const testimonialsData = {
       image: "/assets/images/clients/meheriar.png",
     },
     {
-      id: 3,
+      id: 6,
       quote:
         "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
       name: "Kiran R.",
