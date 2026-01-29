@@ -66,13 +66,13 @@ const testimonialsData = {
   ],
 };
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ heading }) {
   return (
     <section className="bg-gray-50 pt-20">
       <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
         {/* Heading */}
         <h2 className="text-center text-xl lg:text-3xl font-semibold text-gray-900 mb-10">
-          {testimonialsData.heading}
+          {heading}
         </h2>
 
         {/* Slider */}
