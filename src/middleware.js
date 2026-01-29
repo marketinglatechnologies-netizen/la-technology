@@ -54,13 +54,16 @@ export function middleware(request) {
     "Content-Security-Policy",
     [
       "default-src 'self';",
-      "frame-src https://www.google.com https://www.google.com/maps;",
-      "script-src 'self' 'unsafe-inline' https://www.google.com;",
+      // Added googletagmanager for the script itself
+      "script-src 'self' 'unsafe-inline' https://www.google.com https://www.googletagmanager.com;",
       "style-src 'self' 'unsafe-inline';",
-      // Added blob: and verified 'self' for internal Next.js optimization paths
-      "img-src 'self' data: blob: https://www.google.com https://maps.gstatic.com;",
+      // Added googletagmanager and google-analytics for tracking pixels
+      "img-src 'self' data: blob: https://www.google.com https://maps.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com;",
       "font-src 'self';",
-    ].join(" ")
+      // Added connect-src so GTM can send data out to Google Analytics
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;",
+      "frame-src https://www.google.com https://www.google.com/maps https://www.googletagmanager.com;",
+    ].join(" "),
   );
 
   return response;
