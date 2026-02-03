@@ -9,9 +9,9 @@ import Image from "next/image";
 import FourBoxSection from "@/components/services/FourBox";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Managed Broadband & SD-WAN | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Optimise enterprise connectivity with managed broadband and SD-WAN solutions for secure and scalable networks",
 };
 
 const industries = {

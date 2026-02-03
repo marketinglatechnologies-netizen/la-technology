@@ -12,9 +12,9 @@ import EightCards from "@/components/services/EightCards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Cloud Security Solutions | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Protect cloud environments with comprehensive cloud security for AWS, Azure, and hybrid infrastructures",
 };
 
 const industriesData = {

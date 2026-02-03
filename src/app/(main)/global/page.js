@@ -6,9 +6,9 @@ import PageWrapper from "@/components/services/PageWrapper";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Global Presence | LA Technologies Pvt Ltd Worldwide Operations",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Discover LA Technologies Pvt Ltd global footprint delivering cyber security and IT services to clients across multiple regions worldwide",
 };
 
 const clients = [

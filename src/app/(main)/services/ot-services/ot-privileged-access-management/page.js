@@ -13,9 +13,9 @@ import SolutionGrid from "@/components/services/SolutionGrid";
 import IndustryGrid from "@/components/sections/IndustrySection";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "OT Privileged Access Management | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Control and monitor privileged access in OT environments with advanced access management solutions",
 };
 
 const multiCardsItems = [

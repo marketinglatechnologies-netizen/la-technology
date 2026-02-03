@@ -3,9 +3,9 @@ import JobApplicationForm from "@/components/joinus/JobApplicationForm";
 import PageWrapper from "@/components/services/PageWrapper";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Careers at LA Technologies Pvt Ltd | Join Our Cyber Security Team",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Build your career at LA Technologies Pvt Ltd . Explore exciting opportunities in cyber security, IT infrastructure, OT security, and managed services.",
 };
 
 export default function AboutPage() {

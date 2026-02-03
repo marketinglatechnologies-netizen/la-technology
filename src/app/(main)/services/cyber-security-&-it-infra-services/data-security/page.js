@@ -9,9 +9,9 @@ import Image from "next/image";
 import FourBoxSection from "@/components/services/FourBox";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Data Security Solutions | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Safeguard sensitive business data with advanced encryption, DLP, and data security solutions",
 };
 
 const items = [

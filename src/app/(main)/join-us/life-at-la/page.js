@@ -6,9 +6,9 @@ import PageWrapper from "@/components/services/PageWrapper";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Life at LA Technologies Pvt Ltd | Culture, People & Growth",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Explore life at LA Technologies Pvt Ltd —our culture, values, employee experiences, and commitment to professional growth and innovation.",
 };
 
 export default function AboutPage() {

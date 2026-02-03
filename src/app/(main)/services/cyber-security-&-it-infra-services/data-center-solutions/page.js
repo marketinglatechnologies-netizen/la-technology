@@ -10,9 +10,9 @@ import OurExpertise from "@/components/sections/OurExpertise";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Data Center Solutions | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "End-to-end data center solutions covering design, deployment, security, and ongoing management",
 };
 
 const expertiseData = [

@@ -13,9 +13,9 @@ import IndustryGrid from "@/components/sections/IndustrySection";
 import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "OT Asset Discovery Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Gain complete visibility into OT environments with automated asset discovery solutions.",
 };
 
 const multiCardsItems = [

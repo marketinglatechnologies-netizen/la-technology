@@ -10,9 +10,9 @@ import Image from "next/image";
 
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "IT Staff Augmentation Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Scale your IT workforce with skilled professionals through flexible IT staff augmentation services",
 };
 
 export default function ITBranchOperations() {

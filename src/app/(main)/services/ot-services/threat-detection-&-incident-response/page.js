@@ -15,9 +15,9 @@ import BenefitsGrid from "@/components/services/BenefitsGrid";
 import SixCards from "@/components/services/SixCards";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "OT Threat Detection & Incident Response | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Detect and respond to OT cyber threats with real-time monitoring and incident response services",
 };
 
 const multiCardsItems = [

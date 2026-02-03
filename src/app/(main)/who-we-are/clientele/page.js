@@ -22,9 +22,9 @@ const testimonials = [
 ];
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Our Clients | Enterprises Trusting LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Explore the diverse clientele of LA Technologies Pvt Ltd , trusted by enterprises across industries for cyber security, IT, and OT solutions.",
 };
 
 export default function Clientele() {

@@ -15,9 +15,9 @@ import BenefitsGrid from "@/components/services/BenefitsGrid";
 import SixCards from "@/components/services/SixCards";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "OT Endpoint Protection | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Protect OT endpoints from cyber threats without disrupting industrial operations.",
 };
 
 const multiCardsItems = [

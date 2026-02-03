@@ -9,9 +9,9 @@ import FourCards from "@/components/services/FourCards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: " SOC as a Service | 24x7 Security Operations | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "LA Technologies Pvt Ltd provides SOC as a Service with round-the-clock monitoring, threat detection, and incident response for enterprises",
 };
 
 const features = [

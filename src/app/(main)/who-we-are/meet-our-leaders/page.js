@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Leadership Team | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Meet the leadership team driving innovation and excellence at LA Technologies Pvt Ltd in cyber security, IT infrastructure, and digital transformation.",
 };
 
 const items = [

@@ -17,9 +17,9 @@ import KeyPerformanceIndicators from "@/components/sections/KeyPerformance";
 import { Key } from "lucide-react";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Network Infrastructure Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Design, deploy, and manage robust enterprise network infrastructure solutions",
 };
 
 const industriesData = {

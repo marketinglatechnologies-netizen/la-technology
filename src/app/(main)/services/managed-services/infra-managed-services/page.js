@@ -9,9 +9,9 @@ import FiveCards from "@/components/services/FiveCards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Infrastructure Managed Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Comprehensive infrastructure managed services covering servers, networks, cloud, and enterprise IT environments",
 };
 
 const features = [

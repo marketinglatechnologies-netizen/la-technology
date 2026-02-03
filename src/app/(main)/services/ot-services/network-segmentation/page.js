@@ -13,9 +13,9 @@ import IndustryGrid from "@/components/sections/IndustrySection";
 import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "OT Network Segmentation Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Enhance OT network security with robust network segmentation strategies and implementation",
 };
 
 const multiCardsItems = [

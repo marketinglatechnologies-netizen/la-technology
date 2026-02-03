@@ -9,9 +9,9 @@ import SixCards from "@/components/services/SixCards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Managed Security Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Protect your organization with end-to-end managed security services including detection, response, and compliance.",
 };
 
 const features = [

@@ -13,9 +13,9 @@ import IndustryGrid from "@/components/sections/IndustrySection";
 import FiveCards from "@/components/services/FiveCards";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "ICS & SCADA Security Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Secure industrial control systems and SCADA environments with specialized OT cyber security solutions.",
 };
 
 // const multiCardsItems = [

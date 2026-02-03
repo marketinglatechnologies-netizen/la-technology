@@ -10,9 +10,9 @@ import EightCards from "@/components/services/EightCards";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "IT Branch Operations Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "End-to-end IT branch operations support ensuring seamless performance and business continuity.",
 };
 // const benefitsData = {
 //   title: "Benefits",

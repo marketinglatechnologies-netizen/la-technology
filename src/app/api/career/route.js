@@ -20,7 +20,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "hr@la-technologiesindia.com", // Your target HR email
+      to: "recruitment@la-technologiesindia.com", // Your target HR email
       subject: `Career Application: ${data.get("jobTitle")} - ${data.get(
         "firstName"
       )}`,

@@ -10,9 +10,9 @@ import Image from "next/image";
 import BenefitsGrid from "@/components/services/BenefitsGrid";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "NOC as a Service | Network Monitoring | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Ensure network uptime with LA Technologies Pvt Ltd NOC as a Service offering proactive monitoring and rapid issue resolution",
 };
 
 const benefitsData = [

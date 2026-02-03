@@ -13,9 +13,9 @@ import StandardsFrameworks from "@/components/sections/StandardFramework";
 import EngagementOptions from "@/components/sections/EngagementOptions";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Security Assessment Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Identify vulnerabilities and risks with comprehensive security assessment services by LA Technologies Pvt Ltd",
 };
 
 const items = [

@@ -9,9 +9,9 @@ import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "Endpoint Security Services | LA Technologies Pvt Ltd",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Protect endpoints from advanced cyber threats with enterprise-grade endpoint security solutions",
 };
 
 export default function EndpointSecurity() {

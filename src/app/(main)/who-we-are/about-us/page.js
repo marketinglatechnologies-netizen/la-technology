@@ -7,9 +7,9 @@ import PageWrapper from "@/components/services/PageWrapper";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 
 export const metadata = {
-  title: "Who We Are | LA TECH Cybersecurity",
+  title: "About LA Technologies Pvt Ltd  | Trusted Cyber & IT Security Company",
   description:
-    "Learn about LA Technologies' mission to provide industry-compliant security designs.",
+    "Learn about LA Technologies Pvt Ltd —our journey, expertise, and commitment to delivering reliable cyber security, IT infrastructure, and OT security solutions.",
 };
 
 export default function AboutPage() {
