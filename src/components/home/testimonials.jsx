@@ -12,7 +12,7 @@ const testimonialsData = {
     {
       id: 1,
       quote:
-        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
+        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence. Their professionalism and reliability make them an invaluable partner.",
       name: "Hemant Sudhakar Marathe",
       designation: "CISO",
       company: "Thane Bharat Bank",
@@ -21,7 +21,7 @@ const testimonialsData = {
     {
       id: 2,
       quote:
-        "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
+        "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey, bringing a level of expertise, discipline, and commitment that stands out.",
       name: "Meheriar Patel",
       designation: "GCTO & Director IT",
       company: "Master Group",
@@ -30,7 +30,7 @@ const testimonialsData = {
     {
       id: 3,
       quote:
-        "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
+        "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort, delivering a comprehensive Dark Web Monitoring and Threat Intelligence framework.",
       name: "Kiran R.",
       designation: "CISO",
       company: "NKGSB Bank",
@@ -39,29 +39,11 @@ const testimonialsData = {
       {
       id: 4,
       quote:
-        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence.",
-      name: "Hemant Sudhakar Marathe",
-      designation: "CISO",
-      company: "Thane Bharat Bank",
-      image: "/assets/images/clients/hemant.png",
-    },
-    {
-      id: 5,
-      quote:
-        "As our digital landscape continues to grow in scale and complexity, achieving unified visibility, stronger control, and operational resilience across our security environment has become a strategic necessity. LA Technologies has been an exceptional partner in this journey.",
-      name: "Meheriar Patel",
-      designation: "GCTO & Director IT",
-      company: "Master Group",
-      image: "/assets/images/clients/meheriar.png",
-    },
-    {
-      id: 6,
-      quote:
-        "With the growing sophistication of cyber adversaries and the increasing exposure of financial institutions on the dark web, enhancing our threat intelligence capabilities became a strategic priority for NKGSB. LA Technologies has been an exceptional partner in this effort.",
-      name: "Kiran R.",
-      designation: "CISO",
-      company: "NKGSB Bank",
-      image: "/assets/images/clients/kiran.png",
+        "LA Technologies is a powerhouse strategic security partner that has seamlessly integrated architectural vision and operational rigor into C5i’s IT and security practices. Their ability to deliver high-precision security enhancements that align with our business growth has significantly elevated our organizational resilience and cybersecurity maturity.",
+      name: "Sanjay Chandiramani",
+      designation: "Head – Information Technology",
+      company: "C5i",
+      image: "/assets/images/clients/sanjay.png",
     },
   ],
 };
@@ -93,7 +75,7 @@ export default function TestimonialsSection({ heading }) {
             <SwiperSlide key={item.id}>
               <div className="bg-[#FFF3E0] rounded-2xl p-8 shadow-xl h-full flex flex-col">
                 {/* Quote */}
-                <p className="text-gray-700 text-sm leading-relaxed mb-6">
+                <p className="text-gray-700 text-sm leading-relaxed text-justify mb-6">
                   “{item.quote}”
                 </p>
 
