@@ -29,7 +29,7 @@ export async function POST(req) {
 
     // 3. Confirmation to User
     const userTask = transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: `"LA Technologies" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "We received your inquiry - LA Technologies",
       html: `<p>Hi ${firstName},</p><p>Thank you for reaching out. Our team will contact you shortly.</p>`,

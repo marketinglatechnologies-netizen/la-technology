@@ -36,13 +36,22 @@ const testimonialsData = {
       company: "NKGSB Bank",
       image: "/assets/images/clients/kiran.png",
     },
-      {
+    {
       id: 4,
       quote:
         "LA Technologies is a powerhouse strategic security partner that has seamlessly integrated architectural vision and operational rigor into C5i’s IT and security practices. Their ability to deliver high-precision security enhancements that align with our business growth has significantly elevated our organizational resilience and cybersecurity maturity.",
       name: "Sanjay Chandiramani",
       designation: "Head – Information Technology",
       company: "C5i",
+      image: "/assets/images/clients/sanjay.png",
+    },
+    {
+      id: 5,
+      quote:
+        "LA Technologies has been a reliable and highly competent technology partner for us. Their seamless deployment of servers and implementation of Kaspersky endpoint security significantly strengthened our infrastructure and security posture. The team worked with professionalism, precision, and a strong customer‑first approach.",
+      name: "Asim Shaikh",
+      designation: "Head - IT & InfoSec",
+      company: "Athena BPO Pvt. Ltd",
       image: "/assets/images/clients/sanjay.png",
     },
   ],
