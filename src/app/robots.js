@@ -2,9 +2,8 @@ export default function robots() {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: "/private/", // Just in case you add sensitive paths later
+      disallow: ["/cgi-bin/"],
     },
-    sitemap: "https://yourdomain.com/sitemap.xml",
+    sitemap: "https://la-technologiesindia.com/sitemap.xml",
   };
 }
