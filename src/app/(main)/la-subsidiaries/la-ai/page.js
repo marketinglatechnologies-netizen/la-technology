@@ -79,7 +79,7 @@ export default function LaAi() {
               {/* Top Left – Image */}
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/ai/ab/abt1-1.jpeg"
+                  src="/assets/images/la/ai/abt1-1.jpeg"
                   alt="AI Security Shield"
                   className="w-full h-full object-cover"
                 />
@@ -87,7 +87,7 @@ export default function LaAi() {
 
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/ai/ab/abt1-2.jpeg"
+                  src="/assets/images/la/ai/abt1-2.jpeg"
                   alt="AI Protection Network"
                   className="w-full h-full object-cover"
                 />
@@ -96,7 +96,7 @@ export default function LaAi() {
               {
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/images/la/ai/ab/abt1-3.jpeg"
+                    src="/assets/images/la/ai/abt1-3.jpeg"
                     alt="AI Security Shield"
                     className="w-full h-full object-cover"
                   />
@@ -107,7 +107,7 @@ export default function LaAi() {
               {
                 <div className="rounded-2xl overflow-hidden">
                   <img
-                    src="/assets/images/la/ai/ab/abt1-4.jpeg"
+                    src="/assets/images/la/ai/abt1-4.jpeg"
                     alt="AI Protection Network"
                     className="w-full h-full object-cover"
                   />
