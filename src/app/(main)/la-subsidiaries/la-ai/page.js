@@ -79,26 +79,40 @@ export default function LaAi() {
               {/* Top Left – Image */}
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/ai/abt1.png"
+                  src="/assets/images/la/ai/ab/abt1-1.jpeg"
                   alt="AI Security Shield"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              {/* Top Right – Gradient Block */}
-              <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
-
-              {/* Bottom Left – Gradient Block */}
-              <div className="rounded-2xl bg-gradient-to-br from-[#F97316] to-[#E11D48]" />
-
-              {/* Bottom Right – Image */}
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/assets/images/la/ai/abt2.png"
+                  src="/assets/images/la/ai/ab/abt1-2.jpeg"
                   alt="AI Protection Network"
                   className="w-full h-full object-cover"
                 />
               </div>
+
+              {
+                <div className="rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/images/la/ai/ab/abt1-3.jpeg"
+                    alt="AI Security Shield"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              }
+
+              {/* Bottom Right – Image */}
+              {
+                <div className="rounded-2xl overflow-hidden">
+                  <img
+                    src="/assets/images/la/ai/ab/abt1-4.jpeg"
+                    alt="AI Protection Network"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              }
             </div>
 
             {/* Right Content */}
