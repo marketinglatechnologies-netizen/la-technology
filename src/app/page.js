@@ -5,6 +5,7 @@ import DynamicMasonryGrid from "@/components/ui/DynamicMasonryGrid";
 import { PhoneCall } from "lucide-react";
 import Link from "next/link";
 import TestimonialsSection from "@/components/home/testimonials";
+import { getAllBlogs } from "@/lib/getBlogs";
 import dynamic from "next/dynamic";
 import VendorLogo from "@/components/home/vendorslogo";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
@@ -12,6 +13,9 @@ import IndustryGrid from "@/components/home/IndustryHome";
 import PageWrapper from "@/components/services/PageWrapper";
 
 export default function HomePage() {
+
+  const blogs = getAllBlogs().slice(0,2);
+  
   const caseStudies = [
     {
       title: "Secure Digital Banking Transformation Using Netskope",
@@ -321,35 +325,16 @@ export default function HomePage() {
 
             {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {[
-                {
-                  date: "Dec 4",
-                  title:
-                    "The Future of Enterprise IT – How AI and Automation Are Transforming Business Operations",
-                  description:
-                    "Enterprise IT is undergoing a massive transformation. Businesses today are moving beyond",
-                  image: "/assets/images/blogs/blog1.jpg",
-                  link: "/insights/blogs/the-future-of-enterprise-it",
-                },
-                {
-                  date: "Dec 4",
-                  title:
-                    "Why Zero Trust Security Is Becoming Mandatory for Modern Businesses",
-                  description:
-                    "Cyberattacks are becoming more advanced, more frequent, and far more damaging than ever before",
-                  image: "/assets/images/blogs/blog2.jpeg",
-                  link: "/insights/blogs/why-zero-trust-security-is-becoming-mandatory-for-modern-businesses",
-                },
-              ].map((item, index) => (
+              {blogs.map((blog, index) => (
                 <div
-                  key={index}
+                  key={blog.slug}
                   className="bg-[#FFF3E0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
                 >
                   {/* Image */}
                   <div className="relative">
                     <img
-                      src={item.image}
-                      alt={item.title}
+                      src={blog.image}
+                      alt={blog.title}
                       className="w-full h-[240px] object-cover"
                     />
 
@@ -357,12 +342,15 @@ export default function HomePage() {
                     <div className="absolute top-0 left-4">
                       <div className="relative">
                         <img
-                          src="/assets/images/home/flag.png" // your image path
+                          src="/assets/images/home/flag.png"
                           alt="Date badge"
                           className="w-15 h-auto"
                         />
-                        <span className="absolute inset-0 flex items-center  -translate-y-3 justify-center text-white text-sm font-semibold">
-                          {item.date}
+                        <span className="absolute inset-0 flex items-center -translate-y-3 justify-center text-white text-sm font-semibold">
+                          {new Date(blog.date).toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                          })}
                         </span>
                       </div>
                     </div>
@@ -372,21 +360,23 @@ export default function HomePage() {
                   <div className="p-6 flex items-center justify-between gap-6">
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                        {item.title}
+                        {blog.title}
                       </h3>
                       <p className="text-sm text-gray-600">
-                        {item.description}
+                        {blog.description}
                       </p>
                     </div>
 
                     {/* CTA Button */}
-
-                    <Link href={item.link} aria-label="Read more">
+                    <Link
+                      href={`/insights/blogs/${blog.slug}`}
+                      aria-label="Read more"
+                    >
                       <button
                         className="shrink-0 w-11 h-11 rounded-xl
-               bg-gradient-to-r from-[#E11D48] to-[#F97316]
-               flex items-center justify-center
-               text-white hover:opacity-90 transition"
+                    bg-gradient-to-r from-[#E11D48] to-[#F97316]
+                    flex items-center justify-center
+                    text-white hover:opacity-90 transition"
                       >
                         <img
                           src="/assets/images/home/send.svg"
