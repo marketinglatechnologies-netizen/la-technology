@@ -2,11 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-export default function IndustryGrid({
-  data,
-  headingTag: Tag = "h3",
-}) {
+export default function IndustryGrid({ data, headingTag: Tag = "h3" }) {
   if (!data || !data.items) return null;
 
   return (
@@ -39,11 +37,14 @@ export default function IndustryGrid({
                 group
               "
             >
-              {/* Image */}
-              <img
+              {/* Optimized Image */}
+              <Image
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                width={300}
+                height={180}
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 300px"
               />
 
               {/* Subtle dark overlay */}
@@ -51,12 +52,14 @@ export default function IndustryGrid({
 
               {/* Bottom pill label */}
               <div className="absolute bottom-4 inset-x-0 flex justify-center">
-                <div className="
+                <div
+                  className="
                   bg-black/10
                   backdrop-blur-md
                   px-8 py-3
                   rounded-md
-                ">
+                "
+                >
                   <span
                     className="text-white text-sm font-medium"
                     dangerouslySetInnerHTML={{ __html: item.title }}
