@@ -40,7 +40,7 @@ export default function HomePage() {
   ];
 
   const heroSlides = [
-    {
+     {
       type: "image",
       src: "/assets/images/home/home-banner.jpg", // Based on your "Building Technology" mockup
       title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
@@ -137,7 +137,7 @@ export default function HomePage() {
 
                 <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                   <p>
-                    For 20+ years, we've secured enterprises with scalable,
+                    For 20+ years, we&apos;ve secured enterprises with scalable,
                     intelligent solutions that mitigate risks, enable agility,
                     and drive growth. With global expertise, strong OEM
                     partnerships, and a consultative approach, we protect what
@@ -288,7 +288,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {caseStudies.map((item) => (
-              <Link key={item.id} href={item.link} className="group block">
+            <Link key={item.link} href={item.link} className="group block">
                 <div
                   className="relative overflow-hidden rounded-2xl
                  w-full h-[auto] lg:h-[360px] mx-auto"

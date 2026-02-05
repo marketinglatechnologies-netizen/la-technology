@@ -59,8 +59,8 @@ const testimonialsData = {
       quote:
         "Partnering with LA Technologies for our SOC operations has been a strategic advantage. Their proactive monitoring and rapid incident response have strengthened our security posture significantly. The team’s professionalism and deep expertise give us complete confidence in our ability to mitigate risks in real time",
       name: "Jayesh Acharya",
-      designation: "TUV Nord",
-      company: "Athena BPO Pvt. Ltd",
+      designation: "Head - IT",
+      company: "TUV Nord",
       image: "/assets/images/clients/jayesh.jpg",
     },
   ],
