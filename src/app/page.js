@@ -41,7 +41,7 @@ export default function HomePage() {
 
   const heroSlides = [
     {
-      type: "video",
+      type: "image",
       src: "/assets/images/home/home-banner.jpg", // Based on your "Building Technology" mockup
       title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
       description:
