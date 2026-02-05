@@ -2,8 +2,9 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import Image from "next/image";
 
-// Import Swiper styles
+// Swiper styles
 import "swiper/css";
 
 const CLIENT_LOGOS = [
@@ -19,7 +20,7 @@ export default function LogoSlider() {
   return (
     <section className="py-12 bg-white border-b border-gray-50">
       <div className="max-w-full mx-auto px-4 md:px-0">
-        <h3 className="text-center text-[#302123] text-[30px] font-[700]  tracking-[2%] mb-10 font-montserrat">
+        <h3 className="text-center text-[#302123] text-[30px] font-[700] tracking-[2%] mb-10 font-montserrat">
           Trusted by Clients
         </h3>
 
@@ -27,8 +28,8 @@ export default function LogoSlider() {
           modules={[Autoplay]}
           spaceBetween={10}
           slidesPerView={2}
-          loop={true}
-          speed={4000} // This creates the smooth continuous motion
+          loop
+          speed={4000}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -39,24 +40,27 @@ export default function LogoSlider() {
           }}
           className="logo-swiper"
         >
-          {/* We repeat the array twice to ensure the loop is perfectly seamless */}
           {[...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, index) => (
             <SwiperSlide
               key={index}
-              className="flex items-center justify-center transition-all duration-500"
+              className="flex items-center justify-center"
             >
-              <img
-                src={logo.src}
-                alt={logo.name}
-                className="h-12 md:h-16 w-auto object-contain"
-              />
+              {/* Fixed-size container prevents CLS */}
+              <div className="relative w-[160px] h-[64px]">
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  fill
+                  className="object-contain"
+                  sizes="160px"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
       <style jsx global>{`
-        /* This makes the transition linear so it doesn't pause between slides */
         .logo-swiper .swiper-wrapper {
           transition-timing-function: linear !important;
         }

@@ -64,13 +64,13 @@ export default function HomeHero({ slides }) {
                 />
 
                 {/* Mockup Button */}
-                <Link
+                {/* <Link
                   href="/contact"
                   className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl"
                 >
                   <PhoneCall size={22} />
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>
