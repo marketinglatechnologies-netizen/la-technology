@@ -42,7 +42,7 @@ export default function HomeHero({ slides }) {
                 />
               )}
               {/* Brand Overlay - Adjusted to match mockup darkness */}
-              <div className="absolute inset-0 bg-black/20 md:bg-black/20 bg-gradient-to-r from-black/10 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-black/60 md:bg-black/60 bg-gradient-to-r from-black/10 via-black/20 to-transparent" />
             </div>
 
             {/* Content Layer */}
@@ -66,7 +66,7 @@ export default function HomeHero({ slides }) {
                 {/* Mockup Button */}
                 <Link
                   href="/contact"
-                  className="mt-[240px] ml-[96px] inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl"
+                  className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl"
                 >
                   <PhoneCall size={22} />
                   Get in Touch

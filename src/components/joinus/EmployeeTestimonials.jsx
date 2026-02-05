@@ -77,57 +77,71 @@ const testimonials = [
 
 export default function EmployeeTestimonials() {
   return (
-    <section className="py-14 md:py-20 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
-          slidesPerView="auto"
-          spaceBetween={24}
-          grabCursor
+   <section className="py-12 sm:py-14 md:py-20 bg-white overflow-hidden">
+  <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6">
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      slidesPerView="auto"
+      spaceBetween={16}
+      grabCursor
+    >
+      {testimonials.map((item, index) => (
+        <SwiperSlide
+          key={index}
+          className="!w-[90%] sm:!w-[420px] md:!w-[520px] lg:!w-[560px]"
         >
-          {testimonials.map((item, index) => (
-            <SwiperSlide key={index} className="!w-[520px] sm:!w-[560px]">
-              <div className="relative flex gap-6 items-center bg-gradient-to-r from-[#FFF4E8] to-[#FFF9F2] rounded-2xl shadow-md p-6">
-                {/* Quote Icon */}
-                <span className="absolute top-4 right-6 text-[80px] text-orange-100 leading-none">
-                  “
-                </span>
+          <div className="
+            relative flex flex-col sm:flex-row
+            gap-5 sm:gap-6
+            items-center sm:items-start
+            bg-gradient-to-r from-[#FFF4E8] to-[#FFF9F2]
+            rounded-2xl shadow-md
+            p-5 sm:p-6
+          ">
+            {/* Quote Icon */}
+            <span className="absolute top-3 right-4 sm:top-4 sm:right-6 text-[56px] sm:text-[80px] text-orange-100 leading-none">
+              “
+            </span>
 
-                {/* LEFT: IMAGE + NAME */}
-                <div className="flex flex-col items-center min-w-[160px]">
-                  <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center shadow overflow-hidden">
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={112}
-                      height={112}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-
-                  <p className="mt-4 text-base font-bold text-black text-center leading-tight">
-                    {item.name.split(" ")[0]}&nbsp;
-                    {item.name.split(" ").slice(1).join(" ")}
-                  </p>
-
-                  <p className="mt-1 text-xs text-red-500 font-medium text-center">
-                    {item.designation}
-                  </p>
-                </div>
-
-                {/* RIGHT: TEXT */}
-                <p className="text-gray-700 text-sm leading-relaxed max-w-[320px]">
-                  “{item.text}”
-                </p>
+            {/* LEFT: IMAGE + NAME */}
+            <div className="flex flex-col items-center min-w-0 sm:min-w-[160px]">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white flex items-center justify-center shadow overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={112}
+                  height={112}
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
+
+              <p className="mt-3 sm:mt-4 text-sm sm:text-base font-bold text-black text-center leading-tight">
+                {item.name}
+              </p>
+
+              <p className="mt-1 text-xs text-red-500 font-medium text-center">
+                {item.designation}
+              </p>
+            </div>
+
+            {/* RIGHT: TEXT */}
+            <p className="
+              text-gray-700 text-sm leading-relaxed
+              text-center sm:text-left
+              max-w-full sm:max-w-[300px] md:max-w-[320px]
+            ">
+              “{item.text}”
+            </p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
   );
 }
