@@ -16,7 +16,8 @@ const BLOGS_DIR = path.join(process.cwd(), "content/blogs");
 export default function BlogPage() {
   const files = fs.readdirSync(BLOGS_DIR);
 
-  const blogs = files.map((file) => {
+  const blogs = files
+  .map((file) => {
     const slug = file.replace(".md", "");
     const fileContent = fs.readFileSync(path.join(BLOGS_DIR, file), "utf-8");
     const { data } = matter(fileContent);
@@ -28,7 +29,9 @@ export default function BlogPage() {
       image: data.image,
       date: data.date,
     };
-  });
+  })
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
+
   return (
     <>
       <InnerPageBanner
