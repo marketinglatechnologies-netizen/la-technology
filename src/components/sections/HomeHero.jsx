@@ -80,7 +80,7 @@ export default function HomeHero({ slides }) {
                 />
 
                 {/* CTA */}
-                <div className="fixed bottom-12 left-6 z-50">
+                <div className="fixed bottom-6 left-6 z-50">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
