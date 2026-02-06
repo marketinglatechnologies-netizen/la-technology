@@ -61,9 +61,9 @@ export default function HomeHero({ slides }) {
             </div>
 
             {/* Content Layer */}
-            <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-6 lg:px-6 md:px-6 px-4 flex flex-col justify-center">
+            <div className="relative z-10 h-full max-w-7xl mx-auto px-4 md:px-6 flex items-center">
               <div className="max-w-3xl">
-                {/* Dynamic SEO Tags */}
+                {/* Title */}
                 <slide.titleTag
                   className={`text-3xl md:text-5xl lg:text-4xl font-bold text-white leading-[1.5] mb-6 ${
                     slide.titleClassName || ""
@@ -71,21 +71,24 @@ export default function HomeHero({ slides }) {
                   dangerouslySetInnerHTML={{ __html: slide.title }}
                 />
 
+                {/* Description */}
                 <slide.descTag
-                  className={`text-lg md:text-xl text-gray-200 leading-relaxed mb-10 max-w-2xl ${
+                  className={`text-lg md:text-xl text-gray-200 leading-relaxed mb-8 max-w-2xl ${
                     slide.descClassName || ""
                   }`}
                   dangerouslySetInnerHTML={{ __html: slide.description }}
                 />
 
-                {/* Mockup Button */}
-                {/* <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl"
-                >
-                  <PhoneCall size={22} />
-                  Get in Touch
-                </Link> */}
+                {/* CTA */}
+                <div className="fixed bottom-12 left-6 z-50">
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+                  >
+                    <PhoneCall size={22} />
+                    Get in Touch
+                  </Link>
+                </div>
               </div>
             </div>
           </SwiperSlide>
