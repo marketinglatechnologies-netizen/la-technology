@@ -26,23 +26,38 @@ export default function HomeHero({ slides }) {
             {/* Background Layer: Video or Image */}
             <div className="absolute inset-0 z-0">
               {slide.type === "video" ? (
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src={slide.src} type="video/mp4" />
-                </video>
+                <>
+                  {/* Desktop Video */}
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="hidden md:block w-full h-full object-cover"
+                  >
+                    <source src={slide.desktopSrc} type="video/mp4" />
+                  </video>
+
+                  {/* Mobile Video */}
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="block md:hidden w-full h-full object-cover"
+                  >
+                    <source src={slide.mobileSrc} type="video/mp4" />
+                  </video>
+                </>
               ) : (
                 <div
                   className="w-full h-full bg-cover bg-center transition-transform duration-[5000ms] scale-110 group-[.swiper-slide-active]:scale-100"
                   style={{ backgroundImage: `url(${slide.src})` }}
                 />
               )}
-              {/* Brand Overlay - Adjusted to match mockup darkness */}
-              <div className="absolute inset-0 bg-black/60 md:bg-black/60 bg-gradient-to-r from-black/10 via-black/20 to-transparent" />
+
+              {/* Brand Overlay */}
+              <div className="absolute inset-0 bg-black/20 md:bg-black/20 bg-gradient-to-r from-black/10 via-black/20 to-transparent" />
             </div>
 
             {/* Content Layer */}
@@ -64,13 +79,13 @@ export default function HomeHero({ slides }) {
                 />
 
                 {/* Mockup Button */}
-                <Link
+                {/* <Link
                   href="/contact"
                   className="inline-flex items-center gap-3 bg-la-gradient text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl"
                 >
                   <PhoneCall size={22} />
                   Get in Touch
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>

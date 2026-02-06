@@ -40,17 +40,18 @@ export default function HomePage() {
   ];
 
   const heroSlides = [
-    {
-      type: "image",
-      src: "/assets/images/home/home-banner.jpg", // Based on your "Building Technology" mockup
-      title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
-      description:
-        "We Design and Implement Cybersecurity Solutions to Scale Businesses ",
-      titleTag: "h1",
-      descTag: "p",
-      titleClassName: "lg:text-[40px] lg:tracking-[2%] lg:font-[700]",
-    },
-  ];
+  {
+    type: "video",
+    desktopSrc: "/assets/videos/hero-desktop.mp4",
+    mobileSrc: "/assets/videos/hero-mobile.mp4",
+    // title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
+    // description: "We Design and Implement Cybersecurity Solutions to Scale Businesses",
+    titleTag: "h1",
+    descTag: "p",
+    titleClassName: "lg:text-[40px] lg:tracking-[2%] lg:font-[700]",
+  },
+];
+
 
   const securityMedia = [
     "/assets/images/home/home1.jpg", // Becomes the large left image
