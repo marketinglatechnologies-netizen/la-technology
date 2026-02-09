@@ -252,6 +252,9 @@ export default function SOC() {
       <GradientCtaBanner text="READY TO STRENGTHEN YOUR SECURITY POSTURE?" />
       <section className="w-full py-12">
         <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
+          <h2 className="mb-8 text-center text-2xl font-semibold">
+            Contact Our Security Experts
+          </h2>
           <form
             onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-5"
