@@ -1,3 +1,5 @@
+"use client"
+
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import FeatureHighlightSection from "@/components/services/FeatureHighlightSection";
 import InfoCtaSection from "@/components/services/InfoCtaSection";
@@ -7,12 +9,13 @@ import ImageHighlightSection from "@/components/services/ImageHighlightSection";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import FourCards from "@/components/services/FourCards";
 import Image from "next/image";
+import HalfwayPopupForm from "@/components/sections/PopupForm";
 
-export const metadata = {
-  title: " SOC as a Service | 24x7 Security Operations | LA Technologies Pvt Ltd",
-  description:
-    "LA Technologies Pvt Ltd provides SOC as a Service with round-the-clock monitoring, threat detection, and incident response for enterprises",
-};
+// export const metadata = {
+//   title: " SOC as a Service | 24x7 Security Operations | LA Technologies Pvt Ltd",
+//   description:
+//     "LA Technologies Pvt Ltd provides SOC as a Service with round-the-clock monitoring, threat detection, and incident response for enterprises",
+// };
 
 const features = [
   {
@@ -106,6 +109,8 @@ export default function SOC() {
           },
         ]}
       />
+
+      <HalfwayPopupForm/>
 
       <WhyChooseSection
         heading="LA Technologies SOC-as-a-Service:"
