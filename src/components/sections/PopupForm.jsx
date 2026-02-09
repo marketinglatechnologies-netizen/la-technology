@@ -109,6 +109,9 @@ export default function ScrollPopupForm() {
             type="tel"
             placeholder="Contact Number"
             className="w-full rounded border border-gray-300 px-4 py-2 focus:border-black focus:outline-none required"
+            inputMode="numeric"
+            maxLength={10}
+            pattern="[0-9]{10}"
             required
           />
 
