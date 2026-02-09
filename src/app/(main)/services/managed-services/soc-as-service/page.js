@@ -156,7 +156,7 @@ export default function SOC() {
       />
 
       <FourCards
-        heading="Our Data Center Services"
+        heading="Key Features of Our SOC-as-a-Service"
         headingTag="h2"
         cards={[
           {
