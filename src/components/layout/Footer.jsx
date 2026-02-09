@@ -37,12 +37,12 @@ export default function Footer() {
     <footer className="relative bg-la-cream pt-16 overflow-hidden">
       {/* 1. THE GIANT WATERMARK (Now positioned absolutely to match mockup) */}
       <div className="absolute bottom-12 left-0 w-[70%] px-6 z-0 pb-4 pointer-events-none">
-    <img
-      src="/assets/svgs/logo.png"
-      alt="Logo watermark"
-      className="w-full max-w-[50%] md:max-w-[1200px] opacity-[0.07]"
-    />
-  </div>
+        <img
+          src="/assets/svgs/logo.png"
+          alt="Logo watermark"
+          className="w-full max-w-[50%] md:max-w-[1200px] opacity-[0.07]"
+        />
+      </div>
 
       <div className="lg:px-6 max-w-7xl md:px-6 mx-auto px-4 relative z-10 pb-20 lg:px-6 md:px-6 px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
@@ -247,6 +247,29 @@ export default function Footer() {
                     <Link href="/services/ot-services/ot-privileged-access-management">
                       OT Privileged Access Management
                     </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-bold text-[#DC2A3C] mb-2 text-sm">Legal</p>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="/privacy-policy" className="text-sm">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    {/* <a href="/disclaimer" className="text-sm ">
+                      Disclaimer
+                    </a> */}
+                  </li>
+                  <li>
+                    {/* <a
+                      href="/recruitment-fraud-warning"
+                      className="text-sm"
+                    >
+                      Recruitment & Fraud Warning
+                    </a> */}
                   </li>
                 </ul>
               </div>
