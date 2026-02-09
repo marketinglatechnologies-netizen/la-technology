@@ -9,7 +9,12 @@ const NON_CLICKABLE_ROUTES = [
   "/join-us",
   "/la-subsidiaries",
   "/services",
-  "/who-we-are"
+  "/who-we-are",
+  "/services/managed-services",
+  "/services/cyber-security-&-it-infra-services",
+  "/services/ot-services"
+
+
 
   // add more parent-only routes if needed
 ];
