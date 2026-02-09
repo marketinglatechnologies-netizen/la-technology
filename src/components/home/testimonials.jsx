@@ -63,6 +63,24 @@ const testimonialsData = {
       company: "TUV Nord",
       image: "/assets/images/clients/jayesh.jpg",
     },
+    {
+      id: 7,
+      quote:
+        "In an industry where information integrity, client confidentiality, and operational resilience are paramount, the strength of our cybersecurity framework directly influences our ability to serve and protect our stakeholders. LA Technologies has been a pivotal partner in elevating our security posture through the management of our Security Operations.",
+      name: "Agnelo Rodrigues",
+      designation: "Deputy General Manager IT",
+      company: "Adfactors PR",
+      image: "/assets/images/clients/adfactors.png",
+    },
+    {
+      id: 8,
+      quote:
+        "LA Technologies has added significant value to our cybersecurity framework through their management of our Security Operations Centre. Their structured approach, clarity of communication, and disciplined monitoring have helped us maintain a stronger and more dependable security environment.",
+      name: "Sanjay Balkrishna Apishte",
+      designation: "CISO",
+      company: " Vaishya Sahakari Bank Limited",
+      image: "/assets/images/clients/vaishya.png",
+    },
   ],
 };
 
