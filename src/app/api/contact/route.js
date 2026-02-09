@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { firstName, lastName, email, mobile, message } = await req.json();
+    const { firstName, lastName, email, mobile, company, jobTitle, companySize, industry, message } = await req.json();
 
     // 1. Setup Transporter
     const transporter = nodemailer.createTransport({
@@ -14,15 +14,22 @@ export async function POST(req) {
       },
     });
 
-    // 2. Email to Admin
+    // 2. Email to Admin    company: "",
     const adminTask = transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "sales@la-technologiesindia.com",
+      to: [
+    "sales@la-technologiesindia.com",
+    "development@syspreedigital.com",
+  ],
       subject: `New Lead: ${firstName} ${lastName}`,
       html: `
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mobile:</strong> +91 ${mobile}</p>
+        <p><strong>Company Name:</strong> ${company}</p>
+        <p><strong>Job Title:</strong> ${jobTitle}</p>
+        <p><strong>Company Size (No. of Employees):</strong> ${companySize}</p>
+        <p><strong>Industry:</strong> ${industry}</p>
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
@@ -43,7 +50,7 @@ export async function POST(req) {
     console.error("Email Error:", error);
     return NextResponse.json(
       { error: "Failed to send email" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
