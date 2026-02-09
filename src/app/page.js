@@ -100,7 +100,7 @@ export default function HomePage() {
       {
         id: "data center",
         title: "Data Center",
-        image: "/assets/images/home/data-center.jpg",
+        image: "/assets/images/home/data.jpg",
       },
       {
         id: "government",
