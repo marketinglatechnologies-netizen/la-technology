@@ -12,7 +12,7 @@ const testimonialsData = {
     {
       id: 1,
       quote:
-        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence. Their professionalism and reliability make them an invaluable partner.",
+        "Our partnership with LA Technologies has transformed the way we approach cybersecurity. Their SOC operations deliver real-time threat intelligence and actionable insights, enabling us to operate with confidence. Their professionalism and reliability make them an invaluable and trusted partner.",
       name: "Hemant Sudhakar Marathe",
       designation: "CISO",
       company: "Thane Bharat Bank",
