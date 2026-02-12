@@ -25,7 +25,7 @@ const highlightsData = [
   {
     id: 3,
     icon: "/assets/images/la/bootcamps/service3.png",
-    title: "Globally Recognized Certifications",
+    title: "Widely Recognized Certifications",
     description: "Boost your career profile with credentials that matter.",
   },
 ];
