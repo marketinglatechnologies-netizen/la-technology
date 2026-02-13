@@ -192,7 +192,7 @@ export default function PrivacyPolicy() {
           </p>
         </section>
 
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Recruitment Policy</h2>
 
           <p className="mb-4">
@@ -226,7 +226,7 @@ export default function PrivacyPolicy() {
             unfair, or improper hiring practices may be reported using the same
             email address.
           </p>
-        </section>
+        </section> */}
       </main>
     </>
   );

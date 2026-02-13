@@ -252,7 +252,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-bold text-[#DC2A3C] mb-2 text-sm">Legal</p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 text-gray-600">
                   <li>
                     <a href="/privacy-policy" className="text-sm">
                       Privacy Policy
@@ -264,12 +264,12 @@ export default function Footer() {
                     </a> */}
                   </li>
                   <li>
-                    {/* <a
-                      href="/recruitment-fraud-warning"
+                    <a
+                      href="/recruitment-policy"
                       className="text-sm"
                     >
-                      Recruitment & Fraud Warning
-                    </a> */}
+                      Recruitment Policy
+                    </a>
                   </li>
                 </ul>
               </div>
