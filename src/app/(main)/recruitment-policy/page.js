@@ -31,15 +31,12 @@ export default function RecruitmentPolicy() {
             applicants in accordance with applicable laws. If you receive any
             suspicious communications, advertisements, or approaches from
             individuals claiming to offer employment with LA Technologies Pvt
-            Ltd, please report the same at
-          </p>
-
-          <p>
+            Ltd, please report the same at {" "}
             <a
               href="mailto:sales@la-technologiesindia.com"
               className="text-red-600 hover:underline"
             >
-              sales@la-technologiesindia.com
+               hrd@la-technologiesindia.com.
             </a>
           </p>
         </section>
