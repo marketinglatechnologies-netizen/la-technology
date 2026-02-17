@@ -11,8 +11,22 @@ import VendorLogo from "@/components/home/vendorslogo";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import IndustryGrid from "@/components/home/IndustryHome";
 import PageWrapper from "@/components/services/PageWrapper";
+import { sanityClient } from "@/lib/sanityClient";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const TESTIMONIALS_QUERY = `
+  *[_type == "testimonial"] 
+  | order(isFeatured desc, sortOrder asc, publishedAt desc) {
+    _id,
+    quote,
+    personName,
+    personTitle,
+    companyName,
+    "imageUrl": personImage.asset->url
+  }
+`;
+
+  const testimonials = await sanityClient.fetch(TESTIMONIALS_QUERY);
 
   const blogs = getAllBlogs().slice(0,2);
   
@@ -314,7 +328,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <TestimonialsSection heading="What our clients have to say about the services we provide at LA Technologies" />
+          <TestimonialsSection
+        items={testimonials}
+        heading="What our clients have to say about the services we provide at LA Technologies"
+      />
 
       <PageWrapper>
         <section className="py-20">
