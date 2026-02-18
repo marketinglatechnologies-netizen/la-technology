@@ -13,6 +13,8 @@ import IndustryGrid from "@/components/home/IndustryHome";
 import PageWrapper from "@/components/services/PageWrapper";
 import { sanityClient } from "@/lib/sanityClient";
 
+export const revalidate = 60;
+
 export default async function HomePage() {
   const TESTIMONIALS_QUERY = `
   *[_type == "testimonial"] 
@@ -131,7 +133,7 @@ export default async function HomePage() {
       </section>
       <section>
         <PageWrapper>
-          <LogoSlider />
+          <LogoSlider heading="Trusted By Clients" />
         </PageWrapper>
       </section>
 
