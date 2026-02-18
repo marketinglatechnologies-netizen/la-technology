@@ -11,6 +11,8 @@ import VendorLogo from "@/components/home/vendorslogo";
 import GradientCtaBanner from "@/components/services/GradientCtaBanner";
 import IndustryGrid from "@/components/home/IndustryHome";
 import PageWrapper from "@/components/services/PageWrapper";
+import HomeBlogSection from "@/components/home/HomeBlogSection";
+import HomeCaseStudies from "@/components/home/HomeCaseStudies";
 import { sanityClient } from "@/lib/sanityClient";
 
 export const revalidate = 60;
@@ -28,46 +30,43 @@ export default async function HomePage() {
   }
 `;
 
-  const testimonials = await sanityClient.fetch(TESTIMONIALS_QUERY);
+  const HOME_BLOGS_QUERY = `
+    *[_type == "post"]
+    | order(publishedAt desc)[0...2] {
+      title,
+      "slug": slug.current,
+      publishedAt,
+      excerpt,
+      "image": mainImage.asset->url
+    }
+  `;
 
-  const blogs = getAllBlogs().slice(0,2);
-  
-  const caseStudies = [
-    {
-      title: "Secure Digital Banking Transformation Using Netskope",
-      image: "/assets/images/home/case1.jpg",
-      link: "/case-studies/secure-digital-banking-netskope",
-    },
-    {
-      title: "Pan-India Power Manufacturing OT Cybersecurity Transformation",
-      image: "/assets/images/home/case2.jpg",
-      link: "/case-studies/pan-india-power-manufacturing",
-    },
-    {
-      title: "Authentication IoT Security Enhancement for Smart Devices",
-      image: "/assets/images/home/case3.jpg",
-      link: "/case-studies/iot-security-enhancement",
-    },
-    {
-      title: "Authentication IoT Security Enhancement for Smart Devices",
-      image: "/assets/images/home/case4.jpg",
-      link: "/case-studies/iot-security-enhancement-2",
-    },
-  ];
+  const HOME_CASESTUDIES_QUERY = `
+*[_type == "caseStudy"]
+| order(publishedAt desc)[0...4] {
+  _id,
+  title,
+  "slug": slug.current,
+  "image": heroImage.asset->url,
+  publishedAt
+}
+`;
+  const testimonials = await sanityClient.fetch(TESTIMONIALS_QUERY);
+  const blogs = await sanityClient.fetch(HOME_BLOGS_QUERY);
+  const caseStudies = await sanityClient.fetch(HOME_CASESTUDIES_QUERY);
 
   const heroSlides = [
-  {
-    type: "video",
-    desktopSrc: "/assets/videos/hero-desktop.mp4",
-    mobileSrc: "/assets/videos/hero-mobile.mp4",
-    // title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
-    // description: "We Design and Implement Cybersecurity Solutions to Scale Businesses",
-    titleTag: "h1",
-    descTag: "p",
-    titleClassName: "lg:text-[40px] lg:tracking-[2%] lg:font-[700]",
-  },
-];
-
+    {
+      type: "video",
+      desktopSrc: "/assets/videos/hero-desktop.mp4",
+      mobileSrc: "/assets/videos/hero-mobile.mp4",
+      // title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
+      // description: "We Design and Implement Cybersecurity Solutions to Scale Businesses",
+      titleTag: "h1",
+      descTag: "p",
+      titleClassName: "lg:text-[40px] lg:tracking-[2%] lg:font-[700]",
+    },
+  ];
 
   const securityMedia = [
     "/assets/images/home/home1.jpg", // Becomes the large left image
@@ -297,120 +296,14 @@ export default async function HomePage() {
 
       <IndustryGrid data={industriesData} />
 
-      <section className="bg-[#FFF7EB] py-20">
-        <div className="max-w-7xl mx-auto bg-white lg:px-6 md:px-6 px-4 py-16">
-          <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
-            Case Studies
-          </h2>
+      <HomeCaseStudies caseStudies={caseStudies} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {caseStudies.map((item) => (
-            <Link key={item.link} href={item.link} className="group block">
-                <div
-                  className="relative overflow-hidden rounded-2xl
-                 w-full h-[auto] lg:h-[360px] mx-auto"
-                >
-                  {/* Image */}
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-
-                  {/* TEXT OVERLAY */}
-                  <div className="absolute bottom-5 w-full bg-black/30 backdrop-blur-sm px-4 py-3">
-                    <p className="text-white text-sm font-semibold leading-snug line-clamp-2 text-center">
-                      {item.title}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-          <TestimonialsSection
+      <TestimonialsSection
         items={testimonials}
         heading="What our clients have to say about the services we provide at LA Technologies"
       />
 
-      <PageWrapper>
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
-            {/* Section Heading */}
-            <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-900 mb-12">
-              Insights, ideas, and updates from our team.
-            </h2>
-
-            {/* Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {blogs.map((blog, index) => (
-                <div
-                  key={blog.slug}
-                  className="bg-[#FFF3E0] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition"
-                >
-                  {/* Image */}
-                  <div className="relative">
-                    <img
-                      src={blog.image}
-                      alt={blog.title}
-                      className="w-full h-[240px] object-cover"
-                    />
-
-                    {/* Date Ribbon */}
-                    <div className="absolute top-0 left-4">
-                      <div className="relative">
-                        <img
-                          src="/assets/images/home/flag.png"
-                          alt="Date badge"
-                          className="w-15 h-auto"
-                        />
-                        <span className="absolute inset-0 flex items-center -translate-y-3 justify-center text-white text-sm font-semibold">
-                          {new Date(blog.date).toLocaleDateString("en-US", {
-                            month: "short",
-                            day: "numeric",
-                          })}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6 flex items-center justify-between gap-6">
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                        {blog.title}
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        {blog.description}
-                      </p>
-                    </div>
-
-                    {/* CTA Button */}
-                    <Link
-                      href={`/insights/blogs/${blog.slug}`}
-                      aria-label="Read more"
-                    >
-                      <button
-                        className="shrink-0 w-11 h-11 rounded-xl
-                    bg-gradient-to-r from-[#E11D48] to-[#F97316]
-                    flex items-center justify-center
-                    text-white hover:opacity-90 transition"
-                      >
-                        <img
-                          src="/assets/images/home/send.svg"
-                          alt="Read more"
-                        />
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </PageWrapper>
+      <HomeBlogSection heading="Latest Blogs" blogs={blogs} />
 
       <PageWrapper>
         <VendorLogo />

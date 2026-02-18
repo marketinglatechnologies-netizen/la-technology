@@ -151,74 +151,77 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+import PageWrapper from "../services/PageWrapper";
 
 export default function TestimonialsSection({ items = [], heading }) {
   if (!items.length) return null;
 
   return (
-    <section className="bg-gray-50 pt-20">
-      <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
-        <h2 className="text-center text-xl lg:text-3xl font-semibold text-gray-900 mb-10">
-          {heading}
-        </h2>
+    <PageWrapper>
+      <section className="bg-white pt-20">
+        <div className="max-w-7xl mx-auto lg:px-6 md:px-6 px-4">
+          <h2 className="text-center text-xl lg:text-3xl font-semibold text-gray-900 mb-10">
+            {heading}
+          </h2>
 
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          spaceBetween={32}
-          slidesPerView={1}
-          autoplay={{ delay: 3000 }}
-          pagination={false}
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-            },
-          }}
-          style={{ padding: "40px 0px" }}
-        >
-          {items.map((item) => (
-            <SwiperSlide key={item._id}>
-              <div className="bg-[#FFF3E0] rounded-2xl p-8 shadow-xl h-full flex flex-col">
-                <p className="text-gray-700 text-sm leading-relaxed text-justify mb-4 line-clamp-4">
-                  “{item.quote}”
-                </p>
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            spaceBetween={32}
+            slidesPerView={1}
+            autoplay={{ delay: 3000 }}
+            pagination={false}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+            }}
+            style={{ padding: "40px 0px" }}
+          >
+            {items.map((item) => (
+              <SwiperSlide key={item._id}>
+                <div className="bg-[#FFF3E0] rounded-2xl p-8 shadow-xl h-full flex flex-col">
+                  <p className="text-gray-700 text-sm leading-relaxed text-justify mb-4 line-clamp-4">
+                    “{item.quote}”
+                  </p>
 
-                {/* Read More Link */}
-                <Link href="/who-we-are/clientele">
-                  <span className="text-sm font-medium text-red-500 hover:text-red-600 cursor-pointer mb-6 inline-block">
-                    Read More
-                  </span>
-                </Link>
+                  {/* Read More Link */}
+                  <Link href="/who-we-are/clientele">
+                    <span className="text-sm font-medium text-red-500 hover:text-red-600 cursor-pointer mb-6 inline-block">
+                      Read More
+                    </span>
+                  </Link>
 
-                <div className="flex items-center gap-4 mt-auto">
-                  {item.imageUrl && (
-                    <img
-                      src={item.imageUrl}
-                      alt={item.personName}
-                      className="w-16 h-16 rounded-full object-cover object-top"
-                    />
-                  )}
-
-                  <div>
-                    <p className="font-semibold text-gray-900 text-sm">
-                      {item.personName}
-                    </p>
-
-                    {item.personTitle && (
-                      <p className="text-xs text-gray-600">
-                        {item.personTitle}
-                      </p>
+                  <div className="flex items-center gap-4 mt-auto">
+                    {item.imageUrl && (
+                      <img
+                        src={item.imageUrl}
+                        alt={item.personName}
+                        className="w-16 h-16 rounded-full object-cover object-top"
+                      />
                     )}
 
-                    <p className="text-xs font-medium text-red-500">
-                      {item.companyName}
-                    </p>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm">
+                        {item.personName}
+                      </p>
+
+                      {item.personTitle && (
+                        <p className="text-xs text-gray-600">
+                          {item.personTitle}
+                        </p>
+                      )}
+
+                      <p className="text-xs font-medium text-red-500">
+                        {item.companyName}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+    </PageWrapper>
   );
 }
