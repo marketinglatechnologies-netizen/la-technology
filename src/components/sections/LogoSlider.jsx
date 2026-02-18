@@ -16,12 +16,12 @@ const CLIENT_LOGOS = [
   { name: "Tata AIG", src: "/assets/images/clients/TATA-AIG.png" },
 ];
 
-export default function LogoSlider() {
+export default function LogoSlider({ heading }) {
   return (
     <section className="py-12 bg-white border-b border-gray-50">
       <div className="max-w-full mx-auto px-4 md:px-0">
         <h3 className="text-center text-[#302123] text-[30px] font-[700] tracking-[2%] mb-10 font-montserrat">
-          Trusted by Clients
+          {heading}
         </h3>
 
         <Swiper
