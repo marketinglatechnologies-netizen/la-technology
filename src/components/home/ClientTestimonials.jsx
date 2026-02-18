@@ -165,9 +165,11 @@ export default function TestimonialsGridSection({ items = [], heading }) {
                         {item.personName}
                       </h3>
 
-                      <p className="text-gray-600 leading-relaxed mb-8">
-                        {item.quote}
-                      </p>
+                      <div className="mb-8 max-h-[150px] overflow-y-auto pr-2">
+                        <p className="text-gray-600 leading-relaxed text-justify">
+                          “{item.quote}”
+                        </p>
+                      </div>
 
                       <div className="flex items-center gap-4">
                         {item.imageUrl && (
