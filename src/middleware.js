@@ -59,6 +59,7 @@ export function middleware(request) {
       "style-src 'self' 'unsafe-inline';",
       // Added blob: and verified 'self' for internal Next.js optimization paths
       "img-src 'self' data: blob: https://cdn.sanity.io https://www.google.com https://maps.gstatic.com;",
+      "media-src 'self' https://cdn.sanity.io;",
       "font-src 'self';",
     ].join(" ")
   );
