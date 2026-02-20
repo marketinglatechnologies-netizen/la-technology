@@ -154,7 +154,8 @@ export const NAV_LINKS = [
     dropdown: [
       { label: "Blogs", href: "/insights/blogs" },
       // { label: "Podcast", href: "/insights/podcast" },
-      { label: "CSR", href: "/insights/csr" },
+      // { label: "CSR", href: "/insights/csr" },
+      { label: "Case Studies", href: "/insights/case-studies" },
     ],
   },
   // Add Subsidiaries and Insights similarly...

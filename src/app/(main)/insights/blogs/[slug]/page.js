@@ -12,7 +12,16 @@ const query = `
   title,
   publishedAt,
   body,
-  mainImage
+
+  mainImage{
+    asset,
+    alt
+  },
+
+  seo{
+    metaTitle,
+    metaDescription
+  }
 }
 `;
 
@@ -24,6 +33,19 @@ export async function generateStaticParams() {
   return slugs.map((item) => ({
     slug: item.slug,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  if (!slug) return {};
+
+  const post = await sanityClient.fetch(query, { slug });
+  if (!post) return {};
+
+  return {
+    title: post.seo?.metaTitle || post.metaTitle || "Blog Post",
+    description: post.seo?.metaDescription || "Read this blog post.",
+  };
 }
 
 export default async function Page({ params }) {
@@ -52,7 +74,7 @@ export default async function Page({ params }) {
       {post.mainImage && (
         <img
           src={urlFor(post.mainImage).width(1200).url()}
-          alt={post.title}
+            alt={post.mainImage?.alt || "Main Image"}
           className="w-full h-[360px] object-cover rounded-xl mb-10"
         />
       )}

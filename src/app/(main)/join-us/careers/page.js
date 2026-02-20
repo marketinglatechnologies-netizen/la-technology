@@ -54,7 +54,7 @@ export default function AboutPage() {
       </PageWrapper>
 
       <PageWrapper>
-        <JobApplicationForm />
+        <JobApplicationForm text="“We’ve been alerted to fraudulent recruitment activities. To protect yourself, ensure emails come from @la-technologiesindia.com, and be wary of any requests for money, which we never make.”" />
       </PageWrapper>
     </main>
   );

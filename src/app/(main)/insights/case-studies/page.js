@@ -171,10 +171,10 @@ export default async function CaseStudiesPage() {
     <>
       {/* Banner */}
       <InnerPageBanner
-        bgImage="/assets/images/insights/csr-banner.jpg"
-        title="Real Challenges. Proven Security Outcomes."
+        bgImage="/assets/images/insights/case-studies.jpg"
+        title="Transforming Security Strategies"
         titleTag="h1"
-        description="Discover how LA Technologies delivers enterprise-grade cybersecurity and IT transformation solutions across industries."
+        description="Case studies showing how enterprises leverage modern cybersecurity technologies to protect and grow their business"
       />
 
       <PageWrapper>
@@ -214,7 +214,7 @@ export default async function CaseStudiesPage() {
                     )}
 
                     <Link
-                      href={`/insights/csr/${item.slug.current}`}
+                      href={`/insights/case-studies/${item.slug.current}`}
                       className="inline-flex items-center text-sm font-medium text-[#E11D48] hover:underline"
                     >
                       Read Case Study

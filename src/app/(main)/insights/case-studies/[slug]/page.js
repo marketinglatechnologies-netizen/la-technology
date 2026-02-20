@@ -1,4 +1,3 @@
-
 import { sanityClient } from "@/lib/sanityClient";
 import { notFound } from "next/navigation";
 import { createImageUrlBuilder } from "@sanity/image-url";
@@ -13,10 +12,28 @@ const query = `
   title,
   heroTitle,
   heroSubtitle,
-  heroImage,
+  publishedAt,
   industryScope,
   executiveSummary,
-  publishedAt
+
+  // Hero Image
+  heroImage{
+    asset->{
+      url
+    }
+  },
+
+  // Side Image with Alt
+  sideImage{
+  asset,
+  alt
+},
+
+  // SEO Fields
+  seo{
+    metaTitle,
+    metaDescription
+  }
 }
 `;
 
@@ -30,6 +47,21 @@ export async function generateStaticParams() {
   return slugs.map((item) => ({
     slug: item.slug,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params; 
+
+  if (!slug) return {};
+
+  const data = await sanityClient.fetch(query, { slug });
+
+  if (!data) return {};
+
+  return {
+    title: data?.seo?.metaTitle || data?.heroTitle,
+    description: data?.seo?.metaDescription || data?.heroSubtitle,
+  };
 }
 
 export default async function Page({ params }) {
@@ -199,12 +231,12 @@ export default async function Page({ params }) {
               </div>
 
               {/* Right Side Image */}
-              {executiveSummary.sideImage?.asset?._ref && (
+              {executiveSummary?.sideImage?.asset && (
                 <div className="flex justify-center lg:justify-end">
                   <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-sm">
                     <img
                       src={urlFor(executiveSummary.sideImage).width(800).url()}
-                      alt={caseStudy.title}
+                      alt={executiveSummary.sideImage?.alt || "Side Image"}
                       className="w-full h-full object-cover"
                     />
                   </div>

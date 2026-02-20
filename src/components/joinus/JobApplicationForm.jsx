@@ -4,7 +4,7 @@ import { Send } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function JobApplicationForm() {
+export default function JobApplicationForm({ text }) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("idle");
   const [selectedFileName, setSelectedFileName] = useState("");
@@ -149,7 +149,14 @@ export default function JobApplicationForm() {
             <Input label="First Name" name="firstName" required />
             <Input label="Last Name" name="lastName" required />
             <Input label="Email Id" name="email" type="email" required />
-            <Input label="Mobile Number" name="mobile"  maxLength={10}  pattern="[0-9]{10}"  inputMode="numeric" required />
+            <Input
+              label="Mobile Number"
+              name="mobile"
+              maxLength={10}
+              pattern="[0-9]{10}"
+              inputMode="numeric"
+              required
+            />
             <Select
               label="Job Title"
               name="jobTitle"
@@ -202,6 +209,8 @@ export default function JobApplicationForm() {
               }`}
             />
           </div>
+
+          <p className="text-xs text-red-500 italic mb-2">{text}</p>
 
           <button
             type="submit"

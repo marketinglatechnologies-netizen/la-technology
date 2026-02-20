@@ -31,7 +31,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: {
     default: "LA Technologies Pvt Ltd  | Cyber Security, IT & OT Solutions in India",
-    // template: "%s | LA Technologies",
+    template: "%s | LA Technologies",
   },
   description: "LA Technologies Pvt Ltd  delivers end-to-end Cyber Security, IT Infrastructure, OT Security, and Managed Services for enterprises across industries in India and globally.",
 };

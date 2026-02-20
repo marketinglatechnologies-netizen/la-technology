@@ -15,7 +15,7 @@ export default function HomeCaseStudiesSection({ caseStudies = [] }) {
           {caseStudies.map((item) => (
             <Link
               key={item._id}
-              href={`insights/csr/${item.slug}`}
+              href={`insights/case-studies/${item.slug}`}
               className="group block"
             >
               <div
