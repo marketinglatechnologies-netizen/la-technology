@@ -154,9 +154,7 @@ const CASE_STUDIES_QUERY = `
     industry,
     organizationType
   },
-  executiveSummary {
-    summary
-  },
+  "executiveSummary": executiveSummary.sections[contentType == "paragraph"][0].paragraph,
   heroImage {
     asset->{ url }
   },
@@ -207,12 +205,11 @@ export default async function CaseStudiesPage() {
                       {item.title}
                     </h3>
 
-                    {item.executiveSummary?.summary && (
-                      <p className="text-sm text-gray-600 leading-relaxed line-clamp-3 mb-4">
-                        {item.executiveSummary.summary.slice(0, 150)}...
+                    {item.executiveSummary && (
+                      <p className="text-sm text-gray-600 line-clamp-3 mb-4">
+                        {item.executiveSummary.slice(0, 150)}...
                       </p>
                     )}
-
                     <Link
                       href={`/insights/case-studies/${item.slug.current}`}
                       className="inline-flex items-center text-sm font-medium text-[#E11D48] hover:underline"

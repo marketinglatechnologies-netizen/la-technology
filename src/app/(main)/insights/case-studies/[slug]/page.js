@@ -50,7 +50,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params; 
+  const { slug } = await params;
 
   if (!slug) return {};
 
@@ -116,36 +116,90 @@ export default async function Page({ params }) {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-gray-800">
-              {/* LEFT */}
+              {/* LEFT COLUMN */}
               <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold mb-1">Industry :</h4>
-                  <p>{industryScope.industry}</p>
-                </div>
+                {industryScope.industry && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.industry.heading}
+                    </h4>
+                    <p>{industryScope.industry.value}</p>
+                  </div>
+                )}
 
-                <div>
-                  <h4 className="font-semibold mb-1">Organization Type :</h4>
-                  <p>{industryScope.organizationType}</p>
-                </div>
+                {industryScope.organizationType && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.organizationType.heading}
+                    </h4>
+                    <p>{industryScope.organizationType.value}</p>
+                  </div>
+                )}
 
-                <div>
-                  <h4 className="font-semibold mb-1">Deployment Size :</h4>
-                  <p>{industryScope.size}</p>
-                </div>
+                {industryScope.size && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.size.heading}
+                    </h4>
+                    <p>{industryScope.size.value}</p>
+                  </div>
+                )}
+
+                {industryScope.usersCovered && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.usersCovered.heading}
+                    </h4>
+                    <p>{industryScope.usersCovered.value}</p>
+                  </div>
+                )}
               </div>
 
-              {/* MIDDLE */}
-              <div>
-                <h4 className="font-semibold mb-1">Geography :</h4>
-                <p className="leading-relaxed">{industryScope.geography}</p>
+              {/* MIDDLE COLUMN */}
+              <div className="space-y-6">
+                {industryScope.geography && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.geography.heading}
+                    </h4>
+                    <p className="leading-relaxed">
+                      {industryScope.geography.value}
+                    </p>
+                  </div>
+                )}
+
+                {industryScope.operationalFootprint && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.operationalFootprint.heading}
+                    </h4>
+                    <p className="leading-relaxed">
+                      {industryScope.operationalFootprint.value}
+                    </p>
+                  </div>
+                )}
+
+                {industryScope.networkCoverage && (
+                  <div>
+                    <h4 className="font-semibold mb-1">
+                      {industryScope.networkCoverage.heading}
+                    </h4>
+                    <p className="leading-relaxed">
+                      {industryScope.networkCoverage.value}
+                    </p>
+                  </div>
+                )}
               </div>
 
-              {/* RIGHT */}
+              {/* RIGHT COLUMN */}
               {industryScope.securitySolutions && (
                 <div>
-                  <h4 className="font-semibold mb-4">
-                    Security Solutions Deployed:
-                  </h4>
+                  {industryScope.securitySolutionsHeading && (
+                    <h4 className="font-semibold mb-4">
+                      {industryScope.securitySolutionsHeading}
+                    </h4>
+                  )}
+
                   <ul className="space-y-3 list-disc list-inside">
                     {industryScope.securitySolutions.map((item, i) => (
                       <li key={i}>{item}</li>
@@ -157,7 +211,6 @@ export default async function Page({ params }) {
           </div>
         </section>
       )}
-
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Executive Section */}
         {executiveSummary && (
@@ -165,69 +218,31 @@ export default async function Page({ params }) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Left Content */}
               <div className="text-sm text-gray-800 leading-relaxed">
-                <h2 className="text-2xl font-semibold mb-4">
-                  Executive Summary
-                </h2>
 
-                <p className="mb-8">{executiveSummary.summary}</p>
+                {/* Render all sections dynamically */}
+                {executiveSummary.sections?.map((section, i) => (
+                  <div key={i} className="mb-8">
+                    {section.heading && (
+                      <h3 className="text-2xl font-semibold mb-4">
+                        {section.heading}
+                      </h3>
+                    )}
 
-                {/* Business Challenges */}
-                <h3 className="text-2xl font-semibold mb-4">
-                  Business Challenges
-                </h3>
-                <ul className="mb-8 space-y-1">
-                  {executiveSummary.businessChallenges?.map((item, i) => (
-                    <li key={i}>– {item}</li>
-                  ))}
-                </ul>
+                    {section.contentType === "paragraph" &&
+                      section.paragraph && (
+                        <p className="mb-8">{section.paragraph}</p>
+                      )}
 
-                {/* Security Objectives */}
-                <h3 className="text-2xl font-semibold mb-4">
-                  Security Objectives
-                </h3>
-                <ul className="mb-8 space-y-1">
-                  {executiveSummary.securityObjectives?.map((item, i) => (
-                    <li key={i}>– {item}</li>
-                  ))}
-                </ul>
-
-                {/* Solution Overview */}
-                <h3 className="text-2xl font-semibold mb-4">
-                  Solution Overview
-                </h3>
-                <div className="space-y-4 mb-8">
-                  {executiveSummary.solutionOverview?.map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
-
-                {/* Deployment Phases */}
-                <h3 className="text-2xl font-semibold mb-4">
-                  Deployment Phases
-                </h3>
-                <ul className="mb-8 space-y-1">
-                  {executiveSummary.deploymentPhases?.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-
-                {/* Business Outcomes */}
-                <h3 className="text-2xl font-semibold mb-4">
-                  Business Outcomes
-                </h3>
-                <ul className="mb-8 space-y-1">
-                  {executiveSummary.businessOutcomes?.map((item, i) => (
-                    <li key={i}>– {item}</li>
-                  ))}
-                </ul>
-
-                {/* Conclusion */}
-                <h3 className="text-2xl font-semibold mb-4">Conclusion</h3>
-                <div className="space-y-3">
-                  {executiveSummary.conclusion?.map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
+                    {section.contentType === "list" &&
+                      section.listItems?.length > 0 && (
+                        <ul className="mb-8 space-y-1 list-disc list-inside">
+                          {section.listItems.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      )}
+                  </div>
+                ))}
               </div>
 
               {/* Right Side Image */}
