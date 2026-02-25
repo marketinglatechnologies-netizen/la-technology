@@ -76,6 +76,8 @@ export default function JobListing({ jobs }) {
   const [selectedJob, setSelectedJob] = useState(null);
   const [loading, setLoading] = useState(false);
   const [readMoreJob, setReadMoreJob] = useState(null);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -83,20 +85,25 @@ export default function JobListing({ jobs }) {
     if (!selectedJob) return;
 
     setLoading(true);
+    setError(null);
 
     const formData = new FormData(e.target);
     formData.append("jobId", selectedJob._id);
 
-    const res = await fetch("/api/apply", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const res = await fetch("/api/apply", {
+        method: "POST",
+        body: formData,
+      });
 
-    if (res.ok) {
-      alert("Application Submitted Successfully!");
-      setSelectedJob(null);
-    } else {
-      alert("Submission Failed");
+      if (!res.ok) {
+        throw new Error("Submission failed");
+      }
+
+      setSuccess(true); // show success UI
+      e.target.reset(); // clear form
+    } catch (error) {
+      setError("Something went wrong. Please try again.");
     }
 
     setLoading(false);
@@ -188,50 +195,75 @@ export default function JobListing({ jobs }) {
                 Apply for {selectedJob.title}
               </h2>
 
-              <form onSubmit={handleSubmit} className="space-y-3">
-                <input
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                  className="w-full border p-2 rounded"
-                />
+              {!success ? (
+                <form onSubmit={handleSubmit} className="space-y-3">
+                  <input
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                    className="w-full border p-2 rounded focus:ring-2 focus:ring-red-500 outline-none"
+                  />
 
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  required
-                  className="w-full border p-2 rounded"
-                />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                    className="w-full border p-2 rounded focus:ring-2 focus:ring-red-500 outline-none"
+                  />
 
-                <input
-                  name="phone"
-                  placeholder="Phone"
-                  required
-                  className="w-full border p-2 rounded"
-                />
+                  <input
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                    className="w-full border p-2 rounded focus:ring-2 focus:ring-red-500 outline-none"
+                  />
 
-                <textarea
-                  name="coverLetter"
-                  placeholder="Cover Letter"
-                  className="w-full border p-2 rounded"
-                />
+                  <textarea
+                    name="coverLetter"
+                    placeholder="Cover Letter"
+                    className="w-full border p-2 rounded focus:ring-2 focus:ring-red-500 outline-none"
+                  />
 
-                <input
-                  name="resume"
-                  type="file"
-                  required
-                  className="w-full border p-2 rounded"
-                />
+                  <input
+                    name="resume"
+                    type="file"
+                    required
+                    className="w-full border p-2 rounded"
+                  />
 
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-red-600 text-white py-2 rounded"
-                >
-                  {loading ? "Submitting..." : "Submit Application"}
-                </button>
-              </form>
+                  {error && <p className="text-red-600 text-sm">{error}</p>}
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full bg-gradient-to-r from-[#E53935] to-[#F37321] text-white py-2 rounded transition disabled:opacity-50"
+                  >
+                    {loading ? "Submitting..." : "Submit Application"}
+                  </button>
+                </form>
+              ) : (
+                <div className="text-center py-8">
+                  <h3 className="text-2xl font-semibold text-green-600 mb-4">
+                    Application Submitted Successfully 🎉
+                  </h3>
+
+                  <p className="text-gray-600 mb-6">
+                    Our HR team will review your application and contact you
+                    soon.
+                  </p>
+
+                  <button
+                    onClick={() => {
+                      setSuccess(false);
+                      setSelectedJob(null);
+                    }}
+                    className="from-[#E53935] to-[#F37321] text-white px-6 py-2 rounded"
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}
