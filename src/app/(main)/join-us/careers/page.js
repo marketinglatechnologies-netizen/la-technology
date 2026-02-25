@@ -1,6 +1,26 @@
 import InnerPageBanner from "@/components/layout/InnerPageBanner";
 import JobApplicationForm from "@/components/joinus/JobApplicationForm";
 import PageWrapper from "@/components/services/PageWrapper";
+import JobListing from "@/components/joinus/JobListing";
+import sanityClient from "@/lib/sanityClient";
+import Page from "../../insights/blogs/[slug]/page";
+
+export const revalidate = 60;
+
+const query = `
+*[_type == "job" && isActive == true]
+| order(postedDate desc){
+  _id,
+  title,
+  company,
+  jobType,
+  location,
+  postedDate,
+  shortDescription,
+  description,
+}
+`;
+
 
 export const metadata = {
   title: "Careers at LA Technologies Pvt Ltd | Join Our Cyber Security Team",
@@ -8,7 +28,8 @@ export const metadata = {
     "Build your career at LA Technologies Pvt Ltd . Explore exciting opportunities in cyber security, IT infrastructure, OT security, and managed services.",
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const jobs = await sanityClient.fetch(query);
   return (
     <main>
       <InnerPageBanner
@@ -52,6 +73,11 @@ export default function AboutPage() {
           </div>
         </section>
       </PageWrapper>
+
+      <PageWrapper>
+      <JobListing jobs={jobs} />
+      </PageWrapper>
+     
 
       <PageWrapper>
         <JobApplicationForm text="“We’ve been alerted to fraudulent recruitment activities. To protect yourself, ensure emails come from @la-technologiesindia.com, and be wary of any requests for money, which we never make.”" />
