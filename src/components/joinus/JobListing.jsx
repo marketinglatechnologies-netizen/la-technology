@@ -110,53 +110,56 @@ export default function JobListing({ jobs }) {
   };
 
   return (
-    <section className="bg-white py-12 px-6">
-      <div className="space-y-6 max-w-7xl mx-auto px-4">
-        <h1 className="text-3xl font-semibold text-center mb-10">
-          Current Openings
-        </h1>
+    <>
+      {jobs && jobs.length > 0 && (
+        <section className="bg-white py-12 px-6">
+    <div className="space-y-6 max-w-7xl mx-auto px-4">
+      
+      <h1 className="text-3xl font-semibold text-center mb-10">
+        Current Openings
+      </h1>
 
-        {jobs.map((job) => (
-          <div
-            key={job._id}
-            className="bg-white p-6 border rounded-md shadow-sm"
-          >
-            <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+      {jobs.map((job) => (
+        <div
+          key={job._id}
+          className="bg-white p-6 border rounded-md shadow-sm"
+        >
+          <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
 
-            <div className="flex gap-6 text-sm text-gray-600 mb-3">
-              <span className="flex items-center gap-2">
-                <FaBriefcase /> {job.jobType}
-              </span>
+          <div className="flex gap-6 text-sm text-gray-600 mb-3">
+            <span className="flex items-center gap-2">
+              <FaBriefcase /> {job.jobType}
+            </span>
 
-              <span className="flex items-center gap-2">
-                <FaMapMarkerAlt /> {job.location}
-              </span>
+            <span className="flex items-center gap-2">
+              <FaMapMarkerAlt /> {job.location}
+            </span>
 
-              <span className="flex items-center gap-2">
-                <FaCalendarAlt />
-                {new Date(job.postedDate).toLocaleDateString()}
-              </span>
-            </div>
-
-            <p className="text-gray-700 mb-4">{job.shortDescription}</p>
-
-            <div className="flex gap-3 mt-3">
-              <button
-                onClick={() => setReadMoreJob(job)}
-                className="border border-red-600 text-red-600 px-5 py-2 rounded"
-              >
-                Read More
-              </button>
-
-              <button
-                onClick={() => setSelectedJob(job)}
-                className="bg-gradient-to-r from-[#E53935] to-[#F37321] text-white px-5 py-2 rounded"
-              >
-                Apply Now
-              </button>
-            </div>
+            <span className="flex items-center gap-2">
+              <FaCalendarAlt />
+              {new Date(job.postedDate).toLocaleDateString()}
+            </span>
           </div>
-        ))}
+
+          <p className="text-gray-700 mb-4">{job.shortDescription}</p>
+
+          <div className="flex gap-3 mt-3">
+            <button
+              onClick={() => setReadMoreJob(job)}
+              className="border border-red-600 text-red-600 px-5 py-2 rounded"
+            >
+              Read More
+            </button>
+
+            <button
+              onClick={() => setSelectedJob(job)}
+              className="bg-gradient-to-r from-[#E53935] to-[#F37321] text-white px-5 py-2 rounded"
+            >
+              Apply Now
+            </button>
+          </div>
+        </div>
+      ))}
 
         {readMoreJob && (
           <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
@@ -267,7 +270,9 @@ export default function JobListing({ jobs }) {
             </div>
           </div>
         )}
-      </div>
-    </section>
+        </div>
+        </section>
+      )}
+    </>
   );
 }
