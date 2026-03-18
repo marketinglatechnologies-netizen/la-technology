@@ -58,7 +58,7 @@ export default async function HomePage() {
   const heroSlides = [
     {
       type: "video",
-      desktopSrc: "/assets/videos/hero-desktop.mp4",
+      desktopSrc: "/assets/videos/home.mp4",
       mobileSrc: "/assets/videos/hero-mobile.mp4",
       // title: "Redefining Cybersecurity with Innovative, Future-Ready Solutions",
       // description: "We Design and Implement Cybersecurity Solutions to Scale Businesses",

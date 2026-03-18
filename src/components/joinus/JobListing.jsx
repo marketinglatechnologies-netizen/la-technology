@@ -261,7 +261,7 @@ export default function JobListing({ jobs }) {
                       setSuccess(false);
                       setSelectedJob(null);
                     }}
-                    className="from-[#E53935] to-[#F37321] text-white px-6 py-2 rounded"
+                    className="bg-[#E53935] text-white px-6 py-2 rounded"
                   >
                     Close
                   </button>
