@@ -44,7 +44,7 @@ export default function DatatureSection() {
     },
     {
       image:
-        "/assets/images/mod1.png",
+        "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&h=200&fit=crop&crop=center",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -513,13 +513,13 @@ export default function DatatureSection() {
       title: "Commission & Operate",
       description:
         "From thermal validation and load testing to managed handover and ongoing support, we stay with you beyond delivery to ensure your facility performs at specification.",
-      image: "/assets/images/card1.png",
+      image: "/images/commission-operate.jpg",
     },
   ];
   const steps = [
     {
       image:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=280&fit=crop",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -542,7 +542,7 @@ export default function DatatureSection() {
     },
     {
       image:
-        "/assets/images/card1.png",
+        "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=280&fit=crop",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -564,7 +564,7 @@ export default function DatatureSection() {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=280&fit=crop",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
