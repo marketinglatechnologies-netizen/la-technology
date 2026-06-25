@@ -2,6 +2,15 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+    output: "export",
+      images: {
+    unoptimized: true,
+  },
 };
+
+// next.config.js
+// module.exports = {
+//   output: 'export',
+// };
 
 export default nextConfig;
