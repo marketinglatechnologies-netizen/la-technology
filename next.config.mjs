@@ -1,16 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   reactCompiler: true,
-    output: "export",
-      images: {
+  images: {
     unoptimized: true,
   },
 };
-
-// next.config.js
-// module.exports = {
-//   output: 'export',
-// };
 
 export default nextConfig;
