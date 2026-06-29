@@ -16,8 +16,7 @@ import {
 export default function DatatureSection() {
   const workloads = [
     {
-      image:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=200&fit=crop&crop=center",
+      image: "/assets/images/ai-compute.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +42,7 @@ export default function DatatureSection() {
         "High-density GPU clusters with liquid cooling for model training and inference",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&h=200&fit=crop&crop=center",
+      image: "/assets/images/cloud.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +63,7 @@ export default function DatatureSection() {
         "Secure, compliant infrastructure for government and regulated enterprise data",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&h=200&fit=crop&crop=center",
+      image: "/assets/images/enterprise.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +84,7 @@ export default function DatatureSection() {
         "On-premise cloud environments with enterprise reliability and managed operations",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&h=200&fit=crop&crop=center",
+      image: "/assets/images/hpc.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +107,7 @@ export default function DatatureSection() {
         "High-performance compute clusters for research, simulation, and analytics",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=200&fit=crop&crop=center",
+      image: "/assets/images/edge.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -501,7 +496,7 @@ export default function DatatureSection() {
       title: "Design & Architecture",
       description:
         "We start with your workload requirements—GPU density, power envelope, cooling strategy, compliance—and design a data center that is precisely right for your needs.",
-      image: "/assests/images/city.png",
+      image: "/images/build-integration.jpg",
     },
     {
       title: "Build & Integration",
@@ -513,13 +508,12 @@ export default function DatatureSection() {
       title: "Commission & Operate",
       description:
         "From thermal validation and load testing to managed handover and ongoing support, we stay with you beyond delivery to ensure your facility performs at specification.",
-      image: "/images/commission-operate.jpg",
+      image: "/assets/images/card1.png",
     },
   ];
   const steps = [
     {
-      image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=280&fit=crop",
+      image: "/assets/images/card1.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -541,8 +535,7 @@ export default function DatatureSection() {
         "We start with your workload requirements — GPU density, power envelope, cooling strategy, compliance — and design a data center that is precisely right for your needs.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=280&fit=crop",
+      image: "/assets/images/card2.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -563,8 +556,7 @@ export default function DatatureSection() {
         "Leveraging prefabricated modular infrastructure and factory-commissioned systems, we cut deployment time dramatically without compromising on engineering quality.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=280&fit=crop",
+      image: "/assets/images/card3.png",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -627,8 +619,8 @@ export default function DatatureSection() {
   return (
     <>
       <section
-        className="relative w-full min-h-[420px] flex items-center font-sans overflow-hidden"
-        style={{ minHeight: 450 }}
+        className="relative w-full min-h-[360px] flex items-center font-sans overflow-hidden"
+        style={{ minHeight: 300 }}
       >
         {/* Background image */}
         <img
@@ -686,23 +678,25 @@ export default function DatatureSection() {
             </button>
 
             {/* Secondary — transparent white border */}
-            <button className="flex items-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors">
+            <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className="w-4 h-4 shrink-0"
               >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download Capability Brief
+
+              <span className="whitespace-nowrap">
+                Download Capability Brief
+              </span>
             </button>
           </div>
         </div>
@@ -798,11 +792,11 @@ export default function DatatureSection() {
       <section className="w-full bg-white py-16 font-sans">
         <div className="max-w-6xl mx-auto px-6">
           {/* ── Heading block ── */}
-          <div className="max-w-6xl mx-auto text-center mb-12">
-            <h2 className="text-[30px] font-bold text-[#0f1f3d] tracking-tight mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-[#0f1f3d] tracking-tight mb-4">
               One Partner. End-to-End Delivery.
             </h2>
-            <p className="text-[14.5px] text-gray-500 leading-relaxed">
+            <p className="text-[13.5px] sm:text-[14.5px] text-gray-500 leading-relaxed max-w-2xl mx-auto">
               LA Technologies brings together modular infrastructure, advanced
               liquid cooling, and systems integration expertise into a single,
               accountable delivery framework. We don't sell components — we
@@ -812,7 +806,8 @@ export default function DatatureSection() {
           </div>
 
           {/* ── Cards ── */}
-          <div className="grid grid-cols-3 gap-5 max-w-6xl mx-auto">
+          {/* 1 col mobile → 2 col tablet → 3 col desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {steps.map((step, i) => (
               <div
                 key={i}
@@ -825,10 +820,8 @@ export default function DatatureSection() {
                     alt={step.title}
                     className="w-full h-[200px] object-cover"
                   />
-                  {/* Subtle dark gradient at bottom for icon readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                  {/* Icon — bottom left */}
-                  <div className="absolute bottom-6 left-4 w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                  <div className="absolute bottom-4 left-4 w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
                     {step.icon}
                   </div>
                 </div>
@@ -848,14 +841,14 @@ export default function DatatureSection() {
         </div>
       </section>
 
+      {/*The La technologies data center stack*/}
       <section className="w-full bg-white px-6 py-24 font-sans">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-[#0d1b2e] mb-3 leading-tight">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#0d1b2e] mb-3 leading-tight">
             The LA Technologies Data Center Stack
           </h2>
-
-          <p className="max-w-lg mx-auto text-base text-gray-500 leading-relaxed mb-10">
+          <p className="max-w-lg mx-auto text-sm sm:text-base text-gray-500 leading-relaxed mb-10">
             Every data center we build is assembled from three tightly
             integrated layers — each one best-in-class, all of them working
             together as a unified system.
@@ -863,8 +856,8 @@ export default function DatatureSection() {
         </div>
 
         <div className="flex flex-col gap-3">
-          {/* ── Row 1: 2 cols ── */}
-          <div className="grid grid-cols-2 gap-3">
+          {/* ── Row 1: 1 col mobile → 2 col md+ ── */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {/* Layer 1 — blue */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
@@ -941,8 +934,8 @@ export default function DatatureSection() {
             </div>
           </div>
 
-          {/* ── Row 2: 3 cols ── */}
-          <div className="grid grid-cols-3 gap-3">
+          {/* ── Row 2: 1 col mobile → 2 col sm → 3 col lg ── */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {/* Layer 3 — orange */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
@@ -1019,7 +1012,7 @@ export default function DatatureSection() {
 
             {/* Layer 5 — slate blue */}
             <div
-              className="rounded-2xl p-6 flex flex-col gap-3"
+              className="rounded-2xl p-6 flex flex-col gap-3 sm:col-span-2 lg:col-span-1"
               style={{ background: "#4a6cf7" }}
             >
               <div className="flex items-center gap-2">
@@ -1057,9 +1050,9 @@ export default function DatatureSection() {
             </div>
           </div>
 
-          {/* ── Row 3: 3 cols ── */}
-          <div className="grid grid-cols-3 gap-3">
-            {/* Layer 6 — dark navy */}
+          {/* ── Row 3: 1 col mobile → 2 col sm → 3 col lg ── */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {/* Layer 6 — green */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
               style={{ background: "#34D399" }}
@@ -1098,7 +1091,7 @@ export default function DatatureSection() {
               </p>
             </div>
 
-            {/* Layer 7 — dark navy */}
+            {/* Layer 7 — red */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
               style={{ background: "#F87171" }}
@@ -1139,9 +1132,9 @@ export default function DatatureSection() {
               </p>
             </div>
 
-            {/* Layer 8 — dark navy */}
+            {/* Layer 8 — slate */}
             <div
-              className="rounded-2xl p-6 flex flex-col gap-3"
+              className="rounded-2xl p-6 flex flex-col gap-3 sm:col-span-2 lg:col-span-1"
               style={{ background: "#475569" }}
             >
               <div className="flex items-center gap-2">
@@ -1175,9 +1168,9 @@ export default function DatatureSection() {
             </div>
           </div>
 
-          {/* ── Row 4: 2 cols ── */}
-          <div className="grid grid-cols-2 gap-3">
-            {/* Layer 9 — dark navy */}
+          {/* ── Row 4: 1 col mobile → 2 col md+ ── */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {/* Layer 9 — blue */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
               style={{ background: "#3B82F6" }}
@@ -1215,7 +1208,7 @@ export default function DatatureSection() {
               </p>
             </div>
 
-            {/* Layer 10 — dark navy */}
+            {/* Layer 10 — cyan */}
             <div
               className="rounded-2xl p-6 flex flex-col gap-3"
               style={{ background: "#0891B2" }}
@@ -1256,36 +1249,34 @@ export default function DatatureSection() {
         </div>
       </section>
 
-      <section className="w-full bg-white px-8 py-16 font-sans">
+      {/* Powered by India's Most Innovative Data*/}
+      <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 font-sans">
         {/* ── Section header ── */}
-        <div className="text-center mb-10 ">
+        <div className="text-center mb-8 sm:mb-10">
           <p className="text-[11px] font-bold tracking-[0.18em] uppercase text-orange-500 mb-3">
             Our OEM Ecosystem
           </p>
-          <h2 className="text-3xl font-bold text-[#0f1f3d] leading-tight tracking-tight max-w-2xl mx-auto">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f1f3d] leading-tight tracking-tight max-w-2xl mx-auto">
             Powered by India's Most Innovative Data Center OEMs.
           </h2>
         </div>
 
-        {/* ── Content row ── */}
+        {/* ── Content ── */}
         <div className="max-w-6xl mx-auto">
-          <div className="flex gap-12 items-start">
-            {/* Left — text */}
-            <div className="flex-1 min-w-0">
-              {/* Eyebrow */}
+          {/* Stack on mobile, side-by-side on desktop */}
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            {/* ── Text — below images on mobile, left on desktop ── */}
+            {/* flex-1 with min-w-0 ensures it doesn't overflow on desktop */}
+            <div className="w-full lg:flex-1 lg:min-w-0 order-2 lg:order-1">
               <p className="text-[11px] tracking-[0.15em] uppercase mb-2 text-orange-500">
                 Thermal Engineering Partner
               </p>
 
-              {/* Sub-heading */}
-              <h3 className="text-xl font-bold text-[#0f1f3d] leading-snug mb-4">
-                Cooling That Makes High-
-                <br />
-                Density Compute Possible.
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0f1f3d] leading-snug mb-4">
+                Cooling That Makes High-Density Compute Possible.
               </h3>
 
-              {/* Body */}
-              <p className="text-[13.5px] text-gray-500 leading-relaxed mb-6">
+              <p className="text-[13px] sm:text-[13.5px] text-gray-500 leading-relaxed mb-6">
                 Refroid Technologies is India's pioneer in advanced liquid
                 cooling for data centers, HPC, and edge computing. Their
                 indigenous Direct-to-Chip and Liquid Immersion Cooling systems
@@ -1295,14 +1286,287 @@ export default function DatatureSection() {
                 from scaling beyond 15 kW.
               </p>
 
-              {/* Key Capabilities */}
               <p className="text-[13.5px] font-bold text-[#0f1f3d] mb-3">
                 Key Capabilities:
               </p>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-3 sm:gap-4">
                 {capabilities.map((cap, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <span className="shrink-0 flex items-center justify-center">
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="shrink-0 mt-0.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#f5821f"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="9 12 11 14 15 10" />
+                      </svg>
+                    </span>
+                    <span className="text-[12px] sm:text-[12.5px] text-gray-500 leading-relaxed">
+                      {cap}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* ── Image mosaic — top on mobile, right on desktop ── */}
+            {/* w-full on mobile, fixed 45% max on desktop so it never crushes the text */}
+            <div className="w-full lg:w-[45%] lg:shrink-0 order-1 lg:order-2">
+              <div className="grid grid-cols-2 gap-2">
+                {/* Left tall — spans 2 rows */}
+                <div className="rounded-xl overflow-hidden row-span-2">
+                  <img
+                    src="/assets/images/oem1.png"
+                    alt="Refroid liquid cooling rack"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 300 }}
+                  />
+                </div>
+
+                {/* Top-right */}
+                <div className="rounded-xl overflow-hidden">
+                  <img
+                    src="/assets/images/oem2.png"
+                    alt="Refroid CDU unit"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 145 }}
+                  />
+                </div>
+
+                {/* Bottom-right */}
+                <div className="rounded-xl overflow-hidden">
+                  <img
+                    src="/assets/images/oem3.png"
+                    alt="Chip liquid cooling closeup"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 145 }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Air Cooling vs. Refroid Liquid Cooling */}
+      <section className="w-full bg-white px-4 sm:px-8 py-12 font-sans">
+        <div className="max-w-6xl mx-auto">
+          {/* Title */}
+          <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-bold text-[#0d1b2e] mb-6 sm:mb-8 tracking-tight">
+            Air Cooling vs. Refroid Liquid Cooling
+          </h2>
+
+          {/* Legend */}
+          <div className="flex items-center justify-center gap-8 sm:gap-16 mb-6 sm:mb-8">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-md border bg-black/20" />
+              <span className="text-[13px] sm:text-[14px] font-medium text-[#5d6678a6]">
+                Air Cooling
+              </span>
+            </div>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-md bg-orange-500" />
+              <span className="text-[13px] sm:text-[14px] font-semibold text-[#17233D]">
+                Refroid Liquid Cooling
+              </span>
+            </div>
+          </div>
+
+          {/* Panel */}
+          <div
+            className="rounded-2xl px-4 sm:px-8 lg:px-10 py-2"
+            style={{ background: "#f0f2f5" }}
+          >
+            {/* ── Row 1: PUE ── */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 py-6 sm:py-8">
+              <div className="sm:shrink-0" style={{ minWidth: 0 }}>
+                <p className="text-[14px] sm:text-[15px] font-bold text-[#0d1b2e] leading-snug sm:w-[220px]">
+                  Power Usage Effec-<br></br>tiveness (PUE)
+                </p>
+              </div>
+              <div className="flex-1 flex flex-col gap-3 sm:gap-5">
+                <div
+                  className="w-full h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-5"
+                  style={{ background: "#dde1e7" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] text-gray-500">
+                    1.5 – 1.8
+                  </span>
+                </div>
+                <div
+                  className="h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-4"
+                  style={{ width: "67%", background: "#f97316" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] font-semibold text-white">
+                    1.05
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Row 2: Max Rack Density ── */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 py-6 sm:py-8 ">
+              <div className="sm:shrink-0">
+                <p className="text-[14px] sm:text-[15px] font-bold text-[#0d1b2e] sm:w-[220px]">
+                  Max Rack Density
+                </p>
+              </div>
+              <div className="flex-1 flex flex-col gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 sm:gap-4 h-10 sm:h-12">
+                  <div
+                    className="shrink-0 rounded-xl sm:rounded-2xl"
+                    style={{ width: 48, height: 40, background: "#dde1e7" }}
+                  />
+                  <span className="text-[12.5px] sm:text-[13.5px] text-gray-500">
+                    ~15 kW/rack
+                  </span>
+                </div>
+                <div
+                  className="w-full h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-5"
+                  style={{ background: "#f97316" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] font-semibold text-white">
+                    Up to 500 kW/rack
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Row 3: Energy Reduction ── */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 py-6 sm:py-8 ">
+              <div className="sm:shrink-0">
+                <p className="text-[14px] sm:text-[15px] font-bold text-[#0d1b2e] sm:w-[220px]">
+                  Energy Reduction
+                </p>
+              </div>
+              <div className="flex-1 flex flex-col gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 sm:gap-4 h-10 sm:h-12">
+                  <div
+                    className="shrink-0 rounded-xl sm:rounded-2xl"
+                    style={{ width: 48, height: 40, background: "#dde1e7" }}
+                  />
+                  <span className="text-[12.5px] sm:text-[13.5px] text-gray-500">
+                    Baseline
+                  </span>
+                </div>
+                <div
+                  className="w-full h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-5"
+                  style={{ background: "#f97316" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] font-semibold text-white">
+                    Up to 40% Savings
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* ── Row 4: Cooling Efficiency ── */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8 py-6 sm:py-8">
+              <div className="sm:shrink-0">
+                <p className="text-[14px] sm:text-[15px] font-bold text-[#0d1b2e] sm:w-[220px]">
+                  Cooling Efficiency
+                </p>
+              </div>
+              <div className="flex-1 flex flex-col gap-3 sm:gap-4">
+                <div
+                  className="h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-5"
+                  style={{ width: "47%", background: "#dde1e7" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] text-gray-500">
+                    Standard
+                  </span>
+                </div>
+                <div
+                  className="w-full h-10 sm:h-12 rounded-full flex items-center px-4 sm:px-5"
+                  style={{ background: "#f97316" }}
+                >
+                  <span className="text-[12.5px] sm:text-[13.5px] font-semibold text-white">
+                    Industry-Leading
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*Modular Rapid Enterprise */}
+      <section className="w-full bg-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 font-sans">
+        {/* ── Section header ── */}
+
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            {/* ── Image mosaic (Left) ── */}
+            <div className="w-full lg:w-[45%] lg:shrink-0">
+              <div className="grid grid-cols-2 gap-2">
+                {/* Left tall */}
+                <div className="rounded-xl overflow-hidden row-span-2">
+                  <img
+                    src="/assets/images/mod3.png"
+                    alt="Refroid liquid cooling rack"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 300 }}
+                  />
+                </div>
+
+                {/* Top-right */}
+                <div className="rounded-xl overflow-hidden">
+                  <img
+                    src="/assets/images/mod1.png"
+                    alt="Refroid CDU unit"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 145 }}
+                  />
+                </div>
+
+                {/* Bottom-right */}
+                <div className="rounded-xl overflow-hidden">
+                  <img
+                    src="/assets/images/mod2.png"
+                    alt="Chip liquid cooling closeup"
+                    className="w-full h-full object-cover"
+                    style={{ minHeight: 145 }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* ── Text Content (Right) ── */}
+            <div className="w-full lg:flex-1 lg:min-w-0">
+              <p className="text-[11px] tracking-[0.15em] uppercase mb-2 text-orange-500">
+                MODULAR INFRASTRUCTURE PARTNER
+              </p>
+
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0f1f3d] leading-snug mb-4">
+                Modular. Rapid. Enterprise-Grade.
+              </h3>
+
+              <p className="text-[13px] sm:text-[13.5px] text-gray-500 leading-relaxed mb-6">
+                TierX Datacenters redefines how data centers are built. By
+                manufacturing prefabricated, factory-commissioned infrastructure
+                modules, TierX compresses deployment timelines from over six
+                months to as few as 90 days — without sacrificing
+                enterprise-grade reliability, compliance, or engineering
+                quality. Their EdgePOD X1 platform and OCP-aligned rack
+                solutions are purpose-built for high-density AI and enterprise
+                workloads.
+              </p>
+
+              <p className="text-[13.5px] font-bold text-[#0f1f3d] mb-3">
+                Key Capabilities:
+              </p>
+
+              <ul className="flex flex-col gap-3 sm:gap-4">
+                {capabilities.map((cap, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="shrink-0 mt-0.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18"
@@ -1319,321 +1583,28 @@ export default function DatatureSection() {
                       </svg>
                     </span>
 
-                    <span className="text-[12.5px] text-gray-500 leading-relaxed">
+                    <span className="text-[12px] sm:text-[12.5px] text-gray-500 leading-relaxed">
                       {cap}
                     </span>
                   </li>
                 ))}
               </ul>
             </div>
-
-            {/* Right — image grid */}
-            {/* Layout: 2 cols × 2 rows. Top-left: tall image spanning 2 rows. Top-right: 1 image. Bottom-right: 1 image */}
-            <div
-              className="shrink-0 grid gap-2"
-              style={{
-                gridTemplateColumns: "220px 220px",
-                gridTemplateRows: "auto auto",
-                width: 448,
-              }}
-            >
-              {/* Left tall image — spans 2 rows */}
-              <div
-                className="rounded-xl overflow-hidden"
-                style={{ gridRow: "1 / 3" }}
-              >
-                <img
-                  src="/assets/images/oem1.png"
-                  alt="Refroid CDU unit"
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: 360 }}
-                />
-              </div>
-
-              {/* Top-right image */}
-              <div className="rounded-xl overflow-hidden">
-                <img
-                  src="/assets/images/oem2.png"
-                  alt="Liquid cooled rack"
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: 176 }}
-                />
-              </div>
-
-              {/* Bottom-right image */}
-              <div className="rounded-xl overflow-hidden">
-                <img
-                  src="/assets/images/oem3.png"
-                  alt="Chip cooling closeup"
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: 176 }}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-white px-8 py-12 font-sans">
-        <div className="max-w-6xl mx-auto px-8">
-          {/* Title */}
-          <h2 className="text-center text-3xl font-bold text-[#0d1b2e] mb-8 tracking-tight">
-            Air Cooling vs. Refroid Liquid Cooling
-          </h2>
-
-          {/* Legend */}
-          <div className="flex items-center justify-center gap-16 mt-8 mb-8">
-            {/* Air Cooling */}
-            <div className="flex items-center gap-3">
-              <div className="w-5 h-5 rounded-md border  bg-black/20" />
-              <span className="text-[14px] font-medium text-[#5d6678a6]">
-                Air Cooling
-              </span>
-            </div>
-
-            {/* Refroid Liquid Cooling */}
-            <div className="flex items-center gap-3">
-              <div className="w-5 h-5 rounded-md bg-orange-500" />
-              <span className="text-[14px] font-semibold text-[#17233D]">
-                Refroid Liquid Cooling
-              </span>
-            </div>
-          </div>
-
-          {/* Panel */}
-          <div
-            className="rounded-2xl px-10 py-2 mx-auto"
-            style={{ background: "#f0f2f5", maxWidth: 1100 }}
-          >
-            {/* ── Row 1: PUE ── */}
-            <div className="flex items-center gap-8 py-8 ">
-              <div style={{ width: 220 }} className="shrink-0">
-                <p className="text-[15px] font-bold text-[#0d1b2e] leading-snug">
-                  PUE (Power Usage
-                  <br />
-                  Effectiveness)
-                </p>
-              </div>
-              <div className="flex-1 flex flex-col gap-5">
-                {/* Gray full-width */}
-                <div
-                  className="w-full h-12 rounded-full flex items-center px-5"
-                  style={{ background: "#dde1e7" }}
-                >
-                  <span className="text-[13.5px] text-gray-500">1.5 – 1.8</span>
-                </div>
-                {/* Orange 67% */}
-                <div
-                  className="h-12 rounded-full flex items-center px-4"
-                  style={{ width: "67%", background: "#f97316" }}
-                >
-                  <span className="text-[13.5px] font-semibold text-white">
-                    1.05
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Row 2: Max Rack Density ── */}
-            <div className="flex items-center gap-8 py-8 ">
-              <div style={{ width: 220 }} className="shrink-0">
-                <p className="text-[15px] font-bold text-[#0d1b2e]">
-                  Max Rack Density
-                </p>
-              </div>
-              <div className="flex-1 flex flex-col gap-4">
-                {/* Small square + label outside */}
-                <div className="flex items-center gap-4 h-12">
-                  <div
-                    className="shrink-0 rounded-2xl"
-                    style={{ width: 60, height: 48, background: "#dde1e7" }}
-                  />
-                  <span className="text-[13.5px] text-gray-500">
-                    ~15 kW/rack
-                  </span>
-                </div>
-                {/* Orange full width */}
-                <div
-                  className="w-full h-12 rounded-full flex items-center px-5"
-                  style={{ background: "#f97316" }}
-                >
-                  <span className="text-[13.5px] font-semibold text-white">
-                    Up to 500 kW/rack
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Row 3: Energy Reduction ── */}
-            <div className="flex items-center gap-8 py-8 ">
-              <div style={{ width: 220 }} className="shrink-0">
-                <p className="text-[15px] font-bold text-[#0d1b2e]">
-                  Energy Reduction
-                </p>
-              </div>
-              <div className="flex-1 flex flex-col gap-4">
-                {/* Small square + label outside */}
-                <div className="flex items-center gap-4 h-12">
-                  <div
-                    className="shrink-0 rounded-2xl"
-                    style={{ width: 60, height: 48, background: "#dde1e7" }}
-                  />
-                  <span className="text-[13.5px] text-gray-500">Baseline</span>
-                </div>
-                {/* Orange full width */}
-                <div
-                  className="w-full h-12 rounded-full flex items-center px-5"
-                  style={{ background: "#f97316" }}
-                >
-                  <span className="text-[13.5px] font-semibold text-white">
-                    Up to 40% Savings
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* ── Row 4: Cooling Efficiency ── */}
-            <div className="flex items-center gap-8 py-8">
-              <div style={{ width: 220 }} className="shrink-0">
-                <p className="text-[15px] font-bold text-[#0d1b2e]">
-                  Cooling Efficiency
-                </p>
-              </div>
-              <div className="flex-1 flex flex-col gap-4">
-                {/* Gray ~47% pill */}
-                <div
-                  className="h-12 rounded-full flex items-center px-5"
-                  style={{ width: "47%", background: "#dde1e7" }}
-                >
-                  <span className="text-[13.5px] text-gray-500">Standard</span>
-                </div>
-                {/* Orange full width */}
-                <div
-                  className="w-full h-12 rounded-full flex items-center px-5"
-                  style={{ background: "#f97316" }}
-                >
-                  <span className="text-[13.5px] font-semibold text-white">
-                    Industry-Leading
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-white px-8 py-24 font-sans">
-        <div className="max-w-5xl mx-auto flex gap-10 items-start">
-          {/* ── Left: image mosaic ── */}
-          <div className="shrink-0 flex gap-4" style={{ width: 420 }}>
-            {/* Left col: 2 stacked images */}
-            <div className="flex flex-col gap-4" style={{ width: 160 }}>
-              <div
-                className="rounded-2xl overflow-hidden"
-                style={{ height: 180 }}
-              >
-                <img
-                  src="/assets/images/mod1.png"
-                  alt="Data chip"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div
-                className="rounded-2xl overflow-hidden"
-                style={{ height: 180 }}
-              >
-                <img
-                  src="/assets/images/mod2.png"
-                  alt="Server rack"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right col: tall image */}
-            <div
-              className="rounded-2xl overflow-hidden flex-1"
-              style={{ height: 370 }}
-            >
-              <img
-                src="/assets/images/mod3.png"
-                alt="TierX EdgePOD X1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          {/* ── Right: text content ── */}
-          <div className="flex-1 min-w-0">
-            {/* Eyebrow */}
-            <p
-              className="text-[11px] font-bold tracking-[0.16em] uppercase mb-3"
-              style={{ color: "#f97316" }}
-            >
-              Modular Infrastructure Partner
-            </p>
-
-            {/* Heading */}
-            <h2 className="text-[30px] font-bold text-[#0d1b2e] leading-tight mb-5">
-              Modular. Rapid. Enterprise-Grade.
-            </h2>
-
-            {/* Body */}
-            <p className="text-[13.5px] text-gray-500 leading-relaxed mb-6">
-              TierX Datacenters redefines how data centers are built. By
-              manufacturing prefabricated, factory-commissioned infrastructure
-              modules, TierX compresses deployment timelines from over six
-              months to as few as 90 days — without sacrificing enterprise-grade
-              reliability, compliance, or engineering quality. Their EdgePOD X1
-              platform and OCP-aligned rack solutions are purpose-built for
-              high-density AI and enterprise workloads.
-            </p>
-
-            {/* Key Capabilities */}
-            <p className="text-[13.5px] font-bold text-[#0d1b2e] mb-3">
-              Key Capabilities:
-            </p>
-            <ul className="flex flex-col gap-4">
-              {capabilities.map((cap, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="flex h-[18px] w-[18px] shrink-0 items-center justify-center mt-[2px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#f5821f"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="9 12 11 14 15 10" />
-                    </svg>
-                  </span>
-
-                  <span className="flex-1 text-[12.5px] leading-[1.7] text-gray-500">
-                    {cap}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-white px-10 py-24 font-sans">
+      {/*Deployment Timeline Comparison*/}
+      <section className="w-full bg-white px-6 sm:px-8 lg:px-10 py-12 sm:py-20 lg:py-24 font-sans">
         {/* Heading */}
-        <h2 className="text-center text-3xl font-bold text-[#0f1f3d] tracking-tight mb-10">
+        <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-bold text-[#0f1f3d] tracking-tight mb-8 sm:mb-10">
           Deployment Timeline Comparison
         </h2>
 
-        <div className="max-w-7xl mx-auto flex flex-col gap-8">
+        <div className="max-w-7xl mx-auto flex flex-col gap-6 sm:gap-8">
           {/* ── Design & Engineering ── */}
           <div>
-            <p className="font-semibold text-[14.5px] text-[#0f1f3d] mb-1">
+            <p className="font-semibold text-[14px] sm:text-[14.5px] text-[#0f1f3d] mb-1">
               Design & Engineering
             </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
@@ -1650,7 +1621,7 @@ export default function DatatureSection() {
                 style={{ background: "#fde8e8" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{
                     width: "18.75%",
                     background: "#f05252",
@@ -1667,9 +1638,9 @@ export default function DatatureSection() {
                 style={{ background: "#d1fae5" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{
-                    width: "9.375%",
+                    width: "19.5%",
                     background: "#34d399",
                     minWidth: 80,
                   }}
@@ -1684,7 +1655,7 @@ export default function DatatureSection() {
 
           {/* ── Procurement ── */}
           <div>
-            <p className="font-semibold text-[14.5px] text-[#0f1f3d] mb-1">
+            <p className="font-semibold text-[14px] sm:text-[14.5px] text-[#0f1f3d] mb-1">
               Procurement
             </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
@@ -1701,7 +1672,7 @@ export default function DatatureSection() {
                 style={{ background: "#fde8e8" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{ width: "50%", background: "#f05252", minWidth: 100 }}
                 >
                   <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
@@ -1714,9 +1685,9 @@ export default function DatatureSection() {
                 style={{ background: "#d1fae5" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{
-                    width: "12.5%",
+                    width: "25.5%",
                     background: "#34d399",
                     minWidth: 80,
                   }}
@@ -1731,7 +1702,7 @@ export default function DatatureSection() {
 
           {/* ── Civil & Construction ── */}
           <div>
-            <p className="font-semibold text-[14.5px] text-[#0f1f3d] mb-1">
+            <p className="font-semibold text-[14px] sm:text-[14.5px] text-[#0f1f3d] mb-1">
               Civil & Construction
             </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
@@ -1748,7 +1719,7 @@ export default function DatatureSection() {
                 style={{ background: "#fde8e8" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{ width: "100%", background: "#f05252" }}
                 >
                   <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
@@ -1770,7 +1741,7 @@ export default function DatatureSection() {
 
           {/* ── Factory Commission ── */}
           <div>
-            <p className="font-semibold text-[14.5px] text-[#0f1f3d] mb-1">
+            <p className="font-semibold text-[14px] sm:text-[14.5px] text-[#0f1f3d] mb-1">
               Factory Commission
             </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
@@ -1794,9 +1765,9 @@ export default function DatatureSection() {
                 style={{ background: "#d1fae5" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{
-                    width: "12.5%",
+                    width: "28.5%",
                     background: "#34d399",
                     minWidth: 90,
                   }}
@@ -1811,7 +1782,7 @@ export default function DatatureSection() {
 
           {/* ── Site Installation ── */}
           <div>
-            <p className="font-semibold text-[14.5px] text-[#0f1f3d] mb-1">
+            <p className="font-semibold text-[14px] sm:text-[14.5px] text-[#0f1f3d] mb-1">
               Site Installation
             </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
@@ -1828,7 +1799,7 @@ export default function DatatureSection() {
                 style={{ background: "#fde8e8" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{ width: "25%", background: "#f05252", minWidth: 90 }}
                 >
                   <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
@@ -1841,14 +1812,14 @@ export default function DatatureSection() {
                 style={{ background: "#d1fae5" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{
-                    width: "9.375%",
+                    width: "19.5%",
                     background: "#34d399",
                     minWidth: 80,
                   }}
                 >
-                  <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
+                  <span className="text-white text-[11.5px] font-semibold whitespace-nowrap translate-x-2">
                     2–3 weeks
                   </span>
                 </div>
@@ -1858,7 +1829,9 @@ export default function DatatureSection() {
 
           {/* ── Total ── */}
           <div className="pt-6 border-t border-gray-200">
-            <p className="font-bold text-[15px] text-[#0f1f3d] mb-1">Total</p>
+            <p className="font-bold text-[15px] text-[#0f1f3d] mb-1 pl-4">
+              Total
+            </p>
             <div className="grid grid-cols-2 gap-5 mb-1.5">
               <p className="text-[12px] text-gray-400">
                 Conventional: 6–24 months
@@ -1873,7 +1846,7 @@ export default function DatatureSection() {
                 style={{ background: "#fde8e8" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{ width: "100%", background: "#f05252" }}
                 >
                   <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
@@ -1886,7 +1859,7 @@ export default function DatatureSection() {
                 style={{ background: "#d1fae5" }}
               >
                 <div
-                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3"
+                  className="absolute left-0 top-0 h-full rounded-full flex items-center justify-end pr-3 pl-4"
                   style={{ width: "40%", background: "#34d399", minWidth: 90 }}
                 >
                   <span className="text-white text-[11.5px] font-semibold whitespace-nowrap">
@@ -1899,21 +1872,19 @@ export default function DatatureSection() {
         </div>
       </section>
 
+      {/*Built for the Workloads That Matter Most.*/}
       <section
-        className="w-full px-8 py-24 font-sans"
+        className="w-full px-4 sm:px-8 py-12 sm:py-24 font-sans"
         style={{ background: "#fdf0e8" }}
       >
         {/* Heading */}
-        <h2 className="text-center font-bold text-[#0f1f3d] tracking-tight mb-10 text-3xl">
+        <h2 className="text-center font-bold text-[#0f1f3d] tracking-tight mb-8 sm:mb-10 text-xl sm:text-2xl lg:text-3xl">
           Built for the Workloads That Matter Most.
         </h2>
 
         <div className="mx-auto" style={{ maxWidth: 980 }}>
-          {/* Row 1 — 3 cards */}
-          <div
-            className="grid gap-10 mb-8"
-            style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
-          >
+          {/* ── Row 1: always 1-col on mobile, 3-col on desktop ── */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mb-5 lg:mb-8">
             {workloads.slice(0, 3).map((item, i) => (
               <div
                 key={i}
@@ -1957,9 +1928,55 @@ export default function DatatureSection() {
             ))}
           </div>
 
-          {/* Row 2 — 2 cards centered (col 1 empty, cards in col 2 & 3, col 3... wait)
-            To center 2 cards among 3 cols: use flex justify-center with each card = 1/3 width minus gap */}
-          <div className="flex justify-center gap-6">
+          {/* ── Row 2: mobile = normal grid cols, desktop = 2 cards centered ── */}
+
+          {/* Mobile & tablet row 2 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:hidden">
+            {workloads.slice(3, 5).map((item, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl overflow-hidden shadow-sm flex flex-col"
+              >
+                <div className="relative w-full" style={{ height: 158 }}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{ background: "rgba(0,0,0,0.12)" }}
+                  />
+                  <div
+                    className="absolute flex items-center justify-center"
+                    style={{
+                      bottom: 12,
+                      left: 12,
+                      width: 32,
+                      height: 32,
+                      borderRadius: 8,
+                      background: "rgba(255,255,255,0.18)",
+                      backdropFilter: "blur(6px)",
+                      WebkitBackdropFilter: "blur(6px)",
+                    }}
+                  >
+                    {item.icon}
+                  </div>
+                </div>
+                <div className="px-5 pt-4 pb-5">
+                  <h3 className="font-bold text-[#0f1f3d] mb-1.5 text-[15px]">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed text-[12.5px]">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop row 2 — 2 cards centered */}
+          <div className="hidden lg:flex justify-center gap-6">
             {workloads.slice(3, 5).map((item, i) => (
               <div
                 key={i}
@@ -1996,7 +2013,7 @@ export default function DatatureSection() {
                   <h3 className="font-bold text-[#0f1f3d] mb-1.5 text-[15px]">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed mb-5  text-[12.5px]">
+                  <p className="text-gray-400 leading-relaxed mb-5 text-[12.5px]">
                     {item.description}
                   </p>
                 </div>
@@ -2006,22 +2023,89 @@ export default function DatatureSection() {
         </div>
       </section>
 
-      <section className="w-full bg-white px-8 py-16 font-sans">
+      {/*From Brief to go live*/}
+      <section className="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 font-sans">
         {/* Heading */}
-        <h2 className="text-center text-2xl font-bold text-[#0f1f3d] tracking-tight mb-14">
+        <h2 className="text-center text-xl sm:text-2xl font-bold text-[#0f1f3d] tracking-tight mb-10 sm:mb-14">
           From Brief to Go-Live. Here's How We Deliver.
         </h2>
 
-        {/* Steps row */}
-        <div className="flex items-start justify-center max-w-5xl mx-auto">
+        {/* ── Mobile: vertical stepper ── */}
+        <div className="flex flex-col gap-8 max-w-sm mx-auto lg:hidden">
+          {stepCircle.map((step, i) => (
+            <div key={i} className="flex items-start gap-5">
+              {/* Circle + connector line */}
+              <div className="flex flex-col items-center">
+                <div
+                  style={{
+                    width: CIRCLE_SIZE,
+                    height: CIRCLE_SIZE,
+                    borderRadius: "50%",
+                    background:
+                      "linear-gradient(145deg, #f05236 0%, #f7921e 100%)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    position: "relative",
+                    boxShadow: "0 6px 20px rgba(240,82,54,0.35)",
+                    flexShrink: 0,
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 6,
+                      borderRadius: "50%",
+                      border: "1.5px solid rgba(255,255,255,0.25)",
+                      pointerEvents: "none",
+                    }}
+                  />
+                  {step.icon}
+                </div>
+                {/* Vertical connector line */}
+                {i < stepCircle.length - 1 && (
+                  <div
+                    className="w-px bg-gray-200 mt-2"
+                    style={{ height: 40 }}
+                  />
+                )}
+              </div>
+
+              {/* Text */}
+              <div className="pt-1">
+                <span
+                  className="font-extrabold leading-none block mb-1"
+                  style={{ fontSize: 22, color: "#f5821f" }}
+                >
+                  {step.number}
+                </span>
+                <span
+                  className="font-bold text-[#0f1f3d] block mb-1"
+                  style={{ fontSize: 14.5 }}
+                >
+                  {step.title}
+                </span>
+                <p
+                  className="text-gray-400 leading-relaxed whitespace-pre-line"
+                  style={{ fontSize: 12 }}
+                >
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Desktop: original horizontal layout ── */}
+        <div className="hidden lg:flex items-start justify-center max-w-5xl mx-auto">
           {stepCircle.map((step, i) => (
             <div key={i} className="flex items-start">
-              {/* ── Step column ── */}
+              {/* Step column */}
               <div
                 className="flex flex-col items-center text-center"
                 style={{ width: 160 }}
               >
-                {/* Gradient circle with inner ring effect */}
+                {/* Gradient circle */}
                 <div
                   style={{
                     width: CIRCLE_SIZE,
@@ -2037,7 +2121,6 @@ export default function DatatureSection() {
                     marginBottom: 14,
                   }}
                 >
-                  {/* Inner ring — lighter circle outline inside */}
                   <div
                     style={{
                       position: "absolute",
@@ -2075,11 +2158,11 @@ export default function DatatureSection() {
                 </p>
               </div>
 
-              {/* ── Dash connector between steps ── */}
+              {/* Dash connector */}
               {i < stepCircle.length - 1 && (
                 <div
                   style={{
-                    paddingTop: CIRCLE_SIZE / 2, // align to circle center
+                    paddingTop: CIRCLE_SIZE / 2,
                     transform: "translateY(-50%)",
                     marginTop: CIRCLE_SIZE / 2,
                     flexShrink: 0,
@@ -2099,52 +2182,44 @@ export default function DatatureSection() {
         </div>
       </section>
 
+      {/*Performance You Can Measure*/}
       <section
-        className="w-full px-6 py-24 font-sans"
+        className="w-full px-4 sm:px-6 py-12 sm:py-24 font-sans"
         style={{
           background: "linear-gradient(155deg, #1c2738 0%, #0d1520 100%)",
         }}
       >
-        {/* ── Heading ── */}
-        <h2 className="text-center text-[30px] font-bold text-white tracking-tight mb-10">
+        {/* Heading */}
+        <h2 className="text-center text-[24px] sm:text-[28px] lg:text-[30px] font-bold text-white tracking-tight mb-8 sm:mb-10">
           Performance You Can Measure.
         </h2>
 
-        {/* ── Always 6 cols in one row, scrollable on small screens ── */}
-        <div className="overflow-x-auto">
-          <div
-            className="flex gap-3 min-w-max mx-auto"
-            style={{ maxWidth: "1152px" }}
-          >
-            {stats.map((stat, i) => (
-              <div
-                key={i}
-                className="flex flex-col rounded-2xl pt-12 pb-8 pl-5 pr-5 flex-1 min-w-[150px]"
-                style={{ backgroundColor: "#1d2d3f" }}
+        {/* ── Single layout that works on both mobile and desktop ── */}
+        {/* Mobile: 2-col grid | Desktop: flex single row */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 max-w-[1152px] mx-auto">
+          {stats.map((stat, i) => (
+            <div
+              key={i}
+              className="flex flex-col rounded-2xl px-4 lg:px-5 pt-6 lg:pt-12 pb-5 lg:pb-8"
+              style={{ backgroundColor: "#1d2d3f" }}
+            >
+              <span
+                className="font-bold leading-tight mb-3 lg:mb-4 text-[26px] lg:text-4xl"
+                style={{ color: "#f5821f" }}
               >
-                {/* Orange stat value */}
-                <span
-                  className="font-bold leading-tight mb-4 text-4xl"
-                  style={{ color: "#f5821f" }}
-                >
-                  {stat.value}
-                </span>
-
-                {/* White label */}
-                <span className="text-white font-bold text-[13px] mb-1">
-                  {stat.label}
-                </span>
-
-                {/* Muted description */}
-                <span
-                  className="text-[12px] leading-[1.5]"
-                  style={{ color: "#6e8099" }}
-                >
-                  {stat.description}
-                </span>
-              </div>
-            ))}
-          </div>
+                {stat.value}
+              </span>
+              <span className="text-white font-bold text-[12px] lg:text-[13px] mb-1">
+                {stat.label}
+              </span>
+              <span
+                className="text-[11px] lg:text-[12px] leading-[1.5]"
+                style={{ color: "#6e8099" }}
+              >
+                {stat.description}
+              </span>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -2212,24 +2287,23 @@ export default function DatatureSection() {
           </button>
 
           {/* Secondary — transparent, white border */}
-          <button className="flex items-center gap-2 bg-transparent border border-white text-white font-semibold text-[14.5px] px-10 py-4 rounded-full hover:bg-white/10 transition-colors">
-            {/* Download icon */}
+          <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               strokeWidth="2.2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="w-4 h-4 shrink-0"
             >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Download Capability Brief
+
+            <span className="whitespace-nowrap">Download Capability Brief</span>
           </button>
         </div>
       </section>
