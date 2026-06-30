@@ -1006,7 +1006,7 @@ export default function DatatureSection() {
               </h3>
               <p className="text-[12px] text-white/80 leading-relaxed">
                 Access is earned, not assumed. Multi-layer physical security is
-                built into every data center we deliver — perimeter barriers,
+                built into every data center we deliver  perimeter barriers,
                 biometric access controls, CCTV surveillance, and structured
                 entry governance aligned to Tier III and enterprise compliance
                 requirements.
