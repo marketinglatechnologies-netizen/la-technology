@@ -129,6 +129,7 @@ export const NAV_LINKS = [
       },
     ],
   },
+  { label: "Data Center", href: "/data-center" },
 
   { label: "Global Presence", href: "/global" },
   {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   BadgeCheck,
   Box,
@@ -668,17 +669,19 @@ export default function DatatureSection() {
           {/* CTA Buttons */}
           <div className="flex items-center gap-4 flex-wrap">
             {/* Primary — orange filled */}
-            <button
-              className="flex items-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white transition-opacity hover:opacity-90"
-              style={{
-                background: "linear-gradient(135deg, #f05236, #f7931e)",
-              }}
-            >
-              Talk to an Expert
-            </button>
+            <Link href="/contact">
+              <button
+                className="flex items-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white transition-opacity hover:opacity-90"
+                style={{
+                  background: "linear-gradient(135deg, #f05236, #f7931e)",
+                }}
+              >
+                Talk to an Expert
+              </button>
+            </Link>
 
             {/* Secondary — transparent white border */}
-            <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
+            {/* <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -697,7 +700,7 @@ export default function DatatureSection() {
               <span className="whitespace-nowrap">
                 Download Capability Brief
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
@@ -2282,12 +2285,14 @@ export default function DatatureSection() {
         {/* Buttons */}
         <div className="flex items-center gap-8 flex-wrap justify-center">
           {/* Primary — white bg, orange text */}
-          <button className="bg-white text-orange-500 font-semibold text-[14.5px] px-10 py-4 rounded-full hover:bg-orange-50 transition-colors">
-            Talk to an Expert
-          </button>
+          <Link href="/contact">
+            <button className="bg-white text-orange-500 font-semibold text-[14.5px] px-10 py-4 rounded-full hover:bg-orange-50 transition-colors">
+              Talk to an Expert
+            </button>
+          </Link>
 
           {/* Secondary — transparent, white border */}
-          <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
+          {/* <button className="flex items-center justify-center gap-2 px-10 py-3 rounded-full font-semibold text-[14px] text-white border border-white/70 hover:bg-white/10 transition-colors max-sm:w-full max-sm:px-4 max-sm:py-3 max-sm:text-[12px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -2304,7 +2309,7 @@ export default function DatatureSection() {
             </svg>
 
             <span className="whitespace-nowrap">Download Capability Brief</span>
-          </button>
+          </button> */}
         </div>
       </section>
     </>

@@ -46,7 +46,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center lg:space-x-5 xl:space-x-10">
+        <div className="hidden lg:flex items-center lg:space-x-5 xl:space-x-9">
           {NAV_LINKS.map((link) => (
             <div
               key={link.label}
